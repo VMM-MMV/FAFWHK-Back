@@ -15,7 +15,7 @@ def url_to_txt(pdf_url):
         for page in reader.pages:
             text += page.extract_text()
         
-        yield text
+        return text
 
     except Exception as e:
         print(f"Error processing {pdf_url}: {e}")
