@@ -2,7 +2,7 @@ import requests
 import json
 
 query = "biomedical | (bio medical)"
-fields = "publicationDate,year,title,openAccessPdf"
+fields = "publicationDate,title,openAccessPdf,abstract"
 
 url = f"http://api.semanticscholar.org/graph/v1/paper/search/bulk?query={query}&fields={fields}&publicationDateOrYear=2016-03-05:"
 r = requests.get(url).json()
