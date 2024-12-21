@@ -93,7 +93,7 @@ class PaperSearchSystem:
         """Index multiple papers from a JSON file"""
         try:
             with open(json_file_path, 'r') as file:
-                papers = json.load(file)
+                papers = [json.loads(line) for line in file]
                 
             if isinstance(papers, list):
                 for paper in papers:
