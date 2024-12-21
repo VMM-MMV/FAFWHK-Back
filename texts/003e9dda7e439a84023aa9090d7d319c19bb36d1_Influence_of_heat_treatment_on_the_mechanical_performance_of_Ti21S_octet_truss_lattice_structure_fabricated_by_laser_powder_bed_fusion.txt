@@ -1,0 +1,697 @@
+Vol.:(0123456789)1 3Progress in Additive Manufacturing (2024) 9:947–957 
+https://doi.org/10.1007/s40964-023-00494-9
+FULL RESEARCH ARTICLE
+Influence of heat treatment on the mechanical performance of Ti21S 
+octet truss lattice structure fabricated by laser powder bed fusion
+A. Jam1,6  · M. Pellizzari1  · L. Emanuelli2 · G. Valsecchi3 · A. du Plessis4,5  · M. Benedetti1 
+Received: 2 May 2023 / Accepted: 5 August 2023 / Published online: 18 August 2023 
+© The Author(s) 2023
+Abstract
+Additive manufacturing allows the production of complex and custom designs including lattice structures—porous metallic 
+structures with designed porosity and tailored mechanical properties. The bulk material has a key influence on the eventual 
+properties of the porous lattice structure material. Among metallic biomaterials, beta-titanium alloys are gaining increasing 
+interested because of their low Young’s modulus. In this work, the heat treatment of beta-Ti21S alloy is investigated in the 
+context of octet truss lattice structures. The intention is to improve the performance of these structures for their reliable use 
+in biomedical applications such as for bone implants. The study makes use of laser powder bed fusion of representative sam-
+ples, uses microCT for physical characterization of manufacturing quality, while quasi-static and fatigue testing is performed 
+to evaluate the performance of these lattice structures. The results indicate that the heat treatment significantly improves 
+the fatigue properties of the lattice structures while changing the quasi-static failure mode more towards a stretch-based 
+failure mode. These findings have practical implications for the implementation of this material and structure combination 
+in medical implants. By enhancing the performance of the lattice structures, the study paves the way for their reliable use 
+in biomedical applications.
+Keywords Beta-Ti21S alloy · Laser powder bed fusion · Heat treatment · Octet truss lattices · Fatigue strength
+1 Introduction
+The study of metallic lattice materials has gained popular -
+ity in recent decades due to advancements in form-freedom 
+fabrication techniques [1 ]. These techniques have improved 
+the ability to control the size and shape of lattice materials, 
+making them highly useful in biomedical applications [2 ]. The most commonly used method for fabrication of bio-
+medical components is metal additive manufacturing, spe-
+cifically the powder bed fusion process [3 ]. In this process, 
+thermal energy from an electron or laser source is used to 
+melt a powder bed and create the desired shape. Laser-based 
+powder bed fusion of metals (PBF-LB/M) provides better 
+surface roughness and more precise geometry than electron-
+based powder bed fusion (PBF-EB/M) [ 4]. As a result, PBF-
+LB/M is better suited for fabricating complex and intricate 
+biomedical components with fine features and high quality.
+Despite its ability to fabricate feature sizes as small as 
+0.1 mm in complex geometries, the properties of final geom-
+etries produced using PBF-LB/M are still a concern for load-
+bearing applications. This issue has been studied in the con-
+text of defect tolerant lattice structures made of beta-Ti 21S 
+alloy [5 ]. In Ref. [5 ], it was found that micro-notches present 
+in the rough surface, or highly localized stress raiser loca-
+tions, on the surface of the lattice were the primary cause of 
+premature failure and reduced mechanical properties. The 
+negative impact of these micro-notches was greater when 
+the cell size was less than 4 mm, or when the strut thickness 
+was below 0.64 mm. Therefore, it is crucial to assess the  * M. Benedetti 
+ matteo.benedetti@unitn.it
+1 Department of Industrial Engineering, University of Trento, 
+Trento, Italy
+2 INSTM (Operative Center, University of Trento), Via 
+Sommarive 9, Trento, Italy
+3 TAV Vacuum Furnaces Inc., Caravaggio, BG, Italy
+4 Research Group 3D Innovation, Stellenbosch University, 
+Stellenbosch, South Africa
+5 Object Research Systems, Montreal, Canada
+6 Present Address: National Center for Additive Manufacturing 
+Excellence (NCAME), Mechanical Engineering Department, 
+Auburn University, Auburn, USA948 Progress in Additive Manufacturing (2024) 9:947–957
+1 3
+manufacturability of simple geometries in various cell sizes 
+before attempting to fabricate complicated geometries.
+Present beta-Ti21S alloy exhibits remarkable mechani-
+cal properties already in the as-built state with a low elastic 
+modulus required for biomedical application [6 ]. Neverthe-
+less, the rapid heating and solidification rate during PBF-
+LB promote the structural and microstructural anisotropy 
+inside the material, formation of microsegregation and 
+presence of residual stress deleterious for the mechanical 
+and stability response of the part. A lot of studies consider 
+the effect of different heat treatments on the most common 
+Ti alloy used in the biomedical field, namely Ti–6Al–4V 
+[7–11]. Seyed Alireza Etsami et al. demonstrated that the 
+Ti–6Al–4V heat treated below β  transus temperature  (Tβ) 
+is characterized by increased ductility due to the formation 
+of α + β lamellar structure [ 7]. Zhiyi Zou et al., proposed 
+new heat treatments based on the refinement of the prior-β 
+grains thanks to rapid heat treatments in the β  phase field 
+leading to increased strength without loss in ductility [10]. 
+A dual stage heat treatment was proposed by Jinlong Su 
+et al. to obtain a strengthened bimodal microstructure [11]. 
+The effect of heat treatment on Ti–6Al–7Nb, a non-cytotoxic 
+vanadium-free alloy, in comparison with Ti–6Al–4V was 
+investigated by Chao Xu et al. The authors demonstrated that 
+a solution treatment above the β  transus permits to meet the 
+biomedical standards [12]. In the last years, metastable β -Ti 
+alloys produced by additive manufacturing gained increasing 
+interest respect to the conventionally forged alloys. Proper 
+post-heat treatments were studied to improve both, micro-
+structure and properties [13– 17]. In case of metastable β Ti 
+alloys, a solubilization at a temperature below  Tβ ensured 
+optimal combination of fine β  grain and sufficient β  dissolu-
+tion. The aging treatment at temperature between 500 and 
+700 °C after solubilization led to the precipitation of α  phase 
+with a morphology depending on the aging temperature. The 
+mechanical properties could be tuned accordingly [13 ]. Con -
+sidering the metastable β  Ti21S, excellent results in terms 
+of strength–ductility ratio were achieved by heat treating the 
+wrought alloy [18, 19]. To the authors best knowledge, just 
+a few papers report about the influence of heat treatment on 
+microstructure and properties of Ti21S produced by PBF 
+[20], none of them dealing with lattice structures. Inves-
+tigations are needed to exploit the use of the heat-treated 
+alloy for cellular structures, e.g., for lightweight design or 
+biomedical applications.
+The current work focuses on the octet truss topology, 
+whose cell size of 4 mm was selected based on manufactur -
+ability assessments done in Ref. [5 ]. The octet truss topology 
+has some advantages over other topologies in the biomedical 
+field: (i) it has two types of different pore sizes enabling bet-
+ter osseointegration, leading to better biocompatibility. The 
+small pore size contributes toward better initial cell seeding 
+by providing surface availability for cell attachment in which low permeability is required while the big pore size enables 
+nutrients to flow easily through the structure in which good 
+permeability is required [21]; (ii) the octet truss topology 
+itself provides the isotropic material properties because it 
+has symmetric design. It has been reported that material 
+properties of lattices depend on the loading direction [22], 
+assuming the same fabrication quality achieved. Moreover, 
+the octet truss is less sensitive to the building direction if 
+the comparison is made to the other topological design 
+[1], mainly because the building direction in AM should 
+be strictly selected in the way that the downward faces are 
+avoided.
+The octet truss topology belongs to the strut-based archi -
+tecture category, which is the most widely used category 
+in various applications. The deformation behavior of strut-
+based lattices can be described based on the Maxwell sta-
+bility criterion [23]. This discriminates the lattice behavior 
+according to the sign of the coefficient M  = b − 3j + 6, where 
+b is the number of struts and j is the number of nodes. Under 
+compression loading, strut-based lattices can collapse in 
+two ways: (i) through rotation of the struts about the joint 
+if M < 0 (bending-dominated mechanism), or (ii) through 
+axial tensile and compression loading of the struts if M  ≥ 0 
+(stretching-dominated mechanism). The octet truss topol-
+ogy theoretically follows the stretching-dominated mecha-
+nism where M  = 0, resulting in higher weight efficiency and 
+modulus compared to bending-dominated materials [24, 25]. 
+However, these models do not consider the influence of con-
+stitutive material properties, such as microstructural prop-
+erties (i.e., internal defects, grain morphology, and phases) 
+and intrinsic mechanical properties (elastic modulus, yield 
+stress, and ductility), on the deformation behavior of lattices.
+The influence of microstructure on the mechanical 
+behavior of additively manufactured lattices has been limit-
+edly studied [26, 27]. Babamiri et al. [26] investigated the 
+relationship between the manufacturing variables, such as 
+post-processing heat treatment, and the quasi-static and 
+dynamic behavior of various lattice topologies made of duc-
+tile Inconel 718 material, including the octet truss topology. 
+The heat treatment affected the microstructure of the lattice 
+material, wherein the improved grain morphology led to an 
+increase in flow stress by 25% in a 4 mm unit cell size with a 
+0.689 mm strut diameter. Another study by Duport et al. [27] 
+explored the impact of microstructure optimization on the 
+mechanical behavior of a binary beta-Ti-14Mo octet truss 
+lattice fabricated by PBF-EB. The mechanical behavior of 
+three different microstructures (α  + β; metastable β ; and 
+β + ωiso) were compared. The as-built α  + β microstructure 
+showed unstable post-yielding behavior under compression 
+loading, while the heat-treated microstructure ( β + ωiso) had 
+increased tolerance to plastic buckling and stabilized post-
+yielding behavior, making it suitable for energy absorption 
+applications. The precipitation of ω  phase is detrimental to 949 Progress in Additive Manufacturing (2024) 9:947–957 
+1 3
+ductility of Ti21S, so that this alloy is typically aged in the 
+alpha phase temperature field to obtain a precipitation-hard-
+ened β microstructure, whose strength is mostly controlled 
+by the volume fraction and morphology of α  precipitates. A 
+fine intragranular precipitation of α  has been recommended 
+to achieve the best strength to density ratio [28, 29]. These 
+studies highlight the significance of material properties 
+on the mechanics of lattices. However, further research is 
+needed to fully understand the impact on all materials and 
+lattice configurations.
+The X-ray microcomputed tomography scan (microCT) 
+is one of the main tools used to study lattice materials 
+[30]. It has become an established and effective method in 
+the additive manufacturing (AM) lattice field for not only 
+dimensional measurement, but also for investigating fail-
+ure mechanisms, due to its accuracy and ability to capture 
+and highlight crucial sites in 3D. This makes the microCT 
+technique superior to traditional 2D characterization meth-
+ods like microscopic investigation. As a result, this method 
+has gained popularity in recent years for investigating AM 
+lattice structures. For example, Kolken et al. [31] used the 
+microCT method to study the morphological properties and 
+fatigue failure mechanism of an auxetic Ti–6Al–4V lattice, 
+while also using digital image correlation (DIC) in 2D to 
+study the fatigue failure mechanism. While the DIC method 
+provides online data, it has a limitation in data analysis at 
+high fatigue frequencies. The microCT method, on the other 
+hand, provides 3D observations of samples without the need 
+for a flat 2D section.
+This study aims to evaluate the potential of Ti21S octet 
+truss lattices for biomedical applications. To this end, the 
+octet truss topology has been optimized for better manufac-
+turability and reduced elastic modulus. Cubic lattices were 
+manufactured using a PBF-LB process, and their morpho-
+logical properties were studied using microCT. The impact 
+of heat treatment, in particular of direct aging at 590 °C, 
+on the mechanical properties of the constitutive material 
+was also analyzed. Finally, the static and fatigue mechani-
+cal properties of the lattices were evaluated, and the fail-
+ure mechanisms were explored using CT data from failed 
+fatigue-tested samples.
+2  Experimental materials and methods
+The experimentation was carried out on specimens addi-
+tively manufactured via laser powder bed fusion (L-PBF) 
+using a pre-alloyed β-Ti21S powder produced by plasma 
+atomization (GKN Hoeganaes Corporation, Cinnaminson, 
+NJ, USA). For this purpose, an L-PBF machine model MYS-
+INT100 (SISMA, Piovene Rocchete, VI, Italy) with a laser 
+spot of 55 μm was employed. The machine is equipped with 
+a building platform of 100 mm diameter and a 200 W fiber laser. An XY alternate scan strategy was adopted along with 
+a powder layer thickness of 20 μm. Some of the specimens 
+were subjected to a post-processing heat treatment. This was 
+carried out in TAV furnace and prior to all heating stages, 
+chamber was subjected to vacuum 5  ×  10–4 mbar followed 
+by argon backfilling to prevent oxidation. The heat treatment 
+strategy aimed at avoiding the precipitation of undesired 
+brittle ω phase (see [20] for further information) and was 
+performed according to the ASTM B265 standard [32]: the 
+samples were heat treated at 590 °C with a heating rate of 10 
+°C/min, a dwell time of 8 h, and a cooling rate of 30 °C/min.
+To characterize the quasi-static tensile properties, cylin-
+drical bars were printed along the longitudinal axis. From 
+these bars, dog-bone specimens (with 5 mm gage diameter) 
+were machined and tested using a servo-hydraulic universal 
+testing machine INSTRON 8516 (Instron, Nordwood, MA, 
+USA), equipped with hydraulic grips, a load cell of 100 kN 
+(non-linearity ± 0.1% of R.O.) and an axial extensometer 
+(12.5 mm gage length, non-linearity ± 0.15% of R. O.). The 
+yield strength was determined as the 0.2% offset yield stress.
+The focus of the experimentation was on cubic lattice 
+specimens. A careful reader may object that the impact of 
+post-heat treatment could have been explored on conven-
+tional bulk tensile specimens as well. However, it should be 
+noted that lattice specimens have distinct stress conditions, 
+with localized stress peaks at the nodes that are absent in 
+bulk coupons. During high-cycle fatigue tests, the stress 
+state of bulk coupons remains in the elastic regime. As a 
+result, the effect of strain softening on the fatigue strength, 
+which is expected in lattice components, cannot be observed 
+in the latter case.
+The lattice coupons were made up of a 6 × 6 × 6 arrange-
+ment of octet truss unit cells as depicted in Fig. 1 . The unit 
+cell size was set to 4 mm, based on the manufacturing feasi-
+bility established in Ref. [5 ]. Using the NTopology software 
+(NTop, New York, NY, USA), the nodes of each unit cell 
+were filleted to reduce stress concentration in these critical 
+fatigue locations. Porosity, strut size, and fillet radius were 
+optimized to achieve a homogenized Young’s modulus of 
+approximately 3.5 GPa, making these structures potentially 
+suitable for use in prosthetic implants. The optimal values 
+are listed in Table  1. It is worth mentioning that the strut 
+thickness of 0.63 mm is very close to the value found in Ref. 
+[5] and has been shown to provide good manufacturability 
+and excellent static mechanical properties.
+A total of 24 lattice coupons were fabricated, with half 
+of them undergoing heat treatment. The lattice specimens 
+underwent both quasi-static and cyclic mechanical testing. 
+The quasi-static tests were performed using the aforemen-
+tioned servo-hydraulic testing machine with compression 
+plates, in accordance with standard ISO 13314:2011 [33]. 
+The tests were conducted at room temperature with a con-
+stant actuator speed of 0.5 mm/min, and a linear variable 950 Progress in Additive Manufacturing (2024) 9:947–957
+1 3
+displacement transducer (LVDT) was used to measure 
+the displacement up to 15% elongation. The resulting 
+stress–strain curve was used to calculate the monotonic 
+Young’s modulus (Em), 0.2% offset yield strength (σy), 
+and maximum compressive strength (σmc). The cyclic tests 
+were done to obtain the cyclic Young’s modulus (Ec) after 
+the stress–strain response stabilized. The specimens were 
+loaded between 20 and 70% of the yield load obtained from the monotonic testing using a triangular wave shape 
+for five cycles. High-cycle compression–compression 
+fatigue testing was performed using a Rumul Testronic 
+(Russenberger Prüfmaschinen, Neuhausen am Rheinfall, 
+Switzerland) resonant fatigue test machine equipped with 
+a 50 kN load cell with a load ratio R of 0.1 in compression. 
+Fatigue tests were run in laboratory environment at various 
+stress amplitudes to evaluate fatigue lives ranging from Fig. 1  a Definition of unit cell 
+parameters of octet truss archi-
+tecture (R = fillet radius, t = strut 
+thickness, L = cell size or strut 
+length, PB and S  = big and small 
+porosities), b 3D view of the 
+repeated unit cell, c homog-
+enization simulation result-
+directional elastic modulus for 
+the unit cell
+Table 1  Dimensions of the investigated lattices design and main processing parameters
+Topology Unit cell size Strut thickness Fillet radius Relative 
+densityporosity Laser heat input Scan strategy
+L (mm) t (mm) R (mm) (%) (%) (J/mm3)
+Optimized octet truss 4 0.63 0.6 26 73 60–90 Hatching and outer contour951 Progress in Additive Manufacturing (2024) 9:947–957 
+1 3
+1 ×  105 to 1 ×  107 cycles. Each S –N curve was determined 
+using around 12 specimens; run-out tests were stopped at 
+1 ×  107 cycles when no fracture occurred. Specimens were 
+regarded as failed if they underwent a drop in stiffness 
+larger than 10%.
+Each S–N curve included at least one run-out test and 
+was interpolated using an asymptotic equation to accu-
+rately depict the knee shape of the experimental S –N data:
+where σmax is the maximum homogenized stress and Nf the 
+number of cycles to failure. The scatter of the experimental 
+data was determined by assessing the estimated regression 
+variance, considered to be non-varying in the whole inves-
+tigated fatigue range, and defined as
+where /u1D70Emax ,i are the i-th fatigue data point, /uni0302.s1/u1D70Emax ,i are their 
+estimators, n is the number of experimental data points and 
+p is the number of parameters in the regression (3 in the 
+present case).
+MicroCT scans were performed using a Nanotom S sys-
+tem (General Electric, Niskayuna, NY, USA), and analysis 
+performed in Dragonfly software (Object Research Sys-
+tems, Inc, Montreal, Quebec, Canada). Local wall thick -
+ness was evaluated using the mesh thickness function, and 
+cracks were identified in cross-sectional images and 3D 
+rendering used to visualize these locations.(1) /u1D70Emax=C1+C2
+Nm
+f,
+(2) S2=∑n
+i=1�/u1D70Emax, i−/uni0302.s1/u1D70Emax ,i�2
+n−p;3  Results and discussion
+3.1  Microstructure and bulk mechanical properties
+The microstructure of the alloy as-built reveals evidence of 
+rapid solidification during L-PBF. Specifically, the melt pool 
+boundaries and an extremely fine cellular structure are vis-
+ible (see Fig.  2a). The high cooling rate facilitated the forma-
+tion of a fully beta-metastable structure without any second-
+ary precipitates. A detailed account of the microstructure of 
+the as-built alloy is presented in Ref. [6 ]. The solidification 
+microstructure is still discernible in the heat-treated sample 
+(Fig.  2b), with evidence of the original columnar grains and 
+melting pools. Although most α precipitates are intragranu-
+lar, some small α grain boundary colonies are visible upon 
+closer inspection, as indicated by SEM micrographs. The 
+alpha lamellae, which are smaller than 1 μm, grow from 
+the grain boundary towards the center of the grain (αWBG). 
+Alternatively, they can nucleate inside the grain, forming 
+a knitted/beam arrangement (αWM), with certain preferred 
+orientations that are related to the growth direction and the 
+parent β-structure. Despite the visibility of the melting pool 
+boundaries, they do not appear to have an impact on the 
+precipitation of α.
+The monotonic tensile properties of the β-Ti21S alloy 
+in both as-built and heat-treated conditions are compared 
+in Table  2 with the minimum values prescribed by ASTM 
+F2924-14 for the golden standard biomedical Ti-grade 23 
+(Ti–6Al–4V ELI). In Fig.  3, the monotonic stress–strain 
+curves are plotted. It can be noted that the β-Ti21S alloy 
+is compliant with the ASTM F2924-14 [34] prescription 
+only in the heat-treated state. In addition, this post-process 
+Fig. 2  SEM micrographs of 
+a As-built, and b heat treated 
+(590 °C/8 h) β-Ti21S alloy ten-
+sile test sample. (B.D: indicates 
+the building direction, αWBG 
+is the Widmanstätten Grain 
+Boundary alpha phase, and αWM 
+is the intragranular Widmanstät-
+ten alpha phase with knitted/
+beam arrangement
+Table 2  Comparable 
+mechanical properties of 
+β-Ti21S and Ti–6Al–4V tensile 
+solid samples fabricated by 
+L-PBFAlloy Condition σ0.2 (MPa) UTS (MPa) E (GPa) EI (%) Structure References
+Ti21S As-built 709 ± 6 831 ± 3 52 ± 0.3 21.6 ± 1.0 β [6]
+Ti21S Heat treated 1208 ± 19 1235 ± 15 95.8 ± 1.1 21.0 ± 1.2 α + β This work
+Ti–6Al–4V Heat treated 990 ± 5 1095 ± 10 110 ± 5.0 8.1 ± 0.3 α ́ [29]952 Progress in Additive Manufacturing (2024) 9:947–957
+1 3
+treatment permits to eliminate the strain softening displayed 
+by the as-built condition and typical of many metastable β-Ti 
+alloys [35, 36].
+3.2  Metrological analyses of lattices
+MicroCT analysis of the local wall thickness reveals, as 
+expected, some increased thickness in the joints, indicat-
+ing > 1 mm in these regions while the struts have a thickness 
+of 0.5 mm. This can be seen in Fig.  4a, b, while (c) shows 
+a cross-sectional image of the actual sample compared to 
+the design. This latter comparison shows good build quality 
+with some excess material in the down-skin regions only. 
+Detailed information extracted from these 3D analyses are 
+included in Table  3. The comparison of the same 3D infor -
+mation from design file allows simple evaluation, showing 
+that the lattice is manufactured very close to the expected 
+parameters.
+3.3  Mechanical properties of lattices
+Representative monotonic stress–strain curves are compared 
+in Fig.  5 and Table  4. It can be observed that despite being 
+nominally categorized as stretch-dominated, the specimen 
+in its as-built condition exhibits a gradual transition to a 
+long flat stress plateau. This can be attributed to the strain 
+softening localized at the nodes which behave as plastic 
+hinges making the global response of the structure bending-
+dominated after yielding. The high strain energy absorbed 
+before final failure indicates the potential use of lattices in 
+as-built conditions for energy absorbing applications. Sup-
+pressing the strain softening through heat treatment leads to 
+a pure stretch-dominated behavior. This is characterized by a sudden, post-yielding collapse at stress levels much higher 
+than the plateau observed in the as-built condition at the cost 
+of a very limited strain to failure.
+The results of compression–compression high-cycle 
+fatigue tests are plotted in Fig.  6a, b in terms of homog-
+enized maximum axial stress σmax and normalized stress 
+Fig. 3  Quasi-static tensile engineering stress–engineering strain 
+curves of the β-Ti21S alloy in as-built and heat-treated condition
+Fig. 4  a, b Wall thickness analysis for the reconstructed microCT 
+data of optimized octet truss lattice structure, c the cross-section 
+plane from the reconstructed microCT data showing the CAD devia-
+tion based on the X-ray absorption953 Progress in Additive Manufacturing (2024) 9:947–957 
+1 3
+to the compressive yield strength σy, respectively. Best-fit 
+coefficients C1, C2, m of Eq.  1 and standard deviation S  are 
+provided in the legend of Fig.  6. It can be noted that the heat 
+treatment considerably improves the fatigue strength, not 
+only in terms of absolute but also relative axial stress. In 
+particular, the HCF strength at 1 ×  107 cycles is increased 
+by almost 120%. Suppressing strain softening appears to be 
+effective in improving the fatigue strength of lattice struc-
+tures. This can be attributed to the fact that the high stress 
+concentration in the nodes of lattice specimens leads to 
+localized plasticization, which expands with each cycle dur -
+ing the fatigue tests of as-built specimens due to the strain 
+softening. As depicted in Fig.  7, this unfavorable outcome 
+not only reduces the fatigue strength, but also results in a 
+noticeable and premature reduction in the stiffness of the 
+as-built samples during fatigue tests. These results indicate that lattice specimens under variable loads should undergo 
+heat treatment prior to use. The heat treatment enhances the 
+normalized high-cycle fatigue strength to above 0.25, which 
+can be considered a remarkable achievement compared to 
+the fatigue strength data published in the literature [1 ].
+The CT scans and SEM inspections of fatigued samples 
+are depicted in Figs.  8 and 9 , respectively. It can be observed 
+that the as-built specimens exhibit diffused fatigue damage 
+in the form of cracks that have formed at multiple locations Table 3  The morphological properties of optimized octet truss lattice structure
+Relative density (%) Strut size (mm) Node size (mm) Pore size (mm)
+As-designed Dry weighing CAD MicroCT CAD MicroCT CAD MicroCT
+26 25 0.633 ± 0.003 0.548 ± 0.002 1.034 ± 0.002 1.094 ± 0.002 Small = 1.49 ± 0.00
+Big = 2.31 ± 0.001.23 ± 0.02
+2.11 ± 0.00
+Fig. 5  Monotonic stress–strain curves of as-built and heat-treated 
+optimized octet truss lattice structures of β-Ti21S alloy
+Table 4  The morphological mechanical properties of As-built and 
+heat-treated optimized octet truss lattice structures of β-Ti21S alloy, 
+reported according to the ISO13314
+As-built Heat-treated
+Yield stress (MPa) 50.91 ± 0.88 76.01 ± 0.94
+Quasi-elastic gradient 
+(MPa)3555 5408
+Fig. 6  SN curves of as-built and heat-treated optimized octet truss 
+lattice structures made of β-Ti21S alloy (a), and same graph with 
+maximum axial stress σmax normalized with respect to the yield 
+strength σy (b)954 Progress in Additive Manufacturing (2024) 9:947–957
+1 3
+in both the struts and nodes (Figs.  8a, 9a). This behavior 
+is similar to that seen in cubic lattices tested in Ref. [5 ]. 
+Surface imperfections, acting as stress concentrators, serve 
+as preferential crack initiation sites (Fig.  9c). In contrast, 
+fatigue failure in heat-treated lattices is confined to the fillet 
+roots at the nodes only (Figs.  8b, 9b). The suppression of 
+the strain softening mechanism seems to have eliminated the 
+impact of the micro-notches on the strut surface (Fig.  9d).
+4  Conclusions
+The mechanical performance of Ti21S alloy octet truss lat-
+tice structure fabricated by laser powder bed fusion has been 
+evaluated in the as-built state as well as after direct ageing 
+at 590 °C for 8 h. The following main results were obtained:
+• The as-built bulk alloy is characterized by a beta-met-
+astable cellular microstructure showing good mechani-
+cal strength-ductility combination, and a marked strain 
+softening. The heat treatment causes a fine precipitation 
+of intragranular α and promotes a remarkable increase in 
+Fig. 7  Stiffness vs. number of fatigue cycles for as-built and heat-
+treated (HT) octet truss samples recorded during fatigue tests per -
+formed at a maximum homogenized stress of 15.6 MPa. The remark -
+able loss in stiffness in the as-built conditions is ascribed to the strain 
+softening exhibited by the base material in this microstructural condi-
+tion
+Fig. 8  a As-built and b heat-treated fatigue samples showing the failure mechanism and locations. Left: isometric, right: front view955 Progress in Additive Manufacturing (2024) 9:947–957 
+1 3
+strength and elastic modulus with no change in fracture 
+elongation, and further eliminates strain softening.
+• MicroCT scans were used for detailed characterization 
+of the structure indicating good build quality lacking 
+defects. Post-fatigue samples were used to visualize the 
+crack locations in 3D showing all cracks occur on struts 
+and near nodes but not through nodes.
+• The monotonic stress compression tests on the lattice 
+structures evidence that suppressing the strain soften-
+ing through heat treatment leads from the pure bending-
+dominated behavior of as-built sample to a pure stretch-
+dominated behavior.
+• The heat treatment considerably improves the compres -
+sion–compression fatigue strength of lattice structure 
+(by almost 120%), confirming that suppressing strain 
+softening is more effective in improving the fatigue 
+strength of lattice structures compared to bulk speci-
+mens. This could be ascribed to the reduced localized 
+plasticization in the nodes of lattice specimens. The diffused fatigue damage observed in as-built lattice in 
+the form of multiple cracks in both the struts and nodes 
+is limited to the nodes fillet roots in heat-treated lat-
+tices.
+Future work will focus on evaluating the influence of heat 
+treatment on the fatigue strength of various cell topologies 
+(i.e., bending-dominated and triply periodic minimal sur -
+face), investigating their behavior also under high-temper -
+ature conditions.
+Acknowledgements This work is part of the Fondazione Cassa di Ris -
+parmio di Verona Vicenza Belluno e Ancona project N. 2020.0042-ID 
+50430, “Produzione additiva di protesi ortopediche a struttura trabe-
+colare in Ti-beta” funded by Fondazione Cariverona.
+Author contributions All the authors contributed to the study concep-
+tion and design. Material preparation, data collection and analysis were 
+performed by AJ, LE and AdP. The first draft of the manuscript was 
+written by MB and all the authors commented on previous versions of 
+the manuscript. All the authors read and approved the final manuscript.
+Fig. 9  SEM micrographs of a–c As-built and b–d heat-treated fatigued samples showing the failure mechanism. It is preferentially located at 
+nodes in heat-treated samples d and distributed throughout the struts in as-built specimens (c)956 Progress in Additive Manufacturing (2024) 9:947–957
+1 3
+Funding Open access funding provided by Università degli Studi di 
+Trento within the CRUI-CARE Agreement.
+Data availability Data available on request.
+Declarations  
+Conflict of interest The authors have no relevant financial or non-fi-
+nancial interests to disclose.
+Open Access  This article is licensed under a Creative Commons Attri-
+bution 4.0 International License, which permits use, sharing, adapta-
+tion, distribution and reproduction in any medium or format, as long 
+as you give appropriate credit to the original author(s) and the source, 
+provide a link to the Creative Commons licence, and indicate if changes 
+were made. The images or other third party material in this article are 
+included in the article's Creative Commons licence, unless indicated 
+otherwise in a credit line to the material. If material is not included in 
+the article's Creative Commons licence and your intended use is not 
+permitted by statutory regulation or exceeds the permitted use, you will 
+need to obtain permission directly from the copyright holder. To view a 
+copy of this licence, visit http:// creat iveco mmons. org/ licen ses/ by/4. 0/.
+References
+ 1. Benedetti M, du Plessis A, Ritchie RO, Dallago M, Razavi SMJ, 
+Berto F (2021) Architected cellular materials: a review on their 
+mechanical properties towards fatigue-tolerant design and fabrica-
+tion. Mater Sci Eng R Rep 144:100606. https:// doi. org/ 10. 1016/j.  
+mser. 2021. 100606
+ 2. du Plessis A, Razavi SMJ, Benedetti M, Murchio S, Leary M, 
+Watson M, Bhate D, Berto F (2022) Properties and applications 
+of additively manufactured metallic cellular materials: a review. 
+Prog Mater Sci 125:100918. https:// doi. org/ 10. 1016/j. pmats ci.  
+2021. 100918
+ 3. Zadpoor AA (2019) Mechanical performance of additively manu-
+factured meta-biomaterials. Acta Biomater 85:41–59. https:// doi.  
+org/ 10. 1016/j. actbio. 2018. 12. 038
+ 4. Debroy T, Wei HL, Zuback JS, Mukherjee T, Elmer JW, Milewski 
+JO, Beese AM, Wilson-Heid A, De A, Zhang W (2018) Additive 
+manufacturing of metallic components—process, structure and 
+properties. Prog Mater Sci 92:112–224. https:// doi. org/ 10. 1016/j.  
+pmats ci. 2017. 10. 001
+ 5. Jam A, du Plessis A, Lora C, Raghavendra S, Pellizzari M, Bene-
+detti M (2022) Manufacturability of lattice structures fabricated 
+by laser powder bed fusion: a novel biomedical application of 
+the beta Ti-21S alloy. Addit Manuf 50:102556. https:// doi. org/  
+10. 1016/j. addma. 2021. 102556
+ 6. Pellizzari M, Jam A, Tschon M, Fini M, Lora C, Benedetti M 
+(2020) A 3D-printed ultra-low Young’s modulus β-Ti alloy for 
+biomedical applications. Materials 13:2792. https:// doi. org/ 10.  
+3390/ MA131 22792
+ 7. Etesami SA, Fotovvati B, Asadi E (2022) Heat treatment of 
+Ti-6Al-4V alloy manufactured by laser-based powder-bed fusion: 
+Process, microstructures, and mechanical properties correlations. 
+J Alloys Compd 895:162618. https://  doi. org/ 10. 1016/j.  jallc om. 
+2021. 162618
+ 8. Ter Haar GM, Becker TH (2018) Selective laser melting produced 
+Ti-6Al-4V: post-process heat treatments to achieve superior ten-
+sile properties. Materials (Basel). https:// doi. org/ 10. 3390/ ma110  
+10146
+ 9. Zou Z, Simonelli M, Katrib J, Dimitrakis G, Hague R (2021) 
+Microstructure and tensile properties of additive manufactured Ti-6Al-4V with refined prior-β grain structure obtained by rapid 
+heat treatment. Mater Sci Eng A 814:141271. https:// doi. org/ 10.  
+1016/j. msea. 2021. 141271
+ 10. Zhang Y, Feng L, Zhang T, Xu H, Li J (2021) Heat treatment 
+of additively manufactured Ti-6Al-4V alloy: microstructure and 
+electrochemical properties. J Alloys Compd 888:161602. https://  
+doi. org/ 10. 1016/j. jallc om. 2021. 161602
+ 11. Su J, Jiang F, Li J, Tan C, Xu Z, Xie H, Liu J, Tang J, Fu D, Zhang 
+H, Teng J (2022) Phase transformation mechanisms, microstruc-
+tural characteristics and mechanical performances of an additively 
+manufactured Ti-6Al-4V alloy under dual-stage heat treatment. 
+Mater Des 223:111240. https:// doi. org/ 10. 1016/j. matdes. 2022.  
+111240
+ 12 Xu C, Sikan F, Atabay SE, Muñiz-Lerma JA, Sanchez-Mata O, 
+Wang X, Brochu M (2020) Microstructure and mechanical behav -
+ior of as-built and heat-treated Ti-6Al-7Nb produced by laser 
+powder bed fusion. Mater Sci Eng A. https:// doi. org/ 10. 1016/j.  
+msea. 2020. 139978
+ 13. Ramachandiran N, Asgari H, Dibia F, Eybel R, Muhammad W, 
+Gerlich A, Toyserkani E (2023) Effects of post heat treatment 
+on microstructure and mechanical properties of Ti5553 parts 
+made by laser powder bed fusion. J Alloys Compd 938:168616. 
+https:// doi. org/ 10. 1016/j. jallc om. 2022. 168616
+ 14. Ackers MA, Messé OMDM, Manninen N, Stryzhyboroda 
+O, Hecht U (2022) Additive manufacturing of TTFNZ (Ti-
+4.5Ta-4Fe-7.5Nb-6Zr), a novel metastable β-titanium alloy 
+for advanced engineering applications. J Alloys Compd 
+920:165899. https:// doi. org/ 10. 1016/j. jallc om. 2022. 165899
+ 15. Liu Y, Xu L, Qiu C (2022) Development of an additively manu-
+factured metastable beta titanium alloy with a fully equiaxed 
+grain structure and ultrahigh yield strength. Addit Manuf 
+60:103208. https:// doi. org/ 10. 1016/j. addma. 2022. 103208
+ 16. Pang X, Xiong Z, Yao C, Sun J, Misra RDK, Li Z (2022) 
+Strength and ductility optimization of laser additive manufac-
+tured metastable β titanium alloy by tuning α phase by post 
+heat treatment. Mater Sci Eng A 831:142265. https:// doi. org/  
+10. 1016/j. msea. 2021. 142265
+ 17 Rajan Soundararajan S, Vishnu J, Manivasagam G, Rao Mukti-
+nutalapati N (2021) Heat treatment of metastable beta titanium 
+alloys. Weld Mod Top. https:// doi. org/ 10. 5772/ INTEC HOPEN.  
+92301
+ 18. Boyer RR, Welsch G, Collings EW (1994) Materials proper -
+ties handbook: titanium alloys. ASM International. ISBN: 
+978-0-87170-481-8
+ 19. Williams JC, Boyer RR (2020) Opportunities and issues in the 
+application of titanium alloys for aerospace components. Metals 
+(Basel). https:// doi. org/ 10. 3390/ met10 060705
+ 20. Pellizzari M, Jam A, Tonon V, Benedetti M, Lora C (2021) 
+Ageing behavior of Beta-Ti21S produced by laser powder bed 
+fusion. Metall Ital 113:42–49
+ 21. Bobyn JD, Pilliar RM, Cameron HU, Weatherly GC (1980) The 
+optimum pore size for the fixation of porous surfaced metal 
+implants by the ingrowth of bone. Clin Orthop Relat Res. 
+https:// doi. org/ 10. 1097/ 00003 086- 19800 7000- 00045
+ 22. Dallago M, Raghavendra S, Luchin V, Zappini G, Pasini D, 
+Benedetti M (2021) The role of node fillet, unit-cell size and 
+strut orientation on the fatigue strength of Ti-6Al-4V lattice 
+materials additively manufactured via laser powder bed fusion. 
+Int J Fatigue 142:105946. https://  doi. org/ 10. 1016/j. ijfat  igue.  
+2020. 105946
+ 23. Deshpande VS, Ashby MF, Fleck NA (2001) Foam topology: 
+bending versus stretching dominated architectures. Acta Mater 
+49:1035–1040. https:// doi. org/ 10. 1016/ S1359- 6454(00) 00379-7
+ 24 Fleck NA, Deshpande VS, Ashby MF (2010) Micro-architectured 
+materials: past, present and future. Proc R Soc A Math Phys Eng 
+Sci 466:2495–2516. https:// doi. org/ 10. 1098/ rspa. 2010. 0215957 Progress in Additive Manufacturing (2024) 9:947–957 
+1 3
+ 25 Ashby M (2006) The properties of foams and lattices. Philos Trans 
+R Soc A Math Phys Eng Sci 364:15–30. https:// doi. org/ 10. 1098/  
+rsta. 2005. 1678
+ 26. Babamiri BB, Barnes B, Soltani-Tehrani A, Shamsaei N, Hazeli 
+K (2021) Designing additively manufactured lattice structures 
+based on deformation mechanisms. Addit Manuf. https:// doi. org/  
+10. 1016/j. addma. 2021. 102143
+ 27. Duport M, Martin G, Lhuissier P, Blandin J-J, Prima F, Dendi -
+evel R (2022) Stabilizing post-yielding behavior of a stretching 
+dominated lattice structure through microstructural optimization. 
+Scr Mater 219:114887. https://  doi. org/ 10.  1016/j. scrip  tamat. 2022. 
+114887
+ 28 Mantri SA, Choudhuri D, Behera A, Cotton JD, Kumar N, Baner -
+jee R (2015) Influence of fine-scale alpha precipitation on the 
+mechanical properties of the beta titanium alloy beta-21S. Metall 
+Mater Trans A Phys Metall Mater Sci. https:// doi. org/ 10. 1007/  
+s11661- 015- 2944-y
+ 29. Facchini L, Magalini E, Robotti P, Molinari A, Höges S, Wis-
+senbach K (2010) Ductility of a Ti-6Al-4V alloy produced by 
+selective laser melting of prealloyed powders. Rapid Prototyp J 
+16:450–459. https:// doi. org/ 10. 1108/ 13552 54101 10833 71
+ 30. du Plessis A, Yadroitsev I, Yadroitsava I, le Roux SG (2018) 
+X-Ray microcomputed tomography in additive manufacturing: a 
+review of the current technology and applications, 3D print. Addit 
+Manuf 5:227–247. https:// doi. org/ 10. 1089/ 3dp. 2018. 0060
+ 31. Kolken HMA, Garcia AF, Du Plessis A, Meynen A, Rans C, 
+Scheys L, Mirzaali MJ, Zadpoor AA (2022) Mechanisms of fatigue crack initiation and propagation in auxetic meta-biomate-
+rials. Acta Biomater. https:// doi. org/ 10. 1016/j. actbio. 2021. 11. 002
+ 32. A.B.- 20a (2020) Standard specification for titanium and titanium 
+alloy strip, sheet, and plate. https:// doi. org/ 10. 1520/ B0265- 20A
+ 33. ISO 13314 (2011) ISO 13314 Mechanical testing of metals, ductil-
+ity testing, compression test for porous and cellular metals, Ref. 
+Number ISO. 13314, pp 1–7. www. iso. org
+ 34. American Society for Testing Materials, ASTM F2924-14 (2014) 
+Standard specification for additive manufacturing titanium-6 alu-
+minum-4 vanadium ELI with powder bed fusion, West Consho-
+hocken, PA, USA
+ 35. Ramachandiran N, Asgari H, Dibia F, Eybel R, Keshavarzkermani 
+A, Gerlich A, Toyserkani E (2023) Anisotropic tensile behavior 
+of laser powder-bed fusion made Ti5553 parts. Mater Sci Eng A 
+865:144633. https:// doi. org/ 10. 1016/j. msea. 2023. 144633
+ 36. Kumar SSS, Pavithra B, Singh V, Ghosal P, Raghu T (2019) Ten-
+sile anisotropy associated microstructural and microtextural evolu-
+tion in a metastable beta titanium alloy. Mater Sci Eng A. https://  
+doi. org/ 10. 1016/j. msea. 2019. 01. 053
+Publisher's Note Springer Nature remains neutral with regard to 
+jurisdictional claims in published maps and institutional affiliations.

@@ -1,0 +1,683 @@
+1
+Vol.:(0123456789) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreportsBiodegradable suture 
+development‑based albumin 
+composites for tissue engineering 
+applications
+Mohamed A. Naser 1,2*, Ahmed M. Sayed 2,5*, Wael Abdelmoez 3, 
+Mohamed Tarek El‑Wakad 4 & Mohamed S. Abdo 1
+Recent advancements in the field of biomedical engineering have underscored the pivotal role of 
+biodegradable materials in addressing the challenges associated with tissue regeneration therapies. 
+The spectrum of biodegradable materials presently encompasses ceramics, polymers, metals, and 
+composites, each offering distinct advantages for the replacement or repair of compromised human 
+tissues. Despite their utility, these biomaterials are not devoid of limitations, with issues such as 
+suboptimal tissue integration, potential cytotoxicity, and mechanical mismatch (stress shielding) 
+emerging as significant concerns. To mitigate these drawbacks, our research collective has embarked 
+on the development of protein‑based composite materials, showcasing enhanced biodegradability 
+and biocompatibility. This study is dedicated to the elaboration and characterization of an innovative 
+suture fabricated from human serum albumin through an extrusion methodology. Employing a suite 
+of analytical techniques—namely tensile testing, scanning electron microscopy (SEM), and thermal 
+gravimetric analysis (TGA)—we endeavored to elucidate the physicochemical attributes of the 
+engineered suture. Additionally, the investigation extends to assessing the influence of integrating 
+biodegradable organic modifiers on the suture’s mechanical performance. Preliminary tensile testing 
+has delineated the mechanical profile of the Filament Suture (FS), delineating tensile strengths 
+spanning 1.3 to 9.616 MPa and elongation at break percentages ranging from 11.5 to 146.64%. 
+These findings illuminate the mechanical versatility of the suture, hinting at its applicability across a 
+broad spectrum of medical interventions. Subsequent analyses via SEM and TGA are anticipated to 
+further delineate the suture’s morphological features and thermal resilience, thereby enriching our 
+comprehension of its overall performance characteristics. Moreover, the investigation delves into 
+the ramifications of incorporating biodegradable organic constituents on the suture’s mechanical 
+integrity. Collectively, the study not only sheds light on the mechanical and thermal dynamics 
+of a novel suture material derived from human serum albumin but also explores the prospective 
+enhancements afforded by the amalgamation of biodegradable organic compounds, thereby 
+broadening the horizon for future biomedical applications.
+Keywords  Biodegradable materials, Surgical sutures, Serum albumin, Extrusion process, Tissue engineering 
+applications
+Biomaterial polymer research has been prioritized to accelerate tissue regeneration, as biopolymers are 
+biocompatible and can combine with the human tissue surrounding the biomaterial. Polymeric materials show 
+unique features, including good mechanical properties and easy to synthesis, which makes them suitable for 
+organ scaffold development and production. However, only few polymers have shown proper biocompatibility 
+and consistency with other matrix proteins and growth factors, as in vitro and in vivo studies  have  shown1. 
+Many protein-derived biomaterials, such as collagen, elastin, and casein, have been extensively employed in OPEN
+1Faculty of Engineering, Biomedical Engineering Department, Minia University, Minia, Egypt. 2Faculty of 
+Engineering, Biomedical Engineering Department, Helwan University, Helwan, Egypt. 3Faculty of Engineering, 
+Chemical Engineering Department, Minia University, Minia, Egypt. 4Faculty of Engineering and Technology, 
+Future University Egypt, Fifth Settlement, Cairo, Egypt. 5EECS Department, MSOE University, Milwaukee, United 
+States. *email: mohamed.nasser@mu.edu.eg ; a.sayed@h-eng.helwan.edu.eg2
+Vol:.(1234567890) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/various applications to enhance cell growth and thus, can be used to develop new biomaterials for biomedical 
+ applications2,3 .
+Surgical sutures can be natural or synthetic. Surgical sutures have grown rapidly in the last two decades, 
+becoming the largest group of biomaterials with a market worth of more than $1.3 billion  yearly4,5. Synthetic 
+sutures are produced from a range of textiles developed specifically for surgical use, such as nylon or polyester. 
+In 2006, Li and Yuan 6 reported a review on the scientific advances in synthetic absorbable polymeric sutures. 
+Hon et al. 7 reported a comparative study of several closure materials used in vascular devices in 2009. They 
+provided a review of sutures used in vascular devices, including how they work, how effective they are at attaining 
+hemostasis, any hazards associated with their usage, and which sutures should be utilized for specific purposes. 
+Gassner 8 conducted a review of wound closure materials in 2002 that summarized the side effects of sutures. 
+Singhal et al. reported a review study that extensively focused on biodegradability and sutures  trends9. They 
+highlighted the key characteristics of absorbable sutures made from poly glycolic acid (PGA) and its copolymers, 
+as well as the upcoming polydioxanone (PDO; some authors used PDS to refer to polydioxanone sutures) and 
+poly trimethylene carbonate (PTMC)-based absorbable sutures. Polyglycolic acid or other glycolide polymers 
+were used to make resorbable synthetic sutures. Many surgical sutures are made of the water-resistant material 
+Gore-Tex, whereas other sutures are formed of thin metal  wires10,11.
+Surgical sutures can be divided into two types: absorbable and non-absorbable5,6. Non-absorbable sutures 
+are used to provide long-term tissue support, remaining walled-off by the body’s inflammatory processes 
+(until removed manually). Non-absorbable sutures often cause less scarring because they provoke less immune 
+response, and thus are used where cosmetic outcome is essential. They may be removed after a specific time or 
+left  permanently13.
+Absorbable suture materials include the original catgut as well as the newer synthetics polyglycolic acid, 
+polylactic acid, polydioxanone, and caprolactone. The utilization of biodegradable sutures provides several 
+benefits in tissue engineering. The need for a second surgery to remove them is eliminated, thus reducing the 
+risk of infection associated with the presence of foreign material in the body. Due to the fact that biodegradable 
+sutures decompose over time, they reduce the risk of tissue damage or trauma during suture removal, which is 
+particularly advantageous in delicate tissues or in areas where repeated surgeries may be required. Biodegradable 
+sutures serve as a scaffold for tissue regeneration and can be tailored to degrade at a rate that aligns with the 
+healing process of the tissue, thereby facilitating natural healing and mitigating inflammation. These sutures are 
+frequently composed of materials that are well tolerated by the body, such as polymers like polylactic acid (PLA) 
+or polyglycolic acid (PGA), which possess biocompatibility and gradually degrade into non-toxic byproducts. 
+Customization of biodegradable sutures for specific applications can be achieved by adjusting the composition 
+and structure of the material, thereby meeting the requirements of the tissue engineering application. In 
+comparison to permanent sutures, biodegradable sutures are able to minimize the foreign body response, thus 
+decreasing the risk of chronic inflammation and tissue rejection. Due to the natural degradation of biodegradable 
+sutures over time, the need for suture removal is eliminated, resulting in reduced patient discomfort, and 
+simplified postoperative care. Although the initial cost of biodegradable sutures may be higher than that of 
+traditional sutures, the avoidance of secondary removal procedures and potential complications associated with 
+permanent sutures can result in long-term cost savings 14–16. In general, the utilization of biodegradable sutures 
+in tissue engineering presents a variety of advantages, such as enhanced biocompatibility, reduced infection risk, 
+improved healing, and simplified postoperative care, which makes them an appealing choice for various surgical 
+and tissue engineering applications. In characterizing the mechanical properties of sutures, tensile strength and 
+elongation percentage are frequently measured. Mechanical strength is the most commonly referenced physical 
+feature of  sutures5,17,18.
+While there may be limited research on the development of sutures using albumin-based composites, there 
+are studies that investigate the use of these materials in tissue engineering and suturing applications. Pourali 
+et al.19 conducted a study that specifically examines the development of albumin-based nanoparticles for suture 
+applications. The researchers synthesized biodegradable nanoparticles using albumin as the main component and 
+evaluated their mechanical properties, biocompatibility, and degradation kinetics. The results showed promising 
+potential for these albumin-based composites to be used as suture materials in tissue engineering due to their 
+biocompatibility and tunable degradation properties.
+The review by Müller et al.20 reports the utilization of various biodegradable sutures in orthopedic surgery, 
+including their benefits and limitations, although it does not specifically focus on albumin-based composites. 
+The review emphasizes the significance of employing materials that degrade over time, thereby minimizing the 
+requirement for suture removal and reducing tissue trauma. Within this context, albumin-based composites 
+could be investigated for their potential advantages in orthopedic suture applications. Zhou et al.21 discovered 
+that coating absorbable sutures with albumin enhanced cell attachment and proliferation, rendering them 
+suitable for delivering cell therapy in soft tissues. Another study was conducted to develop silk sutures that were 
+coated with silk fibroin films containing berberine. These sutures exhibited sustainable antibacterial properties 
+and demonstrated good mechanical and biocompatible properties 22. Furthermore, a novel surgical suture was 
+documented that integrated natural antibacterial berberine into shape memory polyurethane fibers, resulting in 
+antibacterial activity and shape memory  effect23. These findings indicate that the use of albumin-based sutures 
+has the potential to enhance the healing process of wounds, prevent infections, and improve the outcomes of 
+surgical procedures.
+The key objective of this study is to prepare Filament Suture (FS) from protein-based serum  albumin24–26 using 
+the extrusion process. We developed a new method that can improve the mechanical, biological, and chemical 
+proprieties of absorbable suture materials. The proposed FS can be used as filaments for 3-D printers for many 
+applications, such as plates and nails. The FS was characterized for its physio-chemical properties using scanning 
+electron microscopy (SEM) and thermogravimetric analysis (TGA). The studied mechanical parameters were 3
+Vol.:(0123456789) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/tensile strength and elongation at break. We show that using protein of human serum albumin (PHSA) can 
+be exploited in the development of new biodegradable sutures that can be used in many medical applications.
+Materials and methods
+Base material
+Among various types of polymers, natural polymers are considered the most fitting due to their remarkable 
+biocompatibility, appropriate interactions, and propensity for biodegradability. In order to attain this objective, 
+polymer materials must possess characteristics such as transparency, permeability to water and oxygen, while 
+simultaneously being impervious to bacteria. Additionally, they must create a secure and moist  environment17,27,28. 
+Human serum albumin (HSA) is a protein found in serum albumin. In laboratory research, it is frequently 
+used as a reference for protein concentration. HSA has many biochemical uses, notably in immunoblots, 
+immunohistochemistry, and enzyme-linked immunosorbent assays. HSA is an excellent replacement for human 
+serum albumin (HSA) in laboratory experiments because of its structural similarity. The polypeptide chain of 
+the protein, which contains 585 amino acid residues, is folded into three -helical domains to retain the protein’s 
+heart-shaped structure. A lot of ligands and metal ions can be reversibly bound to  albumin29,30.
+This study presents the synthesis of a new biodegradable suture based on human serum albumin (HSA) 
+produced using sub-critical water technology. Previously, Abdelmoez et al.23 demonstrated the theory of protein 
+synthesis from HSA using sub-critical water technology. The pure HSA (first grade) and other chemicals used 
+in the initial preparation trials were provided by Wako Pure Chemical Industries, Ltd. (Osaka, Japan)23,24. When 
+heated, HSA forms soluble aggregates of polymerized molecules via desulphation process and through creation 
+of noncovalent bonds during the early stages of heat-induced gelation of the protein.
+Additive materials
+Highly efficient biocompatible polymers were chosen as additive materials for suture synthesis, based on prior 
+studies in the literature 6,10,12,13,31. We used the following four additives:
+1. Gelatin powder: a powder used for many biomedical applications at 1–5 μg/cm2 or 0.5–50 μg/mL 
+concentration. It has a viscosity of 30–48 mpa•s, pH: 5.5–7, Jelly strength :120—260 bloom, Molar Mass: 
+50,000–60,000 (Qualikems, India, Empirical formula: C102H151N31O39).
+Due to its reversible triple helix shape at low temperatures, gelatin exhibits significant potential for use 
+in the creation of thermo-responsive biomaterials. Since gelatin lacks stable molecular entanglement as 
+net-points in the polymer structure. As a consequence, the mixture of gelatin and materials containing 
+functional group may be promising for biosynthesis of hydrogels that meet the requirements of advanced 
+materials for wound closure and  healing32.
+2. Polyvinyl alcohol (PV A): it is a biocompatible, hydrophilic, and biodegradable polymer that can be used in 
+drug delivery and tissue engineering applications. This alcohol has an average molecular weight of: 30,000–
+70,000, viscosity: 50.0 mpa•s, degree of hydrolysis 80% mol/mol, PH value: 5–7 (LOBA Chemie, Empirical 
+formula: (C2H4O)x).
+PV A-based polymers offer outstanding chemical, mechanical, and biological properties, and no negative 
+side effects are anticipated following their decomposition. PV A is white in color and exhibits abrasion 
+resistance, high strength, corrosion resistance, and high hygroscopicity29.
+3. Hyaluronic-acid MW-MD 3.5%: it is a biocompatible biomaterial that exhibits high biodegradability and 
+extreme water solubility. Its molar mass is: 3–7X106 g/mol (Thunder company, Egypt, Empirical formula: 
+(C14H21NO11) n).
+Hyaluronic acid is a naturally occurring biopolymer that serves a variety of purposes in the body, including 
+cellular functions and wound healing. It has been a crucial part of biomedical research because of its 
+adaptability in many applications in a variety of sectors, including tissue engineering 30. It acts in a similar 
+manner to collagen fibers helping to increase the mechanical proprieties of medical sutures33.
+4. Glycerin: It is a simple polyol hygroscopic compound with a density of 1.25 g/mL, molecular weight/Molar 
+Mass: 92.09 g/mol (Pharmalog company, Egypt, Empirical formula:
+Although glycerin is typically thought of as an osmotic laxative, it can also have lubricating and softening 
+properties. Additionally, scientific evidences prove that glycerin can inhibit bacterial growth 34.
+  C3H8O3).
+5. Sodium alginate: it is a constituent of the cellular wall in marine brown algae. It is comprised of approximately 
+30 to 60% alginic acid. The transformation of alginic acid into sodium alginate permits its dissolution in 
+water, thereby facilitating its extraction.
+Additionally, scientific evidence proves that glycerin can inhibit bacterial growth. It is Empirical formula: 
+(NaC6H7O6) is a linear polysaccharide derivative of alginic acid which comprised of 1,4-β-d-mannuronic 
+(M) and α-l-guluronic (G) acids.
+6. poly lactic acid (PLA): it is a biocompatible biomaterial that exhibits high biodegradability (Pharmalog 
+company, Egypt, Empirical formula (C3H4O2) n).4
+Vol:.(1234567890) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/Its low melting point, high strength, low thermal expansion, good layer adhesion, and high heat resistance 
+when annealed make it an ideal material for this purpose. Without annealing, however, PLA has the lowest 
+heat resistance of the common 3D printing plastics.
+All these additives are widely used for biomedical  applications6, and are FDA approved polymers with good 
+biocompatibility, biodegradability, and mechanical properties. Degradable materials such as PV A, Hyaluronic-
+acid, Glycerin, and water are non-toxic and can be excreted without harmful accumulation in tissues and organs.
+Extruder design
+This section describes the design and structure of a small custom-made plastic extruder machine that will be 
+used in production of filament sutures (FS) from the previously explained composites. The aim of the extruder 
+machine is to convert the polymer extracted from human serum albumin to FS using the extrusion processing 
+technique. During the process, the machine heats the polymer and extrudes a filament with a specific thickness. 
+The extrusion machine has a construction that is similar to that of a commercial machine, but we designed and 
+implemented it in our lab for cost effectiveness reasons.
+The custom extruder main components were made of a barrel and a bundle, as shown in Fig.  1A, which 
+are enclosed by a heater coil that is controlled by a temperature controller; Fig.  1B. To avoid reaction with the 
+mixture materials, the barrel and bundle were made of 304 stainless steels. A high torque stepper motor provided 
+mechanical power to rotate the stainless-steel screw 40N.cm and 200 steps/revolution (1.80/step) (Nema 34 
+closed Loop Stepper Motor 8.5Nm/1204 oz.in Encoder 1000CPR, Jiangning Nanjing City, China). Additionally, 
+a closed loop stepper motor driver (CS-D1008, 20–100 VDC, Max 8A Output Current, Lead shine Technology 
+Co., Ltd- China) was added to the system design to control the motor’s supply voltage; as shown in Fig.  1E. 
+Motor directions and speeds were controlled with a custom lab design speed controller and an Arduino board. 
+This design provided the necessary torque to generate enough pressure to force the mixture extrusion through 
+the small output nozzle.
+Figure  1D illustrates the main components of the developed extruder as a diagram. Figure  1E shows the final 
+implemented design with an added conically shaped extruder’s end hole with nozzles of varying diameters. The 
+material inlet opening was made wide enough (30 mm * 30 mm) to avoid wasting the mixture. The interspaces 
+of the bundle’s teeth were kept small (12 mm) to increase the grinding effect. According to the temperature 
+condition inside the barrel, the machine could melt the mixture as it flows through the nozzle opening, forming 
+the albumin-based filaments.
+Composite preparation
+This subsection describes four experiments with different concentrations. Those experiments aimed to find 
+the best composite materials with acceptable temperature conditions to produce a biocompatible and high-
+quality suture. The four mixtures had fixed masses of the base materials: 5 g protein and 3 g water, while the 
+other additive materials concentrations were changed in the experiments, as Table  1 shows. Firstly, our material 
+experiments were aimed at obtaining the optimal temperature of the extrusion process while avoiding burning 
+Figure 1.  The developed custom-made extruder. (A ) stainless steel bundle and barrel, (B ) Bundle and barrel 
+enclosed by heaters, (C ) The inlet Feeder and nozzle (D ) The assembly design, (E ) Final extrusion device 
+finishing.5
+Vol.:(0123456789) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/the composites. Previously, reported that the transition temperature of native Protein from SA is between 60 and 
+85 °C23,24,33–35. Therefore, the temperature for the extrusion process for the whole composites was maintained 
+between 50 and 100 °C in order to achieve an acceptable concentration/viscosity without burning under vision 
+inspection test. As shown in Table 1 , from experiments, the best temperatures were achieved around 60–85 °C 
+under vision test. From the other side, the Experimentation with the last mixture helped us obtain the optimal 
+concentration ratios of raw materials to optimize for the mixture properties. So, the mixture 1.4 was exposed to 
+many different trail with different heating temperatures.25,26 We assessed the experiments as following:
+The mixture’s gradient was constant concentration. While using manual blending for the mixtures, it causes 
+the produced sutures were not be completely homogenous as it makes the thread appear granular. The protein 
+was grounded by an electronic blender (Tornado electrical blender 500 W , MX5200/2) for 30 s, then the whole 
+mixture was grounded for another 35 s while changing the temperature. concentration 1 was extruded at a 
+temperature of 85 °C, concentration 2 was extruded at 60 °C, and concentration 3 was extruded at 75 °C.
+After many trial and error attempts to reach an acceptable mixture concentration, mixtures of concentration 
+4 in Table  1 were found to exhibit a better tensile strength and elasticity than the other mixtures under manual 
+inspection. The protein was grounded by blender machine for 35 s, the whole mixture was grounded for another 
+55 s, then the mixture was extruded at temperature 60 °C. The main goal of the previous experiments was to 
+explore and determine the best temperature which maintains the best mixing concentrations and avoid burning 
+to mixture. From point of burning condition, the output from the extruder of previous samples was changed 
+according to the temperature conditions. The best accepted temperature for the mixture that avoids the burning 
+was found to be around 60 °C that provides and acceptable filament’s flexibility, while higher temperatures caused 
+burning of the mixture components.
+Tensile strength, SEM and TGA tests
+Three testing methods were used to determine the mechanical and thermal properties of the produced sutures. 
+First, manual tensile testing—by hand test- was applied on the samples before applying tensile testing machine. 
+Scanning electron microscopy (SEM) imaging was performed on the samples to investigate their microscopic 
+structure. Third, Thermogravimetric Analysis (TGA) testing was applied to assess the materials’ thermal stability 
+and their fraction of volatile components as a function of temperature and time.
+Although the tensile strength of the sutures produced from the Sample Type #1, shown in Table  2, was 
+acceptable, as tensile tests show, their diameter was 1.75 mm which was relatively thick to be used in in vitro 
+and in vivo experiments. Many sutures could be produced that achieved the desired diameter of lower than 
+0.5 mm, but the tensile strength might not be technically acceptable. To fulfill the suture’s requirements of being 
+small in diameter with high tensile strength, the end nozzle’s opening of the extruder was modified to be 0.9 mm 
+producing Sample Type #2, while changing the mixture components as shown in Table  4 to achieve the desired 
+tensile strength shown in Table  5. All produced sutures were tested by tension testing machine, SEM, and TGA 
+as will be described in the following section.
+Methodology of pharmaceutical tests
+The cytotoxic effects of pHSA (created as a construct) were examined on various cell types: oral epithelial cells 
+(OEC), human skin fibroblast cells (HSF), and human osteosarcoma cells (MG-63). These cells were sourced 
+from Nawah Scientific Inc. in Mokatam, Cairo, Egypt, and were cultivated in DMEM medium enriched with Table 1.  Different concentrations are processed at different temperatures of four mixtures with the base 
+materials protein (5 g) and water (3 g), while changing the additive materials.Concentration no Gelatin Glycerin Hyaluronic acid Temp Grinding condition Mixture’s gradient
+concentration 1 2 g 3 g 0 85°C
+Electronic mill
+Same gradient of mixtureconcentration 2 2 g 3 g 0 60°C
+concentration 3 2 g 3 g 0 75°C
+concentration 4 3 g 2 g 2 g 60°C Electronic mill
+Table 2.  sample type 1 different material compositions extruded using a 1.75 mm nozzle at 60 °C. The sample 
+types were made with the base materials protein (5 g) and water (3 g), while changing the additive materials.Sample noComposite Concentrations
+Gelatin Glycerin P VA Hyaluronic acid
+Sample 1.1 2 g 3 g 0 0
+Sample 1.2 3 g 2 g 0 0
+Sample 1.3 3 g 2 g 2 g 0
+Sample 1.4 3 g 2 g 2 g 0
+Sample 1.5 3 g 2 g 0 2 g6
+Vol:.(1234567890) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/100 mg/mL streptomycin, 100 units/mL penicillin, and 10% fetal bovine serum that had been inactivated by 
+heat. Cultivation conditions included a humidified atmosphere containing 5% CO2 at a temperature of 37 °C. 
+The pHSA construct was administered to the cells over several time periods: 48 h (2 days), 72 h (3 days), and 
+168 h (7 days), with its cytotoxicity assessed via the sulforhodamine B (SRB) and WST-1 assays.
+To evaluate cell survival, the SRB assay was applied over a 3-day period. A 100 μL cell suspension, with a 
+density of 5  × 10^3 cells, was seeded into 96-well plates and incubated for 24 h in complete medium. Then, the 
+cells were exposed to 100 μL of medium containing varying concentrations of the pHSA construct, from 10 
+to 100 μg/mL. After three days, the medium was replaced with 150 μL of 10% trichloroacetic acid (TCA) and 
+chilled at 4 °C for one hour to fix the cells. The TCA was then discarded, and the cells were rinsed five times with 
+distilled water. Afterwards, 70 μL of SRB solution (0.4% w/v) was added, and the mixture was incubated in the 
+dark at room temperature for 10 min. After washing three times with 1% acetic acid and drying overnight, 150 
+μL of TRIS (10 mM) solution was used to dissolve the bound dye, and absorbance was measured at 540 nm using 
+a BMG LABTECH®- FLUOstar Omega microplate reader (Ortenberg, Germany). The 7-day cell viability was 
+similarly assessed using the SRB assay. Here, 1000 μL of cell suspension, containing 5  ×  103 cells, was incubated 
+in 6-well plates with complete medium for 24 h, followed by treatment with 500 μL of medium containing the 
+pHSA construct at concentrations ranging from 10 to 100 μg/mL. After 7 days, the cells were fixed with 1500 μL 
+of 10% TCA, chilled at 4 °C for an hour, washed five times with distilled water, and then treated with 1000 μL of 
+SRB solution. The plates were incubated, washed, dried, and the dye was dissolved as previously described, with 
+absorbance read at 540 nm. Cell viability was also determined using the WST-1 assay for a 2-day period. For this 
+assay, 1000 μL of cell suspension, containing 3 ×  103 cells, was placed in 6-well plates and incubated for 24 h. The 
+cells were then exposed to 500 μL of medium with the pHSA construct at concentrations of 10 μg/mL and 100 μg/
+mL. After 48 h, 150 μL of WST-1 reagent was added, and absorbance was measured at 450 nm after 1 h using a 
+BMG LABTECH®- FLUOstar Omega microplate reader, (Ortenberg, Germany). Cell viability was also assessed 
+using the WST-1 assay for a duration of 2 days. This assessment was conducted using the Abcam® kit (ab155902 
+WST-1 Cell Proliferation Reagent)36. Aliquots comprising 1000 μL of cell suspension, which contained 3 × 103 
+cells, were introduced into 6-well plates and incubated in complete media for a duration of 24 h. Subsequently, 
+the cells were subjected to treatment with an additional aliquot of 500 μL of media, which contained the PBSA 
+construct at varying concentrations (10 ug/ml, 100 ug/ml). Following a 48-h exposure to the drug, the cells were 
+treated with 150 μL of WST-1 reagent, and the resulting absorbance was measured after 1 h at a wavelength of 
+450 nm, employing a BMG LABTECH®- FLUOstar Omega microplate reader located in Allmendgrün, Ortenberg.
+Results and discussion
+Suturing materials were prepared in a sterile environment, with a continuous ribbon, and were employed in the 
+laboratory for production of the FS materials. In this section, we introduce the results of two experiments in an 
+effort to optimize the suture’s mixtures.
+Samples type 1 testing results
+Five samples were tested via tension testing, SEM, and TGA techniques, as shown in Table  3 and Figs.  2, 3 and 4.
+Table 3.  Samples type 1 mechanical proprieties of sutures produced from nozzle 1.75 mm.Sample 1.1 Sample 1.2 Sample 1.3 Sample 1.4 Sample 1.5
+Elongation % 96.603 49.559 126.85 44.880 146.64
+Maximum Load (N) 2.2312 2.1797 3.5278 3.4631 2.8892
+Tensile Strength at max load (MPa) 1.8993 1.3764 1.9188 1.6334 1.7765
+Figure 2.  Stress–Strain curves for suture samples of Type 1.7
+Vol.:(0123456789) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/Tensile strength results of type 1 samples
+Tensile experiments were performed on the FS samples using the tensile device (LLOYD –LRSK PLUS SERIES 
+materials testing machine, Lloyd Instruments Ltd, UK). It is noticeable that Sample 1.3, which has PV A, showed 
+the highest ultimate tensile stress and young’s modulus than other samples, while sample 1.5, which have 
+hyaluronic acid, achieved the highest toughness. Additionally, only samples 1.3 and 1.5 exhibited an elongation 
+ratio of more than 100%, with 1.5 having stretchability of about 150%. Table  3 summarizes the mechanical 
+proprieties of the synthesized filament sutures from nozzle 1.75 mm.
+SEM and TGA results of samples type 1
+SEM characterization was performed using a scanning electron microscope (JSM-IT200, JEOL InTouch Scope™ 
+series, Tokyo, JAPAN). Figure  3 provides the SEM images of type 1 samples (thickness of 1.75 mm) at different 
+scales. All mixtures of these samples contained Glycerin and gelatin, in which PHSA are mixed and integrated 
+together to form a gel. It is noticed in the SEM images of Sample 1.4 that the granular structure of the suture is 
+more homogeneous with less scattered granules and well oriented surface, compared to the other sutures, which 
+could indicate that the material was mixed in a better way than the other Samples of type 1. From Fig.  3, it is 
+shown that the granules in Samples 1.1, 1.2, 1.3 and 1.5 are not completely homogeneous. Thermogravimetric 
+analyzer TGA (TGA THERMOSTEP device, ELTRA GmbH part of verder scientific group, Netherlands), in 
+Fig.  4 show the thermal stability of the produced FS. It is noticed that these types of samples did not lose more 
+than 5% of their original weight when heated for 5 min at the working temperature of about 370. It is noticed 
+also that the samples 1.2 and 1.5 are the best samples for weight loss as they loss less than 35% weight change at 
+100µm 20µm1 0µm5 µm
+Sample
+1.1
+Sample
+1.2
+Sample
+1.3
+Sample
+1.4
+Sample
+1.5100µm 10µm 20µm
+100µ m5µm
+5µm
+5µm
+5µm100µ m
+100µ m100µm20µm
+20µm
+20µm10µm 20µm
+10µm
+5µm10µm
+10µm
+Figure 3.  SEM images of suture samples of Type 1 produced using a 1.75 mm nozzle. White bars represent the 
+corresponding scale for each imaging magnification.8
+Vol:.(1234567890) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/temperature 200 °C. Sample 1.1 losses 27% weight change at temperature 150 °C. Sample 1.3 losses more than 
+40% weight change at temperature 200 °C. Sample 1.4 losses more than 40% weight change at temperature 200 °C.
+Samples type 2 testing results
+Our research team tried some other additions according to mechanical results of suture type 1, shown in Table  3, 
+including gelatin, Sodium alginate and poly lactic acid (PLA) polyvinyl alcohol, and hyaluronic acid, as shown 
+in Table  4, while extruding these samples with 0.9 mm nozzles to produce samples with smaller diameters that 
+fit more the purpose of suturing. The four samples were tested via the tension test, SEM, and TGA techniques.
+Tensile strength results of samples type 2
+Tensile experiments were performed on samples of the second type with 0.9 diameter using the tensile device 
+(Instron single column, system ID:3345L8714, USA). It was noticeable that during tensile strength testing of 
+the samples, we noticed that adding (PV A + Hyaluronic Acid) in the Sample 2.4, increase the tensile strength 
+and elongation % in agreement with the rest of the sutures testing and with the examination of the sutures over 
+time, we noticed that the tensile strength increased as the sample was subjected to further cooling. As shown in 
+Table  5, the tensile stress and Elongation percentage of Sample 2.4 was 9.616 MPa and 38, respectively and higher 
+than the other tensile stress and Elongation percentage of Samples (1, 2 and 3). These observations confirm that 
+adding PV A and hyaluronic acid (based collagen) to the PHSA and gelatin solvent by water and glycerin is highly 
+recommended to achieve the required tensile strength.
+SEM and TGA results of samples type 2
+SEM characterization was performed by using a JSM-IT200 scanning electron microscope. Figure  5 shows the 
+SEM image of Samples type 2 (with a thickness of 0.9 mm) at temp 60 °C carried using gelatin, in which PHSA are 
+Figure 4.  Type 1 samples thermal stability analysis: TGA curves for sutures produced using the 1.75 mm 
+nozzle: (A ) Sample 1.1. (B ) Sample 1.2. (C ) Sample 1.3. (D ) Sample 1.4. (E ) Sample 1.5
+Table 4.  Sample Type 2: Different compositions extruded using a 0.9 mm nozzle at 60 °C.Base materials used 
+were protein (5 g), water (3 g), Sodium alginate (0.22 g) and poly lactic acid (PLA) (0.73 g), while the additive 
+materials were changed.Sample NoComposite Concentrations
+Gelatin Glycerin P VA Hyaluronic acid
+Sample 2.1 2 g 3 g 0 0
+Sample 2.2 3 g 2 g 0 2 g
+Sample 2.3 3 g 2 g 2 g 0
+Sample 2.4 3 g 2 g 2 g 2 g9
+Vol.:(0123456789) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/mixed and integrated together to form a gel. From Table  3, it is noticed that the effects of mechanical proprieties 
+of PV A and Hyaluronic acid. SO, in these mixtures, PV A was used in Samples 2.3 and 2.4, hyaluronic acid was 
+used in Samples 2.2 and 2.4, while Sample 2.1 did not have PV A and hyaluronic acid as mixing components. 
+Figure  5 shows that the morphology of the mixture that has hyaluronic acid and PV A in Sample 2.4 exhibits 
+a smoother surface profile. The granularity in Sample 2.4 showed that the material was mixed well and better 
+than the other sutures, which is clear at scale 500 µm. TGA tests have shown the thermal stability of the FS, 
+particularly Sample 2.3. The first weight loss occurs due to water molecules evaporation, whereas the second 
+weight loss is due to the degradation of collagen. It is noticed from TGA Fig.  6 that the samples type 2 are better 
+than samples type 1 regarding weight loss at higher temperature. Sample 2.1 losses more than 23% weight change 
+at temperature 200 °C. Sample 2.2 losses more than 13% weight change near a temperature 200 °C. Sample 2.3 
+losses more than 16% weight change near a temperature 200 °C. Sample 2.4 losses more than 16% weight change 
+near a temperature 200 °C.
+Table  6 shows the percentage of viable cells after the incubation period in comparison with the control. Oral 
+epithelial cells and human skin fibroblast cells treated with bone graft sample (PHSA with porous structure of 
+0.3 g catalyst) at high and low concentrations, have showed normal rate of proliferation when compared to the Table 5.  Sample type 2: mechanical proprieties of sutures produced from nozzle 0.9 mm.Sample 2.1 Sample 2.2 Sample 2.3 Sample 2.4
+Elongation % 14.5 11.5 36 38
+Max load (N) 5.044 21.223 17.001 16.993
+Tensile stress at max load (MPa) 5.3086 7.727 6.393 9.616
+500µm 100µ m1 0µm1 µm
+Sample
+2.1
+Sample
+2.2
+Sample
+2.3
+Sample
+2.410µm
+10µm10µm10µm100µ m
+500µm
+500µm500µ m
+500µm
+100µ m
+1µm1µm
+100µ m100µ m 1µm1µm
+Figure 5.  SEM images of suture samples of Type 1 produced using 0.9 mm nozzle. White bars represent the 
+corresponding scale for each imaging magnification.10
+Vol:.(1234567890) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/control cells. Moreover, long incubation periods were conducted on MG-63 bone cells to ensure the safety of 
+the sample. After three days and seven days incubation, there was no significant difference in the percentage of 
+viable cells between the treated and the control cells. In comparison to the control, it could be concluded that 
+the bone graft sample has no cytotoxic effects on cells; and OEC, HSF and MG-63 had regular growth pattern 
+and normal proliferation rate during the incubation periods as shown in Fig.  7A,B.
+Discussion
+The primary goal of our research team is to validate the feasibility of converting protein derived from human 
+serum albumin into filaments that possess superior mechanical properties and can be effectively utilized in the 
+field of medicine. It is important to note that our research team is recognized as the pioneering group that has 
+endeavored to utilize protein sourced from human serum albumin. Therefore, there is no specific reference 
+available to determine the concentration proportions of the mixture used in the process of fabricating filament 
+sutures through the extrusion machine developed by our research team. As a result, we had to rely on the method 
+of experimental investigation, involving various concentrations, in order to achieve the optimal outcomes.
+Those processing steps were first optimized by a trial-and-error routine, since the product is new and there 
+was no similar product in the market to be taken as a guide. After many trials we could.
+adapt a simple and straight forward strategy for the processing methodology. Then, the processed suture FS 
+was used for evaluating the different mechanical and thermal properties.
+Part #1 The primary objective of investigating the concentration of Suture Type 1 was to determine the 
+optimal temperature for the mixture using accepted mechanical properties. This resulted in the production of 
+filament sutures with a diameter of 1.75 mm. However, attempts to reduce the diameter of the filament sutures, 
+while maintaining the same concentration as in Suture Type 1, led to a decrease in the mechanical properties, 
+particularly in the tension process. Therefore, it is necessary to change the concentration of the mixture.
+Part #2 In order to improve the mechanical properties of filament sutures with a diameter smaller than 
+1.75 mm, the concentration of Suture Type 1 was adjusted by incorporating additional biodegradable materials 
+Figure 6.  Type 2 samples thermal stability analysis: TGA curves for sutures produced using the 0.9 mm nozzle: 
+(A) Sample 2.1. (B ) Sample 2.2. (C ) Sample 2.3. (D ) Sample 2.4.
+Table 6.  The percentage of viable cells after the incubation.Bone concentration (ug/ml) SRB_ MG-63 (3 days) SRB_ MG-63 (7 days) WST1_ OEC (2 days) WST1_ HSF (2 days)
+10 94.33% 90.60% 99.78% 99.47%
+100 94.19% 89.06% 96.51% 93.09%11
+Vol.:(0123456789) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/that possess significant chemical and physical properties. This resulted in the creation of Suture Type 2 with a 
+diameter of 0.9 mm. However, sutures currently available in the industry have relatively small diameters, but 
+certain types have limited mechanical characteristics. Therefore, our team is currently conducting ongoing 
+research to modify the properties of sutures while simultaneously reducing the diameter to meet commercial 
+standards.
+SEM technique was performed on all output sutures beginning by samples 1 producing poorly distributed 
+particles which encouraged us to modify its concentration to form sutures sample 2 trying to modify the 
+mechanical proprieties conditioned by decreasing the diameter size from 1.75 mm to 0.9 mm. However, the 
+comparable suture in the industry were characteristic by small scale diameters, but some types have limited 
+mechanical characteristics,37–40. So, our team is still working, as a future work, on modifying the characteristics 
+of Sutures while minimizing the diameter to reach the commercial standards.
+While the results show the low tensile strength of the produced sutures-based albumin compared to 
+commercial sutures, this study motivates us to work more on the development of albumin-based sutures. 
+An important advantage of developing sutures from serum albumin is adding protein to the body during 
+the biodegradation process. Serum albumin is consider one of the most important biochemical indicators of 
+malnutrition 41,42 .The distinctive properties of FS are that it shows tensile strength of tested sutures varies 
+from 1.3 to 9.616 (Mpa) and 11.5 to 146.64 (%) as elongation at break. Rethinam et al.43 investigated a unique 
+multifilament suture that was prepared from animal skin fiber that reported a tensile strength of 85.25 ± 0.09 
+(Mpa), 81.9 ± 0.46(%) as elongation at break. Rethinam et al. 5 developed an absorbable suture that it exhibits 
+tensile strength as high as 43.16 ± 1.03 MPa which have a potential wound healing as well as external surgical 
+applications. Rethinam et al.44 reported a biocompatible polymeric bio-scaffold that can significantly accelerate 
+the process of wound healing which its mechanical characteristics show tensile strength of 20.88  ± 0.05 (Mpa), 
+17.74  ± 0.05 (%) as Elongation at break.
+Zhang et al.45 produced fibers based on natural sources including chicken egg, quail egg, goose.
+egg, milk, bovine serum albumin and collagen that can be used in suturing applications in rat and minipig 
+models depend on the microfluidic device. The breaking strengths of the quail and goose egg white fibers were 
+about 44.50 and 27.83 MPa, respectively. after crosslinking with glutaraldehyde, those values slightly increased 
+to 47.84 and 29.25 MPa. The fibers-based milk showed a breaking strength of about 48 MPa which increased to 
+75 MPa after crosslinking of glutaraldehyde. Remarkably, the authors reported that following the glutaraldehyde 
+crosslinking treatment, a significant increase in the mechanical performance of the BSA fibers was observed. The 
+breaking strength of the BSA fiber increased from 55.24 to 99.28 MPa. Based on previous works, our research 
+team aims to prove that the protein from human serum albumin can convert to sutures with good mechanical 
+proprieties that can be used in medical branches.
+This study presents two important topics. The first is the design of custom extruder machine and the second is 
+developing new filament suture based on serum albumin to aid in the FS production and maintain the extrusion 
+process. It is well known that a medical suture should not only be very strong with high mechanical properties, 
+but also be able to simply disintegrate in body fluids and lose strength at the same rate as the tissue is being 
+repaired. It would neither cause nor promote complications.46.
+Biodegradable sutures based on albumin composites play a crucial role in the field of green biomaterials due 
+to their sustainability and biocompatibility. The following paragraph discusses the key points related to green 
+ biomaterials47.
+Sustainability  Albumin composites for sutures are sourced from natural origins like bovine or human 
+serum albumin, rendering them inherently more sustainable compared to synthetic alternatives derived from 
+petrochemicals. This is in line with the principles of green chemistry and sustainable development 26.
+Figure 7.  Cytotoxicity tests: (A ) MG_63 samples during incubation. (B ) OEC, HSF and MG-63 samples. Tested 
+cells showed regular growth pattern and normal proliferation rate during the incubation periods.12
+Vol:.(1234567890) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/Biodegradability  One of the key advantages of biodegradable sutures is that they undergo degradation within 
+the body over time, thereby eliminating the need for surgical removal. Albumin-based sutures experience 
+enzymatic degradation by proteolytic enzymes found in the body, resulting in minimal tissue reaction, and 
+facilitating wound  healing25,48.
+Biocompatibility  Albumin is a protein naturally found in the human body, making albumin-based sutures 
+highly biocompatible. This reduces the risk of adverse reactions, inflammation, and infections at the wound 
+site. Additionally, albumin has been shown to promote cell adhesion and proliferation, further aiding in tissue 
+ regeneration25,44.
+Mechanical Properties  Albumin composites can be designed to have adjustable mechanical properties, 
+ensuring they meet the requirements of various surgical procedures and tissue  types24,48.
+Drug Delivery  Albumin-based sutures can also function as carriers for drug delivery, providing localized and 
+sustained release of therapeutic agents or growth factors directly to the wound site. This can enhance the healing 
+process and reduce the necessity for additional  medication49,50.
+Reduced Environmental Impact  In comparison to non-biodegradable sutures, which have the potential 
+to persist in the environment and contribute to pollution, biodegradable albumin-based sutures have a 
+minimal impact on the environment. They undergo decomposition into natural byproducts, thus reducing the 
+accumulation of medical  waste51.
+These sutures provide a combination of sustainability, biocompatibility, and mechanical properties that are 
+essential for effective wound closure and tissue regeneration, while also reducing the environmental impact 
+associated with medical waste.
+Abdelmoez et al.25,26,48 reported that the transition temperature of native BSA was 64 °C. The authors found 
+that the transition temperatures for PBSA samples were 66, 77, 78, and 85.5 °C, respectively. So, the temperature 
+for the extrusion process was maintained between 60 and 85 °C in order to achieve the optimal temperature avoid 
+burning the mixture based on trial-and-error method. The accepted temperature for the mixture was found to 
+be 60 °C ± 5 that provides and acceptable filament’s flexibility, while higher temperatures caused burning of the 
+mixture components. The denaturation process of protein is governed by two factors, namely the temperature 
+and the duration of heat exposure. According to the research conducted by Borzova, Vera et al.52, (BSA) protein 
+denaturation can occur for a duration exceeding 12 min at a temperature of 65 °C. However, in our investigation, 
+the mixture is subjected to a temperature of 65 °C  ± 5 for a duration of less than one minute, thereby reducing the 
+likelihood of protein denaturation to a level lower than anticipated. The data from Table  6 and Fig.  7A,B suggest 
+that the bone graft sample exhibits no cytotoxic effects when compared to the control group. This outcome implies 
+that, within the confines of the conducted experiment or study, the bone graft material poses no risk to cellular 
+health, maintaining normal growth patterns in OEC, HSF, and MG-63 cells. The previous results encourage 
+us to continue our research efforts to modify the FS regarding its strength and size to make it a more practical 
+product as surgical biodegradable sutures.
+Conclusion
+To the best of our knowledge, this is the first time that sutures can be constructed based on proteins from 
+human serum albumin derived under subcritical water technology. The novel filament sutures were extensively 
+constructed by the hot-melt extrusion process to successfully develop a biopolymer composite. The strategy 
+used in this study has a lot of promise since the melt extrusion technique is relatively versatile, inexpensive, 
+and simple to scale up. FS created potential biomaterials that can be used for multiple biomedical applications, 
+including suturing materials and wound dressing. The developed suture was produced from human serum 
+albumen and can be used for wound closure. The physicochemical and mechanical tests were conducted and 
+showed promising results.
+Smaller sutures diameters will be required in future works. In vivo and biodegradation tests are also required 
+to validate suture degradation with an appropriate tissue regeneration. One of the most interesting applications 
+of the proposed suture is the ability to be used as a 3D printer filament to print custom scaffolds, nails, and plates 
+with carefully design properties using finite element modelling.
+Data availability
+All data and materials are the property of the authors. Corresponding authors may provide raw data upon 
+reasonable request.
+Received: 27 November 2023; Accepted: 26 March 2024
+References
+ 1. Karabulut, R. et al. An in vitro and in vivo evaluation of tensile strength and durability of seven suture materials in various pH 
+and different conditions: an experimental study in rats. Indian J. Surg.  72(5), 386–390 (2010).
+ 2. Kang, H. W . & Cho, D. W . Development of an indirect stereolithography technology for scaffold fabrication with a wide range of 
+biomaterial selectivity. Tissue Eng. Part C Methods.  18(9), 719–729 (2012).
+ 3. Cianchetti, M., Laschi, C., Menciassi, A. & Dario, P . Biomedical applications of soft robotics. Nat. Rev. Mater. 3(6), 143–153. https://  
+doi. org/ 10. 1038/  s41578-  018-  0022-y (2018).
+ 4. Deb, P ., Deoghare, A. B., Borah, A., Barua, E. & Das, L. S. Scaffold development using biomaterials: A review. Mater. Today Proc.  
+5(5), 12909–12919. https://  doi. org/ 10. 1016/j. matpr. 2018.  02. 276 (2018).
+ 5. Rethinam, S., Thotapalli Parvathaleswara, S., Nandhagobal, G., Alagumuthu, T. & Robert, B. Preparation of absorbable surgical 
+suture: Novel approach in biomedical application. J. Drug Deliv. Sci. Technol. 47(March), 454–460. https:// doi. org/ 10. 1016/j. jddst.  
+2018.  08. 010 (2018).13
+Vol.:(0123456789) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/ 6. Pillai, C. K. S. & Sharma, C. P . Review paper: absorbable polymeric surgical sutures: chemistry, production, properties, 
+biodegradability, and performance. J. Biomater. Appl.  25(4), 291–366. https://  doi. org/ 10. 1177/  08853 28210  384890 (2010).
+ 7. Hon, L. Q. et al.  Vascular closure devices: a comparative overview. Curr. Probl. Diagn Radiol.  38(1), 33–43. https://  doi. org/  10. 
+1067/j.  cprad  iol. 2008.  02. 002 (2009).
+ 8. Gassner, R. Wound closure materials. Oral Maxillofac. Surg. Clin. North Am. 14(1), 95–104. https:// doi. org/ 10. 1016/ s1042- 3699(02)  
+00009-2  (2002).
+ 9. Rastogi, V . et al. Trichobezoars. Indian J. Gastroenterol. Off J Indian Soc. Gastroenterol.  7(1), 55–56 (1988).
+ 10. Tajirian, A. L. & Goldberg, D. J. A review of sutures and other skin closure materials. J. Cosmet. Laser Ther.  12(6), 296–302 (2010).
+ 11. Furth, M. E., Atala, A. & Van Dyke, M. E. Smart biomaterials design for tissue engineering and regenerative medicine. Biomaterials  
+28(34), 5068–5073 (2007).
+ 12. Dasgupta, A. et al. Comprehensive collagen crosslinking comparison of microfluidic wet-extruded microfibers for bioactive surgical 
+suture development. Acta Biomater.  128, 186–200 (2021).
+ 13. Chu, C. C. Materials for absorbable and nonabsorbable surgical sutures. In Biotextiles as Medical Implants 275–334 (Elsevier, 2013). 
+https://  doi. org/ 10. 1533/  97808  57095 602.2.  275.
+ 14. Hjort, H., Mathisen, T., Alves, A., Clermont, G. & Boutrand, J. P . Three-year results from a preclinical implantation study of a 
+long-term resorbable surgical mesh with time-dependent mechanical characteristics. Hernia.  16(2), 191–197 (2012).
+ 15. Höglund, O. V . A resorbable device for ligation of blood vessels. Acta Vet. Scand.  https:// doi. org/ 10. 1186/ 1751- 0147- 53- 47 (2012).
+ 16. Akgun, U., Karahan, M., Randelli, P . S. & Espregueira-Mendes, J. Knots in Orthopedic Surgery: Open and Arthroscopic Techniques  
+(Springer, 2018).
+ 17. Liang, H. et al. Fabrication of tragacanthin gum-carboxymethyl chitosan bio-nanocomposite wound dressing with silver-titanium 
+nanoparticles using freeze-drying method. Mater. Chem. Phys. 279, 125770. https:// doi. org/ 10. 1016/j. match  emphys. 2022. 125770  
+(2022).
+ 18. Ulery, B. D., Nair, L. S. & Laurencin, C. T. Biomedical applications of biodegradable polymers. J. Polym. Sci. Part B Polym. Phys.  
+49(12), 832–864. https://  doi. org/ 10. 1002/  polb.  22259 (2011).
+ 19. Pourali, M., Tarasi, R., Tayebi, T. & Niknejad, H. Design and fabrication of biodegradable tissue adhesive using albumin 
+nanoparticles and polypyrrole as a suture substitute in surgery and trauma. Sci. J. Kurd. Univ. Med. Sci. 28(4), 110–124 (2023).
+ 20. Müller, D. A., Snedeker, J. G. & Meyer, D. C. Two-month longitudinal study of mechanical properties of absorbable sutures used 
+in orthopedic surgery. J. Orthop. Surg. Res.  11(1), 1–7 (2016).
+ 21. Zhou, W . C. et al. Berberine-incorporated shape memory fiber applied as a novel surgical suture. Front. Pharmacol.  10, 504119 
+(2020).
+ 22. Wu, Q. et al. Sustainable antibacterial surgical suture using a facile scalable silk-fibroin-based berberine loading system. ACS 
+Biomater. Sci. Eng.  7(6), 2845–2857 (2021).
+ 23. Horváthy, D. B. et al. Albumin-coated bioactive suture for cell transplantation. Surg. Innov.  20(3), 249–255 (2013).
+ 24. Abdelmoez, W ., Dahab, I., Ragab, E. M., Abdelsalam, O. A. & Mustafa, A. Bio- and oxo-degradable plastics: insights on facts and 
+challenges. Polym. Adv. Technol.  32(5), 1981–1996. https:// doi.  org/ 10. 1002/ pat.  5253  (2021).
+ 25. Abdelmoez, W . & Y oshida, H. Synthesis of a novel protein-based plastic using sub-critical water technology. AIChE J. 52(7), 
+2607–2617 (2006).
+ 26. Abdelmoez, W . & Y oshida, H. Mechanical and thermal properties of a novel protein-based plastic synthesized using subcritical 
+water technology. Macromolecules.  40(26), 9371–9377 (2007).
+ 27. Goh, G. L. et al. Additively manufactured multi-material free-form structure with printed electronics. Int. J. Adv. Manuf. Technol.  
+94(1), 1309–1316 (2018).
+ 28. Smith, B. D. & Grande, D. A. The current state of scaffolds for musculoskeletal regenerative applications. Nat. Rev. Rheumatol.  
+11(4), 213–222. https://  doi. org/ 10. 1038/  nrrhe  um. 2015.  27 (2015).
+ 29. Fehér, D. et al. Early and late effects of absorbable poly(vinyl alcohol) hernia mesh to tissue reconstruction. IET Nanobiotechnol.  
+15(6), 565–574. https://  doi. org/ 10. 1049/  nbt2. 12015  (2021).
+ 30. Shuborna, N. S. et al. Generation of novel hyaluronic acid biomaterials for study of pain in third molar intervention: a review. J. 
+Dent. Anesth. Pain Med. 19(1), 11–19. https://  doi. org/ 10. 17245/ jdapm.  2019.  19.1.  11 (2019).
+ 31. Chellamani, K. P ., Veerasubramanian, D. & Balaji, R. S. V . Surgical sutures: an overview. J. Acad. Ind. Res. 1(12), 778–782 (2013).
+ 32. Mao, Q. et al. Self-contracting oxidized starch/gelatin hydrogel for noninvasive wound closure and wound healing. Mater. Des.  
+194, 108916. https://  doi. org/ 10. 1016/j. matdes. 2020.  108916 (2020).
+ 33. Suzuki, A. et al. Manufacturing micropatterned collagen scaffolds with chemical-crosslinking for development of biomimetic 
+tissue-engineered oral mucosa. Sci. Rep. 10(1), 22192. https://  doi. org/ 10. 1038/  s41598-  020-  79114-3  (2020).
+ 34. Bialik-Wąs, K. et al. The effect of glycerin content in sodium alginate/poly (vinyl alcohol)-based hydrogels for wound dressing 
+application. Int. J. Mol. Sci. 22(21), 12022. https:// doi.  org/ 10. 3390/  ijms2  22112  022 (2021).
+ 35. Karimi, M. et al. Fabrication of shapeless scaffolds reinforced with baghdadite-magnetite nanoparticles using a 3D printer and 
+freeze-drying technique. J. Mater. Res. Technol. 14, 3070–3079 (2021).
+ 36. Sharma, A. et al. Human induced pluripotent stem cell–derived cardiomyocytes as an in vitro model for coxsackievirus B3–induced 
+myocarditis and antiviral drug screening platform. Circ. Res. 115(6), 556–566 (2014).
+ 37. Albawwab, A., Dalloul, R. A. & Abusamra, F. A. Advantages and Disadvantages of Using Sutures Vs Cyanoacrylates for Minor 
+Superficial Lacerated Wounds in Healthy Paediatric Age Groups. Int. J. Med. Biomed. Stud. https://  doi. org/ 10. 32553/ ijmbs.  v5i1.  
+1593  (2021).
+ 38. Srinivasulu, K. & Kumar, N. D. A review on properties of surgical sutures and applications in medical field. Int. J. Res. Eng. Technol.  
+2(2), 85–96 (2014).
+ 39. Halsted, W . S. Ligature and suture material: the employment of fine silk in preference to catgut and the advantages of transfixion 
+of tissues and vessels in control of hemorrhage also an account of the introduction of gloves, gutta-percha tissue and silver foil. J. 
+Am. Med. Assoc.  60(15), 1119–1126 (1913).
+ 40. Lekic, N. & Dodds, S. D. Suture materials, needles, and methods of skin closure: What every hand surgeon should know. J. Hand 
+Surg. Am.  47(2), 160–171 (2022).
+ 41. Hamilton, T. E. & Rombeau, J. L. Chapter 85 - nutritional support. In Current Therapy in Colon and Rectal Surgery  (eds Fazio, V . 
+W . & Church, J. M.) 509–515 (Mosby, 2005). https://  doi. org/ 10. 1016/  B978-1-  55664-  480-1. 50090-3.
+ 42. Jeejeebhoy, K. N. Nutritional Assessment. In Encyclopedia of Gastroenterology  (ed. Johnson, L. R. B. T. E.) 759–766 (Elsevier, 2004). 
+https://  doi. org/ 10. 1016/  B0- 12-  386860-  2/ 00517-7 .
+ 43. Rethinam, S. et al. A new approach for the production of multifilament suture-in vitro and in vivo analysis. Int. J. Polym. Mater. 
+Polym. Biomater.  70(18), 1306–1315 (2021).
+ 44. Rethinam, S., Alagumuthu, T., Subaramaniyan, K., Aruni, A. W . & Kavukcu, S. B. Preparation of biocompatible polymeric bio-
+scaffold as wound healing activity: Characterization and In vivo analysis. Biocatal. Agric. Biotechnol. 33(March), 101992. https://  
+doi. org/ 10. 1016/j.  bcab.  2021.  101992 (2021).
+ 45. Zhang, J. et al. Robust biological fibers based on widely available proteins: facile fabrication and suturing application. Small.  16(8), 
+1–8. https://  doi. org/ 10. 1002/  smll.  20190  7598  (2020).
+ 46. Brissot, H. Current suture materials in surgery. Prat. Medicale Chir L Anim Cie.  37(6), 469–474 (2002).14
+Vol:.(1234567890) Scientific Reports  |         (2024) 14:7912  | https://doi.org/10.1038/s41598-024-58194-5
+www.nature.com/scientificreports/ 47. Rabiee, N. et al. Green Biomaterials: fundamental principles. Green Biomater.  1(1), 1–4. https:// doi.  org/ 10. 1080/  29934  168. 2023.  
+22689 43  (2023).
+ 48. Abdelmoez, W . & Y oshida, H. Kinetics and mechanism of the synthesis of a novel protein-based plastic using subcritical water. 
+Biotechnol. Prog.  24(2), 466–475. https://  doi. org/ 10. 1021/  bp070  2572  (2008).
+ 49. Kuten Pella, O. et al. Albumin as a biomaterial and therapeutic agent in regenerative medicine. Int. J. Mol. Sci. 23(18), 10557 (2022).
+ 50. Elzoghby, A. O., Samy, W . M. & Elgindy, N. A. Albumin-based nanoparticles as potential controlled release drug delivery systems. 
+J. Control Release. 157(2), 168–182 (2012).
+ 51. Joseph B, James J, Kalarikkal N, Thomas S. Advances in biopolymer based surgical sutures. In: Advanced Technologies and Polymer 
+Materials for Surgical Sutures . Elsevier; 2023:1–17.
+ 52. Borzova, V . A. et al. Kinetics of thermal denaturation and aggregation of bovine serum albumin. PLoS One. 11(4), e0153495 (2016).
+Author contributions
+W .A, M.T.E., conceived the concept of the study, procured the funding, and were in charge of the overall direction. 
+W .A. performed preliminary preparation of protein from HSA. M.A.N. and A.M.S. cloned all other expression 
+constructs and purified all the protein’s raw materials and other additives. M.A.N., and M.S.A. had designed 
+the extrusion machine and made the mixtures with many trails of modifications. M.A.N. conducted the release 
+study, as well as SEM and TGA analyses. M.A.N., and M.S.A. performed the mechanical tests. M.A.N., W .A. 
+and M.S.A. analyzed the mechanical results. M.A.N., A.M.S and M.T.E. analyzed the release result profile. All 
+authors were involved in the preparation and reviewing of the manuscript.
+Funding
+Open access funding provided by The Science, Technology & Innovation Funding Authority (STDF) in 
+cooperation with The Egyptian Knowledge Bank (EKB).
+Competing interests  
+The authors declare that they have no known competing financial interests or personal relationships that could 
+have appeared to influence the work reported in this paper.
+Additional information
+Correspondence and requests for materials should be addressed to M.A.N. or A.M.S.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and 
+institutional affiliations.
+Open Access  This article is licensed under a Creative Commons Attribution 4.0 International 
+License, which permits use, sharing, adaptation, distribution and reproduction in any medium or 
+format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the 
+Creative Commons licence, and indicate if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the 
+material. If material is not included in the article’s Creative Commons licence and your intended use is not 
+permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from 
+the copyright holder. To view a copy of this licence, visit http:// creat  iveco  mmons. org/ licen  ses/ by/4. 0/.
+© The Author(s) 2024

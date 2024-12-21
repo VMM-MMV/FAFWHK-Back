@@ -1,0 +1,1361 @@
+Citation: Cong, Y.; Devoogdt, N.;
+Lambin, P .; Dubois, L.J.; Yaromina, A.
+Promising Diagnostic and
+Therapeutic Approaches Based on
+VHHs for Cancer Management.
+Cancers 2024 ,16, 371. https://
+doi.org/10.3390/cancers16020371
+Academic Editor: Ulrich Sack
+Received: 29 November 2023
+Revised: 4 January 2024
+Accepted: 4 January 2024
+Published: 15 January 2024
+Copyright: ©2024 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+cancers
+Review
+Promising Diagnostic and Therapeutic Approaches Based on
+VHHs for Cancer Management
+Ying Cong1, Nick Devoogdt2
+, Philippe Lambin1,3
+, Ludwig J. Dubois1,*
+and Ala Yaromina1,*
+1The M-Lab, Department of Precision Medicine, GROW—School for Oncology and Reproduction,
+Maastricht University, 6211 LK Maastricht, The Netherlands; y.cong@maastrichtuniversity.nl (Y.C.);
+philippe.lambin@maastrichtuniversity.nl (P .L.)
+2Molecular Imaging and Therapy Research Group (MITH), Vrije Universiteit Brussel, 1090 Brussels, Belgium;
+ndevoogd@vub.be
+3Department of Radiology and Nuclear Medicine, Maastricht University Medical Centre+,
+6229 HX Maastricht, The Netherlands
+*Correspondence: ludwig.dubois@maastrichtuniversity.nl (L.J.D.); ala.yaromina@maastrichtuniversity.nl (A.Y.)
+Simple Summary: With around 15 kD molecular weight, VHHs are considered the smallest antigen-
+binding fragments. Based on their unique properties, VHHs have broad application prospects such
+as bio-sensing, molecular imaging, drug delivery, disease treatments, and diagnosis. In this review,
+we discuss VHH applications for cancer treatments and diagnosis. Meanwhile, an overview of
+VHH-based agents in clinical trials is provided.
+Abstract: The discovery of the distinctive structure of heavy chain-only antibodies in species be-
+longing to the Camelidae family has elicited significant interest in their variable antigen binding
+domain (VHH) and gained attention for various applications, such as cancer diagnosis and treatment.
+This article presents an overview of the characteristics, advantages, and disadvantages of VHHs as
+compared to conventional antibodies, and their usage in diverse applications. The singular properties
+of VHHs are explained, and several strategies that can augment their utility are outlined. The preclin-
+ical studies illustrating the diagnostic and therapeutic efficacy of distinct VHHs in diverse formats
+against solid cancers are summarized, and an overview of the clinical trials assessing VHH-based
+agents in oncology is provided. These investigations demonstrate the enormous potential of VHHs
+for medical research and healthcare.
+Keywords: VHH; nanobody; single domain antibody; cancer; therapy; diagnosis
+1. Introduction
+In 1993, a different type of antibody called heavy chain only antibody (HCAb) was dis-
+covered in camelids, which had another structure compared with conventional antibodies
+(Figure 1) [ 1]. Another type of antibody lacking light chains is also found in cartilaginous
+fish [ 2,3]. HCAbs only contain two heavy chains, each one bearing beside two constant
+regions CH2 and CH3 also a variable region. This variable region is also called the vari-
+able domain of heavy chain of heavy-chain-only antibody (VHH), can be recombinantly
+produced and has a molecular weight of only about 15 kD, which is 10% of a conventional
+antibody and half of a single-chain variable fragment (scFv). Therefore, VHHs are also
+called single domain antibodies (sdAb) or nanobodies.
+While conventional antibodies have been used in anti-cancer therapies for many years,
+VHH-based therapies have more recently started to be explored. The unique features of
+VHH, such as high affinity and lower immunogenicity, may provide important differences
+in anti-cancer therapies. To date, preclinical studies and early-stage clinical trials have
+demonstrated the promising potential of VHH for cancer management. In this review, we
+provide an overview of VHH characteristics and the general route of VHH development.
+Cancers 2024 ,16, 371. https://doi.org/10.3390/cancers16020371 https://www.mdpi.com/journal/cancersCancers 2024 ,16, 371 2 of 25
+Furthermore, we summarize the applications of VHH in anti-cancer therapies and provide
+an overview of registered clinical trials testing VHH-based therapeutic and diagnostic
+agents for oncological diseases.
+Cancers  2024 , 16, 371 2 of 25 
+ 
+  
+Figure 1. General structural comparison between conven tional antibodies, he avy chain-only anti-
+bodies, single-chain Fv, and V HH. Abbreviations: Fab—Fragment of Antigen Binding; Fc—Frag-
+ment Crystallizable; CH—Constant domain of the Heavy chain; single-chain Fv; VH—Variable do-
+main of the Heavy chain; CL—Constant domain of  the Light chain; VL—Variable domain of the 
+Light chain; VHH—Variable domain of th e Heavy chain of Heavy-chain antibody.  
+While conventional antibodies have been used in anti-cancer therapies for many 
+years, VHH-based therapies have more recent ly started to be explored. The unique fea-
+tures of VHH, such as high a ﬃnity and lower immunogenicity, may provide important 
+diﬀerences in anti-cancer therapies. To date, preclinical studies and early-stage clinical 
+trials have demonstrated the promising potential of VHH for cancer management. In this 
+review, we provide an overview of VHH characteristics and the general route of VHH 
+development. Furthermore, we summarize the applications of VHH in anti-cancer thera-pies and provide an overview of registered c linical trials testing VHH-based therapeutic 
+and diagnostic agents for oncological diseases. 
+2. General Characteristics of VHH 
+In VHH, there are only three complement arity-determining regions (CDRs) that 
+make contact with the antigen, as compared to six in conventional antibodies (3 in VH and 3 in VL). To compensate for this and to ensure su ﬃcient contact interface, the amino chain 
+in CDR3 (and to a lesser extent CDR1) is longer in VHH than its counterpart in conven-
+tional antibodies [4,5]. As a result, the diversity and speci ﬁcity of CDR3 is improved. Ad-
+ditionally, CDR3 in VHH can make up an expo sed ring structure, which can behave like 
+a ‘ﬁnger’ to stick into the ‘pocket’ of antigen, where a conventional antibody rather inter-
+acts with ﬂat surfaces [6–9]. In addition, an extra cysteine residue in CDR3 can form a 
+disulﬁde bond with an extra cysteine residue in either CDR1 or in the framework region 
+2 (FR2), which increases the stability of th e VHH structure, while decreasing the energy 
+requested for binding with antigens [4,5]. 
+2.1. Biochemical and Biop hysical Characteristics 
+The unique biochemical and biophysical characteristics of VHH are their stability, in 
+addition to high solubility, thermo- and proteolytic-resistance [10]. FR2 contains many 
+hydrophilic amino acid residues, which determi nes the high solubility and dispersibility 
+of VHH in water. VHH has also good conforma tional and thermal stability, which allows 
+VHH to be stable at body temperatur e during a week while still having su ﬃcient binding 
+ability [11]. Additionally, VHH is also stable at extreme pH conditions, ensuring that VHH 
+maintains its bioactivity in the stomach or the intestine [12–15]. The stability of VHH 
+makes it possible to design VHH treatments  following various administration methods, 
+including intravenous injection, inhalation, and oral and intranasal administration. Alto-
+gether, the stable biochemical and biophysical properties nurture the increasing applica-
+tions of VHH. 
+2.2. Low Immunogenicity 
+Relatively li ttle scienti ﬁc evidence is publicly available to make strong claims about 
+the immunogenicity of VHHs. Nevertheless, th e structure of VHH has a high similarity 
+with the human VH structure, in particular , it has a high homology (86–94%) with the 
+Figure 1. General structural comparison between conventional antibodies, heavy chain-only antibod-
+ies, single-chain Fv, and VHH. Abbreviations: Fab—Fragment of Antigen Binding; Fc—Fragment
+Crystallizable; CH—Constant domain of the Heavy chain; single-chain Fv; VH—Variable domain of
+the Heavy chain; CL—Constant domain of the Light chain; VL—Variable domain of the Light chain;
+VHH—Variable domain of the Heavy chain of Heavy-chain antibody.
+2. General Characteristics of VHH
+In VHH, there are only three complementarity-determining regions (CDRs) that make
+contact with the antigen, as compared to six in conventional antibodies (3 in VH and 3 in
+VL). To compensate for this and to ensure sufficient contact interface, the amino chain in
+CDR3 (and to a lesser extent CDR1) is longer in VHH than its counterpart in conventional
+antibodies [ 4,5]. As a result, the diversity and specificity of CDR3 is improved. Additionally,
+CDR3 in VHH can make up an exposed ring structure, which can behave like a ‘finger’ to
+stick into the ‘pocket’ of antigen, where a conventional antibody rather interacts with flat
+surfaces [ 6–9]. In addition, an extra cysteine residue in CDR3 can form a disulfide bond
+with an extra cysteine residue in either CDR1 or in the framework region 2 (FR2), which
+increases the stability of the VHH structure, while decreasing the energy requested for
+binding with antigens [4,5].
+2.1. Biochemical and Biophysical Characteristics
+The unique biochemical and biophysical characteristics of VHH are their stability, in
+addition to high solubility, thermo- and proteolytic-resistance [ 10]. FR2 contains many
+hydrophilic amino acid residues, which determines the high solubility and dispersibility
+of VHH in water. VHH has also good conformational and thermal stability, which allows
+VHH to be stable at body temperature during a week while still having sufficient binding
+ability [ 11]. Additionally, VHH is also stable at extreme pH conditions, ensuring that VHH
+maintains its bioactivity in the stomach or the intestine [ 12–15]. The stability of VHH makes
+it possible to design VHH treatments following various administration methods, including
+intravenous injection, inhalation, and oral and intranasal administration. Altogether, the
+stable biochemical and biophysical properties nurture the increasing applications of VHH.
+2.2. Low Immunogenicity
+Relatively little scientific evidence is publicly available to make strong claims about
+the immunogenicity of VHHs. Nevertheless, the structure of VHH has a high similarity
+with the human VH structure, in particular, it has a high homology (86–94%) with the
+human VH3 family [ 16,17]. The relatively small size of VHH (125 amino acids) implies a
+low number of potentially immunogenic epitopes. The high solubility of VHHs reduces the
+likeliness to form highly immunogenic aggregates. Moreover, unmodified VHHs show fast
+blood clearance, which minimizes capture by antigen-presenting cells. All these features
+favor low immunogenicity. In a phase I clinical study of68Ga-HER2-VHH, 20 patients
+were free of anti-drug antibodies (ADA) after one injection [ 18]. A phase I study of ALX-
+0141, a trimeric format consisting of two identical anti-RANKL humanized VHHs and oneCancers 2024 ,16, 371 3 of 25
+anti-albumin humanized VHH, demonstrated that after a single subcutaneous injection
+in 42 healthy volunteers, no ADAs were found [ 19]. In summary, the immunogenicity
+of VHH in humans seems to be relatively low, which prevents one of the main causes of
+adverse effects, i.e., allergy. Humanization of VHH is possible and can further reduce its
+immunogenicity [20–22].
+2.3. High Tissue Penetration and Fast Blood Clearance
+Theoretically, the passive diffusion rate of a molecule in tissue is inversely proportional
+to its molecular size. Therefore, compared with conventional antibody (150 kD), the mono-
+valent VHH (15 kD) has a fast blood extravasation and a better tissue penetration to reach
+its target. This results in a more homogeneous distribution, for example in solid tumors,
+compared to conventional antibodies [ 23–26]. It has been shown that VHHs can cross the
+blood-brain barrier (BBB) of healthy rats [ 27], providing improved ability for the diagnosis
+and treatment of brain cancer, where in addition the BBB is likely disrupted [28–32]. Due
+to the small molecular weight, VHH is usually cleared quickly through the kidneys [ 33–36].
+As a result, the half-life time of VHH in the human body is mostly less than an hour [ 37,38],
+a feature helpful to prevent toxicity. Although the short half-life of VHH is advantageous
+for diagnostic applications, it may limit its therapeutic efficacy [ 39–41]. Methods such as
+PEGylation, fusion or binding with albumin, multimerization, or fusion with antibody Fc
+can help to extend the half-life [ 42–47]. For example, a bivalent anti-VEGF VHH showed a
+1.8-fold longer half-life in comparison with the monovalent VHH [ 42]. PEGylation resulted
+in a 12-fold longer half-life of an anti-CEA/CD3 bispecific VHH [45].
+3. The Generation of VHH
+There are several steps in the identification of a functional VHH.
+1. The construction of a VHH gene library
+The first step in the generation of antigen-specific VHHs is to construct a VHH-
+encoding cDNA library. Antigen-specific VHHs can be retrieved either from an immune
+VHH library, a naive VHH library, or a synthetic VHH library. The immune library is the
+most frequently used method, exploiting the in vivo affinity maturation of the VHHs. To
+construct an immune library, camelid animals are immunized with a targeted antigen. The
+targeted antigen is injected into camelids multiple times, e.g., 7 times every two weeks [ 48].
+5~7 days after the immunization lymphocytes are then extracted from the peripheral blood,
+which contains B cells producing the matured HCAbs. Lymphocyte RNA is extracted and
+reverse transcribed into cDNA [ 49]. The bulk of cDNA is used as a template for PCR with
+VHH-specific primers [ 50]. Subsequently, the amplified VHH DNA fragments are cloned
+into bacterial vectors to construct the library [51].
+2. The selection of specific VHH
+Phage display is the dominant technique to screen libraries for functional VHHs. Here,
+the VHH immune libraries are cloned in phagemids in fusion with bacteriophage gene III,
+and then VHHs are displayed on the tip of the M13 bacteriophage by infection with helper
+phages providing phage structural components in trans. The target antigen is fixed directly
+or indirectly on a solid carrier, to allow the phage library to interact with the antigen. While
+the phages of interest bind with the fixed antigen, unbounded or unspecific phages are
+removed by washing. Subsequently, a specific acid (e.g., 0.1 M pH 2.2 HCl-Glycine) or
+base (e.g., 0.1 M triethylamine) is used to release the phage from its antigen. Generally,
+after 2–5 selection rounds of panning, the VHHs with good specificity and affinity can be
+selected [52].
+3. The production of VHH
+Due to its simple structure and good water solubility, VHH can be mass-produced
+by using relatively low-cost expression systems such as bacterial or yeast expression sys-
+tems [ 51,53–57]. After verifying the nucleic acid sequence of the selected VHH, an expressionCancers 2024 ,16, 371 4 of 25
+vector is constructed and transferred into bacteria (e.g., E. coli BL21) or yeast (e.g., Pichia
+pastoris GS115 or X33) for the production of VHH. In the bacteria expression process, suc-
+cessfully transformed colonies are picked for culture expansion and induction of VHH pro-
+duction. For example, if a Lac-operon is present in the expression vector, IPTG (Isopropyl- β-
+D-thiogalactoside) is used to induce gene expression when the bacteria reach the exponential
+growth phase. Most often VHHs are transported to the periplasm and extracted from there,
+although also cytoplasmic expression is being pursued [ 58]. In the yeast expression pro-
+cess, successfully transformed yeast colonies are picked for culture expansion following
+induction, with VHHs most often ending up in the conditioned medium due to secretion.
+The VHH protein in the supernatant, cell lysates, or periplasmic extracts can be purified
+by methods such as affinity chromatography, ion exchange chromatography, or molecular
+sieve chromatography. The production of VHHs in mammalian cell lines is rarely reported
+because of the high cost of this expression system.
+4. Applications of VHH
+4.1. Molecular Imaging
+Molecular imaging is one of the important methods in cancer research, which allows
+the noninvasive study of tumors and their microenvironment, as well as tracing or monitor-
+ing cancer progression and therapy effectiveness. Generally, a molecular targeted imaging
+agent contains a targeting moiety and a radioisotope for nuclear imaging or a fluores-
+cent moiety for optical imaging [ 59]. To target cancer cells more precisely, the imaging
+agent is required to have higher specificity and sensitivity, with lower toxicity and fewer
+adverse effects.
+Conventional antibodies have been frequently tested in cancer molecular imaging
+studies [ 60]. However, the application of conventional antibody-based molecular imaging
+is rather limited by its large size and relatively long plasma half-life. This requires the use
+of radionuclides with a long physical half-life, resulting in more radiation exposure and
+additional measures for radiation protection [ 61]. With their smaller molecular weight,
+VHHs have a deeper penetration into the central part of solid tumors to detect target
+expression [ 62,63]. In addition, the short half-life and fast blood clearance limit non-specific
+VHH presence resulting in an improved signal-to-noise ratio and fewer adverse effects.
+Therefore, the VHH-based imaging technique is currently heavily investigated for cancer
+diagnosis, to target proteins or receptors which are overexpressed in tumor cells or the
+tumor microenvironment during cancer progression.
+Positron emission tomography (PET) and single photon emission computed tomogra-
+phy (SPECT) are the two main nuclear imaging techniques for cancer diagnosis. To improve
+the accuracy and specificity and to reduce potential side effects of radiation exposure in
+PET/SPECT imaging, the VHH has been used as an ‘immune carrier’ in the construction of
+radioactive probes. In the very first study, Gainkam et al. investigated the uptake of the
+99mTc labeled anti-EGFR VHH and showed that tumor uptake was correlated with tumor
+burden, concluding that the VHH can be used to track the tumor response to therapy [ 34].
+Table 1 identifies several preclinical studies on VHH-radionuclide conjugates for imaging.
+Clinically, in a phase II study,68Ga labeled anti-HER2 VHH was used to assess HER2
+expression in primary breast cancer and metastatic lesions [ 64]. This clinical study showed
+that the68Ga-HER2-nanobody could be safely administered, with favorable biodistribution
+and high accumulation in HER2-positive primary breast cancer and its metastases. In an-
+other recent phase I study, a68Ga-labeled VHH against the macrophage mannose receptor
+CD206 was tested in a phase I PET safety study to track tumor-associated macrophages in
+the tumor stroma [65]. Other clinical studies are summarized in Table 7.Cancers 2024 ,16, 371 5 of 25
+Table 1. Preclinical studies using VHH-radionuclide conjugates for imaging.
+Target Conjugation Cancer Models Main Findings Reference
+CD889Zr BrCaThe CD8+T cells in solid tumors were
+monitored by89Zr-labeled anti-CD8-VHH,
+which signal positively corresponded
+with ICI treatment response.[66]
+CD818F ALLImaging with the18F-VHH enabled rapid
+visualization of CD8+T cells within 1 h,
+while no visible tumor uptake was
+observed with the control VHH.[67]
+PSMA111In CRPCRenal uptake was efficiently reduced by
+co-injection of gelofusine and lysine.
+Replacing the c-myc-his tag with the
+cysteine reduced renal uptake without
+loss of targeting.[68]
+PD-L199mTcTC-1 (immortalized murine
+lung epithelial cell)VHH accumulation correlated with the
+levels of PD-L1 in tumors, even if PD-L1
+expression was low.[26]
+PD-L199mTc NSCLC[99mTc]Tc-HYNIC-KN035 displayed a
+high PD-L1 specificity both in vitro and
+in vivo, that was positively correlated
+with the expression of PD-L1.[69]
+PD-L168Ga SKCM, BrCa68Ga-NOTA-Nb109 specifically
+accumulated in tumors with a maximum
+uptake of 5 ±0.35% injected dose/g
+at 1 h.[70]
+PD-L168Ga GBM, CRC, NSCLCTumor-to-muscle ratio (TMR) reached its
+peak at 40 min post-injection. The heart
+uptake was almost fully cleared at 35 min
+post-injection.[71]
+MMR99mTcTS/A (murine mammary
+adenocarcinoma), 3LL-R
+(Lewis Lung carcinoma)Anti-MMR VHH targeted pro-angiogenic
+MMR-expressing TAMs with tumor
+uptake correlating with the amount of
+TAMs in the tumor.[72]
+MMR68Ga 3LL-RTMR was determined while no
+treatment-related toxicologically relevant
+changes or acute immunological reactions
+were observed. The tolerated dose was
+established to be >1.68 mg/kg body
+weight. The dosimetry levels for humans
+were calculated by using the data in mice.[73]
+LAG-399mTcTC-1 (immortalized murine
+lung epithelial cell)The tumor uptake of VHHs 3132 and 3206
+targeting LAG-3 was comparable with
+high contrast at 1 h post-injection.[74]
+LAG-399mTcMC38 (murine CRC), MO4
+(murine melanoma), and TC-1The radiolabeled anti-LAG-3 VHH
+detected LAG-3 expressing TILs 1 h post
+tracer injection.[75]
+HER268Ga HER2+cancerA high tumor-to-organ ratio was
+measured at 1 h post-injection with
+increased uptake upon increasing the
+injected dose.[76]
+HER218F OvCaThe tumor-to-organ ratio at 1 h
+post-injection showed excellent specificity.[25]Cancers 2024 ,16, 371 6 of 25
+Table 1. Cont.
+Target Conjugation Cancer Models Main Findings Reference
+HER299mTc BrCaThe tumor had significant radiotracer
+uptake at 0.5 h after injection.[77]
+Glypican-368Ga,18F HCCThe fusion of VHH to an albumin-binding
+domain increased the tumor uptake and
+decreased kidney accumulation of the
+radiotracer (1 h to 6 h).[78]
+EpCAM99mTc EpCAM driven cancerThe uptake value in tumors was increased
+about two times from 0.5 h till 12 h after
+injection, while it could clearly image
+tumor-draining lymph nodes.[79]
+EGFR99mTcEGFR+cancer, A431
+(epidermoid carcinoma)VHH uptake correlated with tumor
+burden and tumor response to EGFR
+inhibitor (erlotinib).[34]
+EGFR99mTc A431In vivo, the study demonstrated that
+OA-cb6 labeled with99mTc showed an
+approximately 2.7-fold tumor-muscle
+ratio at 4 h post-injection.[80]
+CLDN18.289Zr STADThe VHH had good tumor uptake to
+evaluate the expression of CLDN18.2 in
+gastric cancer for patient selection.[81]
+CEACAM599mTc NSCLCThe high ratio of the signal in the tumor
+compared with the background confirmed
+that the VHH can be used as a molecular
+probe for imaging CEACAM5-expressing
+tumors.[82]
+CAIX111In HNSCCThe anti-CAIX VHH targeted hypoxia
+regions in solid tumors.[83]
+* EDB of FN64Cu pan-cancerTargeted the extracellular matrix to image
+tumor progression, metastasis, and
+fibrosis.[84]
+* Alternatively spliced EIIIB domain of fibronectin.
+Besides being conjugated with a radionuclide, VHH can also be conjugated with a
+fluorescent moiety for molecular imaging [ 85]. For example, Debie et al. extensively evalu-
+ated fluorescently labeled anti-HER2 VHH for image-guided surgery and demonstrated a
+significant reduction of residual tumor lesions as compared to conventional surgery [ 86,87].
+Van Brussel et al. developed a CAIX-specific VHH conjugated to IRDye800CW, that could
+visualize tumors compared to the background 2–3 h after the anti-CAIX VHH injection [ 88].
+Furthermore, the VHH can also be used in magnetic resonance imaging (MRI) by conjuga-
+tion with MRI contrast agents, such as gadolinium or paramagnetic nanoparticles [89,90].
+4.2. VHHs in Anti-Cancer Therapies
+The unique features that have been discussed above make VHHs promising replace-
+ments for monoclonal antibodies or other types of antibody fragments. Figure 2 generally
+describes different applications of VHHs in anti-cancer therapies.
+4.2.1. Radioimmunotherapy
+Radioimmunotherapy (RIT) is a “targeted” radionuclide therapy coupling radioiso-
+topes with therapeutic properties to antibodies. These antibodies bind to specific targets
+in the tumors and deliver their cargo, i.e., the radionuclide, at that site, resulting in min-
+imal toxicity to normal tissue [ 91].90Y-ibritumomab tiuxetan (Zevalin®, Bayer) and131I-
+tositumomab (Bexxar®, GSK) are so far the only two RITs approved for clinical use to treatCancers 2024 ,16, 371 7 of 25
+hematological malignancies [ 92,93]. Both are designed based on anti-CD20 monoclonal
+antibodies to treat CD20-positive non-Hodgkin’s lymphoma (NHL). The application of
+RIT for solid tumor treatment is, however, still a challenge. In addition to the large size of
+conventional antibodies, the leakage of tumor blood vessels and the complexity of the ma-
+trix in solid tumors make it difficult for RIT to reach all tumor cells. Therefore, alternative
+carriers of therapeutic radioisotopes, such as VHHs and peptides have been investigated
+for cancer RIT, especially for the treatment of solid tumors.
+Cancers  2024 , 16, 371 6 of 25 
+ 
+ CLDN18.2 89Zr STAD The VHH had good tumor uptake to evaluate the expression of 
+CLDN18.2 in gastric cancer for patient selection. [81] 
+CEA-
+CAM5 99mTc NSCLC The high ratio of the signal in the tumor compared with the back-
+ground confirmed that the VHH can be used as a molecular 
+probe for imaging CEACAM 5-expressing tumors. [82] 
+CAIX 111In HNSCC The anti-CAIX VHH targeted hy poxia regions in so lid tumors. [83] 
+* EDB of 
+FN 64Cu pan-cancer Targeted the extracellular matr ix to image tumor progression, 
+metastasis, and fibrosis. [84] 
+* Alternatively spliced EIIIB domain of ﬁbronectin. 
+Besides being conjugated with a radionuclide, VHH can also be conjugated with a 
+ﬂuorescent moiety for molecular imaging [85]. For example, Debie et al. extensively eval-
+uated ﬂuorescently labeled anti-HER2 VHH for image-guided surgery and demonstrated 
+a signi ﬁcant reduction of residual tumor lesions as compared to conventional surgery 
+[86,87]. Van Brussel et al. developed a CAIX-speci ﬁc VHH conjugated to IRDye800CW, 
+that could visualize tumors compared to th e background 2–3 h after the anti-CAIX VHH 
+injection [88]. Furthermore, the VHH can also  b e  u s e d  in  m ag n e t i c  r e s o n an c e  i m ag in g  
+(MRI) by conjugation with MRI contrast agents, such as gadolinium or paramagnetic na-noparticles [89,90]. 
+4.2. VHHs in Anti-Cancer Therapies 
+The unique features that have been disc ussed above make VHHs promising replace-
+ments for monoclonal antibodies or other type s of antibody fragments. Figure 2 generally 
+describes di ﬀerent applications of VHHs in anti-cancer therapies.  
+ 
+Figure 2. A brief description of VHHs in anti-cancer therapies. TAA—Tumor Associated Antigen, 
+PS—photosensitizer, IC—Immune Checkpoint.  
+4.2.1. Radioimmunotherapy 
+Radioimmunotherapy (RIT) is a “targeted” radionuclide therapy coupling radioiso-
+topes with therapeutic properties to anti bodies. These antibodies bind to speci ﬁc targets 
+in the tumors and deliver their cargo, i.e., the radionuclide, at that site, resulting in mini-
+mal toxicity to normal tissue [91]. 90Y-ibritumomab tiuxetan (Zevalin®, Bayer) and 131I-tos-
+itumomab (Bexxar®, GSK) are so far the only two RITs approved for clinical use to treat 
+hematological malignancies [92,93]. Both ar e designed based on anti-CD20 monoclonal 
+antibodies to treat CD20-positive non-Hodgkin’s lymphoma (NHL). The application of 
+RIT for solid tumor treatment is, however, still a challenge. In addition to the large size of 
+Figure 2. A brief description of VHHs in anti-cancer therapies. TAA—Tumor Associated Antigen,
+PS—photosensitizer, IC—Immune Checkpoint.
+Table 2 summarizes the preclinical studies on the application of VHH in RIT of solid
+tumors. For example, D’Huyvetter et al. treated mice bearing HER2-positive SKOV3 ovar-
+ian adenocarcinoma xenografts with the177Lu-labeled anti-HER2 VHH and demonstrated
+that the tumor growth was almost completely inhibited. Moreover, the event-free survival
+was significantly longer for the treated group compared to the control group that received
+vehicle treatment, while no evidence of renal inflammation or necrosis was observed [ 94].
+Similarly, anti-FAP VHHs that are conjugated to131I or225Ac were able to limit tumor
+growth and enhance the survival of mice bearing FAP-expressing tumors [ 95]. To target the
+TME, Xu et al. generated the anti-FAP α(fibroblast activation protein- α) VHH-Fc fusion
+labeled with177Lu and showed therapeutic efficacy in HT1080 fibrosarcoma xenografts
+in mice [ 96]. Anti-MMR VHH labeled with177Lu was designed to target the stroma of
+solid tumors. The177Lu-labeled anti-MMR VHH significantly delayed tumor growth,
+which outcompeted the effects of currently used therapies, such as immune checkpoint in-
+hibitors, anti-angiogenic therapy (anti-VEGFR2 mAbs), and chemotherapies (doxorubicin,
+paclitaxel) [97].
+Table 2. VHH application in radioimmunotherapy.
+Targets Conjugates Cancer Models References
+HER2131I (β/γ) HER2+cancer [98,99]
+125I,131I-SGMIB ( β/γ) BrCa [100]
+177Lu (β) OvCa [94]
+211At (α) HER2+cancer [101,102]
+225Ac (α) SKOV3, BrCa [103]
+211At (α) BrCa [102]
+FAPα*89Zr (γ),177Lu(β) FAPα+cancer [96]
+131I-SGMIB ( β/γ) FAPα+cancer [95]
+225Ac (α)
+MMR177Lu (β),111In(γ) TS/A [97]
+* The anti-FAP αVHH is fused with the Fc fragment.Cancers 2024 ,16, 371 8 of 25
+4.2.2. Photodynamic Therapy
+VHH can be conjugated to a photosensitizer (PS), which is a light-activatable com-
+pound that generates cytotoxic reactive oxygen species upon activation with a certain
+light wavelength [ 104]. These VHH-PS conjugates can also be used as tracers or probes
+to monitor tumor progression using optical imaging after photodynamic therapy (PDT).
+IRDye700DX, a phthalocyanine dye, is one of the most promising photosensitizers, whose
+chemical structure is similar to hematoporphyrin. Its maximum absorption wavelength is
+in the infrared wavelength region and therefore easier to be transmitted through human
+tissue. Additionally, IRDye has low absorption of light with a wavelength of 400–600 nm,
+which reduces the skin photosensitivity reaction. Therefore, many studies have used
+IRDye700DX as PS to couple with VHH for PDT. For example, Renard et al. generated
+anti-EGFR VHH conjugated with111In-DPTA (diethylenetriaminepentaacetic acid) and
+IRDye700DX PS in a site-specific way, which homed to A431 xenografts in vivo and re-
+sulted in light-induced toxicity via cellular internalization [ 105]. Deken et al. investigated
+anti-HER2 VHH conjugated with IRDye700DX PS that induced significant regression of
+trastuzumab-resistant HER2-expressing breast tumors after a single treatment session with
+selective cytotoxicity [ 106]. Table 3 summarizes cancer targets investigated using VHH-PS
+conjugates in preclinical studies.
+Table 3. Preclinical studies investigating VHH-PS conjugates.
+Targets Conjugates Cancer Models Main Findings References
+HER2 IRDye700DXSK-BR-3 (HER2+, sensitive),
+HCC1954, JIMT1, HCC1419
+(HER2+, resistant), MCF7
+(HER2 low), MDA-MB-231
+(HER2 −)Anti-HER2 VHH-PS could potently and
+selectively induce cell death in
+HER2-positive cells regardless of its
+sensitivity to trastuzumab.[106]
+EGFR IRDye700DX A431The PS was conjugated with111In-VHH in
+a site-specific way, which resulted in
+light-induced toxicity via cellular
+internalization.[105]
+EGFR IRDye700DXCell lines with different EGFR
+expressionThe anti-EGFR VHH-PS led to approx. 90%
+tumor necrosis and almost no toxicity in
+healthy tissue 24 h after PDT.[107,108]
+EGFR IRDye700DX A431, SCC-U8VHH-PS induced the release of DAMPs
+(HSP70, ATP) and the pro-inflammatory
+cytokines of moDCs by incubating it with a
+conditioned medium, which stimulates the
+immune system.[109]
+MET IRDye700DX MKN45The anti-MET VHH-PS had a nanomolar
+affinity and led to cell death at nanomolar
+concentration with illumination.[110]
+US28 IRDye700DX U251-iUS28The anti-US28 VHH-PS was the first
+example using GPCR as a target for
+VHH-directed PDT, which selectively
+killed US28-expressing glioblastoma cells.[7,32]
+EGFR/VEGFR2 IRDye700DX OSCCThe dual-targeting VHH-PS showed
+improved efficacy in co-culture of
+endothelial and cancer cells.[111]
+4.2.3. VHH as Immune Checkpoint Inhibitor
+Several conventional antibodies have been used as immune checkpoint inhibitors (ICIs)
+for anti-cancer treatments in the past years. However, due to the complex structure of these
+antibodies and the tumor heterogeneity, antibody-based ICIs face many challenges such as
+insufficient tumor penetration and immune-related adverse effects [ 112], highlighting the
+need for optimization of antibody-based ICIs.
+Due to the smaller molecular weight, VHHs have a higher penetration potential in
+solid tumors. Petit et al. showed that T cell-mediated targeted delivery of an anti-PD-L1Cancers 2024 ,16, 371 9 of 25
+VHH outperformed an anti-PD-L1 conventional antibody in inhibiting tumor growth,
+related to its higher tumor penetration in MC38 tumor-bearing mice [ 113]. Table 4 sum-
+marizes the studies evaluating VHH-based ICIs. Although the VHHs lack ADCC and
+CDC due to the absence of Fc fragment, the VHH still has anti-cancer efficacy by inhibiting
+the bioactivity of immune checkpoints to attenuate immune suppression in tumors [ 114].
+Therefore, fusing VHH with an Fc fragment can also compensate the ADCC and CDC in
+anti-cancer therapies [ 115]. Ma et al. demonstrated that a tetravalent anti-PD-L1 VHH-Fc
+fusion had a higher inhibitory effect on tumor growth compared to an equimolar dose of an
+anti-PD-L1 monoclonal antibody (Tecentriq analog) in MC38 xenograft-bearing mice [ 116].
+Clinically, envafolimab (KN035), anti-PD-L1 VHH-Fc fusion formulated for subcutaneous
+injection, has demonstrated a favorable safety and pharmacokinetic profile, with promising
+antitumor activity in patients with advanced solid tumors in Phase I–II trials [117–119].
+Table 4. Preclinical studies using VHH-based ICIs.
+Targets Cancer Models Main Findings References
+PD-L1+CD16a+IL15 PD-L1+cancerThe fusion promoted cell growth in vitro ,
+while it attenuated tumor growth in vivo .[120]
+PD-L1 PaCaThe VHH-CCL21 fusion could target
+PD-L1 positive TME and promote
+recruiting effector cells.[121]
+PD-L1 MC38VHH outperformed conventional
+antibodies in inhibiting tumor growth
+due to VHH’s higher tumor penetration
+in the MC38 tumor.[113]
+PD-L1 PD-L1+cancerMonovalent, bivalent, and trivalent
+agents enhanced TCR signaling in PD-L1
+positive cancer cells, to result in CD8+T
+cell activation and cytokine production to
+attenuate cancer progression.[122–124]
+PD-L1+TIGIT MC38The multivalent bispecific VHH could
+synergistically enhance T cell activity by
+inhibiting tumor growth in vitro.[116]
+PD-1 A549, BxPC3The VHH could block the PD-1/PD-L1
+interaction.[125]
+PD-1 MC38Long-term systemic expression of VHH
+by AAV vector provided anti-tumor
+activity without toxicity.[126]
+CTLA-4 MelanomaThe anti-CTLA4 VHH delayed
+melanoma growth and prolonged the
+survival time in mice.[127]
+CTLA-4 MC38, H22The half-life-extended version of VHH
+exhibited therapeutic efficacy in a Fc
+independent manner.[114]
+4-1BB+PD-L1CT-26-huPD-L1,
+MC-38-huPD-L1The bispecific VHH showed anti-tumor
+efficacy with negligible hepatotoxicity.[55]
+4.2.4. Targeting Tumor-Specific Antigens
+Tumor-specific antigens (TSAs) are important targets for cancer treatments and di-
+agnosis. However, TSAs are not exclusively expressed in cancer cells. Normal cells may
+express TSAs at low levels, while cancer cells have high expression of TSAs during tumor
+proliferation. As a consequence, molecules targeting TSAs should have high specificity and
+affinity, which can be achieved with VHH.Cancers 2024 ,16, 371 10 of 25
+VHHs have been designed to bind tumor-specific targets TSAs such as HER2, EGFR,
+and VEGFR, over the past years and they are reported to have anti-tumor efficacy. Table 5
+summarizes the preclinical studies evaluating the therapeutic efficacy of various anti-TSA
+VHHs. As the small molecular weight of VHH allows better intratumor penetration, it
+leads to high VHH clearance resulting in a shorter plasma half-life during the treatment.
+In vivo studies showed the half-life of VHH binding with its target within 1–2 h [128,129].
+In addition, VHHs are not capable of promoting ADCC or CDC effects during the treatment,
+which should also be considered. These two limitations can be overcome by modification
+of the VHHs. For example, Sadeghi et al. generated an anti-VEGF bivalent VHH that
+showed a 1.8-fold longer half-life compared to its monovalent form [ 42]. An et al. coupled
+ABD035 to anti-GPC3 VHH labeled with68Ga, which reached a peak tumor uptake at 6 h
+post-injection combined with a reduced kidney accumulation at 1 h post-injection [ 78].
+Another method is coupling VHHs with an Fc fragment to obtain the VHH-conjugates with
+the ability to promote ADCC or CDC [130].
+Table 5. Preclinical studies evaluating the therapeutic efficacy of anti-TAAs VHHs in solid cancer.
+Target Cancer Models Main Findings Reference
+CapG MDA-MB-231Anti-CapG VHH prevented the formation of
+lung metastasis.[131]
+CD38 MelanomaAnti-CD38 VHH Pseudomonas exotoxin A
+(PE38) showed highly selective cytotoxicity.
+The effectiveness could be increased by
+retinoid acid.[132]
+CD47 MelanomaAnti-CTLA4 VHH synergized with other
+immune therapies when CD47 in TME was
+near-completely blocked.[133]
+CEACAM5/CD3 LS174T, SKOV3The in vivo half-life of the bispecific VHH
+was increased 12-fold via the PEGylation
+strategy, accompanied by more potent tumor
+inhibition.[45]
+CXCR7 HNSCCThe anti-CXCR7 VHH inhibited tumor
+growth by reducing the secretion of CXCL1
+in vitro and inhibiting angiogenesis in vivo.[134]
+DLL4 MKN, HEK293The DLL4 could bind on the surface of MKN
+cells, and gastric carcinoma tissue and inhibit
+the maturation of capillary-like structures in
+HUVECs.[51]
+DR5 Hela, Colo205Multivalent anti-DR5 VHHs had higher
+apoptotic capacity than the monovalent form
+that could mimic the activity of the natural
+TRAIL ligand.[135]
+DPYSL2, TUFM,
+Vimentin, NAP1-L1GBMThe anti-TUFM VHH showed a cytotoxic
+effect on GBM CSCs, while other VHHs were
+shown to target mature GBM cells.[136]
+EGFR LUADVHH was linked with the cell-penetrating
+peptide nonaarginine. The VHH inhibited
+intracellular signaling by binding EGFR
+resulting in reduced cell migration.[137]
+EGFR A549, DU145, MCF-7The anti-EGFR extracellular domain III VHH
+showed an anti-tumor effect both in vitro
+and in vivo.[138]Cancers 2024 ,16, 371 11 of 25
+Table 5. Cont.
+Target Cancer Models Main Findings Reference
+EGFR SW480VHH could inhibit cancer cell viability by
+altering proteins involved in the
+DNA-damage checkpoint process.[139]
+METHepG2, SK-HEP-1, HCC827,
+NIH3T3Anti-MET VHH pool that acts against the
+whole ectodomain of MET could overcome
+MET targeted treatment resistance by
+promoting MET degradation and blocking
+the kinase activity of MET. The anti-MET
+VHH treatment could suppress cancer
+proliferation, viability, and colony formation
+in vitro and tumorigenesis in vivo.[140]
+p38δ HelaThe VHH inhibited the target kinase activity
+and tumor growth.[141]
+Survivin HepG2The VHH targeted survivin and blocked the
+signaling pathway resulting in apoptosis.[142]
+Tie1 U87MGTargeting Tie1 with specific VHH triggered
+Tie1-dependent inhibition of RTK
+phosphorylation and angiogenesis in
+endothelial cells and suppressed GBM
+viability and migration.[143]
+4.2.5. VHH-Drug Conjugates (VHH-DC)
+Antibody-drug conjugates (ADCs) are immune-conjugates formed with a monoclonal
+antibody as a ‘delivery carrier’ and a cytotoxic/immune-promoting drug as ‘cargo’, which
+are conjugated via a chemical linker [ 144]. Highly specific targeting antibodies are used
+to overcome the toxicity and adverse effects of traditional chemotherapeutic drugs. In
+addition, the antibody may also have additive or synergistic anti-cancer effects with the
+drug, when both components of ADC exhibit anti-tumor effects [ 145]. Nowadays, third-
+generation ADCs have been developed and investigated. With novel techniques for ADC
+generation, ADCs with high targeting and therapeutic efficacy, relatively low immunogenic-
+ity, consistent drug-to-antibody ratio (DAR) and low toxicity are becoming available [ 146].
+As more ADCs have been entering clinical trials, more challenges for ADC development
+have been raised. During the synthesis of ADC, the chemical modification leads to the
+instability of monoclonal antibodies. In addition, the high molecular weight makes it
+difficult for ADC to enter the inner hypoxic part of solid tumors, which limits the appli-
+cation of ADCs in cancer treatments. Using VHHs as a ‘carrier’ of cytotoxic drugs is a
+novel alternative to overcome the disadvantages of conventional monoclonal antibodies.
+Table 6 summarizes recent VHH-drug conjugates studies. Indeed, Wu et al. demonstrated
+that the anti-5T4 VHH-SN38 (irinotecan analog) conjugate was detected at 85 µm from
+the periphery of the patient-derived organoids (PDOs), while the anti-5T4 conventional
+antibody-SN38 conjugate mainly located around the periphery of PDOs [ 147]. Drug re-
+sistance and downregulation of tumor antigens are challenging for ADCs as well [ 148].
+Espelin et al. used anti-HER2 VHH conjugated with doxorubicin (MM-302) in combina-
+tion with trastuzumab to demonstrate synergistic anti-tumor activity both in vitro and
+in vivo , supporting its translation into clinical trials [ 149]. Therefore, other strategies are
+being investigated including utilization of novel tumor antigens, antibody formats, linkers,
+payloads, etc.Cancers 2024 ,16, 371 12 of 25
+Table 6. Studies evaluating the therapeutic potential of VHH-drug conjugates.
+Target Cargo Cancer Models Main Findings Reference
+EGFR Mal-Pt A375, A431The VHH-DC could be specifically internalized
+into EGFR-positive cancer cells, resulting in
+higher therapeutic effects and lower side effects
+compared with cisplatin alone.[89]
+PSMA Doxorubicin PC3-PIP , PC3-flu *An in vivo study showed that a 42-fold lower
+amount of VHH-DC could result in similar tumor
+growth inhibition compared with commercial
+doxorubicin treatment.[150]
+HER2 Doxorubicin BT474-M3, NCI-N87VHH-DC could simultaneously bind with the
+HER2 target on cancer cells with trastuzumab,
+which results in synergistic antitumor activity.[149]
+HER2 Auristatin F BT474, MDA-MB-231VHH-DC-albumin fusion overcame the rapid
+renal clearance, which resulted in long-lasting
+tumor remission.[47]
+VEGFR2 Diphtheria Toxin PC3Coupling toxin with immune “carrier” resulted
+in cancer cell growth inhibition, while toxin alone
+was ineffective.[151]
+CD147 DoxorubicinHela, 4T1, U87,
+293T(low), SMMC-7721In vitro studies showed the VHH-DC could
+inhibit tumor cell proliferation and induce cell
+apoptosis. The VHH-DC had a synergistic effect
+in inhibiting the growth of tumors in vivo, as
+compared with the treatment of doxorubicin or
+VHH monotherapy.[152]
+5T4 SN38 BxPC-3, Huh-7N501-SN38 showed deeper tumor penetration,
+higher tumor uptake, and faster accumulation at
+the tumor site than conventional ADC and
+exhibited effective antitumor activity both
+in vitro and in vivo.[147]
+* PC3-PIP and PC3-flu are PSMA positive or PSMA negative PC3, respectively.
+4.2.6. VHH-Based CAR-T
+The chimeric antigen receptor (CAR) is an engineered synthetic receptor that can
+redirect lymphocytes to recognize and eliminate specific cells, which express the target anti-
+gens [ 153]. T cells are most commonly used to carry CARs, but CARs can also be applied to
+other types of immune cells, such as NK cells, dendritic cells, macrophages, etc. [154,155].
+Hitherto, six CAR-T therapies have been approved by the FDA to treat relapsed/refractory
+multiple myeloma (RRMM), diffuse large B-cell lymphoma (DLBCL), mantle cell lym-
+phoma (MCL), follicular lymphoma (FL) and Precursor B-cell lymphoblastic leukemia, of
+which anti-CD19 CAR-T products’ antigen recognition domain is based on the same scFv
+(Kymriah®, Yescarta®, Tecartus®, and Breyanzi®), whereas the antigen recognition domain
+of B-cell maturation antigen (BCMA, Carvykti®, Legend Biotech and Janssen Biotech) is
+based on VHH [ 156]. The peptide linker of scFv-based CAR-T, however, showed immuno-
+genicity as neutralizing antibodies were generated against the linker [ 157]. Additionally, T
+cell exhaustion is another factor that limits the application of CAR-T, which occurs indepen-
+dently of the binding with the target antigen but is caused by the unstable structure of scFv.
+The exposed hydrophobic residues in the scFv variable domain and poor VH or VL folding
+stability can result in CAR aggregation. The CAR aggregation on the surface of CAR-T
+can lead in turn to the activation of effector cells and cytotoxic signaling cascade, which
+contribute to T cell exhaustion [ 158,159]. Xie et al. generated VHH-based CAR-T cells,
+which were designed to target PD-L1, CD47, or EIIIB+ fibronectin splice variant to target
+the TME, and each VHH-based CAR-T could reduce solid tumor growth and improve
+survival in immunocompetent tumor-bearing mice [ 160,161]. Rajabzadeh et al. designed anCancers 2024 ,16, 371 13 of 25
+anti-MUC1 CAR-T which could increase secretion of Th1 cytokines and cytotoxic activity
+that could inhibit cancer cell viability [ 162]. In summary, VHH-based CAR-T is promising
+as an approach to treating solid tumors [163].
+4.3. Other Applications of VHHs
+VHHs can also be applied in other novel anti-cancer treatments. VHH, which binds
+and neutralizes cytokines or growth factors such as TNF αor VEGF, respectively, can
+attenuate tumor growth by inhibiting metastasis or angiogenesis [ 13,164–166]. Alterna-
+tively, VHHs conjugated with proteins (e.g., cucurmosin, pseudomonas exotoxin), cy-
+tokines (e.g., IFN γ, IL-2, TNF α) or peptides show promising potential of inhibiting tumor
+growth [ 167–171]. Yin et al. investigated an anti-PD-L1 VHH and used it for modified
+liposomes co-delivery of simevastatin/gefitinib that could remodel the TME of EGFR-
+T790M-mutated NSCLC and overcome the drug resistance [ 172]. Furthermore, VHHs can
+be used to construct cancer vaccinations. For example, conjugating anti-CD11b VHH with
+H-2Db-restricted immunodominant E7 epitope (E749-57), which exists in high-risk human
+papillomavirus-associated cancers, induced stronger CD8+T-cell responses against HPV
+positive tumors than E749-57 alone [ 173]. The tumor vaccine that contains anti-CD47 VHH
+could induce suppression of tumor progression and improve the long-term survival of
+tumor-bearing mice by remodeling the TME [ 174]. Altogether, VHHs have great poten-
+tial to develop novel anti-cancer therapies with higher efficacy and lower toxicity, which
+warrants further investigations.
+5. An Overview of Ongoing Clinical Trials of VHHs in Cancer Treatments
+With the failure of many promising anti-cancer therapies in clinical trials and un-
+derstanding the progression of cancer, more strict safety and efficacy requirements have
+been raised for the investigation of cancer treatments. Since the discovery of VHHs in
+1993, VHH have become a promising agent for the diagnosis and treatment of cancer, viral
+infection [41,175,176], and other diseases due to its unique structure and physicochemical
+properties. The CAR-T, in which anti-BCMA VHHs serve as antigen receptors on T cells
+(Carvykti®, Legend Biotech, and Janssen Biotech), has been approved by the FDA for the
+treatment of advanced multiple myeloma in 2022. Meanwhile, many clinical trials evaluat-
+ing the diagnostic and therapeutic potential of VHH-based agents in solid and hematological
+malignancies are ongoing. Table 7 summarizes some of these clinical trials. Data was collected
+on ClinicalTrial.gov , on 24 August 2023 (https://www.clinicaltrials.gov/ct2/home, accessed
+on 24 August 2023, Keywords: VHH, nanobody , sdAb, cancer, tumor, malignancy).Cancers 2024 ,16, 371 14 of 25
+Table 7. Overview of registered clinical trials of VHHs-based agents in the treatment of solid cancer.
+Agent Target Cancer Type Study Identifier Phase Status Primary Purpose Related Publication
+99mTc-NM-02 HER2 Breast cancer NCT04040686 Early Phase I Recruiting Diagnostic [177]
+99mTc-NM-01 PD-L1 Non-Small Cell Lung Cancer NCT02978196 Early Phase I Recruiting Diagnostic [178,179]
+99mTc-MIRC208 HER2 HER2 positive cancer NCT04591652 Not Applicable Recruiting Diagnostic [180]
+89Zr-KN035 PD-L1 PD-L1 positive solid tumor NCT04977128 Not Applicable Recruiting Diagnostic [181]
+68Ga-THP-APN09 PD-L1Lung cancer
+MelanomaNCT05156515 Not Applicable Recruiting Diagnostic [181]
+68Ga-NOTA-Anti-MMR-VHH2 MMRBreast cancer
+Head and Neck cancer
+Melanoma (skin)NCT04168528 Phase I/IIa Recruiting Diagnostic [73,182,183]
+68Ga-NOTA-Anti-MMR-VHH2 MMRBreast cancer
+Pancreatic cancer
+Salivary gland cancer
+Gastric cancer
+Endometrial cancer
+Uterine cancer
+Non-Small Cell Lung Cancer
+Biliary tract cancer
+Cholangiocarcinoma
+Colorectal cancer
+Urothelial carcinoma
+Prostate cancerNCT03924466 Phase II Recruiting Diagnostic [73,182,183]
+68Ga-NOTA-Anti-HER2 VHH1 HER2 Breast cancer NCT03924466 Phase II Recruiting Diagnostic [18,64,184]
+68Ga-NOTA-Anti-HER2 VHH1 HER2 Breast cancer NCT03331601 Phase II Recruiting Diagnostic [18,64,184]
+99mTc-NM01 PD-L1 Non-Small Cell Lung Cancer NCT04992715 Phase II Recruiting Diagnostic [178,179]
+131I-SGMIB Anti-HER2 VHH1 HER2 Breast cancer NCT02683083 Phase I Completed Diagnostic [185]
+68Ga-ACN376 CLDN18.2 Solid tumor NCT05436093 Not Applicable Recruiting Screening
+αPD1-MSLN-
+CAR-T CellsPD-1 Solid tumor NCT05373147 Early Phase I Recruiting Treatment [186]
+αPD1-MSLN-
+CAR-T CellsPD-1Colorectal cancer
+Ovarian cancerNCT04503980 Early Phase I Recruiting Treatment [186]
+αPD1-MSLN-
+CAR-T CellsPD-1Non-small-cell Lung Cancer
+MesotheliomaNCT04489862 Early Phase I Recruiting Treatment [186]
+αPD1-MSLN-
+CAR-T CellsPD-1 Colorectal cancer NCT05089266 Phase I Not yet recruiting Treatment [186]Cancers 2024 ,16, 371 15 of 25
+Table 7. Cont.
+Agent Target Cancer Type Study Identifier Phase Status Primary Purpose Related Publication
+KN046+Axitinib PD-L1/CTLA4 Bispecific Advanced Non-small Cell Lung cancer NCT05420220 Phase II Not yet recruiting Treatment [187]
+KN046 PD-L1/CTLA4 Bispecific Thymic carcinoma NCT04469725 Phase II Recruiting Treatment [188]
+KN044 CTLA4 Advanced solid tumor NCT04126590 Phase I Recruiting Treatment [189]
+KN035 PD-L1 Solid tumor NCT03101488 Phase I Completed Treatment [190,191]
+KN035 PD-L1 Advanced or metastatic solid tumor NCT03248843 Phase I Completed Treatment [190,191]
+JS014
+(fusion with IL-21)
++ PembrolizumabHuman Serum AlbuminMalignant neoplasm Experimental solid tumor
+Adult lymphomaNCT05296772 Phase IActive, not
+recruitingTreatment
+Gavocabtagene
+autoleucel
+(gavo-cel; TC-210)Mesothelin Mesothelioma NCT03907852 Phase I Phase II Recruiting Treatment [192]
+Envofolimab
+(KN035)+Gemcitabine and
+CisplatinPD-L1 Biliary tract cancer NCT04910386 Phase II Not yet recruiting Treatment [193]
+99mTc-NM-02,
+188Re-NM-02HER2 Breast cancer NCT04674722Early
+Phase IRecruiting Treatment [177,194]
+Envafolimab (+Ipilimumab) PD-L1 Pleomorphic sarcoma Myxofibrosarcoma NCT04480502 Phase II Recruiting Treatment [195]
+68Ga-NODAGA-SNA006 CD8 α Solid tumors NCT05126927Early
+Phase IRecruiting Diagnostic [196]
+DR30303-IgG1Fc CLDN18.2 Malignant neoplasm of the digestive system NCT05639153 Phase I Recruiting Treatment [197]
+[99mTc]-NM-01 PD-L1Non-small cell lung cancer, malignant
+melanomaNCT04436406 Not Applicable Recruiting Diagnostic
+68Ga-PD-L2 PD-L2 Colorectal cancer, Lung cancer NCT05803746 Not Applicable Recruiting DiagnosticCancers 2024 ,16, 371 16 of 25
+6. Discussion and Future Directions
+Since its discovery in 1993, VHHs have become one of the most promising approaches
+for the treatment and diagnosis of various diseases, including cancer, autoimmune diseases,
+respiratory diseases, and blood systemic diseases. The first VHH-based drug Caplacizumab
+was approved in 2018 for the treatment of thrombotic thrombocytopenic purpura and
+thrombosis. In 2022, the first VHH-based CAR-T treatment Carvykti has been approved by
+the FDA to treat multiple myeloma. Up until now, VHH alone as a therapeutical agent has
+not been approved for anti-cancer treatments.
+As the smallest known antibody fragment that can recognize antigen, the VHHs retain
+high affinity and specificity, whilst having unique chemical and physical features compared
+to conventional antibodies. The unique molecular structure of VHHs makes it possible
+to bind some epitopes that conventional antibodies are not able to access, such as the
+active structure in the middle of the protein cleft. These unique features may behave like
+a ‘double-edged sword’ in the therapeutic application of VHHs. For example, the single
+domain character of VHH makes almost every amino acid residue crucial for antigen-
+antibody interaction increasing the difficulty of VHH humanization. Additionally, fast
+blood clearance can reduce the toxicity of the treatment, but it may compromise treatment
+efficacy as well. In addition, although the lack of Fc fragments minimize immunogenicity,
+the absence of ADCC or CDC limits the application of VHHs in anti-cancer treatments,
+which are mainly promoted by Fc fragments. Therefore, related technologies should be
+applied in the VHHs development process to overcome these drawbacks of VHHs. In
+addition, in preclinical studies evaluating the efficacy of VHHs, the cancer models should
+be chosen carefully, and the data should be interpreted with caution, since in some studies
+VHH imaging agents recognizing human antigen were tested in human tumor xenografts in
+mice, which cannot provide information on the binding of VHH in normal tissues of human
+origin. Similarly, VHH with immune-modulating properties targeting human antigens
+should be investigated in humanized mouse models.
+7. Conclusions
+According to the database of clinical trials investigating VHH-based anti-cancer agents,
+most VHHs in ongoing clinical trials are still in their early stages. Most of these anti-cancer
+targets cover PD-1, PD-L1, CTLA4, HER2, EGFR, and BCMA. The VHH studies gathered
+in this review indicate that many promising novel VHH-based anti-cancer treatments and
+diagnostic tools have been investigated. With the progressive understanding of cancer
+biology, more potential anti-cancer targets have been identified. Together with straightfor-
+ward selection methods, efficient and cost-effective expression, and purification techno-
+logical processes, VHHs represent a promising opportunity in anti-cancer treatment and
+cancer diagnosis.
+Author Contributions: Writing, Y.C.; review and editing, N.D., P .L., L.J.D. and A.Y. All authors have
+read and agreed to the published version of the manuscript.
+Funding: Authors acknowledge financial support from the China Scholarship Council (CSC, grant
+number: 202006100044 for Y.C.).
+Conflicts of Interest: Lambin reports, within and outside the submitted work, grants/sponsored
+research agreements from Varian medical, Oncoradiomics, ptTheragnostic/DNAmito, Health Innova-
+tion Ventures. He received an advisor/presenter fee and/or reimbursement of travel costs/external
+grant writing fee and/or in-kind manpower contribution from Oncoradiomics, BHV , Merck, Varian,
+Elekta, ptTheragnostic and Convert pharmaceuticals. Lambin has shares in the company Oncora-
+diomics SA, Convert Pharmaceuticals SA and The Medical Cloud Company SPRL and is co-inventor
+of two issued patents with royalties on radiomics (PCT/NL2014/050248, PCT/NL2014/050728)
+licensed to Oncoradiomics and one issue patent on mtDNA (PCT/EP2014/059089) licensed to ptTher-
+agnostic/DNAmito, three non-patented invention (softwares) licensed to ptTheragnos-tic/DNAmito,
+Oncoradiomics and Health Innovation Ventures and three non-issues, non-licensed patents on Deep
+Learning-Radiomics and LSRT (N2024482, N2024889, N2024889). Dubois reports, outside the sub-Cancers 2024 ,16, 371 17 of 25
+mitted work, shares in the company Convert Pharmaceuticals SA and is co-inventor of a non-issue
+patent on LSRT (N2024889). Devoogdt has several patents and patent applications related to VHH
+products and technologies. He is co-founder and consultant of the companies ABSCINT and PRE-
+CIRIX that utilize VHHs in their technology program. His research group has received research
+support from the companies Boehringer Ingelheim, Complix, 121BIO, Agenus, Telix Pharma, Roche,
+Confo Therapeutics, Exevir and Esobiotec.
+References
+1. Hamers-Casterman, C.; Atarhouch, T.; Muyldermans, S.; Robinson, G.; Hamers, C.; Songa, E.B.; Bendahman, N.; Hamers, R.
+Naturally occurring antibodies devoid of light chains. Nature 1993 ,363, 446–448. [CrossRef] [PubMed]
+2. Streltsov, V .A.; Carmichael, J.A.; Nuttall, S.D. Structure of a shark IgNAR antibody variable domain and modeling of an
+early-developmental isotype. Protein Sci. 2005 ,14, 2901–2909. [CrossRef]
+3. Greenberg, A.S.; Avila, D.; Hughes, M.; Hughes, A.; McKinney, E.C.; Flajnik, M.F. A new antigen receptor gene family that
+undergoes rearrangement and extensive somatic diversification in sharks. Nature 1995 ,374, 168–173. [CrossRef]
+4. Vu, K.B.; Ghahroudi, M.A.; Wyns, L.; Muyldermans, S. Comparison of llama VH sequences from conventional and heavy chain
+antibodies. Mol. Immunol. 1997 ,34, 1121–1131. [CrossRef] [PubMed]
+5. Desmyter, A.; Transue, T.R.; Ghahroudi, M.A.; Thi, M.H.; Poortmans, F.; Hamers, R.; Muyldermans, S.; Wyns, L. Crystal structure
+of a camel single-domain VH antibody fragment in complex with lysozyme. Nat. Struct. Biol. 1996 ,3, 803–811. [CrossRef]
+[PubMed]
+6. De Groof, T.W.M.; Bobkov, V .; Heukers, R.; Smit, M.J. Nanobodies: New avenues for imaging, stabilizing and modulating GPCRs.
+Mol. Cell. Endocrinol. 2019 ,484, 15–24. [CrossRef] [PubMed]
+7. De Groof, T.W.M.; Mashayekhi, V .; Fan, T.S.; Bergkamp, N.D.; Sastre Torano, J.; van Senten, J.R.; Heukers, R.; Smit, M.J.; Oliveira, S.
+Nanobody-Targeted Photodynamic Therapy Selectively Kills Viral GPCR-Expressing Glioblastoma Cells. Mol. Pharm. 2019 ,16,
+3145–3156. [CrossRef] [PubMed]
+8. Rasmussen, S.G.; Choi, H.J.; Fung, J.J.; Pardon, E.; Casarosa, P .; Chae, P .S.; Devree, B.T.; Rosenbaum, D.M.; Thian, F.S.;
+Kobilka, T.S.; et al. Structure of a nanobody-stabilized active state of the beta(2) adrenoceptor. Nature 2011 ,469, 175–180. [CrossRef]
+9. Rasmussen, B.; Fletcher, I.R.; Brocks, J.J.; Kilburn, M.R. Reassessing the first appearance of eukaryotes and cyanobacteria. Nature
+2008 ,455, 1101–1104. [CrossRef]
+10. Salvador, J.P .; Vilaplana, L.; Marco, M.P . Nanobody: Outstanding features for diagnostic and therapeutic applications.
+Anal. Bioanal. Chem. 2019 ,411, 1703–1713. [CrossRef]
+11. Kunz, P .; Zinner, K.; Mucke, N.; Bartoschik, T.; Muyldermans, S.; Hoheisel, J.D. The structural basis of nanobody unfolding
+reversibility and thermoresistance. Sci. Rep. 2018 ,8, 7934. [CrossRef] [PubMed]
+12. Vosjan, M.J.; Perk, L.R.; Roovers, R.C.; Visser, G.W.; Stigter-van Walsum, M.; van Bergen En Henegouwen, P .M.; van Dongen, G.A.
+Facile labelling of an anti-epidermal growth factor receptor Nanobody with 68Ga via a novel bifunctional desferal chelate for
+immuno-PET. Eur. J. Nucl. Med. Mol. Imaging 2011 ,38, 753–763. [CrossRef]
+13. Ebrahimizadeh, W.; Mousavi Gargari, S.L.; Javidan, Z.; Rajabibazl, M. Production of Novel VHH Nanobody Inhibiting Angiogen-
+esis by Targeting Binding Site of VEGF. Appl. Biochem. Biotechnol. 2015 ,176, 1985–1995. [CrossRef]
+14. Dumoulin, M.; Conrath, K.; Van Meirhaeghe, A.; Meersman, F.; Heremans, K.; Frenken, L.G.; Muyldermans, S.; Wyns, L.;
+Matagne, A. Single-domain antibody fragments with high conformational stability. Protein Sci. 2002 ,11, 500–515. [CrossRef]
+[PubMed]
+15. Goldman, E.R.; Liu, J.L.; Zabetakis, D.; Anderson, G.P . Enhancing Stability of Camelid and Shark Single Domain Antibodies: An
+Overview. Front. Immunol. 2017 ,8, 865. [CrossRef]
+16. Arbabi-Ghahroudi, M. Camelid Single-Domain Antibodies: Promises and Challenges as Lifesaving Treatments. Int. J. Mol. Sci.
+2022 ,23, 5009. [CrossRef] [PubMed]
+17. Achour, I.; Cavelier, P .; Tichit, M.; Bouchier, C.; Lafaye, P .; Rougeon, F. Tetrameric and homodimeric camelid IgGs originate from
+the same IgH locus. J. Immunol. 2008 ,181, 2001–2009. [CrossRef] [PubMed]
+18. Keyaerts, M.; Xavier, C.; Heemskerk, J.; Devoogdt, N.; Everaert, H.; Ackaert, C.; Vanhoeij, M.; Duhoux, F.P .; Gevaert, T.;
+Simon, P .; et al. Phase I Study of68Ga-HER2-Nanobody for PET/CT Assessment of HER2 Expression in Breast Carcinoma.
+J. Nucl. Med. 2016 ,57, 27–33. [CrossRef]
+19. Schoen, P .; Jacobs, S.; Verschueren, K.; Ottevaere, I.; Sobry, S.; Holz, J.-B. Anti-RANKL nanobody ALX-0141 shows sustained
+biomarker inhibition in a phase I study in healthy postmenopausal women. In Bone Abstracts ; Bioscientifica: Bristol, UK, 2013.
+20. Li, Y.; Zhou, C.; Li, J.; Liu, J.; Lin, L.; Li, L.; Cao, D.; Li, Q.; Wang, Z. Single domain based bispecific antibody, Muc1-Bi-1, and
+its humanized form, Muc1-Bi-2, induce potent cancer cell killing in muc1 positive tumor cells. PLoS ONE 2018 ,13, e0191024.
+[CrossRef]
+21. Sulea, T. Humanization of Camelid Single-Domain Antibodies. In Methods in Molecular Biology ; Springer: Berlin/Heidelberg,
+Germany, 2022; pp. 299–312.
+22. Ackaert, C.; Smiejkowska, N.; Xavier, C.; Sterckx, Y.G.J.; Denies, S.; Stijlemans, B.; Elkrim, Y.; Devoogdt, N.; Caveliers, V .;
+Lahoutte, T.; et al. Immunogenicity Risk Profile of Nanobodies. Front. Immunol. 2021 ,12, 632687. [CrossRef]Cancers 2024 ,16, 371 18 of 25
+23. Lwin, T.M.; Hernot, S.; Hollandsworth, H.; Amirfakhri, S.; Filemoni, F.; Debie, P .; Hoffman, R.M.; Bouvet, M. Tumor-specific
+near-infrared nanobody probe rapidly labels tumors in an orthotopic mouse model of pancreatic cancer. Surgery 2020 ,168, 85–91.
+[CrossRef]
+24. Debie, P .; Lafont, C.; Defrise, M.; Hansen, I.; van Willigen, D.M.; van Leeuwen, F.W.B.; Gijsbers, R.; D’Huyvetter, M.; Devoogdt, N.;
+Lahoutte, T.; et al. Size and affinity kinetics of nanobodies influence targeting and penetration of solid tumours. J. Control. Release
+2020 ,317, 34–42. [CrossRef]
+25. Xavier, C.; Blykers, A.; Vaneycken, I.; D’Huyvetter, M.; Heemskerk, J.; Lahoutte, T.; Devoogdt, N.; Caveliers, V . (18)F-nanobody
+for PET imaging of HER2 overexpressing tumors. Nucl. Med. Biol. 2016 ,43, 247–252. [CrossRef]
+26. Broos, K.; Keyaerts, M.; Lecocq, Q.; Renmans, D.; Nguyen, T.; Escors, D.; Liston, A.; Raes, G.; Breckpot, K.; Devoogdt, N. Non-
+invasive assessment of murine PD-L1 levels in syngeneic tumor models by nuclear imaging with nanobody tracers. Oncotarget
+2017 ,8, 41932–41946. [CrossRef]
+27. Caljon, G.; Caveliers, V .; Lahoutte, T.; Stijlemans, B.; Ghassabeh, G.H.; Van Den Abbeele, J.; Smolders, I.; De Baetselier, P .;
+Michotte, Y.; Muyldermans, S.; et al. Using microdialysis to analyse the passage of monovalent nanobodies through the blood-
+brain barrier. Br. J. Pharmacol. 2012 ,165, 2341–2353. [CrossRef] [PubMed]
+28. Ruiz-L ópez, E.; Schuhmacher, A.J. Transportation of Single-Domain Antibodies through the Blood-Brain Barrier. Biomolecules
+2021 ,11, 1131. [CrossRef] [PubMed]
+29. Jovcevska, I.; Muyldermans, S. The Therapeutic Potential of Nanobodies. BioDrugs 2020 ,34, 11–26. [CrossRef] [PubMed]
+30. Lesniak, W.G.; Chu, C.; Jablonska, A.; Behnam Azad, B.; Zwaenepoel, O.; Zawadzki, M.; Lisok, A.; Pomper, M.G.; Walczak, P .;
+Gettemans, J.; et al. PET imaging of distinct brain uptake of a nanobody and similarly-sized PAMAM dendrimers after intra-
+arterial administration. Eur. J. Nucl. Med. Mol. Imaging 2019 ,46, 1940–1951. [CrossRef]
+31. Custers, M.L.; Wouters, Y.; Jaspers, T.; De Bundel, D.; Dewilde, M.; Van Eeckhaut, A.; Smolders, I. Applicability of cerebral open
+flow microperfusion and microdialysis to quantify a brain-penetrating nanobody in mice. Anal. Chim. Acta 2021 ,1178 , 338803.
+[CrossRef]
+32. Heukers, R.; Fan, T.S.; de Wit, R.H.; van Senten, J.R.; De Groof, T.W.M.; Bebelman, M.P .; Lagerweij, T.; Vieira, J.; de Munnik, S.M.;
+Smits-de Vries, L.; et al. The constitutive activity of the virally encoded chemokine receptor US28 accelerates glioblastoma growth.
+Oncogene 2018 ,37, 4110–4121. [CrossRef]
+33. Chakravarty, R.; Goel, S.; Cai, W. Nanobody: The “magic bullet” for molecular imaging? Theranostics 2014 ,4, 386–398. [CrossRef]
+34. Gainkam, L.O.; Keyaerts, M.; Caveliers, V .; Devoogdt, N.; Vanhove, C.; Van Grunsven, L.; Muyldermans, S.; Lahoutte, T.
+Correlation between epidermal growth factor receptor-specific nanobody uptake and tumor burden: A tool for noninvasive
+monitoring of tumor response to therapy. Mol. Imaging Biol. 2011 ,13, 940–948. [CrossRef] [PubMed]
+35. Vaneycken, I.; D’Huyvetter, M.; Hernot, S.; De Vos, J.; Xavier, C.; Devoogdt, N.; Caveliers, V .; Lahoutte, T. Immuno-imaging using
+nanobodies. Curr. Opin. Biotechnol. 2011 ,22, 877–881. [CrossRef] [PubMed]
+36. Vaneycken, I.; Devoogdt, N.; Van Gassen, N.; Vincke, C.; Xavier, C.; Wernery, U.; Muyldermans, S.; Lahoutte, T.; Caveliers, V .
+Preclinical screening of anti-HER2 nanobodies for molecular imaging of breast cancer. FASEB J. 2011 ,25, 2433–2446. [CrossRef]
+[PubMed]
+37. Coppieters, K.; Dreier, T.; Silence, K.; de Haard, H.; Lauwereys, M.; Casteels, P .; Beirnaert, E.; Jonckheere, H.; Van de Wiele, C.;
+Staelens, L.; et al. Formatted anti-tumor necrosis factor alpha VHH proteins derived from camelids show superior potency and
+targeting to inflamed joints in a murine model of collagen-induced arthritis. Arthritis Rheum. 2006 ,54, 1856–1866. [CrossRef]
+38. Iqbal, U.; Trojahn, U.; Albaghdadi, H.; Zhang, J.; O’Connor-McCourt, M.; Stanimirovic, D.; Tomanek, B.; Sutherland, G.;
+Abulrob, A. Kinetic analysis of novel mono- and multivalent VHH-fragments and their application for molecular imaging of
+brain tumours. Br. J. Pharmacol. 2010 ,160, 1016–1028. [CrossRef]
+39. Altunay, B.; Morgenroth, A.; Beheshti, M.; Vogg, A.; Wong, N.C.L.; Ting, H.H.; Biersack, H.J.; Stickeler, E.; Mottaghy, F.M.
+HER2-directed antibodies, affibodies and nanobodies as drug-delivery vehicles in breast cancer with a specific focus on radioim-
+munotherapy and radioimmunoimaging. Eur. J. Nucl. Med. Mol. Imaging 2021 ,48, 1371–1389. [CrossRef] [PubMed]
+40. Bao, G.; Tang, M.; Zhao, J.; Zhu, X. Nanobody: A promising toolkit for molecular imaging and disease therapy. EJNMMI Res.
+2021 ,11, 6. [CrossRef]
+41. Sheikhi, A.; Hojjat-Farsangi, M. An immunotherapeutic method for COVID-19 patients: A soluble ACE2-Anti-CD16 VHH to
+block SARS-CoV-2 Spike protein. Hum. Vaccines Immunother. 2021 ,17, 92–97. [CrossRef]
+42. Sadeghi, A.; Behdani, M.; Muyldermans, S.; Habibi-Anbouhi, M.; Kazemi-Lomedasht, F. Development of a mono-specific
+anti-VEGF bivalent nanobody with extended plasma half-life for treatment of pathologic neovascularization. Drug Test. Anal.
+2020 ,12, 92–100. [CrossRef] [PubMed]
+43. Hoefman, S.; Ottevaere, I.; Baumeister, J.; Sargentini-Maier, M.L. Pre-clinical intravenous serum pharmacokinetics of albumin
+binding and non-half-life extended Nanobodies®.Antibodies 2015 ,4, 141–156. [CrossRef]
+44. Sleep, D.; Cameron, J.; Evans, L.R. Albumin as a versatile platform for drug half-life extension. BBA-Gen. Subj. 2013 ,1830 ,
+5526–5534. [CrossRef]
+45. Pan, H.; Liu, J.; Deng, W.; Xing, J.; Li, Q.; Wang, Z. Site-specific PEGylation of an anti-CEA/CD3 bispecific antibody improves its
+antitumor efficacy. Int. J. Nanomed. 2018 ,13, 3189–3201. [CrossRef]
+46. Kontermann, R.E. Strategies for extended serum half-life of protein therapeutics. Curr. Opin. Biotechnol. 2011 ,22, 868–876.
+[CrossRef] [PubMed]Cancers 2024 ,16, 371 19 of 25
+47. Xenaki, K.T.; Dorrestijn, B.; Muns, J.A.; Adamzek, K.; Doulkeridou, S.; Houthoff, H.; Oliveira, S.; van Bergen En Henegouwen, P .M.
+Homogeneous tumor targeting with a single dose of HER2-targeted albumin-binding domain-fused nanobody-drug conjugates
+results in long-lasting tumor remission in mice. Theranostics 2021 ,11, 5525–5538. [CrossRef] [PubMed]
+48. Chow, K.M.; Whiteheart, S.W.; Smiley, J.R.; Sharma, S.; Boaz, K.; Coleman, M.J.; Maynard, A.; Hersh, L.B.; Vander Kooi, C.W.
+Immunization of Alpacas ( Lama pacos ) with Protein Antigens and Production of Antigen-specific Single Domain Antibodies.
+J. Vis. Exp. 2019 ,143, e58471. [CrossRef]
+49. Marturano, A.; Hendrickx, M.L.V .; Falcinelli, E.; Sebastiano, M.; Guglielmini, G.; Hassanzadeh-Ghassabeh, G.; Muyldermans,
+S.; Declerck, P .J.; Gresele, P . Development of anti-matrix metalloproteinase-2 (MMP-2) nanobodies as potential therapeutic and
+diagnostic tools. Nanomedicine 2020 ,24, 102103. [CrossRef]
+50. Jakobs, B.D.; Spannagel, L.; Purvanov, V .; Uetz-von Allmen, E.; Matti, C.; Legler, D.F. Engineering of Nanobodies Recognizing the
+Human Chemokine Receptor CCR7. Int. J. Mol. Sci. 2019 ,20, 2597. [CrossRef]
+51. Baharlou, R.; Tajik, N.; Habibi-Anbouhi, M.; Shokrgozar, M.A.; Zarnani, A.H.; Shahhosseini, F.; Behdani, M. Generation and
+characterization of an anti-delta like ligand-4 Nanobody to induce non-productive angiogenesis. Anal. Biochem. 2018 ,544, 34–41.
+[CrossRef]
+52. Ledsgaard, L.; Kilstrup, M.; Karatt-Vellatt, A.; McCafferty, J.; Laustsen, A.H. Basics of Antibody Phage Display Technology. Toxins
+2018 ,10, 236. [CrossRef]
+53. Evazalipour, M.; D’Huyvetter, M.; Tehrani, B.S.; Abolhassani, M.; Omidfar, K.; Abdoli, S.; Arezumand, R.; Morovvati, H.;
+Lahoutte, T.; Muyldermans, S.; et al. Generation and characterization of nanobodies targeting PSMA for molecular imaging of
+prostate cancer. Contrast Media Mol. Imaging 2014 ,9, 211–220. [CrossRef]
+54. Ma, L.; Gu, K.; Zhang, C.H.; Chen, X.T.; Jiang, Y.; Melcher, K.; Zhang, J.; Wang, M.; Xu, H.E. Generation and characterization of a
+human nanobody against VEGFR-2. Acta Pharmacol. Sin. 2016 ,37, 857–864. [CrossRef] [PubMed]
+55. Zhai, T.; Wang, C.; Xu, Y.; Huang, W.; Yuan, Z.; Wang, T.; Dai, S.; Peng, S.; Pang, T.; Jiang, W.; et al. Generation of a safe and
+efficacious llama single-domain antibody fragment (vHH) targeting the membrane-proximal region of 4-1BB for engineering
+therapeutic bispecific antibodies for cancer. J. Immunother. Cancer 2021 ,9, e002131. [CrossRef]
+56. Chen, Q.; Zhou, Y.; Yu, J.; Liu, W.; Li, F.; Xian, M.; Nian, R.; Song, H.; Feng, D. An efficient constitutive expression system for
+Anti-CEACAM5 nanobody production in the yeast Pichia pastoris. Protein Expr. Purif. 2019 ,155, 43–47. [CrossRef]
+57. Detalle, L.; Stohr, T.; Palomo, C.; Piedra, P .A.; Gilbert, B.E.; Mas, V .; Millar, A.; Power, U.F.; Stortelers, C.; Allosery, K.; et al.
+Generation and Characterization of ALX-0171, a Potent Novel Therapeutic Nanobody for the Treatment of Respiratory Syncytial
+Virus Infection. Antimicrob. Agents Chemother. 2016 ,60, 6–13. [CrossRef]
+58. Djender, S.; Schneider, A.; Beugnet, A.; Crepin, R.; Desrumeaux, K.E.; Romani, C.; Moutel, S.; Perez, F.; de Marco, A. Bacterial
+cytoplasm as an effective cell compartment for producing functional VHH-based affinity reagents and Camelidae IgG-like
+recombinant antibodies. Microb. Cell Fact. 2014 ,13, 140. [CrossRef] [PubMed]
+59. Hong, H.; Zhang, Y.; Sun, J.; Cai, W. Molecular imaging and therapy of cancer with radiolabeled nanoparticles. Nano Today 2009 ,
+4, 399–413. [CrossRef] [PubMed]
+60. van Dongen, G.; Beaino, W.; Windhorst, A.D.; Zwezerijnen, G.J.C.; Oprea-Lager, D.E.; Hendrikse, N.H.; van Kuijk, C.; Boellaard, R.;
+Huisman, M.C.; Vugts, D.J. The Role of (89)Zr-Immuno-PET in Navigating and Derisking the Development of Biopharmaceuticals.
+J. Nucl. Med. 2021 ,62, 438–445. [CrossRef]
+61. Hegi-Johnson, F.; Rudd, S.; Hicks, R.J.; De Ruysscher, D.; Trapani, J.A.; John, T.; Donnelly, P .; Blyth, B.; Hanna, G.; Everitt, S.; et al.
+Imaging immunity in patients with cancer using positron emission tomography. NPJ Precis. Oncol. 2022 ,6, 24. [CrossRef]
+62. Kijanka, M.; Warnders, F.J.; El Khattabi, M.; Lub-de Hooge, M.; van Dam, G.M.; Ntziachristos, V .; de Vries, L.; Oliveira, S.;
+van Bergen En Henegouwen, P .M. Rapid optical imaging of human breast tumour xenografts using anti-HER2 VHHs site-directly
+conjugated to IRDye 800CW for image-guided surgery. Eur. J. Nucl. Med. Mol. Imaging 2013 ,40, 1718–1729. [CrossRef]
+63. Terwisscha van Scheltinga, A.G.; van Dam, G.M.; Nagengast, W.B.; Ntziachristos, V .; Hollema, H.; Herek, J.L.; Schröder, C.P .;
+Kosterink, J.G.; Lub-de Hoog, M.N.; de Vries, E.G. Intraoperative near-infrared fluorescence tumor imaging with vascular
+endothelial growth factor and human epidermal growth factor receptor 2 targeting antibodies. J. Nucl. Med. 2011 ,52, 1778–1785.
+[CrossRef] [PubMed]
+64. Gondry, O.C.V .; Xavier, C.; Raes, L.; Vanhoeij, M.; Verfaillie, G.; Fontaine, C.; Glorieus, K.; De Gr ève, J.; Joris, S.; Luyten, I.; et al.
+Phase II trial to assess the repeatability and tumor uptake of [68Ga]Ga-HER2-sdAb PET/CT in patients with Breast Carcinoma.
+J. Nucl. Med. 2023, in press.
+65. Gondry, O.; Xavier, C.; Raes, L.; Heemskerk, J.; Devoogdt, N.; Everaert, H.; Breckpot, K.; Lecocq, Q.; Decoster, L.; Fontaine, C.; et al.
+Phase I Study of [68Ga]Ga-Anti-CD206-sdAb for PET/CT Assessment of Protumorigenic Macrophage Presence in Solid Tumors
+(MMR Phase I). J. Nucl. Med. 2023 ,64, 1378–1384. [CrossRef]
+66. Rashidian, M.; Ingram, J.R.; Dougan, M.; Dongre, A.; Whang, K.A.; LeGall, C.; Cragnolini, J.J.; Bierie, B.; Gostissa, M.;
+Gorman, J.; et al. Predicting the response to CTLA-4 blockade by longitudinal noninvasive monitoring of CD8 T cells. J. Exp. Med.
+2017 ,214, 2243–2255. [CrossRef]
+67. Sriraman, S.K.; Davies, C.W.; Gill, H.; Kiefer, J.R.; Yin, J.; Ogasawara, A.; Urrutia, A.; Javinal, V .; Lin, Z.; Seshasayee, D.; et al.
+Development of an (18)F-labeled anti-human CD8 VHH for same-day immunoPET imaging. Eur. J. Nucl. Med. Mol. Imaging 2023 ,
+50, 679–691. [CrossRef] [PubMed]Cancers 2024 ,16, 371 20 of 25
+68. Chatalic, K.L.; Veldhoven-Zweistra, J.; Bolkestein, M.; Hoeben, S.; Koning, G.A.; Boerman, O.C.; de Jong, M.; van Weerden, W.M.
+A Novel (1)(1)(1)In-Labeled Anti-Prostate-Specific Membrane Antigen Nanobody for Targeted SPECT/CT Imaging of Prostate
+Cancer. J. Nucl. Med. 2015 ,56, 1094–1099. [CrossRef] [PubMed]
+69. Zhang, Y.; Ding, Y.; Li, N.; Wang, S.; Zhou, S.; Li, R.; Yang, H.; Li, W.; Qu, J. Noninvasive Imaging of Tumor PD-L1 Expression
+Using [99mTc]Tc-Labeled KN035 with SPECT/CT. Mol. Pharm. 2023 ,20, 690–700. [CrossRef] [PubMed]
+70. Lv, G.; Sun, X.; Qiu, L.; Sun, Y.; Li, K.; Liu, Q.; Zhao, Q.; Qin, S.; Lin, J. PET Imaging of Tumor PD-L1 Expression with a Highly
+Specific Nonblocking Single-Domain Antibody. J. Nucl. Med. 2020 ,61, 117–122. [CrossRef]
+71. Liu, Q.; Jiang, L.; Li, K.; Li, H.; Lv, G.; Lin, J.; Qiu, L. Immuno-PET imaging of68Ga-labeled nanobody Nb109 for dynamic
+monitoring the PD-L1 expression in cancers. Cancer Immunol. Immunother. 2021 ,70, 1721–1733. [CrossRef]
+72. Movahedi, K.; Schoonooghe, S.; Laoui, D.; Houbracken, I.; Waelput, W.; Breckpot, K.; Bouwens, L.; Lahoutte, T.; De Baetselier, P .;
+Raes, G.; et al. Nanobody-based targeting of the macrophage mannose receptor for effective in vivo imaging of tumor-associated
+macrophages. Cancer Res. 2012 ,72, 4165–4177. [CrossRef]
+73. Xavier, C.; Blykers, A.; Laoui, D.; Bolli, E.; Vaneyken, I.; Bridoux, J.; Baudhuin, H.; Raes, G.; Everaert, H.; Movahedi, K.; et al.
+Clinical Translation of [68Ga]Ga-NOTA-anti-MMR-sdAb for PET/CT Imaging of Protumorigenic Macrophages. Mol. Imaging Biol.
+2019 ,21, 898–906. [CrossRef] [PubMed]
+74. Lecocq, Q.; Zeven, K.; De Vlaeminck, Y.; Martens, S.; Massa, S.; Goyvaerts, C.; Raes, G.; Keyaerts, M.; Breckpot, K.; Devoogdt, N.
+Noninvasive Imaging of the Immune Checkpoint LAG-3 Using Nanobodies, from Development to Pre-Clinical Use. Biomolecules
+2019 ,9, 548. [CrossRef] [PubMed]
+75. Lecocq, Q.; Awad, R.M.; De Vlaeminck, Y.; de Mey, W.; Ertveldt, T.; Goyvaerts, C.; Raes, G.; Thielemans, K.; Keyaerts, M.;
+Devoogdt, N.; et al. Single-Domain Antibody Nuclear Imaging Allows Noninvasive Quantification of LAG-3 Expression by
+Tumor-Infiltrating Leukocytes and Predicts Response of Immune Checkpoint Blockade. J. Nucl. Med. 2021 ,62, 1638–1644.
+[CrossRef] [PubMed]
+76. Xavier, C.; Vaneycken, I.; D’Huyvetter, M.; Heemskerk, J.; Keyaerts, M.; Vincke, C.; Devoogdt, N.; Muyldermans, S.; Lahoutte, T.;
+Caveliers, V . Synthesis, preclinical validation, dosimetry, and toxicity of68Ga-NOTA-anti-HER2 Nanobodies for iPET imaging of
+HER2 receptor expression in cancer. J. Nucl. Med. 2013 ,54, 776–784. [CrossRef] [PubMed]
+77. Li, L.; Liu, T.; Shi, L.; Zhang, X.; Guo, X.; Hu, B.; Yao, M.; Zhu, H.; Yang, Z.; Jia, B.; et al. HER2-targeted dual radiotracer approach
+with clinical potential for noninvasive imaging of trastuzumab-resistance caused by epitope masking. Theranostics 2022 ,12,
+5551–5563. [CrossRef]
+78. An, S.; Zhang, D.; Zhang, Y.; Wang, C.; Shi, L.; Wei, W.; Huang, G.; Liu, J. GPC3-targeted immunoPET imaging of hepatocellular
+carcinomas. Eur. J. Nucl. Med. Mol. Imaging 2022 ,49, 2682–2692. [CrossRef]
+79. Liu, T.; Wu, Y.; Shi, L.; Li, L.; Hu, B.; Wang, Y.; Gao, H.; Yu, X.; Zhang, X.; Zhao, H.; et al. Preclinical evaluation of [99mTc]Tc-labeled
+anti-EpCAM nanobody for EpCAM receptor expression imaging by immuno-SPECT/CT. Eur. J. Nucl. Med. Mol. Imaging 2022 ,49,
+1810–1821. [CrossRef]
+80. Piramoon, M.; Hosseinimehr, S.J.; Omidfar, K.; Noaparast, Z.; Abedi, S.M.99mTc-anti-epidermal growth factor receptor nanobody
+for tumor imaging. Chem. Biol. Drug Des. 2017 ,89, 498–504. [CrossRef]
+81. Hu, G.; Zhu, W.; Liu, Y.; Wang, Y.; Zhang, Z.; Zhu, S.; Duan, W.; Zhou, P .; Fu, C.; Li, F.; et al. Development and comparison of
+three (89)Zr-labeled anti-CLDN18.2 antibodies to noninvasively evaluate CLDN18.2 expression in gastric cancer: A preclinical
+study. Eur. J. Nucl. Med. Mol. Imaging 2022 ,49, 2634–2644. [CrossRef]
+82. Wang, H.; Meng, A.M.; Li, S.H.; Zhou, X.L. A nanobody targeting carcinoembryonic antigen as a promising molecular probe for
+non-small cell lung cancer. Mol. Med. Rep. 2017 ,16, 625–630. [CrossRef]
+83. van Lith, S.A.M.; Huizing, F.J.; Franssen, G.M.; Hoeben, B.A.W.; Lok, J.; Doulkeridou, S.; Boerman, O.C.; Gotthardt, M.;
+van Bergen En Henegouwen, P .M.P .; Bussink, J.; et al. Novel VHH-Based Tracers with Variable Plasma Half-Lives for Imaging of
+CAIX-Expressing Hypoxic Tumor Cells. Mol. Pharm. 2022 ,19, 3511–3520. [CrossRef]
+84. Jailkhani, N.; Ingram, J.R.; Rashidian, M.; Rickelt, S.; Tian, C.; Mak, H.; Jiang, Z.; Ploegh, H.L.; Hynes, R.O. Noninvasive imaging
+of tumor progression, metastasis, and fibrosis using a nanobody targeting the extracellular matrix. Proc. Natl. Acad. Sci. USA
+2019 ,116, 14181–14190. [CrossRef] [PubMed]
+85. Debie, P .; Declerck, N.B.; van Willigen, D.; Huygen, C.M.; De Sloovere, B.; Mateusiak, L.; Bridoux, J.; Puttemans, J.; Devoogdt, N.;
+van Leeuwen, F.W.B.; et al. The Design and Preclinical Evaluation of a Single-Label Bimodal Nanobody Tracer for Image-Guided
+Surgery. Biomolecules 2021 ,11, 360. [CrossRef] [PubMed]
+86. Debie, P .; Devoogdt, N.; Hernot, S. Targeted Nanobody-Based Molecular Tracers for Nuclear Imaging and Image-Guided Surgery.
+Surgery 2020 ,8, 12. [CrossRef] [PubMed]
+87. Debie, P .; Vanhoeij, M.; Poortmans, N.; Puttemans, J.; Gillis, K.; Devoogdt, N.; Lahoutte, T.; Hernot, S. Improved Debulking
+of Peritoneal Tumor Implants by Near-Infrared Fluorescent Nanobody Image Guidance in an Experimental Mouse Model.
+Mol. Imaging Biol. 2018 ,20, 361–367. [CrossRef] [PubMed]
+88. van Brussel, A.S.; Adams, A.; Oliveira, S.; Dorresteijn, B.; El Khattabi, M.; Vermeulen, J.F.; van der Wall, E.; Mali, W.P .;
+Derksen, P .W.; van Diest, P .J.; et al. Hypoxia-Targeting Fluorescent Nanobodies for Optical Molecular Imaging of Pre-Invasive
+Breast Cancer. Mol. Imaging Biol. 2016 ,18, 535–544. [CrossRef]
+89. Huang, H.; Wu, T.; Shi, H.; Wu, Y.; Yang, H.; Zhong, K.; Wang, Y.; Liu, Y. Modular design of nanobody-drug conjugates for
+targeted-delivery of platinum anticancer drugs with an MRI contrast agent. Chem. Commun. 2019 ,55, 5175–5178. [CrossRef]Cancers 2024 ,16, 371 21 of 25
+90. Prantner, A.M.; Yin, C.; Kamat, K.; Sharma, K.; Lowenthal, A.C.; Madrid, P .B.; Scholler, N. Molecular Imaging of Mesothelin-
+Expressing Ovarian Cancer with a Human and Mouse Cross-Reactive Nanobody. Mol. Pharm. 2018 ,15, 1403–1411. [CrossRef]
+91. Larson, S.M.; Carrasquillo, J.A.; Cheung, N.K.; Press, O.W. Radioimmunotherapy of human tumours. Nat. Rev. Cancer 2015 ,15,
+347–360. [CrossRef]
+92. Wiseman, G.A.; Kornmehl, E.; Leigh, B.; Erwin, W.D.; Podoloff, D.A.; Spies, S.; Sparks, R.B.; Stabin, M.G.; Witzig, T.; White, C.A.
+Radiation dosimetry results and safety correlations from 90Y-ibritumomab tiuxetan radioimmunotherapy for relapsed or
+refractory non-Hodgkin’s lymphoma: Combined data from 4 clinical trials. J. Nucl. Med. 2003 ,44, 465–474.
+93. Rajendran, J.G.; Gopal, A.K.; Fisher, D.R.; Durack, L.D.; Gooley, T.A.; Press, O.W. Myeloablative 131I-tositumomab radioim-
+munotherapy in treating non-Hodgkin’s lymphoma: Comparison of dosimetry based on whole-body retention and dose to
+critical organ receiving the highest dose. J. Nucl. Med. 2008 ,49, 837–844. [CrossRef] [PubMed]
+94. D’Huyvetter, M.; Vincke, C.; Xavier, C.; Aerts, A.; Impens, N.; Baatout, S.; De Raeve, H.; Muyldermans, S.; Caveliers, V .;
+Devoogdt, N.; et al. Targeted radionuclide therapy with A 177Lu-labeled anti-HER2 nanobody. Theranostics 2014 ,4, 708–720.
+[CrossRef] [PubMed]
+95. Dekempeneer, Y.M.S.; Santens, F.; Navarro, L.; Berdal, M.; Lucero, M.M.; Pombo Antunes, A.R.; Van Ginderachter, J.A.;
+Lahoutte, T.; Devoogdt, N.; D’Huyvetter, M. Preclinical evaluation of a radiotheranostic single-domain antibody against Fibroblast
+Activation Protein alpha. J. Nucl. Med. 2023, in press.
+96. Xu, J.; Li, S.; Xu, S.; Dai, J.; Luo, Z.; Cui, J.; Cai, F.; Geng, C.; Wang, Z.; Tang, X. Screening and Preclinical Evaluation of Novel
+Radiolabeled Anti-Fibroblast Activation Protein- αRecombinant Antibodies. Cancer Biother. Radiopharm. 2023 ,38, 726–737.
+[CrossRef] [PubMed]
+97. Bolli, E.; D’Huyvetter, M.; Murgaski, A.; Berus, D.; Stange, G.; Clappaert, E.J.; Arnouk, S.; Pombo Antunes, A.R.; Krasniqi, A.;
+Lahoutte, T.; et al. Stromal-targeting radioimmunotherapy mitigates the progression of therapy-resistant tumors. J. Control Release
+2019 ,314, 1–11. [CrossRef]
+98. D’Huyvetter, M.; De Vos, J.; Xavier, C.; Pruszynski, M.; Sterckx, Y.G.J.; Massa, S.; Raes, G.; Caveliers, V .; Zalutsky, M.R.;
+Lahoutte, T.; et al. (131)I-labeled Anti-HER2 Camelid sdAb as a Theranostic Tool in Cancer Treatment. Clin. Cancer Res. 2017 ,23,
+6616–6628. [CrossRef]
+99. Feng, Y.; Meshaw, R.; McDougald, D.; Zhou, Z.; Zhao, X.G.; Jannetti, S.A.; Reiman, R.E.; Pippen, E.; Marjoram, R.; Schaal, J.L.; et al.
+Evaluation of an (131)I-labeled HER2-specific single domain antibody fragment for the radiopharmaceutical therapy of HER2-
+expressing cancers. Sci. Rep. 2022 ,12, 3020. [CrossRef]
+100. Pruszynski, M.; Koumarianou, E.; Vaidyanathan, G.; Revets, H.; Devoogdt, N.; Lahoutte, T.; Lyerly, H.K.; Zalutsky, M.R. Improved
+tumor targeting of anti-HER2 nanobody through N-succinimidyl 4-guanidinomethyl-3-iodobenzoate radiolabeling. J. Nucl. Med.
+2014 ,55, 650–656. [CrossRef]
+101. Choi, J.; Vaidyanathan, G.; Koumarianou, E.; Kang, C.M.; Zalutsky, M.R. Astatine-211 labeled anti-HER2 5F7 single domain
+antibody fragment conjugates: Radiolabeling and preliminary evaluation. Nucl. Med. Biol. 2018 ,56, 10–20. [CrossRef]
+102. Feng, Y.; Meshaw, R.; Zhao, X.G.; Jannetti, S.; Vaidyanathan, G.; Zalutsky, M.R. Effective Treatment of Human Breast Carcinoma
+Xenografts with Single-Dose (211)At-Labeled Anti-HER2 Single-Domain Antibody Fragment. J. Nucl. Med. 2023 ,64, 124–130.
+[CrossRef]
+103. Pruszynski, M.; D’Huyvetter, M.; Bruchertseifer, F.; Morgenstern, A.; Lahoutte, T. Evaluation of an Anti-HER2 Nanobody Labeled
+with (225)Ac for Targeted α-Particle Therapy of Cancer. Mol. Pharm. 2018 ,15, 1457–1466. [CrossRef]
+104. Castano, A.P .; Mroz, P .; Hamblin, M.R. Photodynamic therapy and anti-tumour immunity. Nat. Rev. Cancer 2006 ,6, 535–545.
+[CrossRef] [PubMed]
+105. Renard, E.; Collado Camps, E.; Canovas, C.; Kip, A.; Gotthardt, M.; Rijpkema, M.; Denat, F.; Goncalves, V .; van Lith, S.A.M.
+Site-Specific Dual-Labeling of a VHH with a Chelator and a Photosensitizer for Nuclear Imaging and Targeted Photodynamic
+Therapy of EGFR-Positive Tumors. Cancers 2021 ,13, 428. [CrossRef]
+106. Deken, M.M.; Kijanka, M.M.; Beltran Hernandez, I.; Slooter, M.D.; de Bruijn, H.S.; van Diest, P .J.; van Bergen En Henegouwen,
+P .M.P .; Lowik, C.; Robinson, D.J.; Vahrmeijer, A.L.; et al. Nanobody-targeted photodynamic therapy induces significant tumor
+regression of trastuzumab-resistant HER2-positive breast cancer, after a single treatment session. J. Control Release 2020 ,323,
+269–281. [CrossRef] [PubMed]
+107. van Driel, P .; Boonstra, M.C.; Slooter, M.D.; Heukers, R.; Stammes, M.A.; Snoeks, T.J.A.; de Bruijn, H.S.; van Diest, P .J.; Vahrmeijer,
+A.L.; van Bergen En Henegouwen, P .M.P .; et al. EGFR targeted nanobody-photosensitizer conjugates for photodynamic therapy
+in a pre-clinical model of head and neck cancer. J. Control Release 2016 ,229, 93–105. [CrossRef] [PubMed]
+108. van Driel, P .B.; van der Vorst, J.R.; Verbeek, F.P .; Oliveira, S.; Snoeks, T.J.; Keereweer, S.; Chan, B.; Boonstra, M.C.; Frangioni,
+J.V .; van Bergen en Henegouwen, P .M.; et al. Intraoperative fluorescence delineation of head and neck cancer with a fluorescent
+anti-epidermal growth factor receptor nanobody. Int. J. Cancer 2014 ,134, 2663–2673. [CrossRef] [PubMed]
+109. Beltrán Hern ández, I.; Angelier, M.L.; Del Buono D’Ondes, T.; Di Maggio, A.; Yu, Y.; Oliveira, S. The Potential of Nanobody-
+Targeted Photodynamic Therapy to Trigger Immune Responses. Cancers 2020 ,12, 978. [CrossRef] [PubMed]
+110. Heukers, R.; Mashayekhi, V .; Ramirez-Escudero, M.; de Haard, H.; Verrips, T.C.; van Bergen En Henegouwen, P .M.P .; Oliveira, S.
+VHH-Photosensitizer Conjugates for Targeted Photodynamic Therapy of Met-Overexpressing Tumor Cells. Antibodies 2019 ,8, 26.
+[CrossRef]Cancers 2024 ,16, 371 22 of 25
+111. Mashayekhi, V .; Xenaki, K.T.; van Bergen En Henegouwen, P .M.P .; Oliveira, S. Dual Targeting of Endothelial and Cancer Cells
+Potentiates In Vitro Nanobody-Targeted Photodynamic Therapy. Cancers 2020 ,12, 2732. [CrossRef]
+112. de Miguel, M.; Calvo, E. Clinical Challenges of Immune Checkpoint Inhibitors. Cancer Cell 2020 ,38, 326–333. [CrossRef]
+113. Petit, P .F.; Bombart, R.; Desimpel, P .H.; Naulaerts, S.; Thouvenel, L.; Collet, J.F.; Van den Eynde, B.J.; Zhu, J. T Cell-Mediated
+Targeted Delivery of Anti-PD-L1 Nanobody Overcomes Poor Antibody Penetration and Improves PD-L1 Blocking at the Tumor
+Site. Cancer Immunol. Res. 2022 ,10, 713–727. [CrossRef] [PubMed]
+114. Sato, Y.; Casson, C.N.; Matsuda, A.; Kim, J.I.; Shi, J.Q.; Iwasaki, S.; Chen, S.; Modrell, B.; Chan, C.; Tavares, D.; et al. Fc-
+independent functions of anti-CTLA-4 antibodies contribute to anti-tumor efficacy. Cancer Immunol. Immunother. 2022 ,71,
+2421–2431. [CrossRef] [PubMed]
+115. Jiang, C.; Zhang, L.; Xu, X.; Qi, M.; Zhang, J.; He, S.; Tian, Q.; Song, S. Engineering a Smart Agent for Enhanced Immunotherapy
+Effect by Simultaneously Blocking PD-L1 and CTLA-4. Adv. Sci. 2021 ,8, e2102500. [CrossRef]
+116. Ma, L.; Gai, J.; Qiao, P .; Li, Y.; Li, X.; Zhu, M.; Li, G.; Wan, Y. A novel bispecific nanobody with PD-L1/TIGIT dual immune
+checkpoint blockade. Biochem. Biophys. Res. Commun. 2020 ,531, 144–151. [CrossRef] [PubMed]
+117. Papadopoulos, K.P .; Harb, W.; Peer, C.J.; Hua, Q.; Xu, S.; Lu, H.; Lu, N.; He, Y.; Xu, T.; Dong, R.; et al. First-in-Human Phase I
+Study of Envafolimab, a Novel Subcutaneous Single-Domain Anti-PD-L1 Antibody, in Patients with Advanced Solid Tumors.
+Oncologist 2021 ,26, e1514–e1525. [CrossRef]
+118. Li, J.; Deng, Y.; Zhang, W.; Zhou, A.P .; Guo, W.; Yang, J.; Yuan, Y.; Zhu, L.; Qin, S.; Xiang, S.; et al. Subcutaneous envafolimab
+monotherapy in patients with advanced defective mismatch repair/microsatellite instability high solid tumors. J. Hematol. Oncol.
+2021 ,14, 95. [CrossRef]
+119. Shimizu, T.; Nakajima, T.E.; Yamamoto, N.; Yonemori, K.; Koyama, T.; Kondo, S.; Sunakawa, Y.; Izawa, N.; Horie, Y.; Xiang, S.; et al.
+Phase I study of envafolimab (KN035), a novel subcutaneous single-domain anti-PD-L1 monoclonal antibody, in Japanese patients
+with advanced solid tumors. Investig. New Drugs 2022 ,40, 1021–1031. [CrossRef]
+120. Li, Y.; Wu, L.; Liu, Y.; Ma, S.; Huang, B.; Feng, X.; Wang, H. A novel multifunctional anti-PD-L1-CD16a-IL15 induces potent cancer
+cell killing in PD-L1-positive tumour cells. Transl. Oncol. 2022 ,21, 101424. [CrossRef]
+121. Fang, T.; Li, R.; Li, Z.; Cho, J.; Guzman, J.S.; Kamm, R.D.; Ploegh, H.L. Remodeling of the Tumor Microenvironment by a
+Chemokine/Anti-PD-L1 Nanobody Fusion Protein. Mol. Pharm. 2019 ,16, 2838–2844. [CrossRef]
+122. Awad, R.M.; Lecocq, Q.; Zeven, K.; Ertveldt, T.; De Beck, L.; Ceuppens, H.; Broos, K.; De Vlaeminck, Y.; Goyvaerts, C.; Verdonck,
+M.; et al. Formatting and gene-based delivery of a human PD-L1 single domain antibody for immune checkpoint blockade.
+Mol. Ther. Methods Clin. Dev. 2021 ,22, 172–182. [CrossRef]
+123. Broos, K.; Lecocq, Q.; Xavier, C.; Bridoux, J.; Nguyen, T.T.; Corthals, J.; Schoonooghe, S.; Lion, E.; Raes, G.; Keyaerts, M.; et al.
+Evaluating a Single Domain Antibody Targeting Human PD-L1 as a Nuclear Imaging and Therapeutic Agent. Cancers 2019 ,
+11, 872. [CrossRef]
+124. Broos, K.; Lecocq, Q.; Keersmaecker, B.; Raes, G.; Corthals, J.; Lion, E.; Thielemans, K.; Devoogdt, N.; Keyaerts, M.; Breckpot, K.
+Single Domain Antibody-Mediated Blockade of Programmed Death-Ligand 1 on Dendritic Cells Enhances CD8 T-cell Activation
+and Cytokine Production. Vaccines 2019 ,7, 85. [CrossRef] [PubMed]
+125. Wen, B.; Zhao, L.; Wang, Y.; Qiu, C.; Xu, Z.; Huang, K.; Zhu, H.; Li, Z.; Li, H. Nanobodies targeting the interaction interface of
+programmed death receptor 1 (PD-1)/PD-1 ligand 1 (PD-1/PD-L1). Prep. Biochem. Biotechnol. 2020 ,50, 252–259. [CrossRef]
+126. Noelia, S.-P .; Eva, M.; Mar ía Cristina, B.-B.; Sandra, H.-S.; Noelia, C.; Gualberto, G.-S.; Cristian, S.; Lucia, V . Long-Term Systemic
+Expression of a Novel PD-1 Blocking Nanobody from an AAV Vector Provides Antitumor Activity without Toxicity. Biomedicines
+2020 ,8, 562.
+127. Wan, R.; Liu, A.; Hou, X.; Lai, Z.; Li, J.; Yang, N.; Tan, J.; Mo, F.; Hu, Z.; Yang, X.; et al. Screening and antitumor effect of an
+anti-CTLA-4 nanobody. Oncol. Rep. 2018 ,39, 511–518. [CrossRef]
+128. Gainkam, L.O.; Huang, L.; Caveliers, V .; Keyaerts, M.; Hernot, S.; Vaneycken, I.; Vanhove, C.; Revets, H.; De Baetselier, P .;
+Lahoutte, T. Comparison of the biodistribution and tumor targeting of two 99mTc-labeled anti-EGFR nanobodies in mice, using
+pinhole SPECT/micro-CT. J. Nucl. Med. 2008 ,49, 788–795. [CrossRef]
+129. Huang, L.; Gainkam, L.O.; Caveliers, V .; Vanhove, C.; Keyaerts, M.; De Baetselier, P .; Bossuyt, A.; Revets, H.; Lahoutte, T. SPECT
+imaging with 99mTc-labeled EGFR-specific nanobody for in vivo monitoring of EGFR expression. Mol. Imaging Biol. 2008 ,10,
+167–175. [CrossRef]
+130. Maryam, Q.; Mahdi, B.; Mohammad Ali, S.; Vahid, M.-K.; Homa, M.-K.; Mahdi, H.-A. Construction and expression of an
+anti-VEGFR2 Nanobody-Fc fusionbody in NS0 host cell. Protein Expr. Purif. 2016 ,123, 19–25.
+131. Van Impe, K.; Bethuyne, J.; Cool, S.; Impens, F.; Ruano-Gallego, D.; De Wever, O.; Vanloo, B.; Van Troys, M.; Lambein, K.;
+Boucherie, C.; et al. A nanobody targeting the F-actin capping protein CapG restrains breast cancer metastasis. Breast Cancer Res.
+2013 ,15, R116. [CrossRef] [PubMed]
+132. Li, T.; Qi, S.; Unger, M.; Hou, Y.N.; Deng, Q.W.; Liu, J.; Lam, C.M.C.; Wang, X.W.; Xin, D.; Zhang, P .; et al. Immuno-targeting the
+multifunctional CD38 using nanobody. Sci. Rep. 2016 ,6, 27055. [CrossRef]
+133. Ingram, J.R.; Blomberg, O.S.; Sockolosky, J.T.; Ali, L.; Schmidt, F.I.; Pishesha, N.; Espinosa, C.; Dougan, S.K.; Garcia, K.C.;
+Ploegh, H.L.; et al. Localized CD47 blockade enhances immunotherapy for murine melanoma. Proc. Natl. Acad. Sci. USA 2017 ,
+114, 10184–10189. [CrossRef] [PubMed]Cancers 2024 ,16, 371 23 of 25
+134. Maussang, D.; Mujic-Delic, A.; Descamps, F.J.; Stortelers, C.; Vanlandschoot, P .; Stigter-van Walsum, M.; Vischer, H.F.; van Roy, M.;
+Vosjan, M.; Gonzalez-Pajuelo, M.; et al. Llama-derived single variable domains (nanobodies) directed against chemokine receptor
+CXCR7 reduce head and neck cancer cell growth in vivo. J. Biol. Chem. 2013 ,288, 29562–29572. [CrossRef]
+135. Sadeghnezhad, G.; Rom ão, E.; Bernedo-Navarro, R.; Massa, S.; Khajeh, K.; Muyldermans, S.; Hassania, S. Identification of New
+DR5 Agonistic Nanobodies and Generation of Multivalent Nanobody Constructs for Cancer Treatment. Int. J. Mol. Sci. 2019 ,
+20, 4818. [CrossRef]
+136. Zottel, A.; Jovˇ cevska, I.; Šamec, N.; Mlakar, J.; Šribar, J.; Križaj, I.; Skoblar Vidmar, M.; Komel, R. Anti-vimentin, anti-TUFM,
+anti-NAP1L1 and anti-DPYSL2 nanobodies display cytotoxic effect and reduce glioblastoma cell migration. Ther. Adv. Med. Oncol.
+2020 ,12, 1758835920915302. [CrossRef] [PubMed]
+137. Tabtimmai, L.; Suphakun, P .; Srisook, P .; Kiriwan, D.; Phanthong, S.; Kiatwuthinon, P .; Chaicumpa, W.; Choowongkomon, K.
+Cell-penetrable nanobodies (transbodies) that inhibit the tyrosine kinase activity of EGFR leading to the impediment of human
+lung adenocarcinoma cell motility and survival. J. Cell. Biochem. 2019 ,120, 18077–18087. [CrossRef]
+138. Chen, T.; Liu, X.; Hong, H.; Wei, H. Novel single-domain antibodies against the EGFR domain III epitope exhibit the anti-tumor
+effect. J. Transl. Med. 2020 ,18, 376. [CrossRef]
+139. Lamtha, T.; Krobthong, S.; Yingchutrakul, Y.; Samutrtai, P .; Gerner, C.; Tabtimmai, L.; Choowongkomon, K. A novel nanobody
+as therapeutics target for EGFR-positive colorectal cancer therapy: Exploring the effects of the nanobody on SW480 cells using
+proteomics approach. Proteome Sci. 2022 ,20, 9. [CrossRef] [PubMed]
+140. Su, Z.; Han, Y.; Sun, Q.; Wang, X.; Xu, T.; Xie, W.; Huang, X. Anti-MET VHH Pool Overcomes MET-Targeted Cancer Therapeutic
+Resistance. Mol. Cancer Ther. 2019 ,18, 100–111. [CrossRef]
+141. Zhang, C.; Tang, Q.; Xia, H.; Xu, H.; Bi, F. Identification and characterization of inhibitory nanobody against p38delta.
+Biochem. Biophys. Res. Commun. 2022 ,600, 60–66. [CrossRef]
+142. Zhang, N.; Guo, H.; Zheng, W.; Wang, T.; Ma, X. Design and screening of a chimeric survivin-specific nanobody and its anticancer
+activities in vitro. Anticancer. Drugs 2016 ,27, 839–847. [CrossRef]
+143. Meltzer, M.; Eliash, N.; Azoulay, Z.; Hadad, U.; Papo, N. In vitro inhibition of cancer angiogenesis and migration by a nanobody
+that targets the orphan receptor Tie1. Cell. Mol. Life Sci. 2022 ,79, 312. [CrossRef]
+144. Teicher, B.A. Antibody-drug conjugate targets. Curr. Cancer Drug Targets 2009 ,9, 982–1004. [CrossRef]
+145. Jin, R.; Liu, L.; Xing, Y.; Meng, T.; Ma, L.; Pei, J.; Cong, Y.; Zhang, X.; Ren, Z.; Wang, X.; et al. Dual Mechanisms of Novel CD73-
+Targeted Antibody and Antibody-Drug Conjugate in Inhibiting Lung Tumor Growth and Promoting Antitumor Immune-Effector
+Function. Mol. Cancer Ther. 2020 ,19, 2340–2352. [CrossRef] [PubMed]
+146. Goldenberg, D.M.; Sharkey, R.M. Sacituzumab govitecan, a novel, third-generation, antibody-drug conjugate (ADC) for cancer
+therapy. Expert. Opin. Biol. Ther. 2020 ,20, 871–885. [CrossRef]
+147. Wu, Y.; Li, Q.; Kong, Y.; Wang, Z.; Lei, C.; Li, J.; Ding, L.; Wang, C.; Cheng, Y.; Wei, Y.; et al. A highly stable human single-domain
+antibody-drug conjugate exhibits superior penetration and treatment of solid tumors. Mol. Ther. 2022 ,30, 2785–2799. [CrossRef]
+148. Dean, A.Q.; Luo, S.; Twomey, J.D.; Zhang, B. Targeting cancer with antibody-drug conjugates: Promises and challenges. MAbs
+2021 ,13, 1951427. [CrossRef] [PubMed]
+149. Espelin, C.W.; Leonard, S.C.; Geretti, E.; Wickham, T.J.; Hendriks, B.S. Dual HER2 Targeting with Trastuzumab and Liposomal-
+Encapsulated Doxorubicin (MM-302) Demonstrates Synergistic Antitumor Activity in Breast and Gastric Cancer. Cancer Res. 2016 ,
+76, 1517–1527. [CrossRef]
+150. Rosenfeld, L.; Sananes, A.; Zur, Y.; Cohen, S.; Dhara, K.; Gelkop, S.; Ben Zeev, E.; Shahar, A.; Lobel, L.; Akabayov, B.; et al.
+Nanobodies Targeting Prostate-Specific Membrane Antigen for the Imaging and Therapy of Prostate Cancer. J. Med. Chem. 2020 ,
+63, 7601–7615. [CrossRef] [PubMed]
+151. Shajari, S.; Farajollahi, M.M.; Behdani, M.; Tarighi, P . Production and Conjugation of Truncated Recombinant Diphtheria Toxin
+to VEGFR-2 Specific Nanobody and Evaluation of its Cytotoxic Effect on PC-3 Cell Line. Mol. Biotechnol. 2022 ,64, 1218–1226.
+[CrossRef]
+152. Li, R.; Zhu, X.; Zhou, P .; Qiao, Y.; Li, Y.; Xu, Y.; Shi, X. Generation of a High-Affinity Nanobody Against CD147 for Tumor
+Targeting and Therapeutic Efficacy Through Conjugating Doxorubicin. Front. Immunol. 2022 ,13, 852700. [CrossRef]
+153. Sterner, R.C.; Sterner, R.M. CAR-T cell therapy: Current limitations and potential strategies. Blood Cancer J. 2021 ,11, 69. [CrossRef]
+154. Golubovskaya, V . CAR-T Cells Targeting Immune Checkpoint Pathway Players. Front. Biosci. 2022 ,27, 121. [CrossRef] [PubMed]
+155. Titov, A.; Zmievskaya, E.; Ganeeva, I.; Valiullina, A.; Petukhov, A.; Rakhmatullina, A.; Miftakhova, R.; Fainshtein, M.; Rizvanov, A.;
+Bulatov, E. Adoptive Immunotherapy beyond CAR T-Cells. Cancers 2021 ,13, 743. [CrossRef] [PubMed]
+156. Berdeja, J.G.; Madduri, D.; Usmani, S.Z.; Jakubowiak, A.; Agha, M.; Cohen, A.D.; Stewart, A.K.; Hari, P .; Htut, M.;
+Lesokhin, A.; et al. Ciltacabtagene autoleucel, a B-cell maturation antigen-directed chimeric antigen receptor T-cell therapy in
+patients with relapsed or refractory multiple myeloma (CARTITUDE-1): A phase 1b/2 open-label study. Lancet 2021 ,398, 314–324.
+[CrossRef]
+157. Wagner, D.L.; Fritsche, E.; Pulsipher, M.A.; Ahmed, N.; Hamieh, M.; Hegde, M.; Ruella, M.; Savoldo, B.; Shah, N.N.;
+Turtle, C.J.; et al. Immunogenicity of CAR T cells in cancer therapy. Nat. Rev. Clin. Oncol. 2021 ,18, 379–393. [CrossRef]
+[PubMed]
+158. Delgoffe, G.M.; Xu, C.; Mackall, C.L.; Green, M.R.; Gottschalk, S.; Speiser, D.E.; Zehn, D.; Beavis, P .A. The role of exhaustion in
+CAR T cell therapy. Cancer Cell 2021 ,39, 885–888. [CrossRef]Cancers 2024 ,16, 371 24 of 25
+159. Lynn, R.C.; Weber, E.W.; Sotillo, E.; Gennert, D.; Xu, P .; Good, Z.; Anbunathan, H.; Lattin, J.; Jones, R.; Tieu, V .; et al. c-Jun
+overexpression in CAR T cells induces exhaustion resistance. Nature 2019 ,576, 293–300. [CrossRef] [PubMed]
+160. Xie, Y.J.; Dougan, M.; Jailkhani, N.; Ingram, J.; Fang, T.; Kummer, L.; Momin, N.; Pishesha, N.; Rickelt, S.; Hynes, R.O.; et al.
+Nanobody-based CAR T cells that target the tumor microenvironment inhibit the growth of solid tumors in immunocompetent
+mice. Proc. Natl. Acad. Sci. USA 2019 ,116, 7624–7631. [CrossRef]
+161. Xie, Y.J.; Dougan, M.; Ingram, J.R.; Pishesha, N.; Fang, T.; Momin, N.; Ploegh, H.L. Improved Antitumor Efficacy of Chimeric
+Antigen Receptor T Cells that Secrete Single-Domain Antibody Fragments. Cancer Immunol. Res. 2020 ,8, 518–529. [CrossRef]
+162. Rajabzadeh, A.; Rahbarizadeh, F.; Ahmadvand, D.; Kabir Salmani, M.; Hamidieh, A.A. A VHH-Based Anti-MUC1 Chimeric
+Antigen Receptor for Specific Retargeting of Human Primary T Cells to MUC1-Positive Cancer Cells. Cell J. 2021 ,22, 502–513.
+[CrossRef]
+163. Hanssens, H.; Meeus, F.; De Veirman, K.; Breckpot, K.; Devoogdt, N. The antigen-binding moiety in the driver’s seat of CARs.
+Med. Res. Rev. 2022 ,42, 306–342. [CrossRef]
+164. Ji, X.; Peng, Z.; Li, X.; Yan, Z.; Yang, Y.; Qiao, Z.; Liu, Y. Neutralization of TNF αin tumor with a novel nanobody potentiates
+paclitaxel-therapy and inhibits metastasis in breast cancer. Cancer Lett. 2017 ,386, 24–34. [CrossRef] [PubMed]
+165. Karami, E.; Sabatier, J.M.; Behdani, M.; Irani, S.; Kazemi-Lomedasht, F. A nanobody-derived mimotope against VEGF inhibits
+cancer angiogenesis. J. Enzym. Inhib. Med. Chem. 2020 ,35, 1233–1239. [CrossRef]
+166. Farajpour, Z.; Rahbarizadeh, F.; Kazemi, B.; Ahmadvand, D. A nanobody directed to a functional epitope on VEGF, as a novel
+strategy for cancer treatment. Biochem. Biophys. Res. Commun. 2014 ,446, 132–136. [CrossRef] [PubMed]
+167. Deng, C.; Xiong, J.; Gu, X.; Chen, X.; Wu, S.; Wang, Z.; Wang, D.; Tu, J.; Xie, J. Novel recombinant immunotoxin of EGFR specific
+nanobody fused with cucurmosin, construction and antitumor efficiency in vitro. Oncotarget 2017 ,8, 38568–38580. [CrossRef]
+168. Mohammadlou, M.; Salehi, S.; Baharlou, R. Development of anti DLL4 Nanobody fused to truncated form of Pseudomonas
+exotoxin: As a novel immunotoxin to inhibit of cell proliferation and neovascularization. Anal. Biochem. 2022 ,653, 114776.
+[CrossRef]
+169. Ji, F.; Sha, H.; Meng, F.; Zhu, A.; Ding, N.; Zhang, H.; Xu, H.; Qian, H.; Yu, L.; Liu, Q.; et al. Tumor-penetrating peptide fused
+EGFR single-domain antibody enhances radiation responses following EGFR inhibition in gastric cancer. Oncol. Rep. 2018 ,40,
+1583–1591. [CrossRef]
+170. Dougan, M.; Ingram, J.R.; Jeong, H.J.; Mosaheb, M.M.; Bruck, P .T.; Ali, L.; Pishesha, N.; Blomberg, O.; Tyler, P .M.;
+Servos, M.M.; et al. Targeting Cytokine Therapy to the Pancreatic Tumor Microenvironment Using PD-L1-Specific VHHs.
+Cancer Immunol. Res. 2018 ,6, 389–401. [CrossRef] [PubMed]
+171. Ji, X.; Han, T.; Kang, N.; Huang, S.; Liu, Y. Preparation of RGD4C fused anti-TNF αnanobody and inhibitory activity on
+triple-negative breast cancer in vivo. Life Sci. 2020 ,260, 118274. [CrossRef] [PubMed]
+172. Yin, W.; Yu, X.; Kang, X.; Zhao, Y.; Zhao, P .; Jin, H.; Fu, X.; Wan, Y.; Peng, C.; Huang, Y. Remodeling Tumor-Associated
+Macrophages and Neovascularization Overcomes EGFR(T790M) -Associated Drug Resistance by PD-L1 Nanobody-Mediated
+Codelivery. Small 2018 ,14, e1802372. [CrossRef] [PubMed]
+173. Woodham, A.W.; Cheloha, R.W.; Ling, J.; Rashidian, M.; Kolifrath, S.C.; Mesyngier, M.; Duarte, J.N.; Bader, J.M.; Skeate, J.G.; Da
+Silva, D.M.; et al. Nanobody-Antigen Conjugates Elicit HPV-Specific Antitumor Immune Responses. Cancer Immunol. Res. 2018 ,6,
+870–880. [CrossRef] [PubMed]
+174. Zhang, B.; Shu, Y.; Hu, S.; Qi, Z.; Chen, Y.; Ma, J.; Wang, Y.; Cheng, P . In Situ Tumor Vaccine Expressing Anti-CD47 Antibody
+Enhances Antitumor Immunity. Front. Oncol. 2022 ,12, 897561. [CrossRef]
+175. Chen, F.; Liu, Z.; Jiang, F. Prospects of Neutralizing Nanobodies Against SARS-CoV-2. Front. Immunol. 2021 ,12, 690742. [CrossRef]
+176. Güttler, T.; Aksu, M.; Dickmanns, A.; Stegmann, K.M.; Gregor, K.; Rees, R.; Taxer, W.; Rymarenko, O.; Schünemann, J.;
+Dienemann, C.; et al. Neutralization of SARS-CoV-2 by highly potent, hyperthermostable, and mutation-tolerant nanobodies.
+EMBO J. 2021 ,40, e107985. [CrossRef] [PubMed]
+177. Zhao, L.; Liu, C.; Xing, Y.; He, J.; O’Doherty, J.; Huang, W.; Zhao, J. Development of a99mTc-Labeled Single-Domain Antibody for
+SPECT/CT Assessment of HER2 Expression in Breast Cancer. Mol. Pharm. 2021 ,18, 3616–3622. [CrossRef]
+178. Wong, N.C.; Cai, Y.; Meszaros, L.K.; Biersack, H.J.; Cook, G.J.; Ting, H.H.; Mottaghy, F.M. Preclinical development and
+characterisation of99mTc-NM-01 for SPECT/CT imaging of human PD-L1. Am. J. Nucl. Med. Mol. Imaging 2021 ,11, 154–166.
+179. Xing, Y.; Chand, G.; Liu, C.; Cook, G.J.R.; O’Doherty, J.; Zhao, L.; Wong, N.C.L.; Meszaros, L.K.; Ting, H.H.; Zhao, J. Early Phase I
+Study of a99mTc-Labeled Anti-Programmed Death Ligand-1 (PD-L1) Single-Domain Antibody in SPECT/CT Assessment of
+PD-L1 Expression in Non-Small Cell Lung Cancer. J. Nucl. Med. 2019 ,60, 1213–1220. [CrossRef] [PubMed]
+180. Hu, B.; Liu, T.; Li, L.; Shi, L.; Yao, M.; Li, C.; Ma, X.; Zhu, H.; Jia, B.; Wang, F. IgG-Binding Nanobody Capable of Pro-
+longing Nanobody-Based Radiotracer Plasma Half-Life and Enhancing the Efficacy of Tumor-Targeted Radionuclide Therapy.
+Bioconjug. Chem. 2022 ,33, 1328–1339. [CrossRef]
+181. Alauddin, M.M.; Khawli, L.A. Advances in Immuno-PET for the Detection of Cancer and Assessment of Response to Therapy.
+Curr. Med. Chem. 2021 ,28, 647–672. [CrossRef]
+182. Varasteh, Z.; Braeuer, M.; Mohanta, S.; Steinsiek, A.L.; Habenicht, A.; Omidvari, N.; Topping, G.J.; Rischpler, C.; Weber, W.A.;
+Sager, H.B.; et al. In vivo Visualization of M2 Macrophages in the Myocardium After Myocardial Infarction (MI) Using (68)
+Ga-NOTA-Anti-MMR Nb: Targeting Mannose Receptor (MR, CD206) on M2 Macrophages. Front. Cardiovasc. Med. 2022 ,9, 889963.
+[CrossRef]Cancers 2024 ,16, 371 25 of 25
+183. Varasteh, Z.; Mohanta, S.; Li, Y.; L ópez Armbruster, N.; Braeuer, M.; Nekolla, S.G.; Habenicht, A.; Sager, H.B.; Raes, G.; Weber, W.
+Targeting mannose receptor expression on macrophages in atherosclerotic plaques of apolipoprotein E-knockout mice using
+68Ga-NOTA-anti-MMR nanobody: Non-invasive imaging of atherosclerotic plaques. EJNMMI Res. 2019 ,9, 5. [CrossRef]
+[PubMed]
+184. Fares, J.; Kanojia, D.; Rashidi, A.; Ahmed, A.U.; Balyasnikova, I.V .; Lesniak, M.S. Diagnostic Clinical Trials in Breast Cancer Brain
+Metastases: Barriers and Innovations. Clin. Breast Cancer 2019 ,19, 383–391. [CrossRef] [PubMed]
+185. D’Huyvetter, M.; Vos, J.; Caveliers, V .; Vaneycken, I.; Heemskerk, J.; Duhoux, F.P .; Fontaine, C.; Vanhoeij, M.; Windhorst,
+A.D.; Aa, F.V .; et al. Phase I Trial of131I-GMIB-Anti-HER2-VHH1, a New Promising Candidate for HER2-Targeted Radionuclide
+Therapy in Breast Cancer Patients. J. Nucl. Med. 2021 ,62, 1097–1105. [CrossRef] [PubMed]
+186. Chocarro, L.; Arasanz, H.; Fern ández-Rubio, L.; Blanco, E.; Echaide, M.; Bocanegra, A.; Teijeira, L.; Garnica, M.; Morilla, I.;
+Martínez-Aguillo, M.; et al. CAR-T Cells for the Treatment of Lung Cancer. Life2022 ,12, 561. [CrossRef] [PubMed]
+187. Lisi, L.; Lacal, P .M.; Martire, M.; Navarra, P .; Graziani, G. Clinical experience with CTLA-4 blockade for cancer immunother-
+apy: From the monospecific monoclonal antibody ipilimumab to probodies and bispecific molecules targeting the tumor
+microenvironment. Pharmacol. Res. 2022 ,175, 105997. [CrossRef] [PubMed]
+188. Ma, B.T.-w.; Dai, V .; Greenberg, J.; Ballman, K.V .; Li, L.; Garcia, C.A.; Scheff, R.J.; Saxena, A.; Giaccone, G. Phase II study of KN046
+in patients with thymic carcinoma who failed immune checkpoint inhibitors. J. Clin. Oncol. 2022 ,40. [CrossRef]
+189. Zhang, F. Structural Biology of anti-PD-L1 and anti-CTLA4 Antibodies in Immune Therapies for Cancer Treatments. Ph.D. Thesis,
+Shanghai Jiaotong University, Shanghai, China, 2018.
+190. Papadopoulos, K.P .; Harb, W.; Lu, N.; Ma, X.; He, Y.; Yuan, L.; Fu, M.; Lin, Y.; Xu, W.; Wang, X.; et al. Phase I study of KN035, a
+novel fusion Anti-PD-L1 antibody administered subcutaneously in patients with advanced solid tumors in the USA. Ann. Oncol.
+2018 ,29, viii405. [CrossRef]
+191. Zhang, F.; Wei, H.; Wang, X.; Bai, Y.; Wang, P .; Wu, J.; Jiang, X.; Wang, Y.; Cai, H.; Xu, T.; et al. Structural basis of a novel PD-L1
+nanobody for immune checkpoint blockade. Cell Discov. 2017 ,3, 17004. [CrossRef]
+192. Hong, D.; SciMentum, S.; Tanyi, J.; MacMullen, L.; Jalbert, L.; Muzithras, V .; Zikaras, K.; Cao, L.; O’Cearbhaill, R.; Quint ás-
+Cardama, A. 959O Gavocabtagene autoleucel (gavo-cel, TC-210) dose escalation in refractory mesothelin-expressing solid tumors.
+Ann. Oncol. 2021 ,32, S830. [CrossRef]
+193. Markham, A. Envafolimab: First Approval. Drugs 2022 ,82, 235–240. [CrossRef]
+194. Zhao, L.; Liu, C.; Xing, Y.; He, J.; O’Doherty, J.; Huang, W.; Zhao, J. First-in-Human Study of a99mTc-Labeled Single-Domain
+Antibody for SPECT/CT Assessment of HER2 Expression in Breast Cancer. 2021. Available online: https://www.researchsquare.
+com/article/rs-356098/v1 (accessed on 15 April 2022).
+195. D’Angelo, S.P .; Robinson, S.I.; Lam, J.; Adams, B.J.; Freddo, J.L.; Theuer, C.P .; Maki, R.G. ENVASARC: A pivotal trial of
+envafolimab, and envafolimab in combination with ipilimumab, in patients with advanced or metastatic undifferentiated
+pleomorphic sarcoma or myxofibrosarcoma who have progressed on prior chemotherapy. J. Clin. Oncol. 2021 ,39, TPS11581.
+[CrossRef]
+196. Wang, Y.; Wang, C.; Huang, M.; Qin, S.; Zhao, J.; Sang, S.; Zheng, M.; Bian, Y.; Huang, C.; Zhang, H.; et al. Pilot study of a
+novel nanobody (68) Ga-NODAGA-SNA006 for instant PET imaging of CD8(+) T cells. Eur. J. Nucl. Med. Mol. Imaging 2022 ,49,
+4394–4405. [CrossRef] [PubMed]
+197. Fang, Y.L.; Yao, G.F.; Zhong, W.X.; Duan, W.W.; Zhou, Z.X.; Wen, X.F.; Chen, Y.L.; Fang, J.J.; Wang, Y.W.; Jiang, W.Q.; et al.
+DR30303, a SMART-VHHBody powered anti-CLDN18.2 VHH-Fc with enhanced ADCC activity for the treatment of gastric and
+pancreatic cancers. Cancer Res. 2022 ,82, 2857. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

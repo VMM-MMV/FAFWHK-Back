@@ -1,0 +1,1099 @@
+Article https://doi.org/10.1038/s41467-023-40610-5
+The net electrostatic potential and hydration
+of ABCG2 affect substrate transport
+Tomoka Gose1, Heather M. Aitken2, Yao Wang1, John Lynch1,
+Evadnie Rampersaud3, Yu Fukuda1,M e d bW i l l s1,S t e f a n i eA .B a r i l1,
+Robert C. Ford4, Anang Shelat5,M e g a nL .O ’Mara2& John D. Schuetz1
+ABCG2 is a medically important ATP-bin ding cassette transporter with crucial
+roles in the absorption and distribution of chemically-diverse toxins anddrugs, reducing the cellular accumula tion of chemotherapeutic drugs to
+facilitate multidrug resistance in cancer. ABCG2 ’s capacity to transport both
+hydrophilic and hydrophobic compounds is not well understood. Here weassess the molecular basis for substrat e discrimination by the binding pocket.
+Substitution of a phylogenetically-cons erved polar residue, N436, to alanine in
+the binding pocket of human ABCG2 pe rmits only hydrophobic substrate
+transport, revealing the unique role of N436 as a discriminator. Molecular
+dynamics simulations show that this ala nine substitution alters the electro-
+static potential of the binding pocket fav oring hydration of the transport pore.
+This change affects the contact with sub strates and inhibitors, abrogating
+hydrophilic compound transport while re taining the transport of hydrophobic
+compounds. The N436 residue is also requ ired for optimal transport inhibition
+of ABCG2, as many inhibitors are functionally impaired by this ABCG2 muta-tion. Overall, these ﬁndings have biomedical implications, broadly extending
+our understanding of substrat e and inhibitor interactions.
+ABCG2 is a medically-relevant ATP-binding cassette (ABC) transporter.
+In cancer cells, it modi ﬁes the cytotoxic response to many structurally
+diverse and mechanistically-unrelated chemotherapeutic drugs1.
+ABCG2 also plays a key role in protecting hematopoietic stem cells
+from low-oxygen environments and cytotoxins2,3. Further, genetic
+variation of ABCG2 is associated with increased risk of gout and
+hyperuricemia due to ABCG2 transport of the endogenous substrateuric acid
+4. Understanding the factors contributing to the interactions
+between ABCG2 and its substrates/inhibitors will provide a basis forthe rational development of advanced therapeutics. Our under-standing of the molecular interactions that ABCG2 employs to recog-nize inhibitors and substrates has been signi ﬁcantly advanced by cryo-
+EM structural studies
+5–10. These studies were crucial in identifying thefunctional role of amino acid F439 as a molecular “clamp ”that is used
+in vitro and in live cells to actively engage substrates and inhibitors inthe ABCG2 binding pocket
+11. Although inhibitors and substrates enter
+the same binding pocket, the substrate/inhibitor-bound ABCG2 cryo-
+EM structures reveal that substrates and inhibitors may be dis-tinguished by differences that arise in part from the size of the com-pound: inhibitors occupy a larger volume and have a greater numberof contact points within the binding pocket
+7. Like ABCB112,t h e r ei s
+overlap in substrate and inhibitor binding contacts in ABCG26,7,9.
+One conundrum among the ﬁve ABCG transporter family
+members (ABCG1, ABCG2, ABCG4, ABCG5, and ABCG8), is thatABCG2 ’s broad substrate speci ﬁcity includes the ability to transport
+both hydrophobic and hydrophilic substrates. Human ABCG2Received: 14 December 2021
+Accepted: 3 August 2023
+Check for updates
+1Department of Pharmacy and Pharmaceutical Sciences, St. Jude Children ’s Research Hospital, 262 Danny Thomas Place, Memphis, TN 38105, USA.
+2Australian Institute of Bioengineering and Nanotechnology, The University of Queensland, Australia, Cnr College Rd & Cooper Rd, St Lucia, QLD 4072,
+Australia.3Center for Applied Bioinformatics, St Jude Children ’s Research Hospital, 262 Danny Thomas Place, Memphis, TN 38105, USA.4School of Biological
+Sciences, The University of Manchester, Oxford Road, Manchester M13 9PL, UK.5Department of Chemical Biology and Therapeutics, St. Jude Children ’s
+Research Hospital, 262 Danny Thomas Place, Memphis, TN 38105, USA. e-mail: john.schuetz@stjude.org
+Nature Communications |         (2023) 14:5035 11234567890():,;
+1234567890():,;harbors two unique phylogenetically-conserved polar residues, T435
+and N436, in the binding pocket13. These two residues have been
+speculated to contribute to ABCG2 hydrophobic and hydrophilicsubstrate transport in vivo. Cryo-EM structural studies reveal that the
+polar residue, N436, interacts with some substrates. When ABCG2
+harboring an N436A substitution is puri ﬁed and reconstituted into
+proteoliposomes, the substrate-stimulated ATPase activity andtransport are impared
+7,9.
+Here we show in cellulo that the substitution of N436A does not
+abolish the function of ABCG2, but profoundly impacts substrateselection. The previously published cryo-EM structures show that theevolutionarily conserved N436 residue in the ABCG2 binding pocketplays a unique role in substrate transport. Using a potent combinationof mutagenesis, in cellulo functional assays, molecular dynamicssimulations (MDS), and structural modeling, we show that this con-
+served polar residue in ABCG2 has pleiotropic effects on the interac-
+tions with substrate and inhibitor.
+Results
+Identi ﬁcation of the binding pocket residues required for ther-
+mal stabilization and transport of Hoechst 33342
+Weﬁrst examined how ATP binding altered ABCG2 substrate interac-
+tion using thermal stability experiments. ATP treatment of ABCG2-WTexpressing membranes produced a 2.5 °C increase in the T
+mcompared
+to untreated membranes, indicating an ATP-dependent thermal sta-bilization (Supplementary Fig. 1a). Next, we used cells expressing
+either ABCG2-WT or ABCG2-K86M (a mutant capable of binding, but
+not hydrolyzing ATP
+14) and performed a cellular thermal shift assay15
+with or without depletion of intracellular ATP by non-toxic 2-deoxy-d-glucose and sodium azide treatment. Depletion of intracellular ATPproduced reductions in the T
+mfor both ABCG2-WT and ABCG2-K86M,
+and since this mutant is catalytically inactive, the ATP interaction aloneseems suf ﬁcient to produce thermal stabilization (Supplementary
+Fig. 1b). Based on our previous studies
+11, we hypothesized that sub-
+strates might thermally stabilize ABCG2. The ABCG2 substrate,Hoechst 33342, thermally stabilized ABCG2-WT in a dose-dependentmanner in the absence of ATP (Supplementary Fig. 1c). We did not test
+it in the presence of ATP because an ATP-bound ABC transporter
+would bind substrate poorly as it is in a low af ﬁnity state
+16. The reduced
+afﬁnity for substrate in an ATP-bound state was con ﬁrmed by com-
+paring the ﬁndings for Hoechst 33342 interaction with ABCG2-K86M
+and ABCG2-E211Q (catalytically inactive mutants) in the absence andpresence of ATP (Supplementary Fig. 1c, d). These ﬁndings provided
+the basis for our decision to omit ATP in our experiments assessing theimpact of ABCG2 binding pocket mutations on Hoechst 33342interaction.
+To investigate the importance of the contacts identi ﬁed in ABCG2
+cryo-EM structures to Hoechst 3342 thermal stabilization, we devel-
+oped retroviral expression vectors containing variants of ABCG2 with
+binding pocket mutations (L405A, F432A, T435A, T435F, N436A,F439A, V546A, and M549A). Membrane vesicles were prepared fromAbcg2- KO MEFs expressing these ABCG2 mutants. Isothermal shift
+assays were performed on the membranes by varying the Hoechst33342 concentration at a ﬁxed, empirically determined, optimal tem-
+perature (see “Methods ”). Hoechst 33342 produced concentration-
+dependent stabilization of ABCG2-WT (Fig. 1a). The effect of the
+binding pocket residues on Hoech st 33342 thermal stabilization was
+not uniform and revealed interesting patterns: the alanine substitutionof residues T435 in transmembrane helix 2 (TMH2), and V546 andM549 in TMH5, slightly reduced Hoechst 33342 thermal stabilization,
+suggesting that Hoechst 33342 sti ll strongly or moderately bound
+these ABCG2 mutants. In contrast, alanine substitution of residuesF432, N436, and F439 in TMH2 mostly prevented Hoechst 33342thermal stabilization, suggesting a loss in Hoechst 33342 interac-tion (Fig. 1a).In a peristaltic transport model such as that proposed for ABCG2
+7,
+transport is a dynamic process that requires the initial entry of sub-strate into the binding pocket, permeation and coordination of sub-strate, prior to an ATP-induced conformational change that powers
+efﬂux. We hypothesized that variants with binding site mutations that
+had the largest effect on the Hoechst 33342-induced thermal stabili-zation would also display impaired Hoechst 33342 transport. Hoechst33342 cellular accumulation assays were used to determine the rela-tionship between Hoechst 33342 thermal stabilization/interaction andtransport. Expectedly, the F439A protein was not thermal stabilized byHoechst 33342 and was incapable of transport (Fig. 1a, b). This is
+consistent with the proposed role of F439 as a molecular clamp thatengages substrates
+11. The substitutions F432A and M549A also reduced
+Hoechst 33342 transport, which corresponded with their impairedABCG2 thermal stabilization/interaction. Intriguingly, the N436A sub-
+stitution markedly reduced Hoechst 33342 thermal stabilization/
+interaction with no loss in transport. Instead, ABCG2-N436A hadenhanced Hoechst 33342 transport, as re ﬂected by the greater
+reduction in the intracellular level of Hoechst 33342 (Fig. 1b). This was
+unexpected as puri ﬁed ABCG2-N436A reconstituted into proteolipo-
+somes has been reported to be incapable of estrone 3-sulfatetransport
+7. The relationship between thermal stabilization/interac-
+tion and transport is depicted in the heatmap of the binding pocketmutants (Fig. 1c) and shows ABCG2-N436A is an outlier with improved
+transport and loss of the thermal stabilization/interaction.
+N436A enhances Hoechst 33342 transport and alters con-
+formational response
+The ABCG2-N436A substitution displayed markedly reduced intracel-
+lular Hoechst 33342 indicated by decreased steady-state accumulation(Fig. 1d). The difference between ABCG-WT and ABCG2-N436A was not
+due to a difference in Hoechst 33342 initial uptake, given that the initialrate of uptake was linear and the slo pes virtually identical for ABCG2-
+WT and ABCG2-N436A (Fig. 1d). The steady-state level of Hoechst
+33342 was twofold lower in ABCG2-N436A cells (Fig. 1d). Steady-state
+drug levels represent an equilibrium between uptake and ef ﬂux rates,
+which can be used to estimate the rate of drug ef ﬂux
+17. The twofold
+lower steady-state level of Hoechst 33342 in cells expressing ABCG2-
+N436A, therefore, indicates an estimated twofold increase in ef ﬂux
+(Fig. 1d). Direct monitoring of Hoechst 33342 ef ﬂux is not possible
+because of its avidity for binding to the minor groove of DNA, leavinglittle free Hoechst 33342 available for assessing ef ﬂux. This effect is
+also responsible for Hoechst 33342 ’s cytotoxicity, a property that we
+utilized as an additional approach to assess ABCG2 transport activity
+18.
+The Hoechst 33342 cytotoxicity assay showed that N436A-expressingcells exhibited a twofold greater Hoechst 33342 EC
+50than that for
+ABCG2-WT cells, indicating strong protection compared to the emptyvector expressing cells (Fig. 1e). The greater reduction in Hoechst
+33342 cytotoxicity in ABCG2-N436A may be because Hoechst 33342
+cytotoxicity occurs by a dual process of DNA binding and topoi-somerase inhibition, both of which promote cytotoxic DNA damage.An investigation of the ATPase activity of ABCG2-WT and ABCG2-N436A showed that the ATP-concentration response curve for ABCG2-N436A shifted to the left, with a 5.7-fold lower EC
+50value, whereas
+there was no signi ﬁcant difference in the maximum effect (E max)o fA T P
+between WT (E max=4 8 + / −19 nmol min−1mg protein−1and EC 50=1 . 7
++/−1.4 mM) and N436A (E max=4 0 + / −6 nmol min−1mg protein−1and
+EC50=0 . 3+ / −0.1 mM) (Fig. 1f). Consistent with the lower EC 50value of
+ATP (0.3 mM) for ABCG2-N436A, ABCG2-N436A was thermally stabi-lized by the non-hydrolyzable ATP analog AMP-PNP at lower con-
+centrations than ABCG2-WT (Supplementary Fig. 2a). Higher substrate
+concentrations can inhibit ATPase activity
+19. As expected, Hoechst
+33342 dose-dependently reduced ABCG2-WT ATPase activity inmembranes with an IC
+50of 35 μM (Supplementary Fig. 2b), consistent
+with the literature20, while membranes from cells expressing ABCG2-Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 2N436A appeared mostly refractory to Hoechst 33342 inhibition, con-
+sistent with our impaired Hoechst 33342 thermal stabilization results(Supplementary Fig. 2b and Fig. 1a).
+We hypothesized that the ABCG2 conformational responses to
+Hoechst 33342 binding may be altered by N436A substitution. TMH5of ABCG2 rotates between the apo-closed (inward-facing), and
+outward-facing nucleotide-bound states
+8with two residues in TMH5,
+V534 and A537, capable of sensing native substrate-induced con-formational changes. After cysteine substitution, these residues formcross-links when closely apposed in the presence of an oxidant, asdepicted in Fig. 1g. Treatment of cells with the oxidant, copperphenanthroline (CuPhen), shows the extent of intermolecular ABCG2
+dimer formation in intact cells as previously described
+8.W ec r e a t e d
+cells harboring ABCG2 expression plasmids for either V534C or A537Csubstitutions along with the extracellular C603S substitution to pre-vent the formation of an intermolecular disul ﬁde bond C603 –C603 ’
+8.
+Cell lines that expressed these ABCG2 chimeras were as follows:
+ABCG2-WT or ABCG2-N436A and either V534C/C603S or A537C/
+C603S. In the presence of CuPhen, oxidation of the cysteines occurredat V534C when ABCG2 was in the outward-facing ATP-bound state andat A537C when ABCG2 was in the apo-closed state (see diagram Fig. 1g).
+As expected, the potent ABCG2 inhibitor, Ko143, impaired CuPhen-
+a
+WT
+L405A
+F432A
+T435A
+T435F
+N436A
+F439A
+V546A
+M549AHoechst 33342 (μM)0
+15102050
+100
+UnheatedkDa
+72
+72
+72727272727272
+cb
+d
+ef
+i
+Control None
+CuPhen
+Ko143
+Hoechst 33342+ N436ANoneCuPhenKo143Hoechst 33342Control NoneCuPhenKo143
+Hoechst 33342+ N436ANone
+CuPhen
+Ko143Hoechst 33342C603S+A537C C603S+V534C
+Dimer
+MonomerkDa
+144
+72A537C cross-linking
+Ligand
+; A537C residueInward-facing state Apo-closed state
+NBD NBD NBD NBDExtracellular
+IntracellularMembrane
+ATP
+ATPV534C cross-linking
+Ligand
+; V534C residueOutward-facing state Inward-facing state
+NBD NBDNBD NBDgHoechst 33342-induced thermal stabilization
+hN/A: not available.ABCG2
+EC50 (μM)WT
+8.8 ± 1.9L405A
+9.6 ± 1.1F432A
+N/AT435A
+20 ± 4T435F
+21 ± 3N436A
+N/AF439A
+N/AV546A
+31 ± 13M549A
+N/A
+Ligand
+NBD NBD5D3 antibodyInward-facing state
+ATP
+ATPNBD NBDOutward-facing state0.63 ± 0.13 μMWTEC50 
+N436A
+Vector7.7 ± 0.6 μM 
+16 ± 1 μM ABCG2
+ATP1A1
+WT
+N436AkDa
+100
+7575Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 3induced dimer formation by V534C in the context of ABCG2-WT,
+indicating that Ko143 blocked the formation of the outward-facingstate (Fig. 1h). Hoechst 33342 did not block CuPhen-induced dimer
+formation by V534C (Fig. 1h). Unlike ABCG2-WT, the dimer formation
+by V534C in the context of ABCG2-N436A was markedly increased aftertreatment of cells with Hoechst 33342, suggesting an enhanced ten-
+dency towards the formation of an outward-facing state. To furtherdelineate if the ABCG2-N436A conformation was altered, we employed5D3, a conformationally sensitive ABCG2 antibody
+21, which strongly
+binds to the ECL3 when ABCG2 forms an inward-facing state5.S u b -
+strate binding typically promotes the formation of an outward-facing
+state, resulting in reduced or no effect of 5D3 binding. The strongerreduction in 5D3 binding for ABCG2-N436A by Hoechst 33342 com-pared to ABCG2-WT (Fig. 1i) suggested that ABCG2-N436A more
+readily transitioned from an inward-facing conformation to anoutward-facing conformation after Hoechst 33342 binding.
+Genetic and structure-based insi ghts into ligand interaction
+ABCG1 is closely related to ABCG2, but prefers sterols whereas ABCG2
+transports hydrophilic and hydrophobic substrates. An analysis of theABCG1 and ABCG2 binding pocket regions that form the conserved
+TMH2 reveals that ABCG1 ’s binding pocket contains predominantly
+hydrophobic residues relative to ABCG2. The preponderance of var-iants in DNA sequence of ABCG2 from the Genome AggregationDatabase ( GnomAD v3.1.1 ) compared with ABCG1 suggests that
+ABCG2 ’s binding pocket is still undergoing evolutionary adaptation
+whereas ABCG1 is not (Supplementary Fig. 3). In accord with this, thegenomic DNA sequences in ABCG2 appear more divergent than thetranslated peptide sequences. These highly conserved binding pocketregions forming TMH2 in ABCG1 and ABCG2 suggest the functionalimportance (Supplementary Fig. 3).
+To assess the potential contribution of N436A in discriminating
+between substrates, atomistic molecular dynamics simulations (MDS)
+were used to investigate the initial binding interactions of threeABCG2 substrates displaying markedly different logP values: erlotinib(logP 2.3), Hoechst 33342 (logP 4.5), and tariquidar (logP 5.4), andcompared to MDS of the inward-facing ABCG2 with no inhibitor orsubstrate present (apo-inward state). ABCG2-WT and two ABCG2 var-iants were studied: ABCG2-N436A and ABCG2-N436A-L405A. L405 was
+chosen based on our preliminary MDS data showing Hoechst 33342interacting with the L405 residue of ABCG2-N436A protein, consistentwith reports that some hydrophobic compounds interact with theL405 residue of ABCG2
+6,9.I na c c o r d a n c ew i t he x p e r i m e n t a ls t u d i e s ,
+these simulations were run using the highest resolution ATP-free
+inward-facing cryo-EM structure available with the inhibitor removed
+(PDB ID: 6ETI) and embedded in a solvated 80/20 POPC/Cholesterolbilayer. After equilibration, n= 3 replicate 300 ns simulations were
+produced for each system, giving 900 ns of combined simulations persystem. To ﬁrst assess protein stability in the MDS of the inward-facingconformation, the backbone RMSD of ABCG2 of each ABCG2 system
+was calculated, in the presence and absence of each compound(Supplementary Fig. 4). The time-dependent data for each indepen-dent simulation system (containing n= 3 concatenated replicate
+simulations) is provided as a Source data ﬁle. For each system, the
+RMSD plateaued within the ﬁrst 50 ns of the simulation to a value
+consistent with thermal noise in an elongated membrane protein,indicating that ABCG2 did not undergo any large-scale conformationalchanges. Unless otherwise stated, the results discussed below weredetermined using statistical averages across the n= 3 replicate simu-
+lations and cluster analysis of the protein.
+In assessing these MDS, we ﬁrst considered the overall changes to
+apo-inward ABCG2 (Fig. 2a) on incorporation of the N436A and N436A-
+L405A mutations. In the membrane-embedded ABCG2-WT, MDS showsolvent-accessible water wires within each individual monomer of theTMD, while the transport pore situated at the interface of the two TMDmonomers is dehydrated (Fig. 2b). Substitution to N436A provided a
+favorable region for the permeation of water molecules, with 4 + / −3
+water molecules present in the binding pocket across the replicate(n= 3) 300 ns simulations in the apo inward-facing conformation
+(Fig. 2c and Supplementary Fig. 11a). This change was maintained in the
+double mutant N436A-L405A (Fig. 2d). In the ﬁrst steps of substrate
+uptake, the substrate enters the transmembrane cavity and movestoward a minimum energy binding site, predicted to be locatedbetween the F439 clamps. While capturing the entire ABCG2 transportcycle is beyond the current capabilities of MDS, the ABCG2 6ETI cryo-EM structure provides a unique opportunity to gain insight into theinitial stages of the permeation of these varied compounds as the F439“clamping ”residues are close together, sterically hindering the entry
+of substrates (Fig. 2a). This is unlike the tariquidar bound ABCG2-
+structure (PDB ID: 7NEQ), where tariquidar occupies the regionbetween residues F439. While the docked orientation of tariquidar is
+different (see below and Supplementary Fig. 7) from previously pub-
+lished structural data (PDB ID 7NEQ), it is important to note that Kowalet al. show that tariquidar can adopt multiple conformations within the7NEQ density map
+9. QM calculations on the conformation of tariquidar
+taken from the 7NEQ cryo-EM structure show that its geometry ishighly constrained by an induced ﬁt interaction with the protein dur-
+ing the transport cycle (Supplem entary Data 1). While the cryo-EM
+conformation of tariquidar is not accessible using ﬂexible docking
+approaches, several contact residues are conserved between MDS andthe 7NEQ cryo-EM structure (Supplementary Fig. 7), suggesting theMDS samples intermediate conformations along the tariquidar trans-port pathway.
+In studying the broad substrate speci ﬁcity of ABCG2, it is impor-
+tant to note the concentration of polar residues lining the intracellularregion of the transmembrane pore (Supplementary Fig. 5). This pro-vides a favorable environment for initial coordination of hydrophilicsubstrates, such as erlotinib, in this region of the transport poreFig. 1 | Characterization of the impact of ABCG2 binding pocket mutations on
+Hoechst 33342 thermal stabilization and transport. a Hoechst 33342-induced
+thermal stabilization of wild-type (WT) and ABCG2 mutants. Representative ABCG2western blots (left), densitometry quanti ﬁcation (middle, mean ± SEM) from inde-
+pendent experiments ( n= 4 (WT, F432A, V546A, and M549A) or n= 3 (all others)),
+and the EC
+50values for Hoechst 33342 thermal stabilization (top, mean ± SEM).
+Signal intensities relative to ABCG2-WT at 50 μM Hoechst 33342 (right, mean ±
+SEM. P< 0.001 vs. WT). bIntracellular Hoechst 33342 levels in the MEFs expressing
+ABCG2 are shown as percentage of vector control (mean ± SEM, representative of
+three independent experiments. P< 0.001 vs. WT). cHeatmap shows the relative
+levels of Hoechst 33342 thermal stabilization ( a(right)) and transport activity ( b),
+with red being 100% and blue being no thermal stabilization or transport activity.
+dRelative intracellular Hoechst 33342 levels in the MEFs normalized to vector
+control at 90 min (mean ± SEM, representative of three independent experiments).eHoechst 33342 cytotoxicity in the MEFs expressing ABCG2-WT (black), ABCG2-N436A (red), or vector control (blue) (mean ± SEM of four independent experi-
+ments). fVanadate-sensitive ATPase activities for ABCG2-WT and ABCG2-N436A
+membranes quanti ﬁed over a range of ATP concentrations (mean ± SEM of four
+independent experiments). Representative ABCG2 western blot (top). gA537C
+forms intermolecular disul ﬁde bonds when ABCG2 is in the apo-closed state
+8.
+V534C forms intermolecular disul ﬁde bonds when ABCG2 is in the nucleotide-
+bound outward-facing state. hCuPhen-induced crosslinking of the V534C or A537C
+monitored with non-reducing SDS-PAGE and western blot analysis of ABCG2. Upper
+band represents disul ﬁde crosslinked ABCG2 (dimer; ~150 kDa). Representative
+ABCG2 western blots (top) and densitometry quanti ﬁcation (bottom, mean ± SEM)
+from independent experiments ( n=4( C 6 0 3 S+A 5 3 7 C ) , n=6( C 6 0 3 S+A 5 3 7 C+
+N436A), n=3( C 6 0 3 S+V 5 3 4 C ) ,o r n=5( C 6 0 3 S+V 5 3 4 C+N 4 3 6 A ) ) . iABCG2-WT
+and ABCG2-N436A labeled with 5D3-A647 antibody in the presence of 50 μM
+Hoechst 33342 (mean ± SEM of three independent experiments. P= 0.004 vs. WT).
+AllPvalues were calculated using two-tailed Student ’sttest.Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 4(Fig. 2e, f and Supplementary Fig. 5). Comparison of the ABCG2-WT
+and ABCG2-N436A shows the all-atom RMSD of erlotinib is extremelysmall across the 900 ns combined replicate simulation (0.9 + / −0.2 Å
+and 1.1 + / −0.2 Å, respectively), indicating the substrate is highly
+coordinated in both. Substitution to N436A signi ﬁcantly hydrates the
+erlotinib binding site (Fig. 2g), increasing the hydration number of the
+substrate from 17 + / −7 in ABCG2-WT simulations (Fig. 2f) to 25 + / −8
+water molecules within 4 Å of the drug in ABCG2-N436A (Fig. 2g),
+further stabilizing this hydrophilic substrate (logP 2.3; erlotinib) in aposition close to its initial uptake conformation (Fig. 2g, h andSupplementary Fig. 5). This reduces the propensity of erlotinib to
+permeate the transport pathway to the comparatively dehydratedF439 clamps (hydration number of 2 + / −2i nt h eA B C G 2 - W Ta n d1+/ −
+1 in the ABCG2-N436A simulations). Based on these simulations, wetested if N436 substitution affected transport of hydrophilic sub-
+strates. [
+14C]-labeled erlotinib was poorly exported by ABCG2-N436A,
+unlike ABCG2-WT (Fig. 2i). Furthermore, ABCG2-N436A was non-
+functional for topotecan (logP 2.0, Fig. 2j) and mitoxantrone (logP
+−0.5, Fig. 2k), in that it was unable to protect against their cytotoxicity.
+Monitoring of Hoechst 33342 intracellular accumulation after addition
+WT 
+N436Abc d N436A N436A-L405A WT
+fg h
+iErlotinib-WTa
+e
+ljk
+pErlotinib-N436A Erlotinib-N436A-L405A Erlotinib-WT
+mno Hoechst-N436A Hoechst-N436A-L405A Hoechst-WTL405’L405F439
+F439’N436’ N436F432F432’
+E446 E446’TMH1
+TMH1’TMH2 TMH2’Inward-facing state
+non-polar polar acidEC50 
+382 ± 48 nM 
+31 ± 6 nM 
+33 ± 4 nM 50 ± 12 nM WT 
+N436A 
+F439A 
+Vector WT
+N436A
+F439A
+VectorEC
+50 
+13.4 ± 2.0 nM 
+2.4 ± 0.5 nM 
+2.4 ± 0.5 nM 
+3.1 ± 1.2 nM Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 5of the hydrophilic competitive substrate, estrone 3-sulfate (logP 2.6,
+Fig.2l) indicated that as predicted, for ABCG2-WT, estrone 3-sulfate
+dose-dependently increased Hoechst 33342 accumulation, likely dueto its competition with Hoechst 33342 for the N436 binding site. Incontrast, accumulation of Hoechst 33342 by ABCG2-N436A was vir-tually unaffected by estrone 3-sulfate (Fig. 2l).
+Hoescht 33342 has a logP of 4.5, consistent with a mildly hydro-
+phobic substrate, yet contains three ionizable groups: the tetra-hydropyrazine amine (pKa 7.87), and two benzoimidazole groups withpKa ’s of 5.02 and 5.81
+22. At pH 7, the tetrahydropyrazine amine is likely
+to be protonated, resulting in an overall charge of +1 for Hoechst
+3334223. Hoechst 33342 is positioned asymmetrically in the pore
+throughout the MDS, where it lies between TMH1 and TMH2 of a singlemonomer (Fig. 2m and Supplementary Fig. 8). The sole interaction
+with the opposing monomer is a single salt bridge between the tetra-hydropyrazine cation and E446, on TMH2 of the opposing monomer(Supplementary Figs. 6 and 8). In ABCG2-WT simulations, the stericbulk of Hoechst 33342 prevents the interaction of N436 with TMH1,restricting its orientation such that N436 forms hydrogen- πinterac-
+tions with F432, located one helical turn above N436 (Fig. 2ma n d
+Supplementary Figs. 6 and 8). Upon substitution to N436A, thisinteraction is lost, allosterically opening the F439-F439 ’clamp (Sup-
+plementary Table 1 and Supplementary Fig. 9), which likely facilitates
+the permeation of Hoechst 33342 toward the center of the ABCG2transport pore, between the F439 clamps (Fig. 2n and Supplementary
+Fig. 9). Substitution of L405 with alanine in the ABCG2-WT did notdiminish either Hoechst 33342 interaction or transport for ABCG2-WT(see Fig. 1a, b). Yet, substitution of both N436A and L405A resulted in a
+marked loss of enhanced transport activity of ABCG2-N436A (Fig. 2p),
+indicating that this hydrophobic residue is functionally important formaximal ABCG2-N436A transport. MDS of this double mutation indi-cate that the drug changes position, occupying the void volume cre-ated by N436A-L405A substitution, below and adjacent to the F439
+clamps (Fig. 2o and Supplementary Fig. 10b). We also show that, like
+the ABCG2-WT interaction, F439 is required for transport activity ofABCG2-N436A (Fig. 2p).
+Based on the MDS of Hoechst 33342, we hypothesized that
+ABCG2-N436A might prefer hydrophobic substrates. Using a cut-off oflogP > 3, we next tested transport of additional hydrophobic sub-strates: chlorin e6, purpurin 18, and pheophorbide a (PhA). Unlikehydrophilic compounds, hydrophobic compounds were still readilytransported by ABCG2-N436A (Fig. 3a). We further investigated the
+effect of other polar residues (T434, T435, and Q437) close to the N436residue for substrate selectivity. The transport of hydrophobic sub-strates was not impaired by the alanine substitution of these polar
+residues (N436A, T434A, T435A, and Q437A). However, the transport
+of hydrophilic substrates in ABCG2-T434A, -T435A, and -Q437A wasimpaired to varying extents (Fig. 3a and Supplementary Fig. 11b, c).
+Protection against the cytotoxic effect of mitoxantrone ’s cytotoxicity
+was lost for ABCG2-T435A and -N436A, whereas ABCG2-T434A and-Q437A retained some protction against its cytotoxicitty. Likewise,
+ABCG2-N436A was unable to protect against topotecan ’s cytotoxicity,
+whereas ABCG2-T434A, -T435A, and -Q437A protected against thecytotoxic effect. These results indicate that N436A has the moststrongest effect on hydrophilic substrate transport (Fig. 3a).
+We investigated the role of these polar residues for the electro-
+static potential and water penetration into the pore of ABCG2. Sub-stitution to N436A introduced an area of negative electrostaticpotential into the binding pocket (Fig. 3b, c). Alanine substitution of
+T434, T435, and Q437 had a similar effect on the electrostatic potentialof the transmembrane region as the N436A substitution (Fig. 3b–f).
+However, in contrast to ABCG2-N436A, no water permeated into the
+binding cavity after 15 ns of MDS equilibration (Figs. 2ca n d 3g–ka n d
+Supplementary Fig. 11a) highlighting the dual nature of the roleof N436A.
+Erlotinib and tariquidar are also known to behave as ABCG2
+inhibitors
+24,25. Unlike erlotinib, the hydrophobic inhibitor tariquidar
+binds deeper within the transmembrane domain, sandwichedbetween the F439 hydrophobic gates (Fig. 4a, b and Supplementary
+Figs. 7 and 8) where it forms transient π-stacking interactions, and is
+stabilized by surrounding hydrophobic residues within the pore(Fig. 4b and Supplementary Fig. 7). The N436A substitution slightly
+destabilizes the compound, increasing the all-atom RMSD of tar-
+iquidar from 0.7 + / −0.2 Å in ABCG2-WT to 1.3 + / −0.2 Å in the
+ABCG2-N436A simulations. In contrast to the hydrophilic substrate,erlotinib, the increase in hydration at the intracellular end of the poreresulting from the N436A substitution facilitates the permeation oftariquidar (logP 5.4) into the F439 clamps (Fig. 4c). On introduction
+of a double substitution, ABCG2-N436A-L405A, tariquidar permeatesdeeper between the F439 clamping residues (Fig. 4d and Supple-
+mentary Figs. 7 and 10), which suggests that it is adopting a substrate-like rather than inhibitor-like conformation. Substitution of bothN436A and L405A was associated with a localized loss of helix-helix
+interactions between TMH1 and TMH2 which acted to widen the F439
+clamps, increasing the C α-Cαdistance from 12.9 + / −0.7 Å to 13.5 + / −
+0.5 Å (Supplementary Table 1). This is associated with a reorientationof tariquidar and its intercalation between the gating F439 sidechains, including transient observations of the drug adopting con-formations similar to the constrained cryo-EM structure (PDB 7NEQ).Tariquidar is known to be transported, albeit slowly, by ABCG2
+9.W e
+speculate that the ABCG2-N436A-L405A mutation may result inincreased transport rather than inhibition by tariquidar (Fig. 4d and
+Supplementary Figs. 7 and 10).
+N436 is essential for ef ﬁcacious inhibition
+We next investigated the relationship between inhibitor-induced
+thermal stabilization and transport inhibition by N436A substitution.Hoechst 33342 uptake was used as a probe to determine the impact oftransport inhibition. ABCG2 inhibitors, Ko143, tariquidar, and lapati-nib, strongly and dose-dependently thermally stabilized ABCG2-WTFig. 2 | N436A substitution affects substrate interaction. a Initial conformation
+of the apo inward-facing ABCG2 structure, after equilibration, highlighting the
+location of key residues relative to the membrane. Phosphate headgroups are clearspheres, N436 is green, L405 is orange, F439 is purple, F432 is cyan, and E446 isyellow. Helices are in cartoon representation with TMH1 and TMH2 opaque. The
+individual monomers are colored gold (chain A) and blue (chain B). b–dMDS
+snapshots showing water (CPK coloring) permeation through ABCG2-WT ( b),
+N436A mutant ( c), and N436A-L405A mutant ( d).e–hMDS snapshots showing the
+interaction of erlotinib with ABCG2. eABCG2-WT with residues within 4 Å of erlo-
+tinib in a surface representation. Non-polar residues are grey, polar residues aregreen, and acidic residues are red. Erlotinib (dark grey space ﬁll) bound structure in
+ABCG2-WT protein ( f), N436A mutant ( g), and N436A-L405A mutant ( h). Water
+molecules within 4 Å of erlotinib are in CPK coloring. iErlotinib ef ﬂux activity as
+percentage of ABCG2-WT (mean of one representative of three independentexperiments). The MEFs expressing ABCG2-WT, ABCG2-N436A, or vector control
+were incubated with [
+14C]-erlotinib for 60 min. Cytotoxicity of topotecan ( j)o r
+mitoxantrone ( k) in the MEFs expressing ABCG2-WT (black), ABCG2-N436A
+(orange), ABCG2-F439A (blue) or vector control (green) (mean ± SEM of indepen-dent experiments ( n=5(j)o rn=4(k))).lThe MEFs were incubated with 0.5 μM
+Hoechst 33342 and estrone 3-sulfate (0.2 –50μM). Intracellular Hoechst 33342
+levels in the MEFs expressing ABCG2 are shown as percentage of vector control(mean ± SEM of 3 independent experiments). m-o MDS snapshots showing ABCG2
+with Hoechst 33342. Hoechst 33342 (dark grey space ﬁll) bound structure in
+ABCG2-WT protein ( m), N436A mutant ( n), and N436A-L405A mutant ( o). Water
+molecules within 4 Å of Hoechst 33342 are in CPK coloring. pIntracellular Hoechst
+33342 levels in the MEFs expressing ABCG2-WT or ABCG2 mutants are shown as
+percentage of vector control (mean ± SEM of four independent experiments.
+P< 0.001 vs. N436A, two-tailed Student ’sttest).Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 6(Fig. 4e). Thermal stabilization was unexpected as inhibitors reduced
+the thermal stability of ABCB115,26. Intriguingly, the N436A substitution
+markedly reduced both inhibition and thermal stabilization; abolishingKo143 and tariquidar inhibition and strongly attenuating lapatinibinhibition (Fig. 4e, g). The conformationally sensitive 5D3 antibody was
+used to evaluate if these inhibitors still promoted the formation of aninward-facing state which would be re ﬂected by increased 5D3
+reactivity
+27. As expected, for ABCG2-WT, all tested inhibitors increased
+5D3 reactivity by at least 1.5-fold, suggesting that inhibitors generally
+immobilize ABCG2-WT in the inward-facing conformation (Fig. 4f). In
+contrast, for ABCG2-N436A, 5D3 reactivity was not uniformlyincreased by all KIs which suggested reduced capability of immobi-lizing ABCG2-N436A in the inward-facing conformation (Fig. 4f). Weextended this analysis to determine the impact of the N436A sub-
+stitution on ABCG2 transport inhibition by 9 additional kinase inhibi-tors (KIs). Strikingly, transport inhibition by all the KIs was impaired bythe N436A substitution (Fig. 4g). The heatmap depicts how the N436
+interaction is crucial for maximal inhibition and shows that the N436Asubstitution produced greater than a 50% loss in the inhibitory activityof Ko143, tariquidar, sunitinib, imatinib, ge ﬁtinib, nilotinib, and erlo-
+tinib (Fig. 4h). Unlike ABCG2-WT which had virtually no correlation
+between inhibitors ’hydrophobicity (logP) and transport inhibition
+(Supplementary Fig. 12a), the inhibitors ’hydrophobicity (logP) weakly
+correlated with transport inhibition in ABCG2-N436A (SupplementaryFig. 12b), supporting the idea that hydrophobicity contributes to thedrug binding/recognition mechanism. This moderate correlation
+bc d e f N436A WT T434A T435A Q437A
+ghi j k N436A WT T434A T435A Q437A
+T434(A) T435(A) Q437(A) F439 N436(A)Region of mutation 
+z-co-ordinate
+Positive NegativeData are from Manolaridis et al. (2018)a
+NT: Not testedbLogP (o/w)
+5.44.54.53.92.62.32.0
+-0.5Substrate of T434A
+YesYesYesYes
+NTNT
+Yes
+YesSubstrate of N436A
+YesYesYesYes
+NoNoNoNoChlorin E6
+Purpurin 18
+Hoechst 33342Pheophorbide aEstrone 3-sulfateErlotinibTopotecanMitoxantroneSubstrate of T435A
+YesYesYesYesYes
+NT
+Yes
+NoSubstrate of Q437A
+YesYesYesYes
+NTNT
+Yes
+Yes
+aa b
+bbb
+ba
+Fig. 3 | Substrate selectivity of polar residues (N436, T434, T435, and Q437) in
+the binding pocket of ABCG2. a ABCG2-N436A protein transports ABCG2-WT
+substrates with logP >3, but not ABCG2-WT substrates with logP <3. The othermutants have lower substrate selectivity than the N436A mutant. ABCG2 functionwas determined by substrate accumulation assay and cytotoxicity assay using the
+MEFs expressing ABCG2-WT, ABCG2-T434A, ABCG2-T435A, ABCG2-N436A,
+ABCG2-Q437A, or vector control. The intracellular accumulation of chlorin e6,purpurin 18, Hoechst 33342, and pheophorbide a was measured. The cytotoxicitydata of topotecan and mitoxantrone in these mutants are from Fig. 2j, k, andSupplementary Fig. 11b, c. Experiments were repeated at least three times inde-
+pendently. Source data are provided as a Source Data ﬁle. The logP values were
+generated by molecular operating environment (MOE 2020.09). Compounds wereneutralized in MOE at pH 7.4 and 2D descriptors were computed from the resultingstructures. b–fElectrostatic potential maps, calculated using APBSmem, of bWT,
+cN436A, dT434A, eT435A, and fQ437A. g–kWater molecules (CPK coloring)
+within 4 Å of the protein after 15 ns of simulation for ( g) WT, ( h)N 4 3 6 A ,( i)T 4 3 4 A ,
+(j)T 4 3 5 A ,a n d( k) Q437A.Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 7WT       0.96 ± 0.27 μM EC50 
+N436A  N/AWT
+N436AKo143 (μM)0
+0.1
+0.5
+1
+2
+510
+Unheated
+WT       2.87 ± 0.94 μM EC50 
+N436A  N/AWT
+N436ATariquidar (μM)0
+0.1
+0.5
+1
+5
+1050
+Unheated
+7272
+WT       1.49 ± 0.22 μM EC50 
+N436A  N/AWT
+N436ALapatinib (μM)0
+0.1
+0.515
+1050
+UnheatedkDa
+geN436A WT
+N436A WTf
+WT       0.77 ± 0.08 μM IC50 
+N436A  N/A
+WT       6.04 ± 0.65 μM IC50 
+N436A  N/AWT       0.10 ± 0.01 μM IC50 
+N436A  N/A
+WT       0.13 ± 0.02 μM IC50 
+N436A  N/A
+WT       2.40 ± 0.41 μM IC50 
+N436A  N/AWT       0.03 ± 0.01 μM IC50 
+N436A  N/A
+WT       0.51 ± 0.05 μM IC50 
+N436A  N/A
+WT       4.15 ± 0.55 μM IC50 
+N436A  N/AWT       0.08 ± 0.01 μM IC50 
+N436A  N/A
+WT       0.71 ± 0.01 μM IC50 
+N436A  N/A
+WT       4.34 ± 0.20 μM IC50 
+N436A  N/AWT       0.05 ± 0.01 μM IC50 
+N436A  0.38 ± 0.12 μMhbcd Tariquidar-N436A Tariquidar-N436A-L405A Tariquidar-WT Tariquidar-WT
+non-polar polar acida
+Fig. 4 | N436A substitution affects inhibitor interaction. a –dRepresentative
+snapshots from MDS of tariquidar interacting with ABCG2. aABCG2-WT with
+residues within 4 Å of tariquidar are in surface representation. Non-polar residues
+are grey, polar residues are green, and acidic residues are red. The interaction of
+tariquidar (dark grey space ﬁll) wiith ABCG2-WT ( b), N436A mutant ( c), and N436A-
+L405A mutant ( d). Water molecules within 4 Å of tariquidar are shown in CPK
+coloring. eABCG2 inhibitor-induced thermal stabilization of ABCG2-WT or ABCG2-
+N436A. Representative ABCG2 western blots (top) and densitometry quanti ﬁcation
+(bottom, mean ± SEM) from four independent experiments. N/A not available.fABCG2-WT (black) and ABCG2-N436A (red) labeled with 5D3-A647 antibody in the
+presence of 5 μM Ko143, 10 μM tariquidar, or 10 μM kinase inhibitors (KIs)
+(mean ± SEM of three independent experiments (top graph) or 4 independentexperiments (bottom graph)). gThe inhibitory effect (IC
+50) of ABCG2 inhibitors for
+Hoechst 33342 transport in ABCG2-WT or ABCG2-N436A. Intracellular Hoechst33342 levels in the MEFs expressing ABCG2 are shown as percentage of vector
+control (mean ± SEM of three independent experiments). N/A not available.
+hHeatmap showing the effect of N436A substitution for 5D3 labeling of ABCG2
+with inhibitor (the data from f) and for transport inhibition at the concentration of
+maximum inhibition for ABCG2-WT (the data from g), with red (100%) being the
+effect of inhibitor for 5D3 labeling of ABCG2-WT protein, and the effect of transportinhibition for ABCG2-WT (blue panels indicate no effect of inhibitor for 5D3labeling of ABCG2-N436A protein and no transport inhibition for ABCG2-N436A
+protein).Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 8suggests there are other important factors beyond the scope of
+this work.
+We further investigated the conformational change of ABCG2-
+N436A produced by the KI using CuPhen-induced cross-linking assay(Fig. 5a, b). When ABCG2 is in the inward-facing state, the V534C and
+A537C residues are too distant to form an intermolecular disul ﬁde
+bond
+8(see diagram Fig. 1g). The dimer formation occurs at V534C
+when ABCG2 is in the outward-facing ATP-bound state, and this assayallows us to assess if inhibitors prevent conformational changes froman inward-facing to an outward-facing state. In the context of ABCG2-WT, the ABCG2 conformational response when engaging with KIsindicated that CuPhen-induced dimer formation by V534C was pre-
+vented (Fig. 5a). In the context of ABCG2-N436A, a majority of the KIs
+(erlotinib, lapatinib, imatinib, ge ﬁtinib, axitinib, and sunitinib) no
+longer restricted dimer formation by V534C (Fig. 5a). We interpret the
+loss of cross-link blocking by N436A substitution to indicate that theseKIs no longer block the transition to an outward-facing ATP-bound
+state. Some of the KIs retained an ability to prevent V534C mediated
+dimerization for ABCG2-N436A (Fig. 5a). We further interrogated
+whether N436A substitution in ﬂuenced inhibitor interaction with the
+binding pocket of ABCG2, by monitoring dimer formation throughCuPhen-induced cross-linking at A537C which is reported to form in
+kDa
+144
+72CuPhen
+Ko143
+Lapatinib
+Nilotinib
+Vemurafenib
+ImatinibSunitinib
+Sorafenib
+Cabozantinib
+Dasatinib
+Gefitinib
+Erlotinib
+AxitinibNone
+1 mM ViC603S+V534C+N436ACuPhen
+Ko143
+Lapatinib
+Nilotinib
+VemurafenibImatinib
+Sunitinib
+Sorafenib
+Cabozantinib
+Dasatinib
+Gefitinib
+Erlotinib
+AxitinibNone
+1 mM ViC603S+V534C
+Dimer
+Monomer
+kDa
+144
+72CuPhen
+Ko143
+Lapatinib
+Nilotinib
+Vemurafenib
+Imatinib
+Sunitinib
+Sorafenib
+Cabozantinib
+Dasatinib
+Gefitinib
+Erlotinib
+AxitinibNone
+1 mM ViC603S+A537C+N436ACuPhen
+Ko143
+Lapatinib
+Nilotinib
+Vemurafenib
+ImatinibSunitinib
+Sorafenib
+Cabozantinib
+Dasatinib
+Gefitinib
+Erlotinib
+AxitinibNone
+1 mM ViC603S+A537C
+Dimer
+Monomera
+bLoss of cross-link blocking
+Blocks
+cross-linking
+c
+Erlotinib-N436A Erlotinib-WT deLoss of 
+cross-link blockingBlocks
+cross-linkingErlotinib
+Lapatinib
+ImatinibGefitinib
+Sunitinib
+NilotinibSorafenib
+Vemurafenib
+Cabozantinib238
+170
+168166
+101
+6752
+45
+392.3
+4.82.8
+3.1
+2.74.3
+3.7
+5.74.516.9
+92.0
+6.39.4
+0
+15.256.0
+61.6
+27.3Dimeric ABCG2
+(% of CuPhen)LogP (o/w)Transport inhibition
+in N436A (% of WT)
+Fig. 5 | N436A substitution affects ABCG2 conformational response to inhibi-
+tors. a ,bCuPhen-induced crosslinking of the V534C ( a) or the A537C ( b)m o n i t o r e d
+with non-reducing SDS-PAGE and western blot analysis of ABCG2. Sodium ortho-
+vanadate (Vi) locks ABCG2 into a nucleotide-bound state. Upper band represents
+disulﬁde crosslinked ABCG2 (~150 kDa). Representative ABCG2 western blots (top)
+and densitometry quanti ﬁcation (bottom, mean ± SEM) from independent experi-
+ments ( n=3(a)o rn=4(b)). The heatmap shows the effect of each inhibitor on thecrosslinking (right). Blue and red indicate a decrease and increase, respectively,
+while white is no change when compared to CuPhen control. cRelationship
+between the effect of ABCG2 inhibitors for V534C cross-linking in ABCG2-N436A,
+transport inhibition in ABCG2-N436A, and logP values of ABCG2 inhibitors.
+d,eMDS snapshots of the interaction of erlotinib with ABCG2-WT ( d) and ABCG2-
+N436A ( e) indicate that erlotinib sits between V534 in ABCG2-WT yet above V534 in
+ABCG2-N436A.Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 9the apo-closed state (Fig. 5b). In the context of ABCG2-WT, most KIs
+readily blocked dimer formation by A537C, with carbozantinib beingamong the most effective. Some exceptions were sorafenib, imatinib,and dasatinib (Fig. 5b). In the context of ABCG2-N436A, a majority of
+the KIs still reduced dimer formation by A537C (Fig. 5b), suggesting
+that these KIs could enter and interact with the binding pocket ofABCG2-N436A. This ﬁnding suggests that although many inhibitors are
+able to enter the binding pocket of ABCG2-N436A, the inhibitors havean impaired ability to immobilize ABCG2-N436A in the inward-facingconformation. There seems to be a correspondence between the KI ’s
+logP value and retention of blockade of ABCG2 dimer formation byV534C in the context of ABCG2-N436A (Fig. 5c). Importantly, only for
+ABCG2-N436A, there was a close correspondence between a lowerlogP value and the loss of crosslink formation (Fig. 5c). For ABCG2-WT,
+there was no discernable relationship between the KI ’s logP value and
+transport inhibition (Supplementary Fig. 12).
+MDS of the hydrophilic KI erlotinib interacting with ABCG2-WT
+show that erlotinib is situated between the opposing V534 residues,physically preventing crosslinking (Fig. 5d and Supplementary Fig. 8).
+In contrast, in the MDS of ABCG2-N436A erlotinib preferentially dwells~7 Å deeper in the pore of the ABCG2-N436A compared to ABCG2-WT(Fig. 5e and Supplementary Fig. 9). In this deeper location, erlotinib is
+no longer positioned between the opposing V534 residues, facilitatingcrosslinking (Fig. 5a).
+Discussion
+Our current studies using functional assays, mutagenesis, structure-
+based modeling, and MDS reveal factors accounting for ABCG2 ’sb r o a d
+ability to readily transport both hydrophilic and hydrophobic sub-strates. Unlike other ABCG family members with binding pockets thatare predominantly composed of non-polar residues (i.e., ABCG1), themammalian ABCG2 subfamily exploits a phylogenetically conservedpolar asparagine, N436. Substitution with alanine reveals the impor-tance of N436 and other polar residues in the transmembrane pore topermit discrimination between hydrophilic and hydrophobic com-pounds, thereby providing fundamental insights into why ABCG2transports more diverse compounds than other ABCG family mem-
+bers. The cross-linking and conformational antibody studies using the
+N436A substituted ABCG2 substantiated the conformational changesand adaptations that were revealed by the MDS and informed how ahydrophobic preferring ABCG2-N436A interacts differently withligands from the ABCG2-WT. These ﬁndings sharply contrast with the
+general correspondence between loss of ligand thermal stabilization(ligand interaction) and transport for both hydrophobic and hydro-philic substrates that occurs with the alanine substitution for theconserved phenylalanine, F439
+11. Cross-linking studies suggest that
+ABCG2-N436A also has an enhanced ability to “switch ”, induced by
+substrate, to the ATP-bound outward-facing conformation. MDS
+demonstrated that Hoechst 33342 repositioning in the transmem-
+brane pore facilitates its transport. Importantly, an N436 interactionwas also requisite for inhibitory activity of the majority of inhibitors,which concurrently lose their ability to thermally stabilize ABCG2-N436A and become less capable of immobilizing ABCG2-N436A in theinward-facing conformation that was revealed through cross-linkingstudies ﬁrst employed by Orlando and Liao
+8.
+The increased Hoechst 33342 transport observed for the N436A
+substitution was unexpected. Our studies suggest that N436 is a“selectivity switch ”in that hydrophobic substrates (e.g., Hoechst
+33342, chlorin e6, purpurin 18, and PhA) are not negatively impactedby N436A substitution, whereas hydrophilic substrates like topotecan,
+erlotinib, and mitoxantrone are not transported, which appears rela-
+ted to the change in the electrostatic potential and hydration of thepore. Previous ﬁndings with the hydrophilic estrone 3-sulfate showed
+that transport activity was lost when the N436A substitution wasintroduced
+7.O u r ﬁndings showing estrone 3-sulfate has a reducedinhibitory effect on Hoechst 33342 transport by ABCG2-N436A high-
+lights how fundamental this asparagine interaction is to transport byABCG2-WT in cellulo . These studies revealed a previously unknown
+role for N436 in the coordination of Hoechst 33342 and other hydro-
+phobic substrates, while underscoring an essential role for hydrophilic
+substrates like topotecan, mitoxantrone, erlotinib, and estrone3-sulfate. MDS of ABCG2-N436A also suggested that the loss of theN436 polar side chain in ﬂuenced Hoechst 33342 position in the pore
+and expanded the binding region (Supplementary Figs. 8b and 9b).This was further highlighted by transport studies that revealed addi-tional hydrophobic contacts (e.g., L405) in ABCG2-N436A (but notABCG2-WT) that supported ABCG2-N436A mediated Hoechst 33342transport (Fig. 2p). We speculate that this would not have been dis-
+covered with puri ﬁed ABCG2-N436A unless it was reconstituted into
+the exact membrane environment of cells. Notably, the formation of
+Hoechst 33342-induced inward-closed ATP-bound state of ABCG2-
+N436A underscores that the bound conformation of Hoechst 33342during the transport cycle is markedly different from ABCG2-WT. Therole of the electrostatic potential and water penetration into the porewas further revealed by the substit ution of additional polar residues
+(T434A, T435A, and Q437A) in the binding pore which had no effect onhydrophobic substrate transport, but impaired hydrophilic substratetransport (Fig. 3a and Supplementary Fig. 11b, c). Although alanine
+substitution of these polar residues (T434A, T435A, N436A, andQ437A) had a similar effect on the electrostatic potential of thetransmembrane region, it was notable that only the N436A substitu-
+tion increased hydration of the transport pore, highlighting the unique
+impact of N436 residue (Fig. 3b–k). Interestingly, alanine substitution
+of adjacent threonine residues at positions 434 and 435 showed dif-ferent effects for the cytotoxicity of topotecan and mitoxantrone(Supplementary Fig. 11b, c). We speculate that the differential effect ofthe alanine substitution among these polar residues and hydrophilicsubstrate transport is likely related to an as yet unquanti ﬁable com-
+bination of the effect on the electrostatic potential and the movementof water into the pore. The differences in the effects of alanine sub-stitution among these residues do not seem to be easily explained bythe compounds physicochemical properties (volume, Van der Waals
+surface area, logP, H bond acceptor, and H bond donor) (Supple-
+mentary Fig. 11d).
+ABCG2-N436A showed the loss of inhibitor-induced thermal sta-
+bilization along with an impairment in inhibition. This lost thermalstability simply cannot be generalized to all ABC transporters and theirinhibitors. ABCB1 inhibitors like verapamil and tariquidar did notinduce thermal stabilization
+26: these inhibitors reduced the ATP-
+induced thermal stabilization of ABCB1 but did not directly competewith ATP. Thermal stabilization studies of ABCG2 were conductedwithout exogenous nucleotide because of ABCG2 ’sl o wa f ﬁnity for
+ligand when ATP is bound
+16. The reduction of ATP-induced thermal
+stabilization of ABCB1 by inhibitors is likely related to mechanistic
+differences between ABCG2 and ABCB1. TMD and NBD coupling forABCB1 are not as strict as they are for the homodimer ABCG2. Thisseems consistent with ABCB1 being less susceptible to inhibitor-reduced ATPase activity
+10.
+The water ﬂow for ABCG2 has been posited to generally impact
+transport of all ABCG2 substrates using the behavior of one hydro-philic substrate, mitoxantrone
+28. Elimination of the ABCG2 hydro-
+phobic di-leucine (L554, L555) valve by double alanine or cysteinemutations (L554A L555A and L554C L555C) enhanced water ﬂow and
+reduced mitoxantrone transport. We show that substitution of thepolar asparagine, N436, with a non-polar alanine generally eliminated
+transport of multiple hydrophilic substrates but retained transport of
+hydrophobic substrates, suggesting that a loss of a polar side chainretains proper valve function. MDS show that substitution of N436with alanine alters the electrostatic potential of the pore and increasesthe permeation of water molecules near N436A. These ﬁndingsArticle https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 10suggest that the effect of N436A substitution is dependent on the
+properties of the substrate.
+Many ABCG2 inhibitors were deleteriously impacted by the
+N436A substitution, showing profound reductions in their ef ﬁcacy.
+This broad general effect on inhibitors suggested a common but key
+mechanism that negatively impacted inhibitors by loss of the polarN436 in ABCG2. The cryo-EM structure of ABCG2 with tariquidar showsmultiple binding modes
+9and one infers that this might occur with
+other inhibitors. Based on our studies, loss of the polar side chainN436 slightly increases the volume of the binding pocket and disruptsinhibitor interactions with multiple residues, thereby impeding theirability to coordinate and lock ABCG2 into an inward-facing con-formation. Many of the inhibitors with impaired ability to block cross-linking at V534C were the least hydrophobic whereas the inhibitorsthat retained the ability to keep ABCG2-N436A in the inward-facing
+conformation were more hydrophobic, suggesting certain physico-
+chemical properties of inhibitors are important. The hydrophobicinhibitors vemurafenib and lapatinib still inhibited ABCG2-N436Atransport (Fig. 4g, h). While vemurafenib retained the ability to keep
+ABCG2-N436A in the inward-facing conformation, lapatinib no longerblocked the transition to an outward-facing ATP-bound state (Fig. 5a,
+c). We speculate that lapatinib has an alternative mode of inhibition,which appears to act by blocking the action of F439 through π-stacking
+and hydrophobic interactions with these so called “clamps ”.
+Our current studies feature a mechanistic account of how a con-
+served N436 substitution produced an unexpected gain in transport
+function, coupled with a loss in thermal stabilization/interaction. The
+increased Hoechst 33342 transport is likely related to untethering the
+substrate from the restraint of the transmembrane pore ’sp o l a ri n t e r -
+actions and an increased propensity to form an ATP-bound outward-facing state revealed by the V534C cross-linking. For inhibitors, N436appears to be a key anchor that enables many inhibitors to adopt athermostable ligand-bound conformation within the binding pocket.Thus, the phylogenetic conservation of N436 seems to play a key rolein ligand-based conformational transitions and substrate selection.
+Methods
+Chemicals
+Hoechst 33342 was obtained from Invitrogen. Pheophorbide a (PhA),chlorin e6, and purpurin 18 were obtained from Frontier Scienti ﬁc.
+PhA, chlorin e6, and purpurin 18 were dissolved in DMSO and aliquotsprotected from light at −20 °C. [
+14C]-erlotinib was obtained from
+Moravek Biochemicals. Ko143 was obtained from Enzo Life Sciences.Lapatinib and tariquidar were obtained from Selleckchem. Ko143,lapatinib, tariquidar, and other compounds were stored at −20 °C at
+10 mM in DMSO.
+Plasmid construction and site-directed mutagenesis
+All site-directed mutations were generated in the MSCV-humanABCG2-IRES-GFP expression plasmid using QuikChange II XL site-directed mutagenesis kit (Agilent Technologies, Santa Clara, CA).
+Cell culture and transduction
+Mouse embryonic ﬁbroblast (MEF) cell line was derived from Abcg2
+knockout (KO) mice that were obtained from the Sorrentino lab3.T h i s
+cell line was reported previously11.T h e Abcg2- KO MEFs were engi-
+neered to express human ABCG2 (Uniprot: Q9UNQ0). Cells wereg r o w ni nD u l b e c c o ’sM o d i ﬁed Essential Medium (D-MEM) (Lonza,
+Basel, Switzerland) supplemented with 10% fetal bovine serum (Gibco,Grand Island, NY), penicillin (100 U/ml), streptomycin (100 µg/ml)
+( G i b c o ,G r a n dI s l a n d ,N Y ) ,a n d
+L-glutamine (2 mM) (Gibco, Grand
+Island, NY) at 37 °C with 5% CO 2.T h e Abcg2- KO MEF cell line was
+transduced with the retroviruses harboring cDNAs encoding either themutant human ABCG2-K86M, E211Q, L405A, F432A, T434A, T435A,T435F, N436A, N436A + L405A, Q437A, F439A, N436A + F439A, V546A,M549A, C603S + V534C, C603S + V534C + N436A, C603S + A537C, or
+C603S + A537C + N436A. The HEK293 cell line was transduced with theretroviruses harboring cDNAs encoding the mutant ABCG2-N436A.
+Substrate accumulation assays
+The intracellular accumulation of ﬂuorescent Hoechst 33342, pheo-
+phorbide a, chlorin e6, and purpurin 18, ABCG2 substrates, was used todetermine the function of ABCG2. For Hoechst 33342 accumulationassay, MEFs were seeded into a 96-well black clear bottom plate(Corning #3603) at 20,000 cells/well and 0.5 μM Hoechst 33342, and
+either Ko143 or the test inhibitor (0.002 –10μM) were added to the
+culture medium followed by incubation for 2 h at 37 °C in the dark.Thereafter, the medium was removed, and cells were washed twicewith 200 μL ice-cold PBS and the ﬂuorescence of Hoechst 33342 was
+then quantitatively determined with a Synergy H4 microplate reader
+(BioTek, Winooski, VT, USA) at an excitation wavelength of 355 nm and
+an emission wavelength of 460 nm. The accumulation of Hoechst33342 was normalized to protein concentration as determined usingthe BCA Protein Assay Kit (Pierce, Rockford, IL, USA). The data werenormalized by the proportion accumulated relative (%) to vectorcontrol. For the time-dependent Hoechst 33342 accumulation assay,10μM Hoechst 33342 was treated for different time periods (0.5, 1, 1.5,
+2, 5, 10, 20, 30, 60, and 90 min). Relative intracellular Hoechst 33342levels in the MEFs were normalized to vector control at 90 min. For theother ﬂuorescent substrate accumulation assay, 0.5 μM pheophorbide
+a, 5μMc h l o r i ne 6 ,o r5 μM purpurin 18 were treated for 1 h at 37 °C in
+the dark. The intracellular accumulation of pheophorbide a, purpurin
+18, or chlorin e6 was measured at an excitation wavelength of 405 nmand an emission wavelength of 667 nm. For [
+14C]-labeled erlotinib
+accumulation assay, cells were seeded into a 24-well cell culture plateat 200,000 cells/well, and 0.1 μM[
+14C]-erlotinib was added to the
+culture medium followed by incubation for 1 h at 37 °C in the dark.Thereafter, the medium was removed and cells were washed twice with1 mL ice-cold PBS. For the determination of intracellular [
+14C]-erlotinib,
+cells were lysed in 0.5 mL of 1 N NaOH, neutralized with 0.25 mL of 2 NHCl, and mixed with ProSafe FC+ liquid scintillation cocktail (MeridianBiotechnologies Ltd, Tadworth, UK). The total radioactivity was mea-
+sured by liquid scintillation counter (Beckman Instrument, Inc.,
+Columbia, MD).
+Plasma membrane preparation
+MEF cell lines or HEK293 cell lines were pelleted and washed with PBSbefore suspension in a hypotonic buffer (0.5 mM Tris (pH 7.4), 0.1 mM
+EDTA, and protease inhibitors) and freezing. After gentle thawing, cellswere pelleted by centrifugation, suspended in 2.5 mL of hypotonicbuffer, and spun for 40 min in an SW32Ti swinging bucket rotor at100,000 × g. Pellets were resuspended into Homogenization Buffer
+(250 mM sucrose, 50 mM Tris, 250 µMC a C l
+2, and protease inhibitors)
+and homogenized with 50 strokes of a tight Dounce pestle. Following
+centrifugation at 500 × gfor 5 min, the pellets were then resuspended
+in Homogenization Buffer and homogenized again before an addi-tional 500 × gcentrifugation step. The supernatants of each spin were
+pooled together and layered over a 5 ml 35% sucrose pad formed in50 mM Tris (pH 7.4) and centrifuged in the SW32Ti rotor for 1.5 h at100,000 × g. The interface was carefully removed and diluted with
+Dilution Buffer (50 mM Tris, (pH 7.4), 25 mM sucrose) and the crudemembranes were pelleted at 100,000 × g. Pellets were resuspended in
+25 mM Tris (pH 7.4) and incubated overnight at 4 °C on ice. Thesepellets were then passed 10× through a 27-gauge needle before proteinquanti ﬁcation. The membranes were typically usually used immedi-
+ately or stored at −80 °C for one thaw cycle.
+ATPase assays
+For each sample, puri ﬁed membrane vesicles (25 µg) from ABCG2-
+expressing HEK293 cells were dissolved in 50 µL total volume reactionArticle https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 11buffer (40 mM MOPS (pH 7.0), 10 mM MgCl 2,5 0m MK C l ,2m MD T T ,
+0.5 mM EDTA, 5 mM sodium azide to block F-type ATPases, and 1 mMouabain to inhibit Na
++/K+ATPase). Samples for Hoechst 33342 dose-
+response experiments were brought to the desired drug concentration
+(0.02, 0.2, 2, 10, 20, or 50 µM) or treated with vehicle and allowed to
+preincubate for 30 min at room temperature. ATP was freshly pre-pared in reaction buffer at twice the desired ﬁnal concentration and
+brought to pH 7.0 and then incubated for 35 min at 37 °C. In ATP dose-response experiments, ATP was varied between 0 and 2.5 mM, whilefor Hoechst 33342 dose-response experiments, 2 mM ATP was used.Blanks were determined by cotreatment with 2 mM sodium vanadate.Reactions were stopped by immediate immersion in ice and cen-trifugation at 21,000 × gat 4 °C. In total, 50 µL of the supernatant was
+transferred to a 96-well plate and reacted with an equal volume ofdeveloping mix, a 1:1 mixture, made immediately before use, of 1%
+ammonium molybdate in water and freshly-made 6% ascorbate in 1 N
+HCl
+29. Plates were incubated at room temperature for 5 min for full
+color to develop and read at a wavele ngth of 800 nm. Quantitation was
+performed using phosphate standards diluted in reaction buffer in arange of 0 –50 nmol, with standards and samples being treated
+identically.
+Cellular and membrane thermal shift assays
+Cellular thermal shift assays were performed as described previously11.
+Human ABCG2-expressing membrane vesicles were prepared fromMEFs lacking murine Abcg2 and programmed to express human
+ABCG2 as described
+11. In some cases, human ABCG2-expressing
+membrane vesicles from HEK293 cells (purchased from Solvo Bio-technology, Budapest, Hungary) were used. The thermal shift assaywas adapted according to ref. 30.B r i e ﬂy, membrane vesicles (5 µg
+protein/20 µLﬁnal reaction volume) in 1x assay buffer (SB PREDIVEZ ™
+Reagent Kit for BCRP, SBPVR4, Solvo Biotechnology) were heated in athermocycler for 3 min at various temperatures (37 –78 °C) to establish
+a thermal denaturation curve. Samples were then treated with ice-coldPBS supplemented with NP-40 to a ﬁnal concentration of 0.8%. Sub-
+sequently, ultracentrifugation (at 100,000× gfor 20 min at 4 °C) was
+performed to precipitate the denatured proteins. The supernatant was
+subjected to immunoblot analysis using an ABCG2 antibody (Enzo Life
+Sciences Inc., BXP-53, 1:500). Based on an extrapolation from thethermal denaturation curve that produced 99% loss of protein in thesupernatant, 65 °C was selected for wild-type (WT), 62 °C for L405A,T435F, and F439A, 64 °C for F432A and V546A, 67 °C for E211Q, N436A,and T435A, and 68 °C for K86M and M549A in the absence of MgATP togenerate an isothermal dose-response curve. In the presence ofMgATP (4 mM), 72 °C was selected for K86M and E211Q. To assess theability of ligands to thermally stabilize ABCG2, membranes were ﬁrst
+incubated with ligand for 60 min at 37 °C. Samples were then heatedfor 3 min. The signal intensity of the heated sample was normalized to
+the signal intensity of the unheated sample (WT and mutants) and the
+signal intensity was reported as % of either unheated control or % ofABCG2-WT. The ligand concentrations required for thermal stabiliza-tion are not true binding constants because they represent two pro-cesses: binding and thermal stabilization. To assess the ability ofHoechst 33342 to thermally stabilize ABCG2-K86M or E211Q in thepresence of MgATP, membranes were ﬁrst incubated with 4 mM
+MgATP for 30 min at 37 °C, and then Hoechst 33342 (1, 5, 10, 20, 50,and 100 μM) were added to the samples. Samples were incubated for
+60 min at 37 °C and then heated for 3 min.
+Immunoblot analysis
+Proteins were separated by SDS-PAGE (4 –15% Criterion TGX Precast
+Gel, Bio-Rad), and transferred to a nitrocellulose membrane (Amer-sham Protran 0.45 μm NC, GE Healthcare). Immunoblot analysis was
+performed using primary antibody against ABCG2 (BXP-53, Enzo LifeSciences Inc., 1:500) and was subjected to further incubation with HRP-conjugated secondary antibody raised against rat IgG (Jackson
+ImmunoResearch Laboratories Inc., 1:10,000) as previouslydescribed
+11. Chemiluminescence signal was detected using LI-COR
+Odyssey Fc Imaging system (Image Studio 5.2). The bands were ana-
+lyzed using LI-COR Image Studio Lite Ver 5.2 software for quanti ﬁca-
+tion of western blot signals. As a membrane marker, immunoblotanalysis was performed using primary antibody against ATP1A1(sodium potassium ATPase alpha 1, Novus Biologicals, Littleton, CO,1:5000). As the secondary antibody, HRP-conjugated secondary anti-body raised against mouse IgG (Jackson ImmunoResearch Labora-tories Inc., 1:10,000) was used.
+Disul ﬁde crosslinking
+Disul ﬁde crosslinking was adapted according to ref. 8. Brie ﬂy, the
+Abcg2- KO MEF cell line was transduced with the retrovirus harboring
+cDNAs encoding either the human mutant ABCG2-C603S+V534C,
+C603S+V534C+N436A, C603S+A537C or C603S+A537C+N436A. Otherretroviral expression constructs were developed that harboredcysteine substitutions at either of the conformational sensing residues,V534 or A537 in a C603S background. Cells were incubated with eitherligand (20 μM) or sodium orthovanadate (1 mM, Sigma Aldrich, S6508)
+as a positive control for 20 min. Copper phenanthroline was preparedby combining 500 mM copper(II) sulfate (Sigma Aldrich, 451657) inwater with 500 mM 1,10-phenanthroline monohydrate (Sigma Aldrich,P9375) in ethanol, 6 mM (Cu
+2+)/(1,10-phenanthroline) 3.S u b s e q u e n t l y ,
+the medium was replaced with medium containing the same ligands
+and 300 μM( C u2+)/(1,10-phenanthroline) 3. The copper phenanthroline
+oxidation proceeded for 45 min. Cells were then washed with PBS,resuspended in 25 mM Tris pH 8, 150 mM NaCl, 1% n-Dodecyl- β-
+D-
+Maltoside (ThermoFisher Scienti ﬁc, 89902), 0.2% cholesteryl hemi-
+succinate (Cayman Chemical, 25698), and protease inhibitors (cOm-plete EDTA-free Protease Inhibito r Cocktail, Roche, 05056489001) and
+incubated on a nutating rocker at 4 °C for 1 h to solubilize membranes.Samples were spun at 15,000 × g and the soluble fraction was mixedwith SDS-PAGE loading buffer containing 40 mM EDTA (Fluka, 03690)and 40 mM N-ethyl maleimide (Sigma Aldrich, E1271). Samples weres u b j e c t e dt on o n - r e d u c i n gS D S - P A G E ,a n dA B C G 2w a sa n a l y z e du s i n g
+monoclonal antibody BXP-53 (Enzo Life Sciences, ALX-801-036-C100)
+to monitor the extent of oxidant-induced crosslinking of the V534C orA537C mutant.
+Cytotoxicity assays
+CellTiter-Glo® luminescent cell viability assay (Promega) was used todetermine the cytotoxicity of Hoechst 33342, topotecan, and mitox-antrone using MEFs lacking murine Abcg2 but expressing the human
+A B C G 2 - W T ,N 4 3 6 A ,F 4 3 9 A ,T 4 3 4 A ,T 4 3 5 A ,Q 4 3 7 A ,o rv e c t o rc o n t r o l .Cells were seeded into a 96-well black clear bottom plate at 1000 cells/well and the cytotoxic compound was added to the culture medium
+followed by incubation for 3 days.
+5D3 antibody shift assay for a ssessing the interaction between
+ABCG2 ligand and ABCG2-N436A
+To determine ligand-induced ABCG2 conformational changes, we used
+the conformationally sensitive 5D3 antibody we developed21that binds
+to extracellular loop 3 (ECL3) of ABCG25.B r i e ﬂy, Alexa-647 labeled 5D3
+antibody binding to intact cells was measured by ﬂow cytometry as
+described previously27.M E F s( 3×1 05cells/sample) were preincubated
+with 5 μMK o 1 4 3 ,5 0 μM Hoechst 33342, or 10 μMo ft h eo t h e rA B C G 2
+ligands in Dulbecco ’s PBS for 10 min at 37 °C before labeling with
+0.5μg/mL of 5D3 antibody (sc-18841, Santa Cruz Biotechnology, Santa
+Cruz, CA) for another 45 min at 37 °C. Cells were washed with PBS
+before incubation with the secondary antibody, anti-mouse IgG-Alexa-647 (A21235, ThermoFisher Scienti ﬁc, 1:100) in 0.5% FBS/PBS for
+30 min at 37 °C. Cells were washed with 0.5% FBS/PBS and resus-pended in 0.5% FBS/PBS. To detect dead cells, cells are stained withArticle https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 12propidium iodide (PI). Samples were run on a BD LSRFortessa ﬂow
+cytometer (BD Biosciences) and analyzed using FlowJo v10 software.Alexa-647 labeled 5D3 antibody was excited with a 640 nm laser andemission was collected with a 670/30 ﬁlter. PI for dead cell exclusion
+was excited with a 562 nm laser and emission was collected with a 610/
+20ﬁlter. 5D3 labeling was presented as the percent of the untreated
+control ﬂuorescence measured in the presence of 5D3-A647 alone for
+each protein.
+Molecular dynamics simulations
+Molecular dynamics simulations were performed using the GroningenMachine for Chemical Simulation engine, version 2019.4 (GROMACS2019.4)
+31, with the GROMOS 54a7 force ﬁeld32. The cryo-EM structure
+of ABCG2 in the ATP-free inward-facing (PDB ID 6ETI) conformationwas used as the starting structure for simulations as it is the highest
+resolution ABCG2 structure available
+6. The residues missing from the
+cryo-EM structure were modelled using the ABCG2 Alphafold struc-tural prediction (AlphaFold Protein Structure Database entry:Q9UNQ0)
+33. To investigate the impact of point mutations on ABCG2 in
+simulation, PyMOL (version 2.5.0, The PyMOL Molecular GraphicsSystem, Schrödinger, LLC) was used to introduce a series of pointmutations (N436A and N436A + L405A) to give starting coordinates forABCG2-N436A and ABCG2-N436A-L4 05A, in addition to ABCG2-WT.
+The Automated Topology Builder and Repository (ATB)
+34was used to
+develop united atom coordinates and GROMOS 54a7 compatableparameters for each drug at the predominant protonation state at
+physiological pH (7.0) (ATB repository molecule ID for erlotinib:
+763850; Hoechst 33342: 29940; tariquidar: 1324). As previous struc-tural studies suggest that ABCG2 operates via a peristalsis mechanismand does not form an occluded conformation that contains a stable,well-de ﬁned substrate binding space
+7, a single drug molecule of either
+erlotinib, Hoechst 33342 or tariquidar was docked into the TM pore ofeach ABCG2 model using Autodock Vina. After assessment of thedocked poses against others with a score within 5 kJ/mol, the mostenergetically favorable scoring docked pose was used as the startingconformation for MDS
+35. Simulations were performed on the WT and
+each mutant ABCG2, in the presence and absence of docked substrate,
+giving 16 different systems in total. Each system was embedded in a
+20% cholesterol and 80% POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphatidylcholine) bilayer and solvated using the simple pointcharge (SPC) explicit water model
+36,a n d0 . 1 5 Mo fN a+and Cl−ions.
+Each system was energy minimized using a steepest descent algorithmand subsequently equilibrated with decreasing restraints on the pro-tein backbone in six sequential 1 ns simulations (1000 kJ mol
+–1nm–2,
+500 kJ mol–1nm–2, 100 kJ mol–1nm–2,5 0 k J m o l–1nm–2,1 0 k J m o l–1nm–2,
+and 0 kJ mol–1nm–2) using a 2 fs timestep. The coordinates from the
+ﬁnal frame of each equilibrated system were used as the starting
+conﬁguration for 300 ns production simulations, using an NPT
+thermodynamic ensemble. MDS use classical mechanics to calculate
+the time-evolution of the system to a local minimum-energy con-formation. The position and orientation of all molecules in thesimulation, including the docked compounds, changes throughoutthe simulation due to their thermal motion. To increase the statisticalsampling of the ABCG2/substrate conformation space and ensureconvergence of the docked compounds, non-biased productionreplicate ( n= 3) simulations of each ABCG2 system were performed
+and a new random starting velocity was assigned at the start of eachreplicate simulation. In all simulations, the temperature was main-tained at 300 K using the Bussi-Donadio-Parrinello velocity rescalethermostat and a coupling constant of 0.1 ps. Pressure was main-
+tained at 1 bar using semi-isotropic pressure coupling using the
+Berendsen barostat with a 0.5 ps coupling constant and an iso-thermal compressibility of 4.5 × 10
+–5bar−1. The length of covalent
+bonds was constrained using the LINCS algorithm37implemented in
+GROMACS 2019.4. Electrostatic interactions were calculated usingparticle mesh Ewald and Van der Waals interactions were calculated
+with a cut-off of 1.2 nm.
+Analysis of simulation trajectories
+Analysis of each system was performed on the n=3r e p l i c a t e3 0 0n s
+production simulations, to give a combined simulation time of 900 ns.Frames collected at 0.1 ns intervals. Data is reported as the mean ±standard deviation for the n= 3 production simulations, each lasting
+300 ns. Simulations were analysed using the GROMACS 2019.4 toolkit,Visual Molecular Dynamics software (VMD) version 1.9.4
+38,a n dA P B S -
+mem (version 2.1.0)39in conjunction with Chimera v1.17.140.T h eA P B S
+electrostatic potential maps were generated using the published set-tings outlined for the Step6p ABC trasporter
+41,w i t ha1 2 9Å3grid.
+Quantum mechanical (QM) calculations
+All QM calculations of Tariquidar (taken from PDB ID 7NEQ) werecarried out using Gaussian 16.3
+42. The geometry of tariquidar reported
+in PDB ID 7NEQ was optimized in the gas phase, at the M06-2X/6-31 + G(p) level of theory, followed by frequency calculations at thesame level to con ﬁrm the nature of the calculated stationary points. An
+alternative geometry was optimized using the ATB (outlined above)followed by a single point energy calculation at M06-2X/6-31 + G(p)level of theory. All calculations are reported as gas phase energies (E) atthe M06-2X/6-31 + G(p) level of theory.
+Data analysis and curve ﬁtting
+All experimental data analysis and curve ﬁtting were carried out using
+GraphPad Prism (version 9.0.2). Melting temperature (T m)c u r v eo r
+dose-response curve (half maximal effective concentration (EC 50)a n d
+half maximal inhibitory concentration (IC 50)) were ﬁt with the non-
+linear regression with three parameters [1] or four parameters (variableslope) [2] and are shown in each ﬁgure according to the best- ﬁtm o d e l
+as determined by r
+2value.
+Y= Bottom + ðTop /C0Bottom Þ=ð1+1 0^ððLogEC50/C0XÞÞÞ ð 1Þ
+Y= Bottom + ðTop /C0Bottom Þ=ð1+1 0^ððLogEC50/C0XÞ*HillSlope ÞÞ
+ð2Þ
+Top and bottom are plateaus in the units of the Yaxis.
+Apparent EC 50and IC 50values were calculated from dose-
+response data using nonlinear regression analysis. All experimentswere independently repeated at least three times. All Pvalues were
+calculated using two-tailed Student ’sttest.
+Reporting summary
+Further information on research design is available in the Nature
+Portfolio Reporting Summary linked to this article.
+Data availability
+Structural data generated during this study are available on request
+from the corresponding author. Simulation parameter ﬁles, and the
+initial and ﬁnal coordinates of the simulations are available at https://
+github.com/OMaraLab/ABCG2_N436A . Source data are provided with
+this paper.
+References
+1. Mo, W. & Zhang, J.-T. Human ABCG2: structure, function, and its
+role in multidrug resistance. Int. J. Biochem. Mol. Biol. 3,1–27 (2012).
+2. Zhou, S. et al. The ABC transporter Bcrp1/ABCG2 is expressed in a
+wide variety of stem cells and is a molecular determinant of the
+side-population phenotype. Nat. Med. 7,1 0 2 8 –1034 (2001).
+3. Zhou, S. et al. Bcrp1 gene expression is required for normal num-
+bers of side population stem cells in mice, and confers relativeArticle https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 13protection to mitoxantrone in hematopoietic cells in vivo. Proc. Natl.
+A c a d .S c i .U S A 99, 12339 –12344 (2002).
+4. Homolya, L. Medically important alterations in transport function
+and traf ﬁcking of ABCG2. Int. J. Mol. Sci. 22,2 7 8 6( 2 0 2 1 ) .
+5. Taylor, N. M. I. et al. Structure of the human multidrug transporter
+ABCG2. Nature 546,5 0 4 –509 (2017).
+6. Jackson, S. M. et al. Structural basis of small-molecule inhibition of
+human multidrug transporter ABCG2. N a t .S t r u c t .M o l .B i o l . 25,
+333 –340 (2018).
+7. Manolaridis, I. et al. Cryo-EM structures of a human ABCG2 mutant
+trapped in ATP-bound and substrate-bound states. Nature 563,
+426 –430 (2018).
+8. Orlando, B. J. & Liao, M. ABCG2 transports anticancer drugs via a
+closed-to-open switch. Nat. Commun. 11, 2264 (2020).
+9. Kowal, J. et al. Structural basis of drug recognition by the multidrug
+transporter ABCG2. J. Mol. Biol. 433, 166980 (2021).
+10. Yu, Q. et al. Structures of ABCG2 under turnover conditions reveal a
+key step in the drug transport mechanism. Nat. Commun. 12,
+4376 (2021).
+11. Gose, T. et al. ABCG2 requires a single aromatic amino acid to
+‘clamp ’substrates and inhibitors into the binding pocket. FASEB J.
+34, 4890 –4903 (2020).
+12. Nosol, K. et al. Cryo-EM structures reveal distinct mechanisms of
+inhibition of the human multidrug transporter ABCB1. Proc. Natl.
+A c a d .S c i .U S A 117, 26245 –26253 (2020).
+13. Skarda, L., Kowal, J. & Locher, K. P. Structure of the human cho-
+lesterol transporter ABCG1. J. Mol. Biol. 433, 167218 (2021).
+14. Özvegy, C., Varadi, A. & Sarkadi, B. Characterization of drug trans-
+port, ATP hydrolysis, and nucleotide trapping by the human ABCG2multidrug transporter. Modulation of substrate speci ﬁcity by a
+point mutation. J. Biol. Chem. 277,4 7 9 8 0 –47990 (2002).
+1 5 . R e i n h a r d ,F .B .M .e ta l .T h e r m a lp r o t e o m ep r o ﬁling monitors ligand
+interactions with cellul ar membrane proteins. Nat. Methods 12,
+1129 –1131 (2015).
+16. McDevitt, C. A. et al. Is ATP binding responsible for initiating drug
+translocation by the multidrug transporter ABCG2? FEBS J.
+275,
+4354 –4362 (2008).
+1 7 . S c h u e t z ,J .D . ,M a t h e r l y ,L .H . ,W e s t i n ,E .H .&G o l d m a n ,I .D .E v i -
+dence for a functional defect in t he translocation of the metho-
+trexate transport carrier in a methotrexate-resistant murine L1210leukemia cell line. J. Biol. Chem. 263,9 8 4 0 –9847 (1988).
+1 8 . S m i t h ,P .J .e ta l .A B C G 2 - a s s o c i a t e dr e s i s t a n c et oH o e c h s t
+33342 and topotecan in a murine cell model with constitutive
+expression of side population characteristics. Cytometry A 75,
+924 –933 (2009).
+19. Locher, K. P. Mechanistic diversity in ATP-binding cassette (ABC)
+transporters. Nat. Struct. Mol. Biol. 23,4 8 7 –493 (2016).
+20. Pál, Á. et al. Cholesterol potentiates ABCG2 activity in a hetero-
+logous expression system: improved in vitro model to study func-
+tion of human ABCG2. J. Pharmacol. Exp. Ther. 321,
+1085 –1094 (2007).
+21. Özvegy-Laczka, C. et al. Function-dependent conformational
+changes of the ABCG2 multidrug transporter modify its interactionwith a monoclonal antibody on the cell surface. J. Biol. Chem. 280,
+4219 –4227 (2005).
+22. Swain, B. M. et al. Complexities of a protonatable substrate in
+measurements of Hoechst 33342 transport by multidrug trans-porter LmrP. Sci. Rep. 10, 20026 (2020).
+23. Subramanian, N., Schumann-Gillett, A., Mark, A. E. & O ’M a r a ,M .L .
+Probing the pharmacological binding sites of P-glycoprotein using
+umbrella sampling simulations. J. Chem. Inf. Model 59,
+2287 –2298 (2019).
+24. Noguchi, K. et al. Substrate-depe ndent bidirectional modulation of
+P-glycoprotein-mediated drug resistance by erlotinib. Cancer Sci.
+100,1 7 0 1 –1707 (2009).25. Kannan, P. et al. The “Speci ﬁc”P-glycoprotein inhibitor tariquidar is
+also a substrate and an inhibitor for breast cancer resistance protein(BCRP/ABCG2). ACS Chem. Neurosci. 2, 82 (2011).
+2 6 . L u s v a r g h i ,S .&A m b u d k a r ,S .V .A T P - d e p e n d e n tt h e r m o s t a b i l i z a t i o n
+of human P-glycoprotein (ABCB1) is blocked by modulators. Bio-
+chem. J. 476,3 7 3 7 –3750 (2019).
+27. Telbisz, Á. et al. Antibody binding shift assay for rapid screening of
+drug interactions with the human ABCG2 multidrug transporter.Eur. J. Pharm. Sci. 45,1 0 1 –109 (2012).
+28. Khunweeraphong, N., Szöll ős i ,D . ,S t o c k n e r ,T .&K u c h l e r ,K .T h e
+ABCG2 multidrug transporter is a pump gated by a valve and an
+extracellular lid. Nat. Commun. 10, 5433 (2019).
+29. Chif ﬂe t ,S . ,T o r r i g l i a ,A . ,C h i e s a ,R .&T o l o s a ,S .Am e t h o df o rt h e
+determination of inorganic phosphate in the presence of labileorganic phosphate and high concentrations of protein: application
+to lens ATPases. Anal. Biochem. 168,1–4 (1988).
+30. Ashok, Y., Nanekar, R. & Jaakola, V. P. De ﬁning thermostability of
+membrane proteins by western blotting. Protein Eng. Des. Sel. 28,
+539 –542 (2015).
+3 1 . A b r a h a m ,M .J .e ta l .G R O M A C S: high performance molecular
+simulations through multi-level pa r a l l e l i s mf r o ml a p t o p st os u p e r -
+computers. SoftwareX 1–2,1 9–25 (2015).
+32. Schmid, N. et al. De ﬁnition and testing of the GROMOS force- ﬁeld
+versions 54A7 and 54B7. Eur. Biophys. J. 40,8 4 3 –856 (2011).
+33. Tunyasuvunakool, K. et al. Highly accurate protein structure pre-
+diction for the human proteome. Nature 596,5 9 0 –596 (2021).
+34. Stroet, M. et al. Automated topolo gy builder version 3.0: prediction
+of solvation free enthalpies in water and hexane. J. Chem. Theory
+Comput. 14, 5834 –5845 (2018).
+35. Trott, O. & Olson, A. J. AutoDock Vina: improving the speed and
+accuracy of docking with a new scoring function, ef ﬁcient optimi-
+zation, and multithreading. J. Comput. Chem. 31,4 5 5 –461 (2010).
+3 6 . B e r e n d s e n ,H .J .C . ,G r i g e r a ,J .R .&S t r a a t s m a ,T .P .T h em i s s i n gt e r m
+in effective pair potentials. J. Phys. Chem. 91,6 2 6 9 –6271 (1987).
+37. Hess, B., Bekker, H., Berendsen, H. J. C. & Fraaije, J. G. E. M. LINCS: a
+linear constraint solver for molecular simulations. J. Comput. Chem.
+18, 1463 –1472 (1997).
+38. Humphrey, W., Dalke, A. & Schulten, K. VMD: visual molecular
+dynamics. J. Mol. Graph. 14,3 3–38 (1996).
+39. Callenberg, K. M. et al. APBSmem: a graphical interface for elec-
+trostatic calculations at the membrane. PLoS ONE 5, e12722 (2010).
+4 0 . P e t t e r s e n ,E .F .e ta l .U C S FC h i m e r a —
+a visualization system for
+exploratory research and analysis. J. Comput. Chem. 25,
+1605 –1612 (2004).
+4 1 . M a r c o l i n e ,F .V . ,B e t h e l ,N . ,G u e r r i e r o ,C .J . ,B r o d s k y ,J .L .&G r a b e ,
+M. Membrane protein properties revealed through data-rich elec-trostatics calculations. Structure 23,1 5 2 6 –1537 (2015).
+42. Frisch, M. J. et al. Gaussian 16 Revision C.01. (2016).
+Acknowledgements
+We thank Sourav Das at St. Jude Children ’s Research Hospital for the
+physicochemical analysis, helpful discussion, and comments on themanuscript. Flow cytometry analysis for this project was done by theFlow Cytometry Core at St. Jude Children ’s Research Hospital. We thank
+Trevor Cunningham for advice and expert assistance with ﬂow cyto-
+metry. This work was supported by R01 CA194057, CA194206 (JS), P30CA21745, and CA96832, and by ALSAC. The Flow Cytometry Core at St.Jude Children ’s Research Hospital is supported by the Comprehensive
+Cancer Center Support Grant P30 CA021765.
+Author contributions
+T.G. and J.D.S. planned the project and designed the experiments. T.G.performed substrate accumulation assays, thermal shift assays, dis-ulﬁde crosslinking, cytotoxicity assays, 5D3 antibody shift assays, and
+immunoblot analysis. H.M.A. and M.L.O. performed MD simulations andArticle https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 14QM calculations. Y.W. performed mutagenesis and transduction. J.L.
+performed plasma membrane preparation and ATPase assays. Y.F.analyzed data and revised the manuscript. S.A.B. provided structuralanalysis. M.W. performed assays. R.C.F., analyzed data and edited the
+manuscript. A.S., provided analysis . E.R. collected, analyzed the data
+and edited the manuscript. T.G., H.M.A., M.L.O., and J.D.S. wrote thepaper. All authors contributed to the interpretation of the data andediting the manuscript.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-023-40610-5 .
+Correspondence and requests for materials should be addressed to
+John D. Schuetz.
+Peer review information Nature Communications thanks the anon-
+ymous reviewer(s) for their contribution to the peer review of this work.Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher ’s note Springer Nature remains neutral with regard to jur-
+isdictional claims in published maps and institutional af ﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,adaptation, distribution and reproduction in any medium or format, aslong as you give appropriate credit to the original author(s) and thesource, provide a link to the Creative Commons licence, and indicate if
+changes were made. The images or other third party material in this
+article are included in the article ’s Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is notincluded in the article ’s Creative Commons licence and your intended
+use is not permitted by statutory re gulation or exceeds the permitted
+use, you will need to obtain permission directly from the copyrightholder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by/4.0/ .
+© The Author(s) 2023, corrected publication 2024Article https://doi.org/10.1038/s41467-023-40610-5
+Nature Communications |         (2023) 14:5035 15

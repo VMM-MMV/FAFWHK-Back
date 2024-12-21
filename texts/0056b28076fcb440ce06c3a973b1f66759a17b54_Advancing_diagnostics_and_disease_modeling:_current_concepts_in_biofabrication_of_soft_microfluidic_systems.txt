@@ -1,0 +1,930 @@
+Vol.:(0123456789)In vitro models (2024) 3:139–150 
+https://doi.org/10.1007/s44164-024-00072-5
+CONCEPTS
+Advancing diagnostics and disease modeling: current concepts 
+in biofabrication of soft microfluidic systems
+César R. Casanova1,2 · Marta R. Casanova1,2 · Rui L. Reis1,2 · Joaquim M. Oliveira1,2
+Received: 11 April 2024 / Revised: 21 May 2024 / Accepted: 21 May 2024 / Published online: 4 June 2024 
+© The Author(s) 2024
+Abstract
+Soft microfluidic systems play a pivotal role in personalized medicine, particularly in in vitro diagnostics tools and disease 
+modeling. These systems offer unprecedented precision and versatility, enabling the creation of intricate three-dimensional 
+(3D) tissue models that can closely emulate both physiological and pathophysiological conditions. By leveraging innova-
+tive biomaterials and bioinks, soft microfluidic systems can circumvent the current limitations involving the use of polydi-
+methylsiloxane (PDMS), thus facilitating the development of customizable systems capable of sustaining the functions of 
+encapsulated cells and mimicking complex biological microenvironments. The integration of lab-on-a-chip technologies with 
+soft nanodevices further enhances disease models, paving the way for tailored therapeutic strategies. The current research 
+concepts underscore the transformative potential of soft microfluidic systems, exemplified by recent breakthroughs in soft 
+lithography and 3D (bio)printing. Novel applications, such as multi-layered tissues-on-chips and skin-on-a-chip devices, 
+demonstrate significant advancements in disease modeling and personalized medicine. However, further exploration is 
+warranted to address challenges in replicating intricate tissue structures while ensuring scalability and reproducibility. This 
+exploration promises to drive innovation in biomedical research and healthcare, thus offering new insights and solutions to 
+complex medical challenges and unmet needs.
+Keywords Biofabrication · Diagnostic chip · Disease modeling · In vitro models · Microfluidics · Organ-on-a-chip · Soft 
+microfluidics
+Introduction
+In the dynamic landscape of biomedical engineering, the 
+evolution of microfluidics (Fig.  1) has been instrumental 
+in revolutionizing research methodologies and therapeutic 
+interventions [1 , 2]. Particularly noteworthy is the emer -
+gence of soft microfluidic systems, which have ushered in 
+ground-breaking approaches to diagnostics and disease mod-
+eling, offering unprecedented precision and versatility [3 , 4].Microfluidics, characterized by manipulating fluids at 
+a microscale, finds applications across diverse disciplines 
+such as chemistry, biology, and medicine. However, the most 
+significant advancements have been witnessed within the 
+realm of soft microfluidics, owing to its ability to emulate 
+physiological conditions more closely [5 , 6].
+This concept paper aims to provide an insightful explo-
+ration and concise overview on the state-of-the-art tech -
+niques utilized in biofabrication, with a special focus on soft 
+microfluidics. By delving into the innovative biomaterials 
+and bioinks employed, as well as the sophisticated designs 
+implemented, the transformative potential of these technolo-
+gies in diagnostics and disease modeling will be elucidated.
+Central to the discussion is the recognition of the pivotal 
+role played by three-dimensional (3D) in vitro models and 
+bioinks in advancing biomedical research [6 , 7]. These tools 
+enable researchers to create more accurate representations 
+of human tissues and organs, thereby enhancing understand-
+ing of tissue functioning and disease pathology, and thus 
+facilitating the development of tailored therapeutic strategies  * Joaquim M. Oliveira 
+ miguel.oliveira@i3bs.uminho.pt
+1 3B’s Research Group, European Institute of Excellence 
+in Tissue Engineering and Regenerative Medicine 
+Headquarters, Parque de Ciência e Tecnologia, I3Bs 
+– Research Institute on Biomaterials, Biodegradable 
+and Biomimetics - University of Minho, Zona Industrial da 
+Gandra - Avepark, Barco, Guimaraes 4805-017, Portugal
+2 ICVS/3B’s – PT Government Associate Laboratory, 
+Guimaraes, Braga, Portugal140 In vitro models (2024) 3:139–150
+[1, 7]. Moreover, the importance of integrating lab-on-a-
+chip technologies with soft nanodevices is gaining a new 
+impetus to address the current societal challenges aiming to 
+develop cost-effective advanced research tools and mimetic 
+disease models to be used as alternatives to animal models. 
+By synergizing biofabrication techniques with advanced soft 
+materials and microfluidic platforms, researchers can create 
+highly customizable systems capable of mimicking complex 
+mechanical and biological environments with unparalleled 
+fidelity [8 ].
+Cutting‑edge concepts: exploring 
+the frontiers of biofabrication and soft 
+microfluidic systems
+Recent breakthroughs in biofabrication technology have led 
+to significant progress in the development of soft microflu-
+idic systems, as demonstrated in Table  1 [9–14], detailing 
+different techniques along with their corresponding materi-
+als and applications in disease modeling, addressing various 
+challenges.
+These advancements are crucial for creating more accu-
+rate and complex models of human diseases, which mirror 
+physiological conditions closely [1 , 2, 6, 8, 13–15].
+Microfluidic in vitro models offer numerous advantages 
+over traditional culture systems, organoids, and in vivo 
+models [16– 18]. These devices provide precise control 
+over the cellular microenvironment, enabling the recreation 
+of complex physiological conditions such as gradients of 
+nutrients, oxygen, and signaling molecules [19 –22]. Lauren 
+M. Delong et al. [23] reported a 3D-printed microfluidic 
+device that was designed and fabricated to maintain the oxy -
+gen gradient across precision-cut murine intestinal slices 
+while being capable of coupling to external neurochemical recording techniques. The gradient was sustained from 
+outlets below, allowing access to the slice from above for 
+detection with fast-scan cyclic voltammetry (FSCV) and 
+carbon-fiber microelectrodes [23]. A series of 11 outlet 
+ports were designed to lay underneath the slice, connected 
+to channels for delivering oxygenated versus deoxygenated 
+media. The outlet ports were shaped in an oval design, with 
+deoxygenated media delivered to the center of the slice and 
+oxygenated media to the outer portion, mimicking the natu-
+ral oxygen distribution in the intestine [ 23]. Another inter -
+esting example of controlled gradients is the novel micro-
+fluidic platform called Griddient [24]. Such type of device, 
+designed by Cristina Sanchez-de-Diego et al., aims to study 
+immune cell extravasation, migration, and endothelial bar -
+rier permeability in vitro [24]. It allows for the creation of 
+transient spatial and temporal gradients on demand, leverag-
+ing capillary forces to generate reconfigurable gradients in a 
+simplistic yet robust manner. The Griddient system consisted 
+of an array of 32 microfluidic chambers for 3D culture con-
+nected to reservoir wells, enabling the manipulation of nutri-
+ent concentration throughout the platform [23]. That study 
+demonstrated the platform’s ability to support the migration 
+and proliferation of natural killer (NK) cells through a colla-
+gen hydrogel, as well as the establishment of an endothelial 
+monolayer that responds to inflammatory signals [24].
+Additionally, microfluidic systems allow for the integra-
+tion of multiple cell types and tissues in a controlled manner, 
+thus facilitating the study of cell-cell interactions and tissue-
+level responses [22, 25, 26]. When compared to organoids, 
+microfluidics offers superior control over spatial organiza-
+tion and dynamic microenvironments, allowing for a more 
+accurate recapitulation of tissue architecture and function. 
+While organoids represent more complex tissue structures, 
+they often lack the precise control over cellular interactions 
+and environmental cues that microfluidic systems provide 
+Fig. 1  Evolution of microfluidics: from introduction to future innovations141 In vitro models (2024) 3:139–150 
+Table 1  Advances in soft microfluidic devices for health research: cutting-edge developments in diagnosis and disease modeling
+Microfabrication method Materials Applications/disease mod-
+elingChallenges addressed Main advantages Main disadvantages Ref.
+High resolution 3D printing PEGDA-250, TPO, ITX, and 
+PETTA - Fabrication of microfluidic 
+organ-on-a-chip devices 
+and microfluidic compo-
+nents, capillary flow-based 
+systems.- Rapid polymerization 
+under low irradiance, reli-
+able printing of embedded 
+microchannels and thin 
+membranes despite illumi-
+nation inhomogeneity
+- Low viscosity for fast print-
+ing, low protein adsorption, 
+and cytocompatibility- High-resolution and rapid 
+micro-fabrication
+- Cost-effective mass produc-
+tion
+- Versatility in applications
+- Automated fabrication 
+process- Limited by the resolution 
+and size of the LCD pixels
+- Challenges with illumina-
+tion inhomogeneity affect-
+ing printing quality[9]
+3D-printed soft lithography PDMS - Reconstruction of complex 
+neural circuits
+- Powerful platform for 
+studying neurodegenerative 
+diseases- Creating complex, com-
+partmentalized microfluidic 
+devices with high-aspect-
+ratio features
+- Simplify fabrication, 
+expands design possibilities
+- Increases biocompatibility, 
+and device functionality- Elimination of manual 
+cutting;
+- Expanded design capabili-
+ties
+- Versatility and reproduc-
+ibility
+- Improved biocompatibility
+- Design flexibility- Material and resolution 
+limitations[10]
+Multilayer soft lithography Collagen type I and poly-L-
+ornithine functionalized 
+PDMS- Co-culture of intestinal 
+epithelial cells with enteric 
+neurons to study neuro-
+epithelial interactions.- Modeling complex neuro-
+epithelial interactions in 
+the gut;
+- Co-culturing enteric 
+neurons with intestinal 
+epithelial cells;
+- Enabling neuronal innerva-
+tion of the epithelial layer.- Physiologically relevant 
+micro-perfusion
+- Flexible design of vascular 
+networks
+- Compatibility with various 
+matrices
+- Enhanced differentiation 
+and viability
+- Drug discovery applica-
+tions
+- Potential for increased 
+biomimicry- Lack of in vivo vascular 
+features
+- Uniform distribution limit-
+ing zonation
+- Dependence on specific 
+material properties[11]142 In vitro models (2024) 3:139–150
+Poly(ethylene glycol) diacrylate (PEGDA)-250; Diphenyl(2,4,6-trimethylbenzoyl)phosphine oxide (TPO); 2-isopropylthioxanthone (ITX); pentaerythritol tetraacrylate (PETTA); polydimethyl-
+siloxane (PDMS); polymethylmethacrylate (PMMA)Table 1  (continued)
+Microfabrication method Materials Applications/disease mod-
+elingChallenges addressed Main advantages Main disadvantages Ref.
+Soft lithography PDMS and gold - Facilitating rapid, sensitive, 
+and specific point-of-care 
+diagnostic applications, par -
+ticularly for DNA detection 
+in clinical settings- Complexity of integrat-
+ing electrochemistry with 
+microfluidics
+- Implemented Electrode 
+functionalization difficulties 
+functionalization techniques
+- Enhanced DNA immobili-
+zation
+- Improved sensitivity and 
+specificity of fluid dynam-
+ics- Tailored microfluidic design
+- Efficient seeding and pla-
+narization
+- Visualization capabilities
+- Robust exchange of mol-
+ecules
+- Maintenance of neuronal 
+morphology
+- Limited cell cross-contam-
+ination- Limited evaluation period
+- Cell contamination and 
+infiltration
+- Lack of structural and func-
+tional assessment
+- Potential for experimental 
+variability[12]
+PMMA
+PDMS and fibrinogen gel- Study of vascular formation, 
+endothelial-pericyte interac-
+tions, and immune cell 
+behavior within a 3D ECM
+- Vascular disorders and 
+analyzing inflammatory 
+responses- Mimicking natural vessel 
+geometry and interactions;
+- Created perfusable micro-
+channels in 3D ECM;
+- Supported complex vascular 
+cell interactions without 
+artificial interference.- Functional neovessel rep-
+lication
+- Endothelial barrier main-
+tenance
+- Live confocal imaging
+- Viable and functional 
+neovessels
+- Biological stimuli respon-
+siveness
+- Immune cell interaction- Neovessel size limitation
+- Shear stress levels
+- Hydrogel properties
+- Flow and vessel integrity[13]
+PDMS - Prostate cancer disease
+- Study of the interactions 
+between prostate cancer 
+cells and the tumor micro-
+environment- Provide a more accurate 
+representation of traditional 
+in vitro and in vivo models
+- Simplify the capture of 
+tumor-stroma interactions
+- Enhance prediction of thera-
+peutic outcomes- Physiologically relevant 
+model
+- Microfluidic design
+- Visualization and labeling
+- Cytokine secretion analysis
+- Drug screening and devel-
+opment- Limited immune response 
+representation
+- Biological and molecular 
+limitations[14]143 In vitro models (2024) 3:139–150 
+[22, 27, 28]. However, organoids may better mimic certain 
+aspects of tissue development and disease progression due 
+to their three-dimensional organization and self-assembly 
+properties [22, 29].
+Microfluidic platforms also offer the possibility of high-
+throughput screening and automation, thus accelerating 
+drug discovery and development processes. Furthermore, 
+microfluidic systems have several advantages over in vivo 
+models, including reduced cost, ethical considerations, and 
+the ability to perform high-throughput experimentation [4 , 
+17, 21, 22, 25, 28]. Nevertheless, they may not fully reca -
+pitulate the complexity of the in vivo environment, such as 
+systemic interactions, immune responses, and long-term tis-
+sue remodeling [4 ].
+Microfluidic models utilize channels to recreate the 
+complex microarchitecture and fluid dynamics of tissues or 
+organs, providing superior control over cellular microenvi-
+ronments and enabling precise manipulation of biochemical 
+and biophysical cues [18, 20, 22, 26, 30]. While organoids 
+and in vivo models provide valuable insights into tissue biol-
+ogy and disease mechanisms, microfluidic-based models 
+offer a complementary tool for drug screening, disease mod-
+eling, and personalized medicine, bridging the gap between 
+traditional in vitro and in vivo approaches [16, 30, 31]. In 
+this context, Magdalena Flont et al. [32] recently developed 
+a new microfluidic system for creating a layered cellular 
+cancer model with non-cancerous stroma on a poly(ethylene 
+terephthalate) (PET) membrane. Their work aimed to mimic 
+the complex structure of a tumor under in vitro conditions, 
+focusing on screening anticancer drugs. The microfluidic 
+system was designed to enable the modeling of cancer 
+diseases in a reproducible and representative manner. By 
+utilizing a scaffold made of a porous PET membrane, the 
+researchers successfully demonstrated the penetration of test 
+compounds into cancer cells through the fibroblast layer and 
+pores in the membrane, indicating the system’s potential for 
+3D cell culture and testing permeability [32]. In that study, 
+the researchers co-cultured cancer cells with non-malignant 
+cells on the biocompatible polymer membrane to assess the 
+toxicity of anticancer compounds. Using CAM/PI staining 
+for each tested drug concentration, the researchers were able 
+to evaluate the cytotoxicity and photocytotoxicity of the 
+compounds. Additionally, the microfluidic system allowed 
+for the analysis of the effectiveness of photodynamic therapy 
+in treating melanoma and chemotherapy in treating breast 
+cancer [32]. Furthermore, the developed microsystem pro-
+vided a more advanced alternative to standard two-dimen-
+sional in vitro cell models by enabling cell culture in the 
+form of a double monolayer. That arrangement facilitated 
+the regular and reproducible organization of cells in the cul -
+ture, maintaining intercellular communication essential for 
+studying drug screening and diffusion into cancer cells. The 
+versatility of the system, coupled with the use of porous membranes, opens up possibilities for testing membrane per -
+meability, drug penetration, and developing 3D models of 
+various cancer types or non-malignant tissues [32].
+Innovations in hot embossing and imprinting, lithogra-
+phy, soft lithography, and emerging techniques such as 3D 
+printing and laser ablation (Fig.  2) have markedly refined 
+the precision of bioink deposition [5 , 33]. These methodolo-
+gies can facilitate the fabrication of intricate constructs that 
+emulate the cellular milieu with unprecedented fidelity. The 
+establishment of microphysiological systems using these 
+technologies brings a new era, enabling the recapitulation of 
+tissues and organ-specific features on a microscale [33– 35]. 
+By employing microfluidics, Chong Shen et al. developed a 
+novel lung-on-a-chip platform based on a biomimetic hydro-
+gel membrane. That platform aimed to mimic the alveolar 
+structure by sandwiching the hydrogel membrane between 
+two PDMS parts, with human umbilical vein endothelial 
+cells (HUVECs) and human pulmonary alveolar epithelial 
+cells (HPAEpiCs) seeded on each side to form the alveolar-
+capillary barrier. The microfluidic device allowed for cyclic 
+membrane stretching by introducing air into the top chamber 
+and fluid flow through the bottom chamber to manipulate 
+shear stress on HUVECs and deliver nutrients to HPAEpiCs 
+[36]. In the context of drug screening and disease modeling, 
+the membrane deformation influenced fluid flow-induced 
+shear stress on HUVECs. Computational fluid dynamics 
+simulations were used to analyze the peak and mean shear 
+stress on the membrane at varying flow rates and strains. The 
+flow rate chosen aimed to approximate the shear stress on the 
+human capillary wall. The study demonstrated that increas-
+ing strain significantly enhanced velocity and shear stress in 
+the chamber due to the compacted chamber by the stretched 
+hydrogel membrane [36]. Such type of innovative microflu-
+idic lung-on-a-chip model provided a platform for studying 
+drug sensitivity for individualized treatment of lung cancer 
+[36]. Additionally, it offers a valuable tool for modeling pul-
+monary fibrosis and understanding the role of alveolar cells 
+under mechanical stress in contributing to fibrosis [36].
+The described cutting-edge approaches not only enhance 
+resolution and control but also lead the way in personalized 
+medicine by supporting the study of disease triggers and the 
+testing of therapies in precisely tailored environments [37].
+ In 2021, Valencia et al. [35] introduced a ground-break -
+ing microfluidic system capable of creating multi-layered 
+tissues-on-chips. A novel approach to generate 3D multilayer 
+tissue models on microfluidic platforms was established 
+using a “cut and assemble” method. A parallel flow tech-
+nique for bilayer tissue deposition was employed, as well 
+as a new vinyl-based microfluidic device, to demonstrate 
+the dynamic upkeep of multilayer tissues in conditions that 
+simulate the function of blood vessels. Valencia’s prelimi -
+nary experiments showed promise (Fig.  4I), demonstrating 
+that this biochip improves the development and maintenance 144 In vitro models (2024) 3:139–150
+of multilayer tissues, hence increasing the potential for 
+novel and improved biological models for complex biologi-
+cal interaction research [35]. In 2023, Mohamadali et al. 
+[34] developed a cutting-edge skin-on-a-chip microfluidic 
+device through soft lithography. A technology that realisti-
+cally mimics the entire thickness of human skin (Fig.  4II), 
+including the epidermis and dermis layers, was successfully 
+created. That model accurately replicated the skin’s vascular 
+system with polydimethylsiloxane (PDMS) microchannels, 
+thus enabling efficient nutrition transportation, which is crit-
+ical for skin tissue viability and mechanical integrity. The 
+tensile strength of the skin sample in the microfluidic device 
+decreased by about 30% after 1 week, while the mechanical 
+strength for traditional culture platforms decreased to 70% during the same timeframe. Such type of innovation out -
+performs traditional culture methods in terms of skin tissue 
+health, moisture absorption, structure, gene expression, and 
+longevity over at least a week. Its operational simplicity and 
+cost-effectiveness render it an invaluable tool for research 
+and development, marking a significant leap forward from 
+previous methods [34]. Mohamadali’s contribution has 
+important implications, offering a more thorough and realis-
+tic model of human skin’s physiological processes [34]. This 
+skin-on-a-chip model is expected to transform personalized 
+medicine by allowing for more precise modeling of complex 
+cellular interactions. It has also the potential to revolution-
+ize drug discovery and tissue engineering, reducing reliance 
+on animal models in favor of more relevant human tissue 
+Fig. 2  Main biofabrication techniques employed in the fabrication development of soft microfluidic devices: a highlighting illustration of the 
+major methodologies, advantages, and limitations of 3D bioprinting, hot embossing, lithography, and laser ablation techniques145 In vitro models (2024) 3:139–150 
+models. The study’s implications span medicine, pharmacol-
+ogy, and tissue engineering, underscoring its importance for 
+advancing personalized medicine and boosting our under -
+standing of tissue biology and disease pathways. To fur -
+ther enhance these models, we can adjust essential tunable 
+parameters to optimize soft microfluidic systems (Fig.  3). 
+These parameters can be meticulously tuned to enhance the 
+performance and adaptability of soft microfluidic systems, 
+facilitating advancements in biomedical research, chemical 
+synthesis, and high-throughput screening applications. The 
+combination of these tunable factors provides a versatile 
+platform for developing innovative microfluidic solutions.
+For example, the selective use of sophisticated materi-
+als in bioink formulations is critical to microfluidic plat -
+forms’ performance [7 , 38, 39]. These often involve stimuli-
+responsive, or “smart” materials, extending the boundaries 
+for creating small systems endowed with complex features 
+that may enable the development of sophisticated diagnostic 
+modalities, and targeted drug delivery systems [7 , 39]. The 
+selection of stimuli (e.g., pH, temperature, light) and type of 
+biomaterials (e.g., methacrylated gelatin, silk fibroin, poly 
+(dimethylacrylamide)) are intricately tied to the final pur -
+pose. Hong et al. [40] reported a novel microfluidic technol-
+ogy that uses a pH-responsive carbon nanotube (CNT) film 
+to efficiently capture and release cancer cells from blood 
+samples. That microfluidic device comprised two main 
+components: (i) a bottom-layer glass slide coated with a 
+CNT film functionalized with pH-responsive poly-L-lysine 
+(PLL) connected to anti-epithelial cell adhesion molecule 
+antibodies and (ii) a top-layer PDMS cover with herringbone 
+channels. The setup significantly enhanced cell collision 
+with the functionalized CNT film, thus leading to an 86.7% 
+capture efficiency. By means of adjusting the pH to trigger 
+a conformational shift in the PLL, the device achieved an 
+84.7% release efficiency, with the released cells maintain-
+ing a high level of biological viability (84.6%). That system, 
+schematized in Fig. 4 III, represented a promising approach 
+for the capture and release of biologically viable circulating tumor cells (CTC’s) for downstream molecular and func -
+tional studies. It successfully demonstrated the strategic use 
+of sophisticated materials and stimuli-responsive features 
+for microfluidic platforms [40].
+The development and application of bioinks in microflu-
+idics for applications such as tissue engineering, pharmaco-
+logical studies, and organ-on-a-chip frameworks necessitate 
+a thorough assessment of their mechanical and biological 
+properties [7 , 39]. In a recent study, Mariana Carvalho et al. 
+developed a biomimetic and soft lab-on-a-chip platform 
+using enzymatically crosslinked silk fibroin (eSF) hydro-
+gel for modeling colorectal tumors [41]. That innovation 
+aimed to address the limitations of conventional microflu-
+idic systems, which rely on solid, non-biodegradable, and 
+non-biocompatible materials, by incorporating biological 
+components into soft microfluidic systems [41]. The pro-
+posed approach holds the promise of revolutionizing in vitro 
+cell and tissue culture and modeling using hydrogel-based 
+microfluidic technologies. The innovative platform was 
+developed using a new methodological approach, employ -
+ing eSF hydrogels, known for their unique tunability and 
+mechano-chemical capabilities, and ideal structural fidel-
+ity [41]. In that study, it was demonstrated that the higher 
+the concentration of eSF, the higher the G’, or the stiffness 
+(Fig.  4IV). The 14% eSF hydrogel microfluidic platform 
+presented a G’ of 7172 ± 605 Pa. The innovative fabrication 
+approach has led to the creation of a microfluidic device 
+with encapsulated living cells. That device, unlike traditional 
+PDMS-based systems that are unsuitable for encapsulating 
+cells, can successfully mimic the dynamic 3D microenviron-
+ment of colorectal cancer and accurately measure its reac-
+tion to chemotherapy agents, and can possibly envisioning 
+the creation of vascularized in vitro models. The platform 
+showed outstanding structural stability and ability to perfuse 
+fluid while showing in vivo-like biological reactions. The 
+eSF hydrogel’s stimuli-responsiveness can allow envision-
+ing the development of highly customizable in vitro testing 
+platforms, with applications ranging from in vitro disease 
+Fig. 3  Tunable parameters in 
+soft microfluidic systems. The 
+key adjustable parameters are 
+categorized into six main areas: 
+channel geometry and dimen-
+sions, fluid properties, material 
+properties, external controls, 
+biological compatibility, and 
+microenvironment conditions
+146 In vitro models (2024) 3:139–150
+147 In vitro models (2024) 3:139–150 
+modeling to drug screening, and the broader field of tis-
+sue engineering [41]. These bioinks are tailored to allow 
+important cellular processes, including nutrition exchange, 
+cell viability, proliferation, and adhesion while maintain-
+ing compatibility with the microfluidic architecture [43]. 
+Moreover, the device design is critical, with current tech -
+niques aiming to accurately mimic physiological conditions. 
+These devices have flexible conduits and compartments that 
+can simulate the complex blood vessel architectures and 
+dynamic mechanical stresses that cells encounter in vivo, 
+such as shear stress and compression [44]. The incorporation 
+of diverse cellular populations and the establishment of gra-
+dients for essential components such as nutrients and oxygen 
+within these constructs enable a more accurate simulation of 
+the cellular microenvironment. Such type of design concept 
+goes way beyond standard modeling techniques by shedding 
+light on cellular dynamics and interactions in an environ-
+ment that closely resembles in vivo conditions. Interestingly, 
+Hao Yang et al. developed an innovative microfluidic chip 
+that combines dynamic cell culture and dielectrophoretic 
+manipulation for the “in situ” assessment of endothelial cell 
+mechanics [42]. The device mimics the vascular microen-
+vironment and allows for the study of the biomechanical 
+effects of fluid shear stress, TNF-α, and blebbistatin on 
+HUVECs. That multi-layer microfluidic device was created 
+using PDMS casting and oxygen plasma bonding, enabling precise control of cell culture conditions and mechanical 
+measuring operations (Fig.  4V). The main results revealed 
+that increased fluid shear stress enhances Young’s modulus 
+of HUVECs, thus indicating the importance of hemodynam-
+ics in cellular biomechanics, whereas TNF-α and blebbista-
+tin significantly reduce HUVECs stiffness [42]. The research 
+contribution introduced a novel vascular-mimetic dynamic 
+culture system and monitoring approach, significantly 
+improving the study’s efficiency and accuracy on hemody -
+namics and pharmacological mechanisms. The microfluidic 
+chip’s ability to respond to changes in the environmental 
+conditions presents an invaluable tool for cardiovascular dis-
+ease research, for example, offering significant advantages 
+in simulating in vivo conditions, high throughput analysis, 
+and potential applications in drug screening and disease 
+modeling [42].
+Challenges and future directions
+Soft microfluidic systems have unequivocally revolution-
+ized the landscape of disease modeling, allowing for subtle 
+and customized investigations that were previously out of 
+reach. These models provide unprecedented opportunities 
+for studying disease ontogeny and therapeutic approaches 
+within a controlled and reproducible setting. Nevertheless, 
+challenges still remain in the advancement of biofabrica-
+tion and soft microfluidic systems, despite the strides made 
+in diagnostics and disease modeling. A critical obstacle is 
+related to the need to replicate complex tissue structures 
+and achieve functional vascularization within microfluidic 
+devices. Such type of grand challenge calls for significant 
+inventive approaches and designs for emulating the sophis-
+ticated architecture and functionalities of living systems 
+in vitro. The refinement of endothelial cell incorporation to 
+mimic in vivo vasculature [11] represents a stride towards 
+this goal. Moreover, the assessment of neuro-epithelial con-
+tacts within co-cultures, aimed at unraveling the complexi-
+ties of gastrointestinal diseases [ 12], underscores the need 
+for enhanced biological mimicry.
+Additionally, ensuring the scalability and reproducibil-
+ity of these systems for widespread application in diag -
+nostics and disease modeling is of paramount importance. 
+Addressing these technical challenges is imperative to 
+unlock the full potential of soft microfluidics, ultimately 
+enabling more effective tailored cost-effective and per -
+sonalized solutions for healthcare. In vitro testing is vital 
+for validating microfluidic chips [21, 24, 32, 36]. This 
+includes assessing fluid dynamics and mixing efficiency 
+to ensure accurate replication of physiological fluid flows 
+[45, 46]. In vitro cytotoxicity screening and live/dead cell 
+staining can help assessing that materials are non-toxic to 
+cells. Simulating biological conditions, such as controlled Fig. 4   Image panel with different microfluidic devices: I visualiza-
+tion of cell viability in microfluidic devices: (A) human fibroblasts 
+embedded within fibrin hydrogel inside a microchannel, with green 
+and red fluorescence indicating live and dead cells respectively. (B) 
+human keratinocytes on fibrin hydrogel observed through confocal 
+microscopy. (C) an overhead view of the upper chamber loaded with 
+GFP-tagged human fibroblasts in fibrin gel, showcasing even distri-
+bution and cell spread; II  fluorescent imaging and viability of full-
+thickness skin tissue models: (A) live imaging of full-thickness skin 
+tissue in micro-bioreactors (µBR) and tissue culture plates (TCPs) 
+on days 0, 1, and 7. (B) Graphical analysis of skin cell viability via 
+Acridine Orange staining over 7 days. (C) Comparative viability of 
+full-thickness skin tissues in µBR and TCP environments over 7 days, 
+assessed by MTT assay, highlighting significant differences; III sche-
+matic illustration of the pH-responsive carbon nanotube (CNT) 
+microfluidic chip: (a) the structure of the CNT chip and the process 
+of capturing circulating tumor cells (CTCs). (b) the release process 
+of captured CTCs under high pH conditions due to the transforma-
+tion of poly-L-lysine (PLL) structure;  IV enzymatically crosslinked 
+silk fibroin (eSF) hydrogel microfluidic platform: (A) the unique 
+mechanical properties of the eSF hydrogel platform. (B) Ink perfu-
+sion experiments and formation of a gradient in the serpentine chan-
+nel. (C) Microscopy snapshots of microstructure flow within the ser -
+pentine channel; V  multi-layer integrated microfluidic chip design: 
+(B) schematization of the chip’s structure. (C) Diagram of the chip’s 
+architecture emphasizing oxygen and plasma bonding technology. (D) 
+The operating principles of the microfluidic device; images adapted 
+with permission from references [ 34, 35, 40–42 ], copyright 2021 
+Springer Nature, copyright 2023 Springer Nature, copyright 2022 
+American Chemical Society, copyright 2022 Authorea, and copyright 
+2023 Royal Society of Chemistry, respectively◂148 In vitro models (2024) 3:139–150
+temperature and pH, best emulates human physiological 
+settings for accurate biological interaction testing [45– 48]. 
+By means of applying such types of methods, research-
+ers ensure that new devices are precise, reliable, and 
+biocompatible, demonstrating improvements over exist-
+ing technologies and advancing personalized healthcare 
+solutions in diagnostics and disease modeling. Advance-
+ments in biosensor platforms are also anticipated, aiming 
+for broader clinical applications including comprehensive 
+disease diagnostics, therapeutics, and potentially real-time 
+biomolecular interaction monitoring in point-of-care set-
+tings [49].
+Looking ahead, the future of biofabrication and soft 
+microfluidic systems holds great innovation potential. As 
+research progresses, a key focus will be refining system 
+precision and functionality, ensuring that they not only 
+mimic but also replicate the dynamic mechanical proper -
+ties of living tissues more closely. A particular area of 
+interest lies in the versatility of these systems to encapsu -
+late a variety of cell types fostering the creation of more 
+intricate and mimetic cellular arrangements and microen-
+vironments. Future research aims to refine the precision 
+and functionality of these systems as there is a marked 
+interest in integrating more complex cellular and micro-
+bial components to faithfully replicate organ physiology, 
+particularly within the gastrointestinal tract for extensive 
+pharmacokinetic analysis [50].
+The integration of Clustered Regularly Interspaced 
+Short Palindromic Repeats (CRISPR) within microflu-
+idic devices is another promising venture. Such type of 
+synergistic approach could yield unprecedented advance-
+ments in the field. By means of combining the unparalleled 
+specificity of CRISPR technologies with the versatility and 
+efficiency of microfluidic systems, scientists are on the 
+edge of developing highly targeted therapies for genetic 
+disorders, enabling the correction of mutations at their 
+source with minimal off-target effects [51, 52]. Further -
+more, this integration paves the way for high-throughput 
+screening of genetic interactions and drug responses in 
+real-time, offering insights into complex biological pro-
+cesses at an unparalleled scale. The ability to manipulate 
+genes within microenvironments that closely mimic the 
+physiological conditions of living tissues could revolution-
+ize our approach to understanding disease mechanisms, 
+leading to the development of novel treatments and diag-
+nostics [51, 52].
+Addressing these challenges and harnessing the innova-
+tion potential of biomaterials, biofabrication methods and 
+soft microfluidic systems will be instrumental in decoding 
+complex biological interactions and pathologies, contribut-
+ing significantly to the evolution of personalized medicine 
+and revolutionizing the landscape of disease modeling and 
+treatment.Conclusion
+The field of biofabrication has undergone remarkable strides 
+in recent years, marking a transformative era  in diagnos-
+tics and disease modeling propelled by the advent of soft 
+microfluidic systems. Innovations in fabrication techniques 
+such as 3D printing, soft lithography, and laser ablation 
+have facilitated the creation of intricate, three-dimensional 
+in vitro models that can better emulate human tissues and 
+organs with unprecedented fidelity. These advancements 
+not only enhance disease modeling accuracy but also lay 
+the foundation for personalized medicine, offering tailored 
+therapeutic strategies based on individual physiological 
+responses. The groundbreaking work of several researchers 
+and pioneers underscores the transformative potential of soft 
+microfluidic systems in creating multi-layered tissue mod-
+els and skin-on-a-chip devices, enabling in-depth studies of 
+complex biological interactions and drug responses within 
+controlled microenvironments. Moreover, the strategic use 
+of advanced soft biomaterials and stimuli-responsive bioinks 
+can open up new avenues for the development of sophisti-
+cated diagnostic tools and targeted drug delivery systems. 
+As biofabricated microfluidic systems expand into clinical 
+settings, they present an exciting frontier for personalized 
+diagnostics, patient-specific treatment planning and stratifi-
+cation, and even the fabrication of bespoke tissue implants 
+for regenerative medicine. The journey from conceptual 
+frameworks to practical applications epitomizes interdisci-
+plinary collaboration, drawing upon expertise from materials 
+science, biology, engineering, and computer science. With 
+continued innovation, these systems promise to revolution-
+ize medical approaches, profoundly impacting healthcare 
+outcomes worldwide.
+Funding Open access funding provided by FCT|FCCN (b-on).  This 
+research was supported by the European Commission (EU-EC) through 
+the ONCOSCREEN project (101097036).
+Data availability Research data are not shared.
+Declarations  
+Conflict of interest The authors declare no competing interests.
+Open Access This article is licensed under a Creative Commons Attri-
+bution 4.0 International License, which permits use, sharing, adapta-
+tion, distribution and reproduction in any medium or format, as long 
+as you give appropriate credit to the original author(s) and the source, 
+provide a link to the Creative Commons licence, and indicate if changes 
+were made. The images or other third party material in this article are 
+included in the article’s Creative Commons licence, unless indicated 
+otherwise in a credit line to the material. If material is not included in 
+the article’s Creative Commons licence and your intended use is not 
+permitted by statutory regulation or exceeds the permitted use, you will 
+need to obtain permission directly from the copyright holder. To view a 
+copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.149 In vitro models (2024) 3:139–150 
+References
+ 1. Khorsandi D, Yang JW, Foster S, Khosravi S, Hosseinzadeh 
+Kouchehbaghi N, Zarei F, et al. Patient-derived organoids as ther -
+apy screening platforms in cancer patients. Adv Healthc Mater. 
+2024;e2302331. https:// doi. org/ 10. 1002/ adhm. 20230 2331.
+ 2. Aubry G, Lee HJ, Lu H. Advances in Microfluidics: technical 
+innovations and applications in diagnostics and therapeutics. Anal 
+Chem. 2023;95(1):444–67. https://  doi. org/ 10. 1021/  acs. analc  hem. 
+2c045 62.
+ 3. Wu CH, Ma HJH, Baessler P, Balanay RK, Ray TR. Skin-inter -
+faced microfluidic systems with spatially engineered 3D fluidics 
+for sweat capture and analysis. Sci Adv. 2023;9(18):eadg4272. 
+https:// doi. org/ 10. 1126/ sciadv. adg42 72.
+ 4. Monteduro AG, Rizzato S, Caragnano G, Trapani A, Giannelli 
+G, Maruccio G. Organs-on-chips technologies – a guide from 
+disease models to opportunities for drug development. Biosens 
+Bioelectron. 2023;231:115271. https:// doi. org/ 10. 1016/j. bios.  
+2023. 115271.
+ 5. Su R, Wang F, McAlpine MC. 3D printed microfluidics: 
+advances in strategies, integration, and applications. Lab Chip. 
+2023;23(5):1279–99. https:// doi. org/ 10. 1039/ d2lc0 1177h.
+ 6. Carvalho MR, Yan LP, Li B, Zhang CH, He YL, Reis RL, et al. 
+Gastrointestinal organs and organoids-on-a-chip: advances and 
+translation into the clinics. Biofabrication. 2023;15(4):042004. 
+https:// doi. org/ 10. 1088/ 1758- 5090/ acf8fb.
+ 7. Hull SM, Lou J, Lindsay CD, Navarro RS, Cai B, Brunel LG, et al. 
+3D bioprinting of dynamic hydrogel bioinks enabled by small 
+molecule modulators. Sci Adv. 2023;9(13):eade7880. https:// doi.  
+org/ 10. 1126/ sciadv. ade78 80.
+ 8. Saorin G, Caligiuri I, Rizzolio F. Microfluidic organoids-
+on-a-chip: the future of human models. Semin Cell Dev Biol. 
+2023;144:41–54. https:// doi. org/ 10. 1016/j. semcdb. 2022. 10. 001.
+ 9. Shafique H, Karamzadeh V, Kim G, Shen ML, Morocz Y, 
+Sohrabi-Kashani A, et al. High-resolution low-cost LCD 3D 
+printing for microfluidics and organ-on-a-chip devices. Lab Chip. 
+2024;24(10):2774–90. https:// doi. org/ 10. 1039/ D3LC0 1125A .
+ 10. Kajtez J, Buchmann S, Vasudevan S, Birtele M, Rocchetti S, 
+Pless CJ, et al. 3D-printed soft lithography for complex com-
+partmentalized microfluidic neural devices. Adv Sci (Weinh). 
+2020;7(16):2001150. https:// doi. org/ 10. 1002/ advs. 20200 1150.
+ 11. Grebenyuk S, Abdel Fattah AR, Kumar M, Toprakhisar B, 
+Rustandi G, Vananroye A, et al. Large-scale perfused tissues via 
+synthetic 3D soft microfluidics. Nat Commun. 2023;14(1):193. 
+https:// doi. org/ 10. 1038/ s41467- 022- 35619-1.
+ 12. de Hoyos-Vega JM, Yu X, Gonzalez-Suarez AM, Chen S, Mer -
+cado-Perez A, Krueger E, et al. Modeling gut neuro-epithelial 
+connections in a novel microfluidic device. Microsyst Nanoeng. 
+2023;9(1):144. https:// doi. org/ 10. 1038/ s41378- 023- 00615-y .
+ 13. van Dijk CGM, Brandt MM, Poulis N, Anten J, van der Moolen 
+M, Kramer L, et al. A new microfluidic model that allows moni-
+toring of complex vascular structures and cell interactions in a 
+3D biological matrix. Lab Chip. 2020;20(10):1827–44. https://  
+doi. org/ 10. 1039/ d0lc0 0059k .
+ 14. Jiang L, Khawaja H, Tahsin S, Clarkson TA, Miranti CK, Zohar Y. 
+Microfluidic-based human prostate-cancer-on-chip. Front Bioeng 
+Biotechnol. 2024;12:1302223. https:// doi. org/ 10. 3389/ fbioe. 2024.  
+13022 23.
+ 15. Kajtez J, Buchmann S, Vasudevan S, Birtele M, Rocchetti S, Pless 
+CJ et al. 3D-printed soft lithography for complex compartmental-
+ized microfluidic neural devices (vol 7, 2001150, 2020). Adv Sci. 
+2021;8(12). doi: ARTN 2101787.10.1002/advs.202101787.
+ 16. Cardoso BD, Castanheira EMS, Lanceros-Méndez S, Cardoso 
+VF. Recent advances on cell culture platforms for in vitro drug screening and cell therapies: from conventional to microfluidic 
+strategies. Adv Healthc Mater. 2023;12(18):2202936. https:// doi.  
+org/ 10. 1002/ adhm. 20220 2936.
+ 17. Sharkey C, White R, Finocchiaro M, Thomas J, Estevam J, 
+Konry T. Advancing point-of-care applications with drop-
+let microfluidics: from single-cell to multicellular analysis. 
+Annu Rev Biomed Eng. 2024. https:// doi. org/ 10. 1146/ annur  
+ev- bioeng- 110222- 102142.
+ 18. Scemama A, Lunetto S, Tailor A, Di Cio S, Dibble M, Gautrot 
+J, et al. Development of an in vitro microfluidic model to study 
+the role of microenvironmental cells in oral cancer metastasis. 
+F1000Res. 2023;12:439. https:// doi. org/ 10. 12688/ f1000  resea rch. 
+131810.2.
+ 19. Salek MM, Carrara F, Zhou J, Stocker R, Jimenez-Martinez J. 
+Multiscale porosity microfluidics to study bacterial transport in 
+heterogeneous chemical landscapes. Adv Sci n/a(n/a):2310121. 
+https:// doi. org/ 10. 1002/ advs. 20231 0121.
+ 20. Reed-McBain CA, Turaga RV, Zima SRT, Abizanda Campo S, 
+Riendeau J, Contreras Guzman E, et al. Microfluidic device with 
+reconfigurable spatial temporal gradients reveals plastic astrocyte 
+response to stroke and reperfusion. Lab Chip. 2023;23(18):3945–
+60. https:// doi. org/ 10. 1039/ D3LC0 0276D.
+ 21. Bachal K, Yadav S, Gandhi P, Majumder A. Design and validation 
+of a flowless gradient generating microfluidic device for high-
+throughput drug testing. Lab Chip. 2023;23(2):261–71. https://  
+doi. org/ 10. 1039/ D2LC0 0879C.
+ 22. Puschhof J, Pleguezuelos-Manzano C, Clevers H. Organoids and 
+organs-on-chips: insights into human gut-microbe interactions. 
+Cell Host Microbe. 2021;29(6):867–78. https:// doi. org/ 10. 1016/j. 
+chom. 2021. 04. 002.
+ 23. Delong LM, Witt CE, Pennell M, Ross AE. A microfluidic chip 
+for sustained oxygen gradient formation in the intestine ex vivo. 
+Lab Chip. 2024;24(7):1918–29. https:// doi. org/ 10. 1039/ D3LC0  
+0793F .
+ 24. Sanchez-de-Diego C, Virumbrales-Muñoz M, Hermes B, Juang 
+TD, Juang DS, Riendeau J, et al. Griddient: a microfluidic array to 
+generate reconfigurable gradients on-demand for spatial biology 
+applications. Commun Biology. 2023;6(1):925. https:// doi. org/ 10.  
+1038/ s42003- 023- 05282-3.
+ 25. Riddle RB, Jennbacken K, Hansson KM, Harper MT. Multicel-
+lular vessel-on-a-chip reveals context dependent roles for plate-
+lets in inflammation and inflammatory hemostasis. Blood Ves-
+sels Thromb Hemost. 2024. https:// doi. org/ 10. 1016/j. bvth. 2024.  
+100007.
+ 26. Vo Q, Carlson KA, Chiknas PM, Brocker CN, DaSilva L, Clark 
+E, et al. On-chip reconstitution of uniformly shear-sensing 3D 
+matrix-embedded multicellular blood microvessel. Adv Funct 
+Mater. 2024;34(10):2304630. https:// doi. org/ 10. 1002/ adfm. 20230  
+4630.
+ 27. Marino A, Battaglini M, Carmignani A, Pignatelli F, De Pasquale 
+D, Tricinci O, et al. Magnetic self-assembly of 3D multicellu-
+lar microscaffolds: a biomimetic brain tumor-on-a-chip for drug 
+delivery and selectivity testing. APL Bioeng. 2023;7(3). https://  
+doi. org/ 10. 1063/5. 01550 37.
+ 28. Wu L, Ai Y, Xie R, Xiong J, Wang Y, Liang Q. Organoids/organs-
+on-a-chip: new frontiers of intestinal pathophysiological models. 
+Lab Chip. 2023;23(5):1192–212. https:// doi. org/ 10. 1039/ D2LC0  
+0804A .
+ 29. Hu C, Yang S, Zhang T, Ge Y, Chen Z, Zhang J, et al. Organoids 
+and organoids-on-a-chip as the new testing strategies for envi-
+ronmental toxicology-applications & advantages. Environ Int. 
+2024;184:108415. https:// doi. org/ 10. 1016/j. envint. 2024. 108415.
+ 30. Li W, Zhou Z, Zhou X, Khoo BL, Gunawan R, Chin YR, et al. 
+3D biomimetic models to reconstitute tumor microenvironment 
+in vitro: spheroids, organoids, and tumor-on-a-chip. Adv Healthc 150 In vitro models (2024) 3:139–150
+Mater. 2023;12(18):2202609. https://  doi. org/ 10. 1002/  adhm.  20220  
+2609.
+ 31. Bouquerel C, Dubrova A, Hofer I, Phan DTT, Bernheim M, 
+Ladaigue S, et al. Bridging the gap between tumor-on-chip and 
+clinics: a systematic review of 15 years of studies. Lab Chip. 
+2023;23(18):3906–35. https:// doi. org/ 10. 1039/ D3LC0 0531C.
+ 32. Flont M, Dybko A, Jastrzębska E. A layered cancer-on-a-chip sys-
+tem for anticancer drug screening and disease modeling. Analyst. 
+2023;148(21):5486–95. https:// doi. org/ 10. 1039/ D3AN0 0959A .
+ 33. Han X, Zhang Y, Tian J, Wu T, Li Z, Xing F, et al. Polymer-based 
+microfluidic devices: a comprehensive review on preparation and 
+applications. Polym Eng Sci. 2021;62(1):3–24. https:// doi. org/ 10. 
+1002/ pen. 25831.
+ 34. Mohamadali M, Ghiaseddin A, Irani S, Amirkhani MA, Dah-
+mardehei M. Design and evaluation of a skin-on-a-chip pump-
+less microfluidic device. Sci Rep. 2023;13(1):8861. https:// doi.  
+org/ 10. 1038/ s41598- 023- 34796-3.
+ 35. Valencia L, Canalejas-Tejero V, Clemente M, Fernaud I, Holgado 
+M, Jorcano JL, et al. A new microfluidic method enabling the 
+generation of multi-layered tissues-on-chips using skin cells as a 
+proof of concept. Sci Rep. 2021;11(1):13160. https:// doi. org/ 10.  
+1038/ s41598- 021- 91875-z.
+ 36. Shen C, Yang H, She W, Meng Q. A microfluidic lung-on-a-chip 
+based on biomimetic hydrogel membrane. Biotechnol Bioeng. 
+2023;120(7):2027–38. https:// doi. org/ 10. 1002/ bit. 28426.
+ 37. Serrano DR, Kara A, Yuste I, Luciano FC, Ongoren B, Anaya BJ, 
+et al. 3D Printing technologies in personalized medicine, nano-
+medicines, and biopharmaceuticals. Pharmaceutics. 2023;15(2). 
+https:// doi. org/ 10. 3390/ pharm aceut ics15 020313.
+ 38. Marcotulli M, Tirelli MC, Volpi M, Jaroszewicz J, Scognamiglio 
+C, Kasprzycki P, et al. Microfluidic 3D printing of emulsion ink 
+for engineering porous functionally graded materials. Adv Mater 
+Technol. 2023;8(5):2201244. https:// doi. org/ 10. 1002/ admt.  20220 
+1244.
+ 39. Yang Y, Jia Y, Yang Q, Xu F. REVIEW ARTICLE Engineering 
+bio-inks for 3D bioprinting cell mechanical microenvironment. Int 
+J Bioprint. 2023;9(1):632. https:// doi. org/ 10. 18063/ ijb. v9i1. 632.
+ 40. Neoh KH, Cheng SKS, Wu HS, Chen AQ, Sun YK, Li BL, et al. 
+pH-responsive carbon nanotube film-based microfluidic chip for 
+efficient capture and release of cancer cells. Acs Appl Nano Mater. 
+2022;5(5):6911–24. https:// doi. org/ 10. 1021/ acsanm. 2c009 12.
+ 41. Carvalho M, Ribeiro V, Caballero D, Kundu S, Reis R, Oliveira J. 
+Biomimetic and soft lab-on-a-chip platform based on enzymatic-
+crosslinked silk fibroin hydrogel for colorectal tumor model. 
+Authorea. 2022. https:// doi. org/ 10. 22541/ au. 16723 2609. 96998  
+643/ v1.
+ 42. Yang H, Chen T, Hu Y, Niu F, Zheng X, Sun H, et al. A micro-
+fluidic platform integrating dynamic cell culture and dielectro-
+phoretic manipulation for in situ assessment of endothelial cell mechanics. Lab Chip. 2023;23(16):3581–92. https://  doi. org/ 10. 
+1039/ d3lc0 0363a.
+ 43. Zhang J, Suttapreyasri S, Leethanakul C, Samruajbenjakun B. 
+Fabrication of vascularized tissue-engineered bone models using 
+triaxial bioprinting. J Biomed Mater Res A. 2024. https:// doi. org/  
+10. 1002/ jbm.a. 37694.
+ 44. Wang D, Gust M, Ferrell N. Kidney-on-a-chip: mechanical stimu-
+lation and Sensor Integration. Sens (Basel). 2022;22(18). https://  
+doi. org/ 10. 3390/ s2218 6889.
+ 45. Bakuova N, Toktarkan S, Dyussembinov D, Azhibek D, 
+Rakhymzhanov A, Kostas K, et al. Design, simulation, and 
+evaluation of polymer-based microfluidic devices via compu-
+tational fluid dynamics and cell culture on-chip. Biosensors. 
+2023;13(7):754.
+ 46. Fedi A, Vitale C, Fato M, Scaglione SA, Human Ovarian, Tumor. 
+Liver organ-on-chip for simultaneous and more predictive toxo-
+efficacy assays. Bioengineering. 2023;10(2):270.
+ 47. Morelli M, Cabezuelo Rodríguez M, Queiroz K. A high-through-
+put gut-on-chip platform to study the epithelial responses to 
+enterotoxins. Sci Rep. 2024;14(1):5797. https:// doi. org/ 10. 1038/  
+s41598- 024- 56520-5.
+ 48. Huh J, Parra JPRLL, Copus JS, Kang H-W, Bishop CE, Soker S, 
+et al. 3D bioprinted liver-on-a-chip for drug cytotoxicity screen-
+ing. Tissue Eng Part A. 2023. https:// doi. org/ 10. 1089/ ten. tea.  
+2023. 0212.
+ 49. Horny MC, Freisa M, Poujouly C, Gonzalez-Losada P, Le Gall 
+J, Dinh THN, et al. Electrochemical nucleic acid biosensor on 
+a microfluidic chip to understand the coupling between electro-
+chemistry and microfluidics. J Chem Educ. 2024;101(2):605–11. 
+https:// doi. org/ 10. 1021/ acs. jchem ed. 3c010 54.
+ 50. Xavier M, Rodrigues PM, Neto MD, Guedes MI, Calero V, Pas-
+trana L, et al. From mouth to gut: microfluidic in vitro simulation 
+of human gastro-intestinal digestion and intestinal permeability. 
+Analyst. 2023;148(14):3193–203. https:// doi. org/ 10. 1039/ d2an0  
+2088b.
+ 51. Tao YZ, Shen HC, Deng KY, Zhang HM, Yang CY. Microfluidic 
+devices with simplified signal readout. Sens Actuators B-Chemi-
+cal. 2021;339:129730. https:// doi. org/ 10. 1016/j. snb. 2021. 129730.
+ 52. Wang J, Jiang H, Pan L, Gu X, Xiao C, Liu P, et al. Rapid on-site 
+nucleic acid testing: on-chip sample preparation, amplification, 
+and detection, and their integration into all-in-one systems. Front 
+Bioeng Biotechnol. 2023;11:1020430. https:// doi. org/ 10. 3389/  
+fbioe. 2023. 10204 30.
+Publisher’s Note Springer Nature remains neutral with regard to 
+jurisdictional claims in published maps and institutional affiliations.
