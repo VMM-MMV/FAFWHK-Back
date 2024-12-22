@@ -119,17 +119,17 @@ class PaperSearchSystem:
         except Exception as e:
             print(f"Error reading JSON file: {str(e)}")
 
-    def search(self, query, size=10, min_date=None, max_date=None, sort_by_date=False, min_score=None):
+    def search(self, query, size=10, min_date=None, max_date=None, sort_by_date=None, min_score=None):
         """
-        Search for papers based on content matching with the query
-        
+        Search for papers based on content matching with the query.
+
         Parameters:
         - query: search query string
         - size: number of results to return
         - min_date: minimum publication date (string in YYYY-MM-DD format)
         - max_date: maximum publication date (string in YYYY-MM-DD format)
-        - sort_by_date: if True, sort results by publication date (newest first)
-        - min_score: minimum relevance score to include in results
+        - sort_by_date: "asc" for oldest first, "desc" for newest first, or None for relevance.
+        - min_score: minimum relevance score to include in results.
         """
         search_body = {
             "query": {
@@ -160,7 +160,7 @@ class PaperSearchSystem:
             }
         }
 
-        # Add date range if specified
+        # Add date range filter if specified
         if min_date or max_date:
             date_range = {"range": {"publicationDate": {}}}
             if min_date:
@@ -172,8 +172,7 @@ class PaperSearchSystem:
         # Add sorting if requested
         if sort_by_date:
             search_body["sort"] = [
-                {"_score": "desc"},
-                {"publicationDate": {"order": "desc"}}
+                {"publicationDate": {"order": sort_by_date}}
             ]
 
         response = self.es.search(
@@ -187,7 +186,7 @@ class PaperSearchSystem:
             # Skip results below minimum score if specified
             if min_score and hit['_score'] < min_score:
                 continue
-                
+
             result = {
                 'paperId': hit['_source']['paperId'],
                 'title': hit['_source']['title'],
@@ -198,40 +197,61 @@ class PaperSearchSystem:
             results.append(result)
 
         return results
-
-# # Example usage
-# if __name__ == "__main__":
-#     # Initialize the search system
-#     search_system = PaperSearchSystem()
-
-#     # Example paper entry
-#     sample_paper = {
-#         "paperId": "00f463bd1d89304afe540d0307418ef3325d21f2",
-#         "title": "Enhancing Professional Employability: The Impact of Agile Methodology Training",
-#         "document_content": "This paper explores the effectiveness of agile methodology training...",
-#         "publicationDate": "2024-12-10"
-#     }
-
-#     # Index a single paper
-#     search_system.index_paper(sample_paper)
-
-#     # Search for papers with specific content
-#     results = search_system.search(
-#         "agile methodology effectiveness",
-#         size=5,
-#         min_score=0.5,
-#         sort_by_date=True
-#     )
     
-#     # Print results with highlights
-#     for result in results:
-#         print(f"Paper ID: {result['paperId']}")
-#         print(f"Title: {result['title']}")
-#         print(f"Score: {result['score']}")
-#         print("Relevant excerpts:")
-#         for highlight in result['highlights']:
-#             print(f"  - {highlight}")
-#         print("---")
+    def get_all(self, size=100, sort_by_date=None):
+        """
+        Retrieve all papers from the Elasticsearch index.
+
+        Parameters:
+        - size: number of results to fetch in each batch (default: 100).
+        - sort_by_date: "asc" for oldest first, "desc" for newest first, or None for no sorting.
+        """
+        search_body = {
+            "query": {
+                "match_all": {}
+            }
+        }
+
+        # Add sorting if requested
+        if sort_by_date:
+            search_body["sort"] = [
+                {"publicationDate": {"order": sort_by_date}}
+            ]
+
+        results = []
+        scroll_timeout = "2m"
+
+        # Start scroll search
+        response = self.es.search(
+            index=self.index_name,
+            body=search_body,
+            size=size,
+            scroll=scroll_timeout
+        )
+        scroll_id = response["_scroll_id"]
+
+        # Collect results from the initial response
+        results.extend(response['hits']['hits'])
+
+        # Continue scrolling until no more hits
+        while len(response['hits']['hits']) > 0:
+            response = self.es.scroll(
+                scroll_id=scroll_id,
+                scroll=scroll_timeout
+            )
+            scroll_id = response["_scroll_id"]
+            results.extend(response['hits']['hits'])
+
+        # Transform results into a readable format
+        return [
+            {
+                'paperId': hit['_source']['paperId'],
+                'title': hit['_source']['title'],
+                'publicationDate': hit['_source']['publicationDate']
+            }
+            for hit in results
+        ]
+
 
 def get_paper_url(pdf_field):
     pdf_url = None
@@ -248,14 +268,17 @@ if __name__ == "__main__":
     # search_system.index_papers_from_json('cs.jsonl')
 
     # Search for recent files
-    # from datetime import datetime, timedelta
-    # min_date = datetime.now() - timedelta(days=30)  # Last 30 days
+    from datetime import datetime, timedelta
+    min_date = datetime.now() - timedelta(days=30)  # Last 30 days
     
-    results = search_system.search(
-        "social media"
-        # min_date=min_date,
-        # sort_by_date=True  # Sort by newest first
-    )
+    # results = search_system.search(
+    #     "some papers on artificial intelligence"
+    #     # min_date=min_date,
+    #     # sort_by_date=True  # Sort by newest first
+    # )
+
+    results = search_system.get_all(sort_by_date="desc")
     
     for result in results:
-        print(result["highlights"])
+        print(result)
+     
