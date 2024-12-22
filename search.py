@@ -4,26 +4,27 @@ import json
 from util.pdf_manager import url_to_txt
 from datetime import datetime
 from dotenv import load_dotenv
+from reco_algo import UserPaperInteractions, UserPreferences
 import os
 
 class PaperSearchSystem:
     def __init__(self, elastic_host='localhost', elastic_port=9200, index_name='papers'):
-        """Initialize the search system with Elasticsearch connection"""
-        # Updated connection initialization
-        # self.es = Elasticsearch(f"http://{elastic_host}:{elastic_port}")
+        """Initialize the search system with Elasticsearch connection and user preferences"""
         load_dotenv()
-
         es_key = os.getenv('ES_KEY')
-
-        self.es = Elasticsearch(f"https://ce8f4aa8de214bfa80e5c5b25079d80e.europe-west3.gcp.cloud.es.io:443", api_key=es_key)
-        self.index_name = index_name
         
-        # Create index if it doesn't exist
+        self.es = Elasticsearch(
+            "https://ce8f4aa8de214bfa80e5c5b25079d80e.europe-west3.gcp.cloud.es.io:443",
+            api_key=es_key
+        )
+        self.index_name = index_name
+        self.user_preferences = UserPreferences()
+        
         if not self.es.indices.exists(index=self.index_name):
             self.create_index()
 
     def create_index(self):
-        """Create Elasticsearch index with appropriate mappings for paper content search"""
+        """Create Elasticsearch index with appropriate mappings"""
         settings = {
             "settings": {
                 "number_of_shards": 1,
@@ -33,11 +34,7 @@ class PaperSearchSystem:
                         "paper_analyzer": {
                             "type": "custom",
                             "tokenizer": "standard",
-                            "filter": [
-                                "lowercase",
-                                "stop",
-                                "snowball"
-                            ]
+                            "filter": ["lowercase", "stop", "snowball"]
                         }
                     }
                 }
@@ -45,15 +42,13 @@ class PaperSearchSystem:
             "mappings": {
                 "properties": {
                     "paperId": {"type": "keyword"},
-                    "title": {
-                        "type": "text",
-                        "analyzer": "paper_analyzer"
-                    },
+                    "title": {"type": "text", "analyzer": "paper_analyzer"},
                     "document_content": {
                         "type": "text",
                         "analyzer": "paper_analyzer",
                         "term_vector": "with_positions_offsets"
                     },
+                    "authorId": {"type": "keyword"},
                     "publicationDate": {"type": "date"},
                     "indexed_date": {"type": "date"}
                 }
@@ -61,179 +56,32 @@ class PaperSearchSystem:
         }
         self.es.indices.create(index=self.index_name, body=settings)
 
-    def index_paper(self, paper_data):
-        """Index a single paper entry into Elasticsearch"""
-        try:
-            # Ensure the paper has required fields
-            if 'paperId' not in paper_data:
-                raise ValueError("Missing required field: paperId")
-
-            # Handle None values in document_content
-            if paper_data.get('document_content') is None:
-                paper_data['document_content'] = ""
-
-            # Add indexing timestamp
-            doc = {
-                **paper_data,
-                'indexed_date': datetime.now().isoformat()
-            }
-
-            # Index the document
-            self.es.index(
-                index=self.index_name,
-                id=paper_data['paperId'],
-                body=doc
-            )
-            print(f"Successfully indexed paper: {paper_data['paperId']}")
-            
-        except Exception as e:
-            print(f"Error indexing paper {paper_data.get('paperId', 'unknown')}: {str(e)}")
-
-    def index_papers_from_json(self, json_file_path):
-        """Index multiple papers from a JSON file"""
-        try:
-            with open(json_file_path, 'r') as file:
-                papers = [json.loads(line) for line in file]
-                
-            if isinstance(papers, list):
-                for paper in papers:
-                    pdf_url = get_paper_url(paper.get("openAccessPdf"))
-                    if not pdf_url:
-                        continue
-
-                    pdf_txt = url_to_txt(pdf_url)
-                    
-                    if not pdf_txt: continue
-
-                    temp_paper = paper
-                    temp_paper.pop("openAccessPdf")
-                    temp_paper.pop("year")
-                    temp_paper["document_content"] = pdf_txt
-                    
-                    [print(x, str(y)[:10], end=", ") for x, y in temp_paper.items()]
-
-                    self.index_paper(temp_paper)
-            else:
-                self.index_paper(papers)
-                
-        except Exception as e:
-            print(f"Error reading JSON file: {str(e)}")
-
-    def search(self, query, size=10, min_date=None, max_date=None, sort_by_date=None, min_score=None):
+    def get_all(self, user_id=None, size=100, sort_by_date=None):
         """
-        Search for papers based on content matching with the query.
-
+        Retrieve papers with optional user personalization
+        
         Parameters:
-        - query: search query string
-        - size: number of results to return
-        - min_date: minimum publication date (string in YYYY-MM-DD format)
-        - max_date: maximum publication date (string in YYYY-MM-DD format)
-        - sort_by_date: "asc" for oldest first, "desc" for newest first, or None for relevance.
-        - min_score: minimum relevance score to include in results.
+        - user_id: Optional user ID for personalized results
+        - size: Number of results per batch
+        - sort_by_date: "asc" or "desc" for date sorting
         """
-        search_body = {
-            "query": {
-                "bool": {
-                    "must": [
-                        {
-                            "multi_match": {
-                                "query": query,
-                                "fields": ["document_content^3", "title"],
-                                "type": "best_fields",
-                                "operator": "or",
-                                "minimum_should_match": "75%"
-                            }
-                        }
-                    ],
-                    "filter": []
-                }
-            },
-            "highlight": {
-                "fields": {
-                    "document_content": {
-                        "fragment_size": 150,
-                        "number_of_fragments": 3,
-                        "pre_tags": ["<mark>"],
-                        "post_tags": ["</mark>"]
-                    }
-                }
-            }
-        }
-
-        # Add date range filter if specified
-        if min_date or max_date:
-            date_range = {"range": {"publicationDate": {}}}
-            if min_date:
-                date_range["range"]["publicationDate"]["gte"] = min_date
-            if max_date:
-                date_range["range"]["publicationDate"]["lte"] = max_date
-            search_body["query"]["bool"]["filter"].append(date_range)
-
-        # Add sorting if requested
-        if sort_by_date:
-            search_body["sort"] = [
-                {"publicationDate": {"order": sort_by_date}}
-            ]
-
-        response = self.es.search(
-            index=self.index_name,
-            body=search_body,
-            size=size
-        )
-
-        results = []
-        for hit in response['hits']['hits']:
-            # Skip results below minimum score if specified
-            if min_score and hit['_score'] < min_score:
-                continue
-
-            result = {
-                'paperId': hit['_source']['paperId'],
-                'title': hit['_source']['title'],
-                'publicationDate': hit['_source']['publicationDate'],
-                'score': hit['_score'],
-                'highlights': hit.get('highlight', {}).get('document_content', [])
-            }
-            results.append(result)
-
-        return results
-    
-    def get_all(self, size=100, sort_by_date=None):
-        """
-        Retrieve all papers from the Elasticsearch index.
-
-        Parameters:
-        - size: number of results to fetch in each batch (default: 100).
-        - sort_by_date: "asc" for oldest first, "desc" for newest first, or None for no sorting.
-        """
-        search_body = {
-            "query": {
-                "match_all": {}
-            }
-        }
-
-        # Add sorting if requested
-        if sort_by_date:
-            search_body["sort"] = [
-                {"publicationDate": {"order": sort_by_date}}
-            ]
-
+        search_body = self._build_search_body(user_id, sort_by_date)
+        
         results = []
         scroll_timeout = "2m"
 
-        # Start scroll search
+        # Initial search
         response = self.es.search(
             index=self.index_name,
             body=search_body,
             size=size,
             scroll=scroll_timeout
         )
+        
         scroll_id = response["_scroll_id"]
-
-        # Collect results from the initial response
         results.extend(response['hits']['hits'])
 
-        # Continue scrolling until no more hits
+        # Continue scrolling
         while len(response['hits']['hits']) > 0:
             response = self.es.scroll(
                 scroll_id=scroll_id,
@@ -242,16 +90,115 @@ class PaperSearchSystem:
             scroll_id = response["_scroll_id"]
             results.extend(response['hits']['hits'])
 
-        # Transform results into a readable format
-        return [
-            {
-                'paperId': hit['_source']['paperId'],
-                'title': hit['_source']['title'],
-                'publicationDate': hit['_source']['publicationDate']
-            }
-            for hit in results
-        ]
+        # Process and sort results
+        processed_results = self._process_results(results, user_id)
+        
+        return processed_results
 
+    def _build_search_body(self, user_id, sort_by_date):
+        """Build Elasticsearch query based on user preferences"""
+        search_body = {
+            "query": {
+                "bool": {
+                    "must": [{"match_all": {}}],
+                    "must_not": [],
+                    "should": []
+                }
+            }
+        }
+
+        if user_id and user_id in self.user_preferences.user_data:
+            user_prefs = self.user_preferences.user_data[user_id]
+
+            # Exclude blocked authors
+            blocked_authors = user_prefs['blocked_authors']
+            if blocked_authors:
+                search_body["query"]["bool"]["must_not"].append({
+                    "terms": {"authorId": list(blocked_authors)}
+                })
+
+            # Boost papers from followed authors
+            followed_authors = user_prefs['followed_authors']
+            if followed_authors:
+                search_body["query"]["bool"]["should"].append({
+                    "terms": {"authorId": list(followed_authors), "boost": 2.0}
+                })
+
+            # Boost papers similar to "show_more"
+            show_more = user_prefs['show_more']
+            if show_more:
+                search_body["query"]["bool"]["should"].append({
+                    "more_like_this": {
+                        "fields": ["title", "document_content"],
+                        "like": [{"_index": self.index_name, "_id": pid} for pid in show_more],
+                        "min_term_freq": 1,
+                        "max_query_terms": 12,
+                        "boost": 1.5
+                    }
+                })
+
+            # Exclude papers similar to "show_less"
+            show_less = user_prefs['show_less']
+            if show_less:
+                search_body["query"]["bool"]["must_not"].append({
+                    "more_like_this": {
+                        "fields": ["title", "document_content"],
+                        "like": [{"_index": self.index_name, "_id": pid} for pid in show_less],
+                        "min_term_freq": 1,
+                        "max_query_terms": 12
+                    }
+                })
+
+        # Add date sorting if requested
+        if sort_by_date:
+            search_body["sort"] = [{"publicationDate": {"order": sort_by_date}}]
+
+        return search_body
+
+    def _process_results(self, results, user_id):
+        """Process and score search results"""
+        processed_results = []
+        
+        for hit in results:
+            source = hit['_source']
+            result = {
+                'paperId': source['paperId'],
+                'title': source['title'],
+                'publicationDate': source['publicationDate'],
+                'authorId': source.get('authorId'),
+                'base_score': hit['_score']
+            }
+            
+            # Add user interaction data if available
+            if user_id and user_id in self.user_preferences.user_data:
+                user_prefs = self.user_preferences.user_data[user_id]
+                paper_id = source['paperId']
+                
+                result.update({
+                    'view_time': user_prefs['view_times'].get(paper_id, 0),
+                    'view_count': user_prefs['view_counts'].get(paper_id, 0),
+                    'is_bookmarked': paper_id in user_prefs['bookmarks'],
+                    'is_downloaded': paper_id in user_prefs['downloads'],
+                    'show_more': paper_id in user_prefs['show_more'],
+                    'show_less': paper_id in user_prefs['show_less']
+                })
+                
+                # Calculate user preference score
+                score = result['base_score']
+                score *= 1.5 if result['is_bookmarked'] else 1.0
+                score *= 1.3 if result['is_downloaded'] else 1.0
+                score *= 1.5 if result['show_more'] else 1.0
+                score *= 0.5 if result['show_less'] else 1.0
+                score *= 1.0 + (result['view_time'] / 3600)  # Boost based on hours spent reading
+                
+                result['final_score'] = score
+            else:
+                result['final_score'] = result['base_score']
+            
+            processed_results.append(result)
+
+        # Sort by final score
+        return sorted(processed_results, key=lambda x: x['final_score'], reverse=True)
 
 def get_paper_url(pdf_field):
     pdf_url = None

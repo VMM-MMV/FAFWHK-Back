@@ -4,57 +4,47 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.document_loaders import TextLoader
 from elasticsearch import Elasticsearch
 import os
+from dotenv import load_dotenv
 
 class DocumentRAG:
-    def __init__(self, elasticsearch_url, index_name="documents"):
-        # Initialize Elasticsearch client
-        self.es_client = Elasticsearch(elasticsearch_url)
+    def __init__(self, index_name="documents"):
+        load_dotenv()
+
+        es_key = os.getenv('ES_KEY')
+
+        self.es_client = Elasticsearch(f"https://ce8f4aa8de214bfa80e5c5b25079d80e.europe-west3.gcp.cloud.es.io:443", api_key=es_key)
         self.index_name = index_name
-        
-        # Initialize embeddings
         self.embeddings = OpenAIEmbeddings()
-        
-        # Initialize vector store
         self.vector_store = ElasticsearchStore(
             es_client=self.es_client,
             index_name=self.index_name,
             embedding=self.embeddings
         )
-        
-        # Initialize text splitter
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=1000,
             chunk_overlap=200
         )
 
-    def ingest_file(self, file_path):
+    def get_paper_content(self, paper_id):
         """
-        Ingest a file into Elasticsearch with metadata
+        Retrieve full paper content from Elasticsearch
         """
-        # Load the document
-        loader = TextLoader(file_path)
-        document = loader.load()
-        
-        # Split the document into chunks
-        splits = self.text_splitter.split_documents(document)
-        
-        # Add file_id metadata to each split
-        file_id = os.path.basename(file_path)
-        for split in splits:
-            split.metadata["file_id"] = file_id
-        
-        # Add to vector store
-        self.vector_store.add_documents(splits)
-        
-        return file_id
+        try:
+            response = self.es_client.get(
+                index=self.index_name,
+                id=paper_id
+            )
+            return response['_source']
+        except Exception as e:
+            raise ValueError(f"Error retrieving paper content: {str(e)}")
 
-    def query_file(self, query, file_id, top_k=5):
+    def query_paper(self, query, paper_id, top_k=5):
         """
-        Query a specific file using metadata filtering
+        Query paper content using vector similarity search
         """
         filter = {
             "term": {
-                "metadata.file_id": file_id
+                "metadata.paper_id": paper_id
             }
         }
         
@@ -66,20 +56,48 @@ class DocumentRAG:
         
         return results
 
-    def get_context_string(self, results):
+    def get_context_string(self, results, paper_content):
         """
-        Convert search results into a context string for the LLM
+        Create context string combining relevant passages and paper metadata
         """
-        context = ""
+        context = f"Paper Title: {paper_content.get('title', 'N/A')}\n"
+        context += f"Authors: {', '.join(paper_content.get('authors', []))}\n"
+        context += f"Publication Date: {paper_content.get('publication_date', 'N/A')}\n\n"
+        context += "Relevant Passages:\n"
+        
         for doc, score in results:
             context += f"\nPassage (similarity score {score:.4f}):\n{doc.page_content}\n"
+        
         return context
 
-def main():
-    rag = DocumentRAG(
-        elasticsearch_url="http://localhost:9200"
-    )
+def get_paper_info(paper_id, rag_system):
+    """
+    Get complete paper information including relevant context
+    """
+    try:
+        # Get full paper content
+        paper_content = rag_system.get_paper_content(paper_id)
+        
+        # Get paper sections and metadata
+        sections = paper_content.get('sections', [])
+        metadata = paper_content.get('metadata', {})
+        
+        # Combine all content for context
+        full_content = {
+            'title': paper_content.get('title'),
+            'authors': paper_content.get('authors', []),
+            'publication_date': paper_content.get('publication_date'),
+            'sections': sections,
+            'metadata': metadata
+        }
+        
+        return full_content
+        
+    except Exception as e:
+        raise ValueError(f"Error retrieving paper information: {str(e)}")
 
+def main():
+    rag = DocumentRAG()
     file_ids = []
     for file_path in ["doc1.txt", "doc2.txt", "doc3.txt"]:
         file_id = rag.ingest_file(file_path)

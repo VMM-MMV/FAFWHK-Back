@@ -6,6 +6,7 @@ import os
 from marshmallow import Schema, fields, validate, ValidationError
 from LLMGroq import LLMGroq
 from papers import get_paper_info
+from rag import DocumentRAG
 
 app = Flask(__name__)
 
@@ -241,20 +242,39 @@ def get_all_papers():
 def ask_paper_question():
     try:
         data = request.get_json()
-
         paper_id = data.get('paper_id')
         user_question = data.get('question', "")
 
         if not paper_id:
             return jsonify({"error": "Missing paper_id"}), 400
 
-        paper_info = get_paper_info(paper_id)
+        rag_system = DocumentRAG()
+        
+        paper_content = get_paper_info(paper_id, rag_system)
+        
+        results = rag_system.query_paper(user_question, paper_id)
+        
+        context = rag_system.get_context_string(results, paper_content)
         
         llm = LLMGroq()
-        prompt = "You are a helpful AI assistant. You will be given a research paper, and a question on it, respond."
-        res = llm.query(prompt + user_question + str(paper_info))
+        prompt = f"""You are a helpful AI assistant. Based on the following paper content and context, 
+        please answer the question: {user_question}
+
+        Context:
+        {context}
+        """
         
-        return jsonify({"response": res})
+        response = llm.query(prompt)
+        
+        return jsonify({
+            "response": response,
+            "context": context,
+            "paper_metadata": {
+                "title": paper_content.get('title'),
+                "authors": paper_content.get('authors'),
+                "publication_date": paper_content.get('publication_date')
+            }
+        })
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
