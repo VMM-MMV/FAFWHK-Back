@@ -4,6 +4,8 @@ from datetime import datetime
 from dotenv import load_dotenv
 import os
 from marshmallow import Schema, fields, validate, ValidationError
+from LLMGroq import LLMGroq
+from papers import get_paper_info
 
 app = Flask(__name__)
 
@@ -234,6 +236,28 @@ def get_all_papers():
             "status": "error",
             "message": str(e)
         }), 500
+    
+@app.route('/ask-paper-question', methods=['POST'])
+def ask_paper_question():
+    try:
+        data = request.get_json()
+
+        paper_id = data.get('paper_id')
+        user_question = data.get('question', "")
+
+        if not paper_id:
+            return jsonify({"error": "Missing paper_id"}), 400
+
+        paper_info = get_paper_info(paper_id)
+        
+        llm = LLMGroq()
+        prompt = "You are a helpful AI assistant. You will be given a research paper, and a question on it, respond."
+        res = llm.query(prompt + user_question + str(paper_info))
+        
+        return jsonify({"response": res})
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     # Run Flask app on port 8443

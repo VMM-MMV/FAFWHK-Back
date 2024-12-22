@@ -65,8 +65,6 @@ summary: {abstract}
 
         return f"File created successfully: md/{paper['paperId']}.mdx"
     
-
-    
 with open ("papers.jsonl","r") as file:
     for line in file.readlines():
         if line:
