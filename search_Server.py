@@ -3,7 +3,6 @@ from elasticsearch import Elasticsearch
 from datetime import datetime
 from dotenv import load_dotenv
 import os
-from pyngrok import ngrok
 from marshmallow import Schema, fields, validate, ValidationError
 
 app = Flask(__name__)
@@ -11,10 +10,6 @@ app = Flask(__name__)
 # Load environment variables
 load_dotenv()
 es_key = os.getenv('ES_KEY')
-NGROK_AUTH_TOKEN = os.getenv('NGROK_AUTH_TOKEN')
-
-# Initialize ngrok
-ngrok.set_auth_token(NGROK_AUTH_TOKEN)
 
 # Validation Schemas
 class SearchSchema(Schema):
@@ -133,7 +128,7 @@ class PaperSearchSystem:
 
         return results
 
-    def get_all(self, size=100, sort_by_date=None):
+    def get_all(self, size=100, sort_by_date="desc"):
         """Retrieve all papers from the index"""
         search_body = {"query": {"match_all": {}}}
 
@@ -241,9 +236,5 @@ def get_all_papers():
         }), 500
 
 if __name__ == "__main__":
-    # Start ngrok
-    public_url = ngrok.connect(5000)
-    print(f" * ngrok tunnel '{public_url}' -> 'http://127.0.0.1:5000'")
-    
-    # Run Flask app
-    app.run(debug=True)
+    # Run Flask app on port 8443
+    app.run(host='0.0.0.0', port=8443, debug=True)

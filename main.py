@@ -8,8 +8,8 @@ from filelock import FileLock
 # =========== CONFIGURATION ===========
 
 QUERY = "biomedical | (bio medical)"
-FIELDS = "publicationDate,year,title,openAccessPdf"
-INITIAL_DATE = "2024-12-15"             # Starting date
+FIELDS = "publicationDate,year,title,openAccessPdf,s2FieldsOfStudy,abstract,journal"
+INITIAL_DATE = "2024-1-15"             # Starting date
 OUTPUT_FILE = "papers.jsonl"            # Where fetched papers are written
 LOCK_FILE = "papers.jsonl.lock"         # For safe writes to OUTPUT_FILE
 PROCESSED_IDS_FILE = "processed_ids.json"  # Stores ALL processed IDs, by date
