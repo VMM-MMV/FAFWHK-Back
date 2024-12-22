@@ -9,16 +9,16 @@ from filelock import FileLock
 
 QUERY = "biomedical | (bio medical)"
 FIELDS = "publicationDate,year,title,openAccessPdf"
-INITIAL_DATE = "2024-12-16"        # Starting date
-OUTPUT_FILE = "papers.jsonl"       # Where fetched papers are written
-LOCK_FILE = "papers.jsonl.lock"    # For safe writes to OUTPUT_FILE
-PROCESSED_IDS_FILE = "processed_ids.json"  # Single file for active date + processed IDs
+INITIAL_DATE = "2024-12-15"             # Starting date
+OUTPUT_FILE = "papers.jsonl"            # Where fetched papers are written
+LOCK_FILE = "papers.jsonl.lock"         # For safe writes to OUTPUT_FILE
+PROCESSED_IDS_FILE = "processed_ids.json"  # Stores ALL processed IDs, by date
 
 # How often (in seconds) we “promote” pending_newest_val => newest_val
-UPDATE_INTERVAL = 10
+UPDATE_INTERVAL = 5
 
-# Small sleep to avoid slamming the API in a tight loop
-FETCH_SLEEP = 1
+# Small sleep to avoid hammering the API in a tight loop
+FETCH_SLEEP = 2
 
 # =====================================
 
@@ -34,51 +34,90 @@ pending_newest_val = newest_val
 # For controlling how often we update newest_val
 last_update_time = time.time()
 
-# In-memory set of processed paper IDs for the *current* newest_val
-processed_ids = set()
+# A dictionary that will map date_str => set_of_ids, loaded from processed_ids.json
+processed_ids_by_date = {}
+# A global set of all processed IDs across all dates (for fast membership checks)
+all_processed_ids = set()
 
-def load_processed_ids_file():
+
+# ----------------------------------------------------------------------
+#                           FILE STORAGE FUNCTIONS
+# ----------------------------------------------------------------------
+
+def load_all_processed_ids():
     """
-    Attempt to load 'processed_ids.json'.
-    Structure expected:
-    {
-      "date": "YYYY-MM-DD",
-      "paperIds": ["paper1", "paper2", ...]
-    }
-    Returns (loaded_date_str, loaded_ids_set).
-    If file not found or invalid, returns (None, empty set).
+    Load processed IDs from PROCESSED_IDS_FILE, which looks like:
+      {
+        "processedIds": {
+          "YYYY-MM-DD": ["paperId1", "paperId2", ...],
+          "YYYY-MM-DD": [...]
+        }
+      }
+    Returns a dict date => set_of_ids, plus a global set of all IDs.
+    If file does not exist or is invalid, returns empty structures.
     """
     if not os.path.exists(PROCESSED_IDS_FILE):
-        return None, set()  # File doesn't exist => no data
+        return {}, set()  # no file yet => empty
 
     try:
         with open(PROCESSED_IDS_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-        # Basic validation
-        loaded_date = data.get("date")
-        paper_ids = data.get("paperIds", [])
-        if not isinstance(loaded_date, str) or not isinstance(paper_ids, list):
-            print(f"[WARN] {PROCESSED_IDS_FILE} has invalid structure.")
-            return None, set()
-        return loaded_date, set(paper_ids)
-    except (json.JSONDecodeError, OSError) as e:
-        print(f"[WARN] Could not read {PROCESSED_IDS_FILE}: {e}")
-        return None, set()
+        if not isinstance(data, dict) or "processedIds" not in data:
+            print(f"[WARN] {PROCESSED_IDS_FILE} has invalid structure. Starting fresh.")
+            return {}, set()
 
-def save_processed_ids_file(date_str: str, ids_set: set):
+        processed_section = data["processedIds"]
+        if not isinstance(processed_section, dict):
+            print(f"[WARN] 'processedIds' key is not a dict. Starting fresh.")
+            return {}, set()
+
+        # Convert all lists into sets
+        loaded_by_date = {}
+        for date_str, id_list in processed_section.items():
+            if isinstance(id_list, list):
+                loaded_by_date[date_str] = set(id_list)
+            else:
+                loaded_by_date[date_str] = set()
+
+        # Build one big set of all IDs
+        global_set = set()
+        for s in loaded_by_date.values():
+            global_set |= s  # union
+
+        return loaded_by_date, global_set
+
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"[WARN] Could not read {PROCESSED_IDS_FILE}: {e}. Starting fresh.")
+        return {}, set()
+
+
+def save_all_processed_ids(by_date_dict):
     """
-    Save the current 'date' and paper IDs to 'processed_ids.json'.
-    Overwrites any existing content.
-    """
-    data = {
-        "date": date_str,
-        "paperIds": list(ids_set)
+    Save the dict (date => set_of_ids) to PROCESSED_IDS_FILE in JSON format:
+    {
+      "processedIds": {
+        "YYYY-MM-DD": [...],
+        ...
+      }
     }
+    """
+    # Convert sets back to lists
+    to_save = {}
+    for date_str, ids_set in by_date_dict.items():
+        to_save[date_str] = list(ids_set)
+
+    data = {"processedIds": to_save}
+
     try:
         with open(PROCESSED_IDS_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
     except OSError as e:
-        print(f"[ERROR] Could not write {PROCESSED_IDS_FILE}: {e}")
+        print(f"[ERROR] Could not write to {PROCESSED_IDS_FILE}: {e}")
+
+
+# ----------------------------------------------------------------------
+#                           LOGIC FUNCTIONS
+# ----------------------------------------------------------------------
 
 def build_url(start_date: str) -> str:
     """
@@ -110,56 +149,45 @@ def fetch_papers():
     """
     Continuously fetch new papers using the global newest_val,
     writing new results to OUTPUT_FILE without duplicates.
-    - Update pending_newest_val if we discover a later publication date.
-    - Every UPDATE_INTERVAL seconds, if pending_newest_val != newest_val:
-        * Overwrite processed_ids.json with new date + empty set
-        * Reload (which starts empty, or might load existing if we changed date earlier)
+    - We store processed IDs across ALL dates in a single file (processed_ids.json).
+    - If we see a new paper, we add it to `processed_ids_by_date[that_date]` and
+      also to the global set `all_processed_ids`.
+    - We keep checking if the paper's date is beyond pending_newest_val => then we
+      update pending_newest_val.
+    - Every UPDATE_INTERVAL seconds, if pending_newest_val != newest_val, we promote it.
     """
-    global newest_val, pending_newest_val, processed_ids
+    global newest_val, pending_newest_val
     global running, last_update_time
+    global processed_ids_by_date, all_processed_ids
 
-    # 1) On startup, try to load the existing processed_ids file
-    file_date, file_ids = load_processed_ids_file()
-
-    if file_date == newest_val:
-        # The file's date matches our current newest_val
-        processed_ids = file_ids
-        print(f"[INFO] Loaded {len(processed_ids)} processed IDs for date={newest_val}.")
-    else:
-        # The file is either for another date or invalid
-        print("[INFO] Starting fresh for newest_val=", newest_val)
-        processed_ids = set()
-        # Save a fresh file with the current newest_val
-        save_processed_ids_file(newest_val, processed_ids)
+    # Initially load everything from file
+    processed_ids_by_date, all_processed_ids = load_all_processed_ids()
+    print(f"[INFO] Loaded {len(all_processed_ids)} total processed IDs across all dates.")
 
     while running:
-        # 2) Check if it's time to “promote” pending_newest_val => newest_val
+        # 1) Check if it's time to promote newest_val => pending_newest_val
         now = time.time()
         if now - last_update_time >= UPDATE_INTERVAL:
             if pending_newest_val != newest_val:
                 print(f"[INFO] Advancing newest_val from {newest_val} to {pending_newest_val}.")
                 newest_val = pending_newest_val
-
-                # Overwrite processed_ids file with the new date + empty set
-                processed_ids = set()
-                save_processed_ids_file(newest_val, processed_ids)
-                print(f"[INFO] Now tracking 0 processed IDs for newest_val={newest_val}.")
-
             last_update_time = now
 
+        # 2) Build the query URL using the frozen newest_val
         url = build_url(newest_val)
         print(f"[DEBUG] Querying URL: {url}")
 
         try:
+            # Fetch the first "page"
             response = requests.get(url)
             response.raise_for_status()
             data = response.json()
-
             token = data.get("token")
             total = data.get("total")
             if total is not None:
                 print(f"[DEBUG] API indicates ~{total} documents for newest_val={newest_val}.")
 
+            # Keep paging if there's a 'token'
             while True:
                 papers = data.get("data", [])
                 if not papers:
@@ -169,22 +197,21 @@ def fetch_papers():
                     paper_id = paper.get("paperId")
                     pub_date = paper.get("publicationDate")
 
-                    # Skip if no ID
                     if not paper_id:
                         print("[WARN] Paper found with no paperId, skipping.")
                         continue
 
-                    # Skip if already processed
-                    if paper_id in processed_ids:
-                        # Already in the set => do not write again
+                    # Already processed across ANY date => skip
+                    if paper_id in all_processed_ids:
+                        # This prevents re-writing old data
                         continue
 
-                    # Skip future-dated publications
+                    # Skip future-dated pubs
                     if pub_date and is_future_date(pub_date):
                         print(f"[WARN] Skipping future publication date: {pub_date}")
                         continue
 
-                    # If we see a pub date newer than our pending_newest_val, update it
+                    # If we see a pub_date that is beyond pending_newest_val, update it
                     if pub_date:
                         try:
                             pub_date_obj = datetime.strptime(pub_date, "%Y-%m-%d")
@@ -196,19 +223,26 @@ def fetch_papers():
                             print(f"[WARN] Invalid publication date '{pub_date}', skipping.")
                             continue
 
-                    # It's a new, valid paper => write to file
+                    # It's a brand new paper => write to file
                     with FileLock(LOCK_FILE):
                         with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
                             f.write(json.dumps(paper) + "\n")
 
                     # Mark it as processed
-                    processed_ids.add(paper_id)
+                    all_processed_ids.add(paper_id)
 
-                # Persist the updated processed_ids after each batch/page
-                save_processed_ids_file(newest_val, processed_ids)
+                    # Also store it by date
+                    # If the paper has no valid date, store under "unknown"
+                    date_key = pub_date if pub_date else "unknown"
+                    if date_key not in processed_ids_by_date:
+                        processed_ids_by_date[date_key] = set()
+                    processed_ids_by_date[date_key].add(paper_id)
 
+                # Save updated processed IDs to file after each batch
+                save_all_processed_ids(processed_ids_by_date)
+
+                # Move on if there's another "page"
                 if token:
-                    # Move to the next page
                     next_url = f"{url}&token={token}"
                     print(f"[DEBUG] Fetching next page with token={token}...")
                     response = requests.get(next_url)
@@ -224,6 +258,7 @@ def fetch_papers():
 
         # Small sleep to avoid spamming the API in a tight loop
         time.sleep(FETCH_SLEEP)
+
 
 def main():
     try:
