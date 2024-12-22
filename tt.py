@@ -1,7 +1,7 @@
 import requests
 import json
 
-query = "biomedical | ((computer science) + (ai |(artificial inteligence)) +(civil engineering) + architecture"
+query = "biomedical | ((computer science) + (ai |(artificial inteligence)) +(civil engineering) + (architecture))"
 fields = "publicationDate,title,openAccessPdf,abstract"
 
 url = f"http://api.semanticscholar.org/graph/v1/paper/search/bulk?query={query}&fields={fields}&publicationDateOrYear=2016-03-05:"
